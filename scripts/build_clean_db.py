@@ -11,12 +11,17 @@ import os
 import re
 import unicodedata
 import warnings
+import sys
 from collections import Counter, OrderedDict
 
 import numpy as np
 import pandas as pd
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import harmonization_decisions as HD  # noqa: E402  (decisiones de armonización, Fases 1–3)
+
 warnings.filterwarnings("ignore")
+CORR_LOG = []  # registro de cada corrección aplicada (base v2)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "HUC-Database descriptor  compound  cheese English.xlsx")
@@ -452,6 +457,29 @@ for i, (k, d) in enumerate(sorted(desc.items(), key=lambda kv: kv[0]), start=1):
     for j, f in enumerate(fams, start=1):
         dfam_rows.append(dict(descriptor_id=did, family_token=f, order_in_source=j))
 dim_descriptor = pd.DataFrame(desc_rows)
+
+# --- Fase 3: ontología de aroma (Bérodier et al. 1997 + Drake et al. 2001) ---
+_dcols = ["is_aroma_target", "aroma_family", "berodier_family_fr", "berodier_subfamily", "aroma_terms",
+          "berodier_term", "drake_term", "split_terms", "harmonization_status", "harmonization_criterion"]
+for c in _dcols:
+    dim_descriptor[c] = None
+_missing = []
+for i, r in dim_descriptor.iterrows():
+    if not r.in_odor_aroma:
+        continue
+    d = HD.DESCRIPTORS.get(r.descriptor_label)
+    if d is None:
+        _missing.append(r.descriptor_label)
+        continue
+    es, l1, l2, l3, bt, dt, sep, est, why = d
+    if dt and dt not in HD.DRAKE_TERMS:
+        raise ValueError(f"Término de Drake no verificado: {dt}")
+    if es == "sí" and l1 not in HD.L1:
+        raise ValueError(f"Familia Bérodier no válida: {l1}")
+    dim_descriptor.loc[i, _dcols] = [es == "sí", HD.L1.get(l1) if es == "sí" else None, l1, l2, l3, bt, dt,
+                                     sep == "sí", est, why]
+if _missing:
+    raise ValueError(f"Descriptores de aroma sin decisión: {_missing}")
 descriptor_term = pd.DataFrame(dalias_rows)
 descriptor_family = pd.DataFrame(dfam_rows)
 
@@ -688,7 +716,7 @@ for _src_vals in (EV["cheese_type"].dropna().map(split_list).explode(),
             DISPLAY[fold(_v)] = _v
 
 
-def cheese_std(raw):
+def _cheese_std_v1(raw):
     r = clean(raw)
     if r is None:
         return None, None, None
@@ -700,9 +728,42 @@ def cheese_std(raw):
     return r[0].upper() + r[1:], None, S
 
 
-# perfiles
+# --- Fase 1.1: correcciones de equivalencias (scripts/harmonization_decisions.py) ---
+ALIAS_OVR = {}   # fold(nombre crudo) -> (nombre nuevo, tipo nuevo)
+TYPE_OVR = {}    # fold(nombre estándar nuevo) -> tipo
+RENAMED = {}     # nombre estándar v1 -> nombre estándar v2
+for _raw, (_name, _typ, _st, _orig, _ref, _why) in HD.ALIAS_DECISIONS.items():
+    _old_std, _q, _t = _cheese_std_v1(_raw)
+    _new = _name or _old_std
+    if _new == _old_std and (_typ or _t) == _t:
+        continue  # decisión explícita sin cambio de valor (p. ej. Parmesan)
+    ALIAS_OVR[fold(_raw)] = (_new, _typ or _t)
+    if _typ and _new:
+        TYPE_OVR[fold(_new)] = _typ
+    if _old_std and _new and _new != _old_std:
+        RENAMED.setdefault(_old_std, _new)
+    CORR_LOG.append(dict(fase="1.1", tabla="cheese_alias", clave=_raw, campo="cheese_name_std / label_type",
+                         valor_anterior=f"{_old_std} / {_t}", valor_nuevo=f"{_new} / {_typ or _t}",
+                         estado=_st, referencia=HD.REF.get(_ref, ""), criterio=_why))
+
+
+def cheese_std(raw):
+    std, q, t = _cheese_std_v1(raw)
+    if std is None:
+        return std, q, t
+    k = fold(raw)
+    if k in ALIAS_OVR:
+        std, t = ALIAS_OVR[k]
+    if fold(std) in TYPE_OVR:
+        t = TYPE_OVR[fold(std)]
+    return std, q, t
+
+
+# perfiles (primero los que no fueron renombrados, para que un alias reasignado
+# no sustituya el perfil propio de una categoría)
 profile_by_std = {}
-for _, r in CP.iterrows():
+_cp_order = sorted(CP.index, key=lambda i: fold(CP.loc[i, "cheese (cheese_type_clean)"]) in ALIAS_OVR)
+for _, r in CP.loc[_cp_order].iterrows():
     std, q, t = cheese_std(r["cheese (cheese_type_clean)"])
     if std in profile_by_std:
         issue("Cheese Profiles", r["cheese (cheese_type_clean)"], "cheese", "Perfil duplicado (se usa el primero)", std)
@@ -734,8 +795,7 @@ for raw in raw_names:
     if t != S and info["type"] == S:
         info["type"] = t
 
-PARENTS = {"Cheddar (aged)": "Cheddar", "Cheddar (low-fat)": "Cheddar", "Farmhouse Cheddar": "Cheddar",
-           "Goat Cheddar": "Cheddar", "Mozzarella (buffalo)": "Mozzarella"}
+PARENTS = {child: v[0] for child, v in HD.PARENTS.items()}
 for p in PARENTS.values():
     std_info.setdefault(p, dict(type=S))
 for p in profile_by_std:
@@ -1001,6 +1061,98 @@ def completeness(row):
 dim_cheese["profile_completeness"] = [completeness(r) if r["has_profile"] else 0.0
                                       for r in dim_cheese.to_dict("records")]
 
+# ----------------------------------------------------------------------------
+# 6b. FASES 1.4 y 2 — familia tecnológica, país/DOP y producción del TIPO de queso
+#     (valores de especificación; nunca se asignan a muestras: van en columnas spec_*)
+# ----------------------------------------------------------------------------
+V1_NAMES = {_cheese_std_v1(r)[0] for r in raw_names} | {_cheese_std_v1(p)[0] for p in CP["cheese (cheese_type_clean)"]}
+
+
+def v2_lookup(dct):
+    """Traduce claves con nombre v1 a nombre v2 cuando el queso fue renombrado,
+    salvo que el nombre v2 ya existiera en v1 como otro queso (no se mezclan datos)."""
+    out = dict(dct)
+    for old, new in RENAMED.items():
+        if old in dct and new not in dct and new not in V1_NAMES:
+            out[new] = dct[old]
+    return out
+
+
+FAM = v2_lookup(HD.CHEESE_FAMILY)
+fam_cols = ["cheese_family", "secondary_technology", "cheese_family_status", "cheese_family_reference",
+            "cheese_family_criterion", "country_iso", "pdo_pgi", "pdo_pgi_status", "pdo_pgi_reference"]
+for c in fam_cols:
+    dim_cheese[c] = None
+for i, r in dim_cheese.iterrows():
+    d = FAM.get(r.cheese_name_std)
+    if d:
+        dim_cheese.loc[i, fam_cols] = [d[0], d[1] or None, d[2], HD.REF.get(d[3], "") if d[3] else None,
+                                       d[4], d[5], d[6], d[7], HD.REF.get(d[8], "") if d[8] else None]
+bad_fam = set(dim_cheese.cheese_family.dropna()) - set(HD.FAMILIES)
+if bad_fam:
+    raise ValueError(f"Familias no válidas: {bad_fam}")
+
+# producción del tipo (spec_*): por defecto el valor del perfil del Excel; después, las decisiones de la Fase 2
+PROD = {}
+for (cheese, block), v in HD.PRODUCTION.items():
+    PROD.setdefault(cheese, {})[block] = v
+PROD = v2_lookup(PROD)
+
+
+def _known(v):
+    return v is not None and not (isinstance(v, float) and np.isnan(v))
+
+
+SPEC_ROWS = {}
+for i, r in dim_cheese.iterrows():
+    src = r.get("profile_source_raw") if r.has_profile else None
+    exc = (HD.V, HD.EXC, src, "Valor del perfil de producción del Excel (fuente citada allí).")
+    none = (HD.N, HD.NONE, None, "El Excel no lo especifica y no se encontró fuente.")
+    milk = r.get("milk_species_raw") if r.get("milk_species_logic") not in (None, "unknown") and _known(r.get("milk_species_logic")) else None
+    heat = r.get("milk_heat_treatment") if _known(r.get("milk_heat_treatment")) and r.get("milk_heat_treatment") != "unknown" else None
+    coag = r.get("rennet_culture_raw") if _known(r.get("rennet_culture_raw")) and not unknown(r.get("rennet_culture_raw")) else None
+    rmin, rmax = r.get("ripening_days_min"), r.get("ripening_days_max")
+    rmin = rmin if _known(rmin) else None
+    rmax = rmax if _known(rmax) else None
+    spec = {
+        "leche": (milk,) + (exc if milk else none),
+        "tratamiento_termico": (heat,) + (exc if heat else none),
+        "cuajo_cultivo": (coag,) + (exc if coag else none),
+        "maduracion": ((rmin, rmax),) + (exc if (rmin is not None or rmax is not None) else none),
+    }
+    for block, (val, est, orig, ref, why) in PROD.get(r.cheese_name_std, {}).items():
+        if block == "maduracion":
+            if val:
+                a, _, b = val.partition("–")
+                val = (float(a) if a else None, float(b) if b else None)
+            else:
+                val = (None, None)
+        spec[block] = (val, est, orig, HD.REF.get(ref, "") if ref else None, why)
+        CORR_LOG.append(dict(fase="2", tabla="dim_cheese", clave=r.cheese_name_std, campo=block,
+                             valor_anterior=None, valor_nuevo=str(val), estado=est,
+                             referencia=HD.REF.get(ref, "") if ref else "", criterio=why))
+    SPEC_ROWS[r.cheese_name_std] = spec
+    mval = spec["leche"][0]
+    pm = parse_milk(mval) if mval else parse_milk(None)
+    rmn, rmx = spec["maduracion"][0]
+    out = dict(
+        spec_milk=mval, spec_milk_cow=pm["milk_cow"], spec_milk_sheep=pm["milk_sheep"],
+        spec_milk_goat=pm["milk_goat"], spec_milk_buffalo=pm["milk_buffalo"],
+        spec_milk_status=spec["leche"][1], spec_milk_reference=spec["leche"][3],
+        spec_heat_treatment=spec["tratamiento_termico"][0], spec_heat_status=spec["tratamiento_termico"][1],
+        spec_heat_reference=spec["tratamiento_termico"][3],
+        spec_coagulant_culture=spec["cuajo_cultivo"][0], spec_coagulant_status=spec["cuajo_cultivo"][1],
+        spec_coagulant_reference=spec["cuajo_cultivo"][3],
+        spec_ripening_days_min=rmn, spec_ripening_days_max=rmx,
+        spec_ripening_class=ripening_class(rmn, rmx, "fresh" if rmx == 0 else None),
+        spec_ripening_status=spec["maduracion"][1], spec_ripening_reference=spec["maduracion"][3],
+    )
+    out["spec_completeness"] = round(sum([out["spec_milk"] is not None, out["spec_heat_treatment"] is not None,
+                                          out["spec_coagulant_culture"] is not None,
+                                          rmn is not None or rmx is not None]) / 4, 2)
+    for k, v in out.items():
+        dim_cheese.loc[i, k] = v
+
 
 # ----------------------------------------------------------------------------
 # 7. EVIDENCIAS (fact_evidence + puentes)
@@ -1099,10 +1251,26 @@ for idx, r in EV.iterrows():
     ev_rows.append(row)
 
     # puentes
+    cit = HD.CHECK_IN_TABLE.get(eid)
     for t in split_list(r["cheese_type"]):
+        if cit and fold(t) == "check in the table" and cit[0]:
+            # Fase 1.1: queso identificado en el texto del PDF copiado en la evidencia
+            for nm in split_list(cit[0]):
+                b_ev_cheese.append(dict(evidence_id=eid, cheese_label_raw=t, cheese_id=CHEESE_ID.get(nm),
+                                        cheese_name_std=nm, sample_qualifier=None,
+                                        label_type=std_info.get(nm, {}).get("type", S),
+                                        resolution_status=cit[1], resolution_criterion=cit[2]))
+                if CHEESE_ID.get(nm) is None:
+                    raise ValueError(f"Queso de resolución inexistente: {nm}")
+            CORR_LOG.append(dict(fase="1.1", tabla="bridge_evidence_cheese", clave=eid, campo="cheese",
+                                 valor_anterior=t, valor_nuevo=cit[0], estado=cit[1], referencia="",
+                                 criterio=cit[2]))
+            continue
         std, q, ty = cheese_std(t)
         b_ev_cheese.append(dict(evidence_id=eid, cheese_label_raw=t, cheese_id=CHEESE_ID.get(std),
-                                cheese_name_std=std, sample_qualifier=q, label_type=ty))
+                                cheese_name_std=std, sample_qualifier=q, label_type=ty,
+                                resolution_status=(cit[1] if cit else None),
+                                resolution_criterion=(cit[2] if cit else None)))
     for s_ in source_ids(r["source_raw"]):
         b_ev_source.append(dict(evidence_id=eid, source_id=s_))
     for p in pv_ids:
@@ -1125,6 +1293,21 @@ for idx, r in EV.iterrows():
 
 fact_evidence = pd.DataFrame(ev_rows)
 bridge_evidence_cheese = pd.DataFrame(b_ev_cheese)
+# Si dos etiquetas originales de la misma evidencia apuntan al mismo queso, se fusionan
+# (evita contar dos veces la misma evidencia para un queso).
+_bk = bridge_evidence_cheese.assign(_k=bridge_evidence_cheese.cheese_id.fillna("NA:" + bridge_evidence_cheese.cheese_label_raw))
+
+
+def _join(s):
+    v = [x for x in dict.fromkeys(s.dropna().astype(str))]
+    return " | ".join(v) if v else None
+
+
+bridge_evidence_cheese = _bk.groupby(["evidence_id", "_k"], sort=False).agg(
+    cheese_label_raw=("cheese_label_raw", _join), cheese_id=("cheese_id", "first"),
+    cheese_name_std=("cheese_name_std", "first"), sample_qualifier=("sample_qualifier", _join),
+    label_type=("label_type", "first"), resolution_status=("resolution_status", "first"),
+    resolution_criterion=("resolution_criterion", "first")).reset_index().drop(columns="_k")
 bridge_evidence_source = pd.DataFrame(b_ev_source).drop_duplicates()
 bridge_evidence_process = pd.DataFrame(b_ev_proc).drop_duplicates()
 
@@ -1294,6 +1477,9 @@ fact_compound_odor = co.groupby(["compound_id", "descriptor_id"]).agg(
     all_possible_double_count=("possible_double_count", "all"),
     evidence_ids=("evidence_id", lambda s: "|".join(sorted(set(s)))),
 ).reset_index()
+fact_compound_odor = fact_compound_odor.merge(
+    dim_descriptor[["descriptor_id", "is_aroma_target", "aroma_family", "berodier_subfamily"]],
+    on="descriptor_id", how="left")
 
 # queso -> compuesto (presencia), desde evidencias + proceso
 cc = fe[fe.claim_scope.isin(["descriptor_compound_in_cheese", "compound_odor_note_only",
@@ -1331,14 +1517,22 @@ bridge_compound_pathway = fe.dropna(subset=["compound_id", "pathway_id"]).groupb
 # 10. TABLA PLANA PARA ML (una fila = evidencia x queso)
 # ----------------------------------------------------------------------------
 desc_info = dim_descriptor.set_index("descriptor_id")[
-    ["family_l1_as_in_source", "is_off_flavor", "family_is_general_or_character"]]
+    ["family_l1_as_in_source", "is_off_flavor", "family_is_general_or_character",
+     "is_aroma_target", "aroma_family", "berodier_subfamily", "aroma_terms", "harmonization_status"]]
+CHEESE_SPEC_COLS = ["cheese_family", "secondary_technology", "country_iso", "pdo_pgi",
+                    "spec_milk_cow", "spec_milk_sheep", "spec_milk_goat", "spec_milk_buffalo",
+                    "spec_heat_treatment", "spec_coagulant_culture", "spec_ripening_days_min",
+                    "spec_ripening_days_max", "spec_ripening_class", "spec_completeness"]
+cheese_info = dim_cheese.set_index("cheese_id")[CHEESE_SPEC_COLS].add_prefix("cheese_")
 cmp_info = dim_compound.set_index("compound_id")[["pubchem_cid", "chemical_class"]]
 pw_info = dim_pathway.set_index("pathway_id")["pathway_label"]
 src_one = bridge_evidence_source.groupby("evidence_id")["source_id"].agg(lambda s: "|".join(sorted(s)))
 
 ml = fe.merge(bec[["evidence_id", "cheese_id", "cheese_name_std", "sample_qualifier", "label_type"]]
               .rename(columns={"label_type": "cheese_label_type"}), on="evidence_id", how="left")
-ml = ml.join(desc_info, on="descriptor_id").join(cmp_info, on="compound_id")
+ml = ml.join(desc_info, on="descriptor_id").join(cmp_info, on="compound_id").join(cheese_info, on="cheese_id")
+ml["use_as_cheese_aroma_label"] = ml.use_as_cheese_descriptor_label & (ml.is_aroma_target == True)
+ml["use_as_compound_aroma_label"] = ml.use_as_compound_odor_label & (ml.is_aroma_target == True)
 ml["pathway_label"] = ml["pathway_id"].map(pw_info)
 ml["source_ids"] = ml["evidence_id"].map(src_one)
 ml.insert(0, "row_id", [f"ML_{i:05d}" for i in range(1, len(ml) + 1)])
@@ -1347,16 +1541,19 @@ ctx_ev = [c for c in fe.columns if c.startswith("ctx_")]
 ML_ORDER = (
     ["row_id", "evidence_id", "evidence_id_generated",
      # objetivo (descriptor)
-     "descriptor_id", "descriptor_label", "family_l1_as_in_source", "is_off_flavor",
+     "descriptor_id", "descriptor_label", "is_aroma_target", "aroma_family", "berodier_subfamily",
+     "aroma_terms", "harmonization_status", "family_l1_as_in_source", "is_off_flavor",
      "family_is_general_or_character",
      # compuesto
      "compound_id", "cas", "pubchem_cid", "iupac_name", "chemical_class", "pathway_id", "pathway_label",
      # queso
      "cheese_id", "cheese_name_std", "cheese_label_type", "sample_qualifier", "cheese_label_raw",
      "n_cheeses"]
+    + ["cheese_" + c for c in CHEESE_SPEC_COLS]
     + ctx_ev
     + ["claim_scope", "verification_status", "evidence_level_raw", "evidence_score",
        "use_as_cheese_descriptor_label", "use_as_compound_odor_label",
+       "use_as_cheese_aroma_label", "use_as_compound_aroma_label",
        "reported_value_raw", "rv_FD", "rv_DF", "rv_OI", "rv_OP", "rv_c", "rv_pct", "rv_vol",
        "method_hint_gc_olfactometry", "descriptor_in_source", "evidence_text", "location_in_source",
        "source_ids", "n_sources", "source_type", "cited_primary_source_id", "cited_primary_source_raw",
@@ -1446,6 +1643,194 @@ write(nonaroma_source, "nonaroma_source.csv")
 write(taste_compound, "taste_compound.csv")
 write(qa_pending, "qa_pending_confirmation.csv")
 write(qa_issues, "qa_issues.csv")
+
+# ----------------------------------------------------------------------------
+# 12b. REGISTROS DE ARMONIZACIÓN (corrections/*.xlsx) — una fila por registro evaluado
+# ----------------------------------------------------------------------------
+CORR = os.path.join(ROOT, "corrections")
+os.makedirs(CORR, exist_ok=True)
+
+
+def save_xlsx(sheets, name):
+    path = os.path.join(CORR, name)
+    with pd.ExcelWriter(path, engine="openpyxl") as xw:
+        for sheet, df in sheets.items():
+            df.to_excel(xw, sheet_name=sheet, index=False)
+            ws = xw.sheets[sheet]
+            ws.freeze_panes = "B2"
+            ws.auto_filter.ref = ws.dimensions
+            for j, col in enumerate(df.columns, start=1):
+                ws.cell(row=1, column=j).font = ws.cell(row=1, column=j).font.copy(bold=True)
+                width = max([len(str(col))] + [len(str(v)) for v in df[col].head(200).tolist()])
+                ws.column_dimensions[ws.cell(row=1, column=j).column_letter].width = min(max(width + 2, 10), 60)
+    print(f"  corrections/{name:43s} " + ", ".join(f"{k}: {len(v)} filas" for k, v in sheets.items()))
+
+
+REC = {}
+# --- Fase 1.1: 282 equivalencias ---
+uses = bridge_evidence_cheese.cheese_label_raw.value_counts().add(PV["cheese"].map(clean).value_counts(), fill_value=0)
+rows = []
+for a in alias_rows:
+    raw = a["cheese_label_raw"]
+    v1n, v1q, v1t = _cheese_std_v1(raw)
+    d = HD.ALIAS_DECISIONS.get(raw)
+    if d:
+        est, orig, ref, why = d[2], d[3], HD.REF.get(d[4], "") if d[4] else "", d[5]
+    elif v1t == "not_cheese":
+        est, orig, ref, why = HD.V, HD.TXT, "", "No es un queso (té, cacao o leche): se conserva como 'not_cheese'."
+    elif v1t == "multi_cheese":
+        est, orig, ref, why = HD.I, HD.TXT, "", "Etiqueta con varios quesos: la fuente da el dato para el grupo; separarla atribuiría datos a quesos concretos sin evidencia."
+    elif v1t == "generic_category":
+        est, orig, ref, why = HD.I, HD.TXT, "", "Etiqueta que designa un grupo de quesos, no un queso concreto: se agrupa en la categoría genérica correspondiente."
+    elif fold(raw) == fold(v1n):
+        est, orig, ref, why = HD.V, HD.TXT, "", "Mismo nombre (solo cambian mayúsculas, acentos o espacios)."
+    elif v1q:
+        est, orig, ref, why = HD.I, HD.TXT, "", "Variante del mismo queso: la información entre paréntesis o el adjetivo pasa a 'sample_qualifier' (condición de la muestra)."
+    else:
+        est, orig, ref, why = HD.I, HD.TXT, "", "Corrección de errata o variante ortográfica (p. ej. Mozzarrella, Grana Tretino, Emmentaler, Parmigiano-Reggiano)."
+    rows.append(dict(cheese_label_raw=raw, n_filas_en_datos=int(uses.get(raw, 0)),
+                     nombre_v1=v1n, tipo_v1=v1t, nombre_final=a["cheese_name_std"],
+                     calificador_muestra=a["sample_qualifier"], tipo_final=a["label_type"],
+                     cheese_id=CHEESE_ID.get(a["cheese_name_std"]),
+                     cambio_respecto_v1="sí" if (v1n, v1t) != (a["cheese_name_std"], a["label_type"]) else "no",
+                     estado=est, origen_evidencia=orig, referencia=ref, criterio=why))
+REC["eq"] = pd.DataFrame(rows).sort_values(["cambio_respecto_v1", "n_filas_en_datos"], ascending=[False, False])
+cit_rows = [dict(evidence_id=k, queso_resuelto=v[0], estado=v[1], criterio=v[2]) for k, v in HD.CHECK_IN_TABLE.items()]
+cit_df = pd.DataFrame(cit_rows).merge(
+    fact_evidence[["evidence_id", "descriptor_label", "iupac_name", "location_in_source", "evidence_text"]],
+    on="evidence_id", how="left")
+parent_df = pd.DataFrame([dict(variante=k, queso_padre=v[0], estado=v[1], referencia=HD.REF.get(v[2], "") if v[2] else "",
+                               criterio=v[3]) for k, v in HD.PARENTS.items()])
+save_xlsx({"equivalencias": REC["eq"], "check_in_the_table": cit_df, "padres_variantes": parent_df},
+          "fase1_quesos_equivalencias.xlsx")
+
+# --- Fase 1.4: 72 familias tecnológicas ---
+n_lab_v1 = ml[ml.use_as_cheese_aroma_label].groupby("cheese_name_std").descriptor_id.nunique()
+rows = []
+for name in sorted(HD.CHEESE_FAMILY, key=fold):
+    d = HD.CHEESE_FAMILY[name]
+    v2 = RENAMED.get(name, name)
+    rows.append(dict(cheese_name_v1=name, cheese_name_v2=v2, cheese_id=CHEESE_ID.get(v2),
+                     n_descriptores_aroma=int(n_lab_v1.get(v2, 0)),
+                     cheese_family=d[0], secondary_technology=d[1] or None, estado_familia=d[2],
+                     referencia_familia=HD.REF.get(d[3], "") if d[3] else "", criterio_familia=d[4],
+                     pais_iso=d[5], dop_igp=d[6], estado_dop_igp=d[7],
+                     referencia_dop_igp=HD.REF.get(d[8], "") if d[8] else ""))
+REC["fam"] = pd.DataFrame(rows)
+fam_def = pd.DataFrame({"cheese_family": HD.FAMILIES, "nota": [
+    "Fresco de coagulación ácida/láctica", "Fresco de cuajo", "Pasta hilada", "Madurado en salmuera",
+    "Pasta blanda con corteza enmohecida", "Corteza lavada / flora de frotado", "Pasta azul",
+    "Pasta semidura", "Pasta prensada dura no cocida (categoría añadida en la armonización)",
+    "Pasta dura cocida", "Grana (extra duro, cocido, larga maduración)", "Tipo suizo con ojos (propiónica)",
+    "Láctico de cabra", "Otra / no encaja"]})
+save_xlsx({"familias": REC["fam"], "definicion_familias": fam_def}, "fase1_quesos_familia_tecnologica.xlsx")
+
+# --- Fase 2: 160 registros (40 quesos x 4 bloques) ---
+PROFILE_V1 = {}
+for _, r in CP.iterrows():
+    PROFILE_V1.setdefault(_cheese_std_v1(r["cheese (cheese_type_clean)"])[0], r)
+COL_EXCEL = {"leche": "milk (species)", "tratamiento_termico": "milk treatment",
+             "cuajo_cultivo": "rennet / culture", "maduracion": "ripening time"}
+UNITS = {"leche": "especie(s)", "tratamiento_termico": "raw / thermized / pasteurized / alternativas",
+         "cuajo_cultivo": "coagulante; cultivos", "maduracion": "días 'mín–máx' (vacío = abierto)"}
+rows = []
+for prio, name in enumerate(HD.PRODUCTION_TARGETS, start=1):
+    prof = PROFILE_V1.get(name)
+    for block in HD.BLOCKS:
+        excel_val = clean(prof[COL_EXCEL[block]]) if prof is not None else None
+        excel_src = clean(prof["source"]) if prof is not None else None
+        excel_known = excel_val is not None and not unknown(excel_val)
+        d = HD.PRODUCTION.get((name, block))
+        if d:
+            val, est, orig, ref, why = d[0], d[1], d[2], HD.REF.get(d[3], "") if d[3] else "", d[4]
+        elif excel_known:
+            val, est, orig, ref = excel_val, HD.V, HD.EXC, excel_src
+            why = "Se conserva el valor del Excel con su fuente citada; no se encontró información que lo contradiga."
+        else:
+            val, est, orig, ref = None, HD.N, HD.NONE, ""
+            why = ("El Excel no lo especifica" if not excel_known else "") + \
+                  "; no se encontró un pliego ni una fuente verificable para este tipo de queso."
+        rows.append(dict(prioridad=prio, cheese_name_v1=name, cheese_name_v2=RENAMED.get(name, name),
+                         bloque=block, valor_excel=excel_val, fuente_excel=excel_src, valor_final=val,
+                         unidad=UNITS[block],
+                         value_scope="type_specification" if val else None,
+                         estado=est, origen_evidencia=orig, referencia=ref, criterio=why))
+REC["prod"] = pd.DataFrame(rows)
+save_xlsx({"produccion": REC["prod"]}, "fase2_produccion_valores.xlsx")
+
+# --- Fase 3: 169 descriptores de aroma ---
+nfil = ml[ml.use_as_compound_odor_label | ml.use_as_cheese_descriptor_label].groupby("descriptor_id").row_id.count()
+REC["desc"] = dim_descriptor[dim_descriptor.in_odor_aroma][
+    ["descriptor_id", "descriptor_label", "family_l1_as_in_source", "is_aroma_target", "aroma_family",
+     "berodier_family_fr", "berodier_subfamily", "aroma_terms", "split_terms", "berodier_term", "drake_term",
+     "harmonization_status", "harmonization_criterion"]].copy()
+REC["desc"].insert(2, "n_filas_etiqueta", REC["desc"].descriptor_id.map(nfil).fillna(0).astype(int))
+REC["desc"] = REC["desc"].sort_values(["aroma_family", "berodier_subfamily", "descriptor_label"], na_position="last")
+lex = pd.DataFrame([
+    dict(nivel="1 (familia)", fuente="Bérodier et al. 1997, reproducido en ITA St-Hyacinthe, pp. 2–3",
+         contenido="lactique, végétal, floral, fruité, torréfié, animal, épicé, autres"),
+    dict(nivel="2 (subfamilia)", fuente="Bérodier et al. 1997 (misma fuente); '[proyecto] …' = subfamilia añadida",
+         contenido="ver columna berodier_subfamily"),
+    dict(nivel="3 (descriptor)", fuente="Términos de la fuente (inglés), separados por ';'", contenido="aroma_terms"),
+    dict(nivel="equivalencia", fuente="Drake et al. 2001 (cheesescience.org)", contenido="drake_term"),
+])
+save_xlsx({"descriptores": REC["desc"], "lexico": lex}, "fase3_descriptores_mapeo.xlsx")
+
+harmonization_log = pd.DataFrame(CORR_LOG)
+write(harmonization_log, "harmonization_log.csv")
+
+# ----------------------------------------------------------------------------
+# 12c. CONTROL DE CALIDAD (falla si algo no cuadra)
+# ----------------------------------------------------------------------------
+QC = []
+
+
+def check(name, ok, detail=""):
+    QC.append(dict(comprobacion=name, resultado="OK" if ok else "FALLO", detalle=str(detail)))
+
+
+check("Filas de Evidence conservadas", len(fact_evidence) == len(EV), f"{len(fact_evidence)} / {len(EV)}")
+check("Filas de Process and Volatiles conservadas", len(fact_process_effect) == len(PV),
+      f"{len(fact_process_effect)} / {len(PV)}")
+for nm, df, key in [("dim_cheese", dim_cheese, "cheese_id"), ("dim_compound", dim_compound, "compound_id"),
+                    ("dim_descriptor", dim_descriptor, "descriptor_id"), ("dim_source", dim_source, "source_id"),
+                    ("fact_evidence", fact_evidence, "evidence_id"), ("ml_evidence_flat", ml, "row_id"),
+                    ("fact_process_effect", fact_process_effect, "process_effect_id")]:
+    check(f"Clave única {nm}.{key}", df[key].is_unique, f"{df[key].duplicated().sum()} duplicados")
+check("Nombres de queso únicos", dim_cheese.cheese_name_std.is_unique)
+for nm, df, col, dim, key in [
+        ("ml", ml, "cheese_id", dim_cheese, "cheese_id"), ("ml", ml, "descriptor_id", dim_descriptor, "descriptor_id"),
+        ("ml", ml, "compound_id", dim_compound, "compound_id"),
+        ("bridge_evidence_cheese", bridge_evidence_cheese, "cheese_id", dim_cheese, "cheese_id"),
+        ("bridge_evidence_source", bridge_evidence_source, "source_id", dim_source, "source_id"),
+        ("fact_compound_odor", fact_compound_odor, "descriptor_id", dim_descriptor, "descriptor_id"),
+        ("fact_cheese_descriptor", fact_cheese_descriptor, "cheese_id", dim_cheese, "cheese_id"),
+        ("fact_process_effect", fact_process_effect, "cheese_id", dim_cheese, "cheese_id"),
+        ("dim_cheese.parent", dim_cheese, "parent_cheese_id", dim_cheese, "cheese_id")]:
+    miss = (~df[col].dropna().isin(dim[key])).sum()
+    check(f"Integridad {nm}.{col} -> {key}", miss == 0, f"{miss} referencias rotas")
+check("Todas las evidencias están en la tabla plana", set(fact_evidence.evidence_id) <= set(ml.evidence_id))
+_dups = ml.dropna(subset=["cheese_id"]).duplicated(["evidence_id", "cheese_id"]).sum()
+check("Sin duplicados evidencia x queso en la tabla plana", _dups == 0, f"{_dups} duplicados")
+check("Fase 1.1: 282 equivalencias evaluadas", len(REC["eq"]) == 282 and REC["eq"].estado.notna().all(), len(REC["eq"]))
+check("Fase 1.1: 11 'check in the table' evaluados", len(cit_df) == 11 and cit_df.estado.notna().all())
+check("Fase 1.4: 72 quesos clasificados/evaluados", len(REC["fam"]) == 72 and REC["fam"].estado_familia.notna().all())
+check("Fase 2: 160 registros evaluados", len(REC["prod"]) == 160 and REC["prod"].estado.notna().all())
+check("Fase 2: todo valor final tiene estado verificado o inferido",
+      REC["prod"][REC["prod"].valor_final.notna()].estado.isin([HD.V, HD.I]).all())
+check("Fase 3: 169 descriptores evaluados", len(REC["desc"]) == 169 and REC["desc"].harmonization_status.notna().all())
+check("Fase 3: términos de Drake dentro del léxico verificado",
+      REC["desc"].drake_term.dropna().isin(HD.DRAKE_TERMS).all())
+check("Fase 3: familias de nivel 1 dentro de Bérodier",
+      REC["desc"][REC["desc"].is_aroma_target == True].berodier_family_fr.isin(HD.L1).all())
+check("Valores de producción del tipo separados de los de muestra (ctx_ sin cambios)",
+      all(c in fact_evidence.columns for c in ["ctx_ripening_days_min", "ctx_milk_heat_treatment"]))
+qc = pd.DataFrame(QC)
+write(qc, "qa_checks_v2.csv")
+if (qc.resultado == "FALLO").any():
+    print(qc[qc.resultado == "FALLO"].to_string())
+    raise SystemExit("Control de calidad NO superado")
+print("  Control de calidad: todas las comprobaciones OK")
 
 # ----------------------------------------------------------------------------
 # 13. DICCIONARIO DE DATOS (se genera a partir de las tablas escritas)
@@ -1573,6 +1958,47 @@ DESC = {
     "record_id": "ID del registro", "sensory_modality": "taste | trigeminal | texture",
     "table": "Tabla", "record_key": "Clave del registro", "field": "Campo", "problem": "Problema detectado",
 }
+DESC.update({
+    "is_aroma_target": "True si el descriptor es una nota de aroma utilizable como objetivo (Fase 3)",
+    "aroma_family": "Familia de aroma armonizada (nivel 1, Bérodier et al. 1997): lactic, vegetal, floral, fruity, toasted, animal, spicy, other",
+    "berodier_family_fr": "Familia de Bérodier en francés",
+    "berodier_subfamily": "Nivel 2: subfamilia de Bérodier; '[proyecto] …' = subfamilia añadida por la armonización",
+    "aroma_terms": "Nivel 3: término(s) del descriptor separados por ';'",
+    "berodier_term": "Término literal de Bérodier equivalente (si existe)",
+    "drake_term": "Término equivalente del léxico de Drake et al. (2001)",
+    "split_terms": "True si el descriptor original agrupa notas distintas que conviene separar",
+    "harmonization_status": "verificado_con_fuente | inferencia_documentada | no_verificado",
+    "harmonization_criterion": "Justificación de la decisión de armonización",
+    "use_as_cheese_aroma_label": "use_as_cheese_descriptor_label y además descriptor de aroma válido (Fase 3)",
+    "use_as_compound_aroma_label": "use_as_compound_odor_label y además descriptor de aroma válido (Fase 3)",
+    "cheese_family": "Familia tecnológica del queso (Fase 1.4)",
+    "secondary_technology": "Tecnologías secundarias (separadas por ';')",
+    "cheese_family_status": "Estado de la clasificación tecnológica",
+    "cheese_family_reference": "Fuente de la clasificación tecnológica",
+    "cheese_family_criterion": "Criterio de la clasificación tecnológica",
+    "country_iso": "País de origen (ISO 3166)", "pdo_pgi": "Protección (PDO/PGI/none/unknown)",
+    "pdo_pgi_status": "Estado de la verificación DOP/IGP", "pdo_pgi_reference": "Fuente de la DOP/IGP",
+    "spec_milk": "Leche del TIPO de queso (especificación; no de la muestra)",
+    "spec_milk_cow": "1 = vaca en la especificación", "spec_milk_sheep": "1 = oveja en la especificación",
+    "spec_milk_goat": "1 = cabra en la especificación", "spec_milk_buffalo": "1 = búfala en la especificación",
+    "spec_milk_status": "Estado (Fase 2)", "spec_milk_reference": "Fuente (Fase 2)",
+    "spec_heat_treatment": "Tratamiento térmico del tipo de queso", "spec_heat_status": "Estado (Fase 2)",
+    "spec_heat_reference": "Fuente (Fase 2)", "spec_coagulant_culture": "Coagulante/cultivos del tipo de queso",
+    "spec_coagulant_status": "Estado (Fase 2)", "spec_coagulant_reference": "Fuente (Fase 2)",
+    "spec_ripening_days_min": "Maduración mínima del tipo de queso (días)",
+    "spec_ripening_days_max": "Maduración máxima del tipo de queso (días; vacío = abierto)",
+    "spec_ripening_class": "Clase de maduración del tipo de queso", "spec_ripening_status": "Estado (Fase 2)",
+    "spec_ripening_reference": "Fuente (Fase 2)", "spec_completeness": "Fracción de los 4 bloques del tipo de queso con valor",
+    "resolution_status": "Estado de la resolución de 'check in the table' (Fase 1.1)",
+    "resolution_criterion": "Criterio de la resolución de 'check in the table'",
+    "fase": "Fase del plan", "tabla": "Tabla afectada", "clave": "Registro afectado", "campo": "Campo",
+    "valor_anterior": "Valor en v1", "valor_nuevo": "Valor en v2", "estado": "Estado de la decisión",
+    "referencia": "Fuente", "criterio": "Justificación",
+    "comprobacion": "Comprobación de calidad", "resultado": "OK / FALLO", "detalle": "Detalle",
+})
+for _c in list(DESC):
+    if _c.startswith("spec_") or _c in ("cheese_family", "secondary_technology", "country_iso", "pdo_pgi"):
+        DESC["cheese_" + _c] = "Del tipo de queso (dim_cheese): " + DESC[_c]
 PREFIX = {"coag_": "1 = mencionado en cuajo/cultivo: ", "cult_": "1 = mencionado en cuajo/cultivo: ",
           "mold_": "1 = mencionado en cuajo/cultivo: ", "flora_": "1 = mencionado en cuajo/cultivo: ",
           "enz_": "1 = mencionado en cuajo/cultivo: ", "proc_": "1 = mencionado en 'otros factores': "}

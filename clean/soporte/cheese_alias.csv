@@ -7,6 +7,7 @@ CH_002,"Aged cheeses (Gruyère, Gouda, American processed, Parmigiano, Swiss)",A
 CH_002,Aged cheeses (generic),Aged cheese (generic),,generic_category
 CH_002,aged cheese (generic),Aged cheese (generic),,generic_category
 CH_003,Arzúa-Ulloa and Tetilla,Arzúa-Ulloa and Tetilla,,multi_cheese
+CH_004,Turkish white cheese,Beyaz peynir,,specific
 CH_004,beyaz peynir,Beyaz peynir,,specific
 CH_005,Black tea,Black tea,,not_cheese
 CH_006,Blue and hard Italian cheeses,Blue and hard Italian cheeses,,generic_category
@@ -47,11 +48,11 @@ CH_022,Cheddar (full fat),Cheddar,full fat,specific
 CH_022,"Cheddar (mild, regular and low-fat)",Cheddar,"mild, regular and low-fat",specific
 CH_022,Cheddar (regular//low fat),Cheddar,regular//low fat,specific
 CH_022,Cheddar (rind),Cheddar,rind,specific
-CH_022,Mature Cheddar,Cheddar,mature,specific
 CH_022,cheddar,Cheddar,,specific
 CH_023,Aged Cheddar,Cheddar (aged),,specific
 CH_023,Aged Cheddar (with nutty note),Cheddar (aged),with nutty note,specific
 CH_023,Cheddar (aged),Cheddar (aged),,specific
+CH_023,Mature Cheddar,Cheddar (aged),mature,specific
 CH_023,cheddar (aged),Cheddar (aged),,specific
 CH_024,Low-fat Cheddar,Cheddar (low-fat),,specific
 CH_024,cheddar (low-fat),Cheddar (low-fat),,specific
@@ -62,222 +63,221 @@ CH_028,Cheeses (generic),Cheese (generic),,generic_category
 CH_028,Cheeses in general,Cheese (generic),,generic_category
 CH_028,Cheeses in general (ch. 7),Cheese (generic),ch. 7,generic_category
 CH_029,Cheeses made with rennet paste,Cheeses made with rennet paste (generic),,generic_category
-CH_030,Chèvre (cottage cheese model),Chèvre,cottage cheese model,specific
-CH_030,Chèvre (fresh goat cheese),Chèvre,fresh goat cheese,specific
-CH_030,chèvre,Chèvre,,specific
-CH_031,Chihuahua,Chihuahua,,specific
-CH_032,Cottage,Cottage,,specific
-CH_032,cottage,Cottage,,specific
-CH_033,Cottage cheese; Swiss cheeses,Cottage cheese; Swiss cheeses,,multi_cheese
-CH_034,Cream cheese,Cream cheese,,specific
-CH_034,cream cheese,Cream cheese,,specific
-CH_035,Cremoso,Cremoso,,specific
-CH_036,Dairy products (generic),Dairy products (generic),,generic_category
-CH_037,Domiati,Domiati,,specific
-CH_037,domiati,Domiati,,specific
-CH_038,dutch-type (generic),Dutch-type (generic),,generic_category
-CH_039,"Edam, Gouda, Quarg, Cottage","Edam, Gouda, Quarg, Cottage",,multi_cheese
-CH_040,Emmental,Emmental,,specific
-CH_040,Emmentaler,Emmental,,specific
-CH_040,Swiss (Emmental),Emmental,Swiss,specific
-CH_040,emmental,Emmental,,specific
-CH_041,Emmental / Swiss cheeses,Emmental / Swiss cheeses,,multi_cheese
-CH_042,"EMC (Cheddar, Swiss, Romano, mozzarella, provolone, feta, Parmesan, blue, Gouda, Gruyère, Colby, brick)",Enzyme-modified cheese (EMC),"Cheddar, Swiss, Romano, mozzarella, provolone, feta, Parmesan, blue, Gouda, Gruyère, Colby, brick",generic_category
-CH_042,Enzyme-modified cheese (EMC),Enzyme-modified cheese (EMC),,generic_category
-CH_043,European,European (unspecified),,unresolved
-CH_044,Cheddar (British Farmhouse),Farmhouse Cheddar,British,specific
-CH_044,Farmhouse Cheddar,Farmhouse Cheddar,,specific
-CH_044,farmhouse cheddar,Farmhouse Cheddar,,specific
-CH_045,Feta,Feta,,specific
-CH_045,feta,Feta,,specific
-CH_046,Feta-type,Feta-type,,generic_category
-CH_046,Feta-type (bovine milk),Feta-type,bovine milk,generic_category
-CH_046,feta-type,Feta-type,,generic_category
-CH_047,Flor de Guia,Flor de Guia,,specific
-CH_047,flor de guia,Flor de Guia,,specific
-CH_048,Formaella (smoked),Formaella,smoked,specific
-CH_048,Smoked Formaella,Formaella,smoked,specific
-CH_048,formaella (smoked),Formaella,smoked,specific
-CH_049,Formaggio di Fossa,Formaggio di Fossa,,specific
-CH_049,Fossa cheese,Formaggio di Fossa,,specific
-CH_050,Fresco,Fresco,,specific
-CH_050,"Fresco (Sonora, Mexico)",Fresco,"Sonora, Mexico",specific
-CH_051,fresh,Fresh,,specific
-CH_052,fresh cheese (generic),Fresh cheese (generic),,generic_category
-CH_053,ġbejna,Ġbejna,,specific
-CH_054,Goat and sheep cheeses,Goat and sheep cheese (generic),,generic_category
-CH_054,Goat and sheep milk cheeses,Goat and sheep cheese (generic),,generic_category
-CH_054,Goat and sheep milk cheeses (generic),Goat and sheep cheese (generic),,generic_category
-CH_054,Goat/sheep cheeses,Goat and sheep cheese (generic),,generic_category
-CH_054,goat and ewe cheeses,Goat and sheep cheese (generic),,generic_category
-CH_055,Goat milk Cheddar,Goat Cheddar,,specific
-CH_055,goat cheddar,Goat Cheddar,,specific
-CH_056,Goat,Goat cheese (generic),,generic_category
-CH_056,Goat cheese,Goat cheese (generic),,generic_category
-CH_056,Goat cheeses,Goat cheese (generic),,generic_category
-CH_056,"Goat cheeses (Sainte-Maure, Garrotxa, Majorero, Ibores, Darfiyeh)",Goat cheese (generic),"Sainte-Maure, Garrotxa, Majorero, Ibores, Darfiyeh",generic_category
-CH_056,"Goat cheeses (Sainte-Maure, Garrotxa, Majorero, Ibores, Darfiyeh…)",Goat cheese (generic),"Sainte-Maure, Garrotxa, Majorero, Ibores, Darfiyeh…",generic_category
-CH_056,Goat cheeses (generic),Goat cheese (generic),,generic_category
-CH_056,Goat milk cheeses,Goat cheese (generic),,generic_category
-CH_056,Raw goat milk cheese,Goat cheese (generic),raw milk,generic_category
-CH_056,goat cheese,Goat cheese (generic),,generic_category
-CH_056,goat cheese (unspecified),Goat cheese (generic),,generic_category
-CH_056,goat cheeses (generic),Goat cheese (generic),,generic_category
-CH_057,Gorgonzola,Gorgonzola,,specific
-CH_057,Gorgonzola (natural),Gorgonzola,natural,specific
-CH_057,Gorgonzola (natural//creamy),Gorgonzola,natural//creamy,specific
-CH_057,gorgonzola,Gorgonzola,,specific
-CH_058,Aged Gouda,Gouda,aged,specific
-CH_058,Gouda,Gouda,,specific
-CH_058,gouda,Gouda,,specific
-CH_059,Grana,Grana (generic),,generic_category
-CH_059,Grana (GP / PR / GT),Grana (generic),GP / PR / GT,generic_category
-CH_059,"Grana (Grana Padano, Parmigiano Reggiano, Grana Trentino)",Grana (generic),"Grana Padano, Parmigiano Reggiano, Grana Trentino",generic_category
-CH_059,Grana cheeses,Grana (generic),,generic_category
-CH_059,grana (generic),Grana (generic),,generic_category
-CH_060,Grana Padano,Grana Padano,,specific
-CH_060,Grana Padano (12 months),Grana Padano,12 months,specific
-CH_060,grana padano,Grana Padano,,specific
-CH_061,Grana Trentino,Grana Trentino,,specific
-CH_061,Grana Tretino,Grana Trentino,,specific
-CH_061,grana trentino,Grana Trentino,,specific
-CH_062,Gruyère,Gruyère,,specific
-CH_062,gruyere,Gruyère,,specific
-CH_062,gruyère,Gruyère,,specific
-CH_063,gruyère / parmesan / proosdij,Gruyère / Parmesan / Proosdij,,multi_cheese
-CH_064,Hard cheeses,Hard cheese (generic),,generic_category
-CH_065,hard italian cheeses,Hard Italian cheeses (generic),,generic_category
-CH_066,Idiazabal,Idiazabal,,specific
-CH_067,"Idiazabal, Fiore Sardo, Feta, Pecorino Foggiano","Idiazabal, Fiore Sardo, Feta, Pecorino Foggiano",,multi_cheese
-CH_068,Limburger,Limburger,,specific
-CH_068,limburger,Limburger,,specific
-CH_069,Limburger; Gruyère and Emmental,Limburger; Gruyère and Emmental,,multi_cheese
-CH_070,Livarot,Livarot,,specific
-CH_070,livarot,Livarot,,specific
-CH_071,Majorero,Majorero,,specific
-CH_071,Majorero (goat),Majorero,goat,specific
-CH_071,majorero,Majorero,,specific
-CH_072,Malatya,Malatya,,specific
-CH_072,malatya,Malatya,,specific
-CH_073,Manchego,Manchego,,specific
-CH_073,manchego,Manchego,,specific
-CH_074,mihalic,Mihalic,,specific
-CH_075,not applicable (milk),Milk (not cheese),,not_cheese
-CH_076,Milk fan,Milk fan,,specific
-CH_076,"Milk fan (Yunnan, China)",Milk fan,"Yunnan, China",specific
-CH_076,"Milk fan (artisanal cheese from Yunnan, China)",Milk fan,"artisanal, Yunnan, China",specific
-CH_077,Minas Frescal,Minas Frescal,,specific
-CH_077,minas frescal,Minas Frescal,,specific
-CH_078,"Mold cheeses (Camembert, blue cheeses)",Mold-ripened cheese (generic),"Camembert, blue cheeses",generic_category
-CH_079,Mozzarella,Mozzarella,,specific
-CH_079,Mozzarella (bovine),Mozzarella,cow milk,specific
-CH_079,Mozzarella (cow),Mozzarella,cow milk,specific
-CH_079,Mozzarrella,Mozzarella,,specific
-CH_079,bovine Mozzarella,Mozzarella,cow milk,specific
-CH_079,mozzarella,Mozzarella,,specific
-CH_080,Buffalo Mozzarella,Mozzarella (buffalo),,specific
-CH_080,Mozzarella (buffalo),Mozzarella (buffalo),,specific
-CH_080,mozzarella (buffalo),Mozzarella (buffalo),,specific
-CH_080,water buffalo Mozzarella,Mozzarella (buffalo),,specific
-CH_081,Munster,Munster,,specific
-CH_082,Palmero,Palmero,,specific
-CH_082,Palmero (smoked),Palmero,smoked,specific
-CH_082,palmero,Palmero,,specific
-CH_083,Parenica,Parenica,,specific
-CH_084,Parmesan,Parmesan,,specific
-CH_084,parmesan,Parmesan,,specific
-CH_085,"Parmesan, Grana Padano","Parmesan, Grana Padano",,multi_cheese
-CH_086,"Parmesan, Grana Padano and Pecorino","Parmesan, Grana Padano and Pecorino",,multi_cheese
-CH_087,Parmesan (Parmigiano-Reggiano),Parmigiano Reggiano,,specific
-CH_087,Parmigiano Reggiano,Parmigiano Reggiano,,specific
-CH_087,Parmigiano-Reggiano,Parmigiano Reggiano,,specific
-CH_087,parmigiano reggiano,Parmigiano Reggiano,,specific
-CH_088,Pasta Filata,Pasta filata (generic),,generic_category
-CH_088,pasta filata (generic),Pasta filata (generic),,generic_category
-CH_089,Pecorino,Pecorino,,specific
-CH_089,Pecorino (6 months),Pecorino,6 months,specific
-CH_089,pecorino,Pecorino,,specific
-CH_090,Pecorino Crotonese,Pecorino Crotonese,,specific
-CH_090,pecorino crotonese,Pecorino Crotonese,,specific
-CH_091,Pecorino Romano,Pecorino Romano,,specific
-CH_091,pecorino romano,Pecorino Romano,,specific
-CH_092,Pecorino Siciliano,Pecorino Siciliano,,specific
-CH_092,pecorino siciliano,Pecorino Siciliano,,specific
-CH_093,Piacentinu Ennese,Piacentinu Ennese,,specific
-CH_093,piacentinu ennese,Piacentinu Ennese,,specific
-CH_094,"Smoked cheese (Polish breeds, Beskid Niski)",Polish smoked cheese,"Polish breeds, Beskid Niski",specific
-CH_094,polish smoked cheese,Polish smoked cheese,,specific
-CH_095,Processed cheese / cream cheese,Processed cheese (generic),processed cheese / cream cheese,generic_category
-CH_095,Processed cheeses,Processed cheese (generic),,generic_category
-CH_096,Proosdij,Proosdij,,specific
-CH_097,Quarg,Quarg,,specific
-CH_097,quarg,Quarg,,specific
-CH_098,quarg / cottage,Quarg / Cottage,,multi_cheese
-CH_099,Ragusano,Ragusano,,specific
-CH_099,Ragusano (4 months),Ragusano,4 months,specific
-CH_099,Ragusano (8 months),Ragusano,8 months,specific
-CH_099,ragusano,Ragusano,,specific
-CH_100,Roncal,Roncal,,specific
-CH_100,"Roncal (type, sheep milk)",Roncal,"type, sheep milk",specific
-CH_100,roncal,Roncal,,specific
-CH_101,Roquefort,Roquefort,,specific
-CH_101,roquefort,Roquefort,,specific
-CH_102,Roquefort vs cow-milk blue cheeses,Roquefort vs cow-milk blue cheeses,,multi_cheese
-CH_103,Sainte-Maure,Sainte-Maure,,specific
-CH_103,Sainte-Maure (goat),Sainte-Maure,goat,specific
-CH_103,sainte-maure,Sainte-Maure,,specific
-CH_104,San Simón da Costa,San Simón da Costa,,specific
-CH_104,san simón da costa,San Simón da Costa,,specific
-CH_105,"Semi-hard cheeses (Gouda, etc.)",Semi-hard cheese (generic),"Gouda, etc.",generic_category
-CH_106,Serpa,Serpa,,specific
-CH_107,Serra da Estrela,Serra da Estrela,,specific
-CH_107,serra da estrela,Serra da Estrela,,specific
-CH_108,Sheep milk cheese,Sheep cheese (generic),,generic_category
-CH_108,Sheep milk cheese (Argentina),Sheep cheese (generic),Argentina,generic_category
-CH_109,Sheep/goat cheeses with lamb/kid rennet paste,Sheep/goat cheeses with lamb/kid rennet paste,,generic_category
-CH_109,"Sheep/goat cheeses with lamb/kid rennet paste (Idiazabal, Pecorino, Teleme…)",Sheep/goat cheeses with lamb/kid rennet paste,"Idiazabal, Pecorino, Teleme…",generic_category
-CH_109,ewe/goat cheeses (rennet paste),Sheep/goat cheeses with lamb/kid rennet paste,,generic_category
-CH_110,"Sheep cheeses with vegetable rennet (La Serena, Torta del Casar…)",Sheep/goat cheeses with vegetable rennet,"sheep; La Serena, Torta del Casar…",generic_category
-CH_110,Sheep/goat cheeses with vegetable rennet,Sheep/goat cheeses with vegetable rennet,,generic_category
-CH_110,"Sheep/goat cheeses with vegetable rennet (La Serena, Torta del Casar, Serra da Estrela…)",Sheep/goat cheeses with vegetable rennet,"La Serena, Torta del Casar, Serra da Estrela…",generic_category
-CH_110,ewe/goat cheeses (vegetable rennet),Sheep/goat cheeses with vegetable rennet,,generic_category
-CH_111,Smear-ripened,Smear-ripened cheese (generic),,generic_category
-CH_111,smear-ripened (generic),Smear-ripened cheese (generic),,generic_category
-CH_112,Smoked,Smoked cheese (generic),,generic_category
-CH_112,"Smoked cheeses (San Simón da Costa, Idiazabal, Palmero, Herreño…)",Smoked cheese (generic),"San Simón da Costa, Idiazabal, Palmero, Herreño…",generic_category
-CH_112,Smoked cheeses (generic),Smoked cheese (generic),,generic_category
-CH_112,smoked cheese,Smoked cheese (generic),,generic_category
-CH_113,"Soft cheeses (Cottage, Feta, Domiati)",Soft cheese (generic),"Cottage, Feta, Domiati",generic_category
-CH_113,Soft cheeses (with L. plantarum / L. casei),Soft cheese (generic),with L. plantarum / L. casei,generic_category
-CH_113,soft cheese (generic),Soft cheese (generic),,generic_category
-CH_114,Stilton,Stilton,,specific
-CH_115,Surface-ripened cheeses,Surface-ripened cheese (generic),,generic_category
-CH_116,Svecia,Svecia,,specific
-CH_116,svecia,Svecia,,specific
-CH_117,Swiss vs Cheddar,Swiss vs Cheddar,,multi_cheese
-CH_118,Hard Swiss cheese,Swiss-type (generic),hard,generic_category
-CH_118,Swiss,Swiss-type (generic),,generic_category
-CH_118,Swiss Hard,Swiss-type (generic),hard,generic_category
-CH_118,Swiss Hard Cheese,Swiss-type (generic),hard,generic_category
-CH_118,Swiss cheeses,Swiss-type (generic),,generic_category
-CH_118,Swiss-type cheese,Swiss-type (generic),,generic_category
-CH_118,Swiss-type cheeses,Swiss-type (generic),,generic_category
-CH_118,swiss-type (generic),Swiss-type (generic),,generic_category
-CH_119,Teleme,Teleme,,specific
-CH_119,Teleme (sheep and goat),Teleme,sheep and goat,specific
-CH_119,Teleme (sheep milk),Teleme,sheep milk,specific
-CH_120,Swiss Tilsit red label,Tilsit,Swiss red label,specific
-CH_120,Tilsit,Tilsit,,specific
-CH_120,tilsit,Tilsit,,specific
-CH_121,"Toma Piemontese, Cantal, Idiazabal","Toma Piemontese, Cantal, Idiazabal",,multi_cheese
-CH_122,Turkish Motal,Turkish Motal,,specific
-CH_123,Turkish white cheese,Turkish white cheese,,specific
-CH_124,"Various (Brie, Edam … Roquefort)","Various (Brie, Edam … Roquefort)",,multi_cheese
-CH_125,"Various (Gouda, Camembert, La Serena)","Various (Gouda, Camembert, La Serena)",,multi_cheese
-CH_126,Washed-rind cheeses,Washed-rind cheese (generic),,generic_category
-CH_126,Washed-rind cheeses (generic),Washed-rind cheese (generic),,generic_category
-CH_127,White Herby,White Herby,,specific
-CH_128,White-mold cheeses (Camembert),White-mold cheese (generic),Camembert,generic_category
-CH_129,Young cheese (generic),Young cheese (generic),,generic_category
-CH_129,young cheese (generic),Young cheese (generic),,generic_category
+CH_030,Chihuahua,Chihuahua,,specific
+CH_031,Cottage,Cottage,,specific
+CH_031,cottage,Cottage,,specific
+CH_032,Cottage cheese; Swiss cheeses,Cottage cheese; Swiss cheeses,,multi_cheese
+CH_033,Cream cheese,Cream cheese,,specific
+CH_033,cream cheese,Cream cheese,,specific
+CH_034,Cremoso,Cremoso,,specific
+CH_035,Dairy products (generic),Dairy products (generic),,generic_category
+CH_036,Domiati,Domiati,,specific
+CH_036,domiati,Domiati,,specific
+CH_037,dutch-type (generic),Dutch-type (generic),,generic_category
+CH_038,"Edam, Gouda, Quarg, Cottage","Edam, Gouda, Quarg, Cottage",,multi_cheese
+CH_039,Emmental,Emmental,,specific
+CH_039,Emmentaler,Emmental,,specific
+CH_039,Swiss (Emmental),Emmental,Swiss,specific
+CH_039,emmental,Emmental,,specific
+CH_040,Emmental / Swiss cheeses,Emmental / Swiss cheeses,,multi_cheese
+CH_041,"EMC (Cheddar, Swiss, Romano, mozzarella, provolone, feta, Parmesan, blue, Gouda, Gruyère, Colby, brick)",Enzyme-modified cheese (EMC),"Cheddar, Swiss, Romano, mozzarella, provolone, feta, Parmesan, blue, Gouda, Gruyère, Colby, brick",generic_category
+CH_041,Enzyme-modified cheese (EMC),Enzyme-modified cheese (EMC),,generic_category
+CH_042,European,European (unspecified),,unresolved
+CH_043,Cheddar (British Farmhouse),Farmhouse Cheddar,British,specific
+CH_043,Farmhouse Cheddar,Farmhouse Cheddar,,specific
+CH_043,farmhouse cheddar,Farmhouse Cheddar,,specific
+CH_044,Feta,Feta,,specific
+CH_044,feta,Feta,,specific
+CH_045,Feta-type,Feta-type,,generic_category
+CH_045,Feta-type (bovine milk),Feta-type,bovine milk,generic_category
+CH_045,feta-type,Feta-type,,generic_category
+CH_046,Flor de Guia,Flor de Guia,,specific
+CH_046,flor de guia,Flor de Guia,,specific
+CH_047,Formaella (smoked),Formaella,smoked,specific
+CH_047,Smoked Formaella,Formaella,smoked,specific
+CH_047,formaella (smoked),Formaella,smoked,specific
+CH_048,Formaggio di Fossa,Formaggio di Fossa,,specific
+CH_048,Fossa cheese,Formaggio di Fossa,,specific
+CH_049,Fresco,"Fresco (queso fresco, generic)",,generic_category
+CH_049,"Fresco (Sonora, Mexico)","Fresco (queso fresco, generic)","Sonora, Mexico",generic_category
+CH_050,fresh,Fresh (Tunick 2023 profile),,generic_category
+CH_051,fresh cheese (generic),Fresh cheese (generic),,generic_category
+CH_052,ġbejna,Ġbejna,,specific
+CH_053,Goat and sheep cheeses,Goat and sheep cheese (generic),,generic_category
+CH_053,Goat and sheep milk cheeses,Goat and sheep cheese (generic),,generic_category
+CH_053,Goat and sheep milk cheeses (generic),Goat and sheep cheese (generic),,generic_category
+CH_053,Goat/sheep cheeses,Goat and sheep cheese (generic),,generic_category
+CH_053,goat and ewe cheeses,Goat and sheep cheese (generic),,generic_category
+CH_054,Goat milk Cheddar,Goat Cheddar,,specific
+CH_054,goat cheddar,Goat Cheddar,,specific
+CH_055,Chèvre (cottage cheese model),Goat cheese (generic),cottage cheese model,generic_category
+CH_055,Chèvre (fresh goat cheese),Goat cheese (generic),fresh goat cheese,generic_category
+CH_055,Goat,Goat cheese (generic),,generic_category
+CH_055,Goat cheese,Goat cheese (generic),,generic_category
+CH_055,Goat cheeses,Goat cheese (generic),,generic_category
+CH_055,"Goat cheeses (Sainte-Maure, Garrotxa, Majorero, Ibores, Darfiyeh)",Goat cheese (generic),"Sainte-Maure, Garrotxa, Majorero, Ibores, Darfiyeh",generic_category
+CH_055,"Goat cheeses (Sainte-Maure, Garrotxa, Majorero, Ibores, Darfiyeh…)",Goat cheese (generic),"Sainte-Maure, Garrotxa, Majorero, Ibores, Darfiyeh…",generic_category
+CH_055,Goat cheeses (generic),Goat cheese (generic),,generic_category
+CH_055,Goat milk cheeses,Goat cheese (generic),,generic_category
+CH_055,Raw goat milk cheese,Goat cheese (generic),raw milk,generic_category
+CH_055,chèvre,Goat cheese (generic),,generic_category
+CH_055,goat cheese,Goat cheese (generic),,generic_category
+CH_055,goat cheese (unspecified),Goat cheese (generic),,generic_category
+CH_055,goat cheeses (generic),Goat cheese (generic),,generic_category
+CH_056,Gorgonzola,Gorgonzola,,specific
+CH_056,Gorgonzola (natural),Gorgonzola,natural,specific
+CH_056,Gorgonzola (natural//creamy),Gorgonzola,natural//creamy,specific
+CH_056,gorgonzola,Gorgonzola,,specific
+CH_057,Aged Gouda,Gouda,aged,specific
+CH_057,Gouda,Gouda,,specific
+CH_057,gouda,Gouda,,specific
+CH_058,Grana,Grana (generic),,generic_category
+CH_058,Grana (GP / PR / GT),Grana (generic),GP / PR / GT,generic_category
+CH_058,"Grana (Grana Padano, Parmigiano Reggiano, Grana Trentino)",Grana (generic),"Grana Padano, Parmigiano Reggiano, Grana Trentino",generic_category
+CH_058,Grana cheeses,Grana (generic),,generic_category
+CH_058,grana (generic),Grana (generic),,generic_category
+CH_059,Grana Padano,Grana Padano,,specific
+CH_059,Grana Padano (12 months),Grana Padano,12 months,specific
+CH_059,grana padano,Grana Padano,,specific
+CH_060,Grana Trentino,Grana Trentino,,specific
+CH_060,Grana Tretino,Grana Trentino,,specific
+CH_060,grana trentino,Grana Trentino,,specific
+CH_061,Gruyère,Gruyère,,specific
+CH_061,gruyere,Gruyère,,specific
+CH_061,gruyère,Gruyère,,specific
+CH_062,gruyère / parmesan / proosdij,Gruyère / Parmesan / Proosdij,,multi_cheese
+CH_063,Hard cheeses,Hard cheese (generic),,generic_category
+CH_064,hard italian cheeses,Hard Italian cheeses (generic),,generic_category
+CH_065,Idiazabal,Idiazabal,,specific
+CH_066,"Idiazabal, Fiore Sardo, Feta, Pecorino Foggiano","Idiazabal, Fiore Sardo, Feta, Pecorino Foggiano",,multi_cheese
+CH_067,Limburger,Limburger,,specific
+CH_067,limburger,Limburger,,specific
+CH_068,Limburger; Gruyère and Emmental,Limburger; Gruyère and Emmental,,multi_cheese
+CH_069,Livarot,Livarot,,specific
+CH_069,livarot,Livarot,,specific
+CH_070,Majorero,Majorero,,specific
+CH_070,Majorero (goat),Majorero,goat,specific
+CH_070,majorero,Majorero,,specific
+CH_071,Malatya,Malatya,,specific
+CH_071,malatya,Malatya,,specific
+CH_072,Manchego,Manchego,,specific
+CH_072,manchego,Manchego,,specific
+CH_073,mihalic,Mihalic,,specific
+CH_074,not applicable (milk),Milk (not cheese),,not_cheese
+CH_075,Milk fan,Milk fan,,specific
+CH_075,"Milk fan (Yunnan, China)",Milk fan,"Yunnan, China",specific
+CH_075,"Milk fan (artisanal cheese from Yunnan, China)",Milk fan,"artisanal, Yunnan, China",specific
+CH_076,Minas Frescal,Minas Frescal,,specific
+CH_076,minas frescal,Minas Frescal,,specific
+CH_077,"Mold cheeses (Camembert, blue cheeses)",Mold-ripened cheese (generic),"Camembert, blue cheeses",generic_category
+CH_078,Mozzarella,Mozzarella,,specific
+CH_078,Mozzarella (bovine),Mozzarella,cow milk,specific
+CH_078,Mozzarella (cow),Mozzarella,cow milk,specific
+CH_078,Mozzarrella,Mozzarella,,specific
+CH_078,bovine Mozzarella,Mozzarella,cow milk,specific
+CH_078,mozzarella,Mozzarella,,specific
+CH_079,Buffalo Mozzarella,Mozzarella (buffalo),,specific
+CH_079,Mozzarella (buffalo),Mozzarella (buffalo),,specific
+CH_079,mozzarella (buffalo),Mozzarella (buffalo),,specific
+CH_079,water buffalo Mozzarella,Mozzarella (buffalo),,specific
+CH_080,Munster,Munster,,specific
+CH_081,Palmero,Palmero,,specific
+CH_081,Palmero (smoked),Palmero,smoked,specific
+CH_081,palmero,Palmero,,specific
+CH_082,Parenica,Parenica,,specific
+CH_083,Parmesan,Parmesan,,specific
+CH_083,parmesan,Parmesan,,specific
+CH_084,"Parmesan, Grana Padano","Parmesan, Grana Padano",,multi_cheese
+CH_085,"Parmesan, Grana Padano and Pecorino","Parmesan, Grana Padano and Pecorino",,multi_cheese
+CH_086,Parmesan (Parmigiano-Reggiano),Parmigiano Reggiano,,specific
+CH_086,Parmigiano Reggiano,Parmigiano Reggiano,,specific
+CH_086,Parmigiano-Reggiano,Parmigiano Reggiano,,specific
+CH_086,parmigiano reggiano,Parmigiano Reggiano,,specific
+CH_087,Pasta Filata,Pasta filata (generic),,generic_category
+CH_087,pasta filata (generic),Pasta filata (generic),,generic_category
+CH_088,Pecorino,Pecorino (generic),,generic_category
+CH_088,Pecorino (6 months),Pecorino (generic),6 months,generic_category
+CH_088,pecorino,Pecorino (generic),,generic_category
+CH_089,Pecorino Crotonese,Pecorino Crotonese,,specific
+CH_089,pecorino crotonese,Pecorino Crotonese,,specific
+CH_090,Pecorino Romano,Pecorino Romano,,specific
+CH_090,pecorino romano,Pecorino Romano,,specific
+CH_091,Pecorino Siciliano,Pecorino Siciliano,,specific
+CH_091,pecorino siciliano,Pecorino Siciliano,,specific
+CH_092,Piacentinu Ennese,Piacentinu Ennese,,specific
+CH_092,piacentinu ennese,Piacentinu Ennese,,specific
+CH_093,"Smoked cheese (Polish breeds, Beskid Niski)",Polish smoked cheese,"Polish breeds, Beskid Niski",specific
+CH_093,polish smoked cheese,Polish smoked cheese,,specific
+CH_094,Processed cheese / cream cheese,Processed cheese (generic),processed cheese / cream cheese,generic_category
+CH_094,Processed cheeses,Processed cheese (generic),,generic_category
+CH_095,Proosdij,Proosdij,,specific
+CH_096,Quarg,Quarg,,specific
+CH_096,quarg,Quarg,,specific
+CH_097,quarg / cottage,Quarg / Cottage,,multi_cheese
+CH_098,Ragusano,Ragusano,,specific
+CH_098,Ragusano (4 months),Ragusano,4 months,specific
+CH_098,Ragusano (8 months),Ragusano,8 months,specific
+CH_098,ragusano,Ragusano,,specific
+CH_099,Roncal,Roncal,,specific
+CH_099,"Roncal (type, sheep milk)",Roncal,"type, sheep milk",specific
+CH_099,roncal,Roncal,,specific
+CH_100,Roquefort,Roquefort,,specific
+CH_100,roquefort,Roquefort,,specific
+CH_101,Roquefort vs cow-milk blue cheeses,Roquefort vs cow-milk blue cheeses,,multi_cheese
+CH_102,Sainte-Maure,Sainte-Maure,,specific
+CH_102,Sainte-Maure (goat),Sainte-Maure,goat,specific
+CH_102,sainte-maure,Sainte-Maure,,specific
+CH_103,San Simón da Costa,San Simón da Costa,,specific
+CH_103,san simón da costa,San Simón da Costa,,specific
+CH_104,"Semi-hard cheeses (Gouda, etc.)",Semi-hard cheese (generic),"Gouda, etc.",generic_category
+CH_105,Serpa,Serpa,,specific
+CH_106,Serra da Estrela,Serra da Estrela,,specific
+CH_106,serra da estrela,Serra da Estrela,,specific
+CH_107,Sheep milk cheese,Sheep cheese (generic),,generic_category
+CH_107,Sheep milk cheese (Argentina),Sheep cheese (generic),Argentina,generic_category
+CH_108,Sheep/goat cheeses with lamb/kid rennet paste,Sheep/goat cheeses with lamb/kid rennet paste,,generic_category
+CH_108,"Sheep/goat cheeses with lamb/kid rennet paste (Idiazabal, Pecorino, Teleme…)",Sheep/goat cheeses with lamb/kid rennet paste,"Idiazabal, Pecorino, Teleme…",generic_category
+CH_108,ewe/goat cheeses (rennet paste),Sheep/goat cheeses with lamb/kid rennet paste,,generic_category
+CH_109,"Sheep cheeses with vegetable rennet (La Serena, Torta del Casar…)",Sheep/goat cheeses with vegetable rennet,"sheep; La Serena, Torta del Casar…",generic_category
+CH_109,Sheep/goat cheeses with vegetable rennet,Sheep/goat cheeses with vegetable rennet,,generic_category
+CH_109,"Sheep/goat cheeses with vegetable rennet (La Serena, Torta del Casar, Serra da Estrela…)",Sheep/goat cheeses with vegetable rennet,"La Serena, Torta del Casar, Serra da Estrela…",generic_category
+CH_109,ewe/goat cheeses (vegetable rennet),Sheep/goat cheeses with vegetable rennet,,generic_category
+CH_110,Smear-ripened,Smear-ripened cheese (generic),,generic_category
+CH_110,smear-ripened (generic),Smear-ripened cheese (generic),,generic_category
+CH_111,Smoked,Smoked cheese (generic),,generic_category
+CH_111,"Smoked cheeses (San Simón da Costa, Idiazabal, Palmero, Herreño…)",Smoked cheese (generic),"San Simón da Costa, Idiazabal, Palmero, Herreño…",generic_category
+CH_111,Smoked cheeses (generic),Smoked cheese (generic),,generic_category
+CH_111,smoked cheese,Smoked cheese (generic),,generic_category
+CH_112,"Soft cheeses (Cottage, Feta, Domiati)",Soft cheese (generic),"Cottage, Feta, Domiati",generic_category
+CH_112,Soft cheeses (with L. plantarum / L. casei),Soft cheese (generic),with L. plantarum / L. casei,generic_category
+CH_112,soft cheese (generic),Soft cheese (generic),,generic_category
+CH_113,Stilton,Stilton,,specific
+CH_114,Surface-ripened cheeses,Surface-ripened cheese (generic),,generic_category
+CH_115,Svecia,Svecia,,specific
+CH_115,svecia,Svecia,,specific
+CH_116,Swiss vs Cheddar,Swiss vs Cheddar,,multi_cheese
+CH_117,Hard Swiss cheese,Swiss-type (generic),hard,generic_category
+CH_117,Swiss,Swiss-type (generic),,generic_category
+CH_117,Swiss Hard,Swiss-type (generic),hard,generic_category
+CH_117,Swiss Hard Cheese,Swiss-type (generic),hard,generic_category
+CH_117,Swiss cheeses,Swiss-type (generic),,generic_category
+CH_117,Swiss-type cheese,Swiss-type (generic),,generic_category
+CH_117,Swiss-type cheeses,Swiss-type (generic),,generic_category
+CH_117,swiss-type (generic),Swiss-type (generic),,generic_category
+CH_118,Teleme,Teleme,,specific
+CH_118,Teleme (sheep and goat),Teleme,sheep and goat,specific
+CH_118,Teleme (sheep milk),Teleme,sheep milk,specific
+CH_119,Swiss Tilsit red label,Tilsit,Swiss red label,specific
+CH_119,Tilsit,Tilsit,,specific
+CH_119,tilsit,Tilsit,,specific
+CH_120,"Toma Piemontese, Cantal, Idiazabal","Toma Piemontese, Cantal, Idiazabal",,multi_cheese
+CH_121,Turkish Motal,Turkish Motal,,specific
+CH_122,"Various (Brie, Edam … Roquefort)","Various (Brie, Edam … Roquefort)",,multi_cheese
+CH_123,"Various (Gouda, Camembert, La Serena)","Various (Gouda, Camembert, La Serena)",,multi_cheese
+CH_124,Washed-rind cheeses,Washed-rind cheese (generic),,generic_category
+CH_124,Washed-rind cheeses (generic),Washed-rind cheese (generic),,generic_category
+CH_125,White Herby,White Herby,,specific
+CH_126,White-mold cheeses (Camembert),White-mold cheese (generic),Camembert,generic_category
+CH_127,Young cheese (generic),Young cheese (generic),,generic_category
+CH_127,young cheese (generic),Young cheese (generic),,generic_category
 ,check in the table,,,unresolved

@@ -1,0 +1,117 @@
+﻿fase,tabla,clave,campo,valor_anterior,valor_nuevo,estado,referencia,criterio
+1.1,cheese_alias,Pecorino,cheese_name_std / label_type,Pecorino / specific,Pecorino (generic) / generic_category,inferencia_documentada,https://en.wikipedia.org/wiki/List_of_European_cheeses_with_protected_geographical_status,"'Pecorino' designa una familia de quesos de oveja: la lista de DOP de la UE recoge varios pecorinos distintos (Romano, Siciliano, Toscano, Sardo…). No es un queso concreto."
+1.1,cheese_alias,pecorino,cheese_name_std / label_type,Pecorino / specific,Pecorino (generic) / generic_category,inferencia_documentada,https://en.wikipedia.org/wiki/List_of_European_cheeses_with_protected_geographical_status,Igual que 'Pecorino'.
+1.1,cheese_alias,Pecorino (6 months),cheese_name_std / label_type,Pecorino / specific,Pecorino (generic) / generic_category,inferencia_documentada,https://en.wikipedia.org/wiki/List_of_European_cheeses_with_protected_geographical_status,Igual que 'Pecorino'; '6 months' se conserva como calificador de muestra.
+1.1,cheese_alias,Chèvre (cottage cheese model),cheese_name_std / label_type,Chèvre / specific,Goat cheese (generic) / generic_category,inferencia_documentada,,'Chèvre' significa 'queso de cabra' en francés: término genérico.
+1.1,cheese_alias,Chèvre (fresh goat cheese),cheese_name_std / label_type,Chèvre / specific,Goat cheese (generic) / generic_category,inferencia_documentada,,Igual que 'Chèvre'.
+1.1,cheese_alias,chèvre,cheese_name_std / label_type,Chèvre / specific,Goat cheese (generic) / generic_category,inferencia_documentada,,Igual que 'Chèvre'.
+1.1,cheese_alias,Turkish white cheese,cheese_name_std / label_type,Turkish white cheese / specific,Beyaz peynir / specific,inferencia_documentada,https://acikerisim.sinop.edu.tr/items/4be64d17-e163-42fc-b509-bdf7a666401d/full,"'Beyaz peynir' es la denominación turca de 'queso blanco' (beyaz = blanco, peynir = queso): mismo queso."
+1.1,cheese_alias,Mature Cheddar,cheese_name_std / label_type,Cheddar / specific,Cheddar (aged) / specific,inferencia_documentada,,'Mature' y 'aged' designan el mismo estado de maduración; 'Aged Cheddar' ya se asignaba a Cheddar (aged).
+1.1,cheese_alias,Fresco,cheese_name_std / label_type,Fresco / specific,"Fresco (queso fresco, generic) / generic_category",inferencia_documentada,https://revistascientificas.uach.mx/index.php/tecnociencia/article/download/654/691/2757,"'Queso fresco' es una categoría de quesos frescos latinoamericanos, no un queso concreto."
+1.1,cheese_alias,"Fresco (Sonora, Mexico)",cheese_name_std / label_type,Fresco / specific,"Fresco (queso fresco, generic) / generic_category",inferencia_documentada,,"Igual que 'Fresco'; 'Sonora, Mexico' se conserva como calificador."
+1.1,cheese_alias,fresh,cheese_name_std / label_type,Fresh / specific,Fresh (Tunick 2023 profile) / generic_category,inferencia_documentada,,"Perfil llamado 'fresh' (Tunick 2023, pp. 227–229, citado en el Excel): no es un nombre de queso; se trata como categoría genérica con perfil propio."
+2,dim_cheese,Bouton de Culotte,leche,,goat,inferencia_documentada,https://tasteatlas.com/bouton-de-culotte,Fuente secundaria: leche cruda de cabra.
+2,dim_cheese,Bouton de Culotte,tratamiento_termico,,raw,inferencia_documentada,https://tasteatlas.com/bouton-de-culotte,Fuente secundaria: leche cruda.
+2,dim_cheese,Bouton de Culotte,cuajo_cultivo,,None,no_verificado,,No se encontró el tipo de coagulación.
+2,dim_cheese,Bouton de Culotte,maduracion,,"(10.0, None)",inferencia_documentada,https://tasteatlas.com/bouton-de-culotte,Fuente secundaria: al menos 10 días antes del consumo.
+2,dim_cheese,Camembert,tratamiento_termico,,raw_or_pasteurized,inferencia_documentada,https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf,La AOP Camembert de Normandie exige leche cruda; los Camembert sin AOP pueden ser pasteurizados. El Excel no indica si las muestras son AOP.
+2,dim_cheese,Camembert,maduracion,,"(None, None)",no_verificado,https://extranet.inao.gouv.fr/fichier/CDCCamembertNormandieSansModification.pdf,No se encontró la maduración mínima en el pliego consultado (solo en una fuente comercial no fiable).
+2,dim_cheese,Castelmagno,leche,,cow (+5–20% sheep/goat),verificado_con_fuente,https://www.onaf.it/uploads/public/20088_castelmagno.pdf,Ficha ONAF: leche de vaca con 5–20 % de oveja y/o cabra.
+2,dim_cheese,Castelmagno,tratamiento_termico,,raw,inferencia_documentada,https://www.onaf.it/uploads/public/20088_castelmagno.pdf,Fuentes: leche normalmente cruda.
+2,dim_cheese,Castelmagno,cuajo_cultivo,,None,no_verificado,,No disponible en los extractos consultados.
+2,dim_cheese,Castelmagno,maduracion,,"(60.0, None)",verificado_con_fuente,https://www.onaf.it/uploads/public/20088_castelmagno.pdf,Ficha ONAF: mínimo 60 días.
+2,dim_cheese,Cheddar,tratamiento_termico,,raw_or_pasteurized,verificado_con_fuente,https://www.law.cornell.edu/cfr/text/21/133.113,21 CFR 133.113: leche cruda (curado ≥ 60 días) o pasteurizada. Cheddar es un tipo internacional.
+2,dim_cheese,Cheddar (aged),tratamiento_termico,,raw_or_pasteurized,inferencia_documentada,https://www.law.cornell.edu/cfr/text/21/133.113,Igual que Cheddar.
+2,dim_cheese,Cheddar (low-fat),tratamiento_termico,,raw_or_pasteurized,inferencia_documentada,https://www.law.cornell.edu/cfr/text/21/133.113,Igual que Cheddar.
+2,dim_cheese,Cheddar (low-fat),maduracion,,"(270.0, 360.0)",verificado_con_fuente,,"Valor del Excel (Papademas 2018, p. 213)."
+2,dim_cheese,Cottage,leche,,None,no_verificado,,Tipo de queso sin pliego único.
+2,dim_cheese,Cottage,tratamiento_termico,,None,no_verificado,,Tipo de queso sin pliego único.
+2,dim_cheese,Cottage,maduracion,,"(0.0, 0.0)",verificado_con_fuente,,"Queso fresco (valor del Excel, McSweeney 2007, p. 359)."
+2,dim_cheese,Emmental,maduracion,,"(120.0, None)",verificado_con_fuente,https://emmentaler.ch/en/maturing-cheese-the-secret-of-affinage,Emmentaler AOP: al menos 120 días. Los Emmental no suizos tienen otros pliegos.
+2,dim_cheese,Farmhouse Cheddar,tratamiento_termico,,raw_or_pasteurized,inferencia_documentada,https://assets.publishing.service.gov.uk/media/5fd3693f8fa8f54d59e8b750/pfn-west-country-farmhouse-cheddar.pdf,Pliego DOP West Country Farmhouse Cheddar: leche pasteurizada o no. Se asume que 'Farmhouse Cheddar' corresponde a esa DOP.
+2,dim_cheese,Farmhouse Cheddar,cuajo_cultivo,,None,no_verificado,https://assets.publishing.service.gov.uk/media/5fd3693f8fa8f54d59e8b750/pfn-west-country-farmhouse-cheddar.pdf,El pliego consultado no especifica el cuajo.
+2,dim_cheese,Farmhouse Cheddar,maduracion,,"(270.0, None)",inferencia_documentada,https://assets.publishing.service.gov.uk/media/5fd3693f8fa8f54d59e8b750/pfn-west-country-farmhouse-cheddar.pdf,Pliego DOP: mínimo 9 meses (misma suposición de equivalencia).
+2,dim_cheese,Flor de Guia,tratamiento_termico,,None,no_verificado,https://boe.gob.es/boe/dias/2006/09/22/pdfs/B10284-10285.pdf,El pliego consultado no lo indica en el extracto disponible.
+2,dim_cheese,Flor de Guia,maduracion,,"(None, None)",no_verificado,https://boe.gob.es/boe/dias/2006/09/22/pdfs/B10284-10285.pdf,El extracto del pliego se corta en 'quince'; no se puede confirmar la cifra.
+2,dim_cheese,Formaella,leche,,sheep_or_goat,verificado_con_fuente,https://www.gov.uk/protected-food-drink-names/phormaella-araxobas-parnassou-slash-formaella-arachovas-parnassou,"Leche de oveja, de cabra o su mezcla."
+2,dim_cheese,Formaella,tratamiento_termico,,None,no_verificado,,No disponible: el registro del Reino Unido no publica el pliego.
+2,dim_cheese,Formaella,cuajo_cultivo,,None,no_verificado,,No disponible.
+2,dim_cheese,Formaella,maduracion,,"(None, None)",no_verificado,https://www.gov.uk/protected-food-drink-names/phormaella-araxobas-parnassou-slash-formaella-arachovas-parnassou,Fuentes contradictorias (fresco o ≥ 3 meses).
+2,dim_cheese,Formaggio di Fossa,leche,,sheep / cow / mixed (≥ 20% sheep),verificado_con_fuente,https://WWW.REGIONE.MARCHE.IT/Portals/0/Agricoltura/qualita/Formaggio_Fossa_Sogliano%20dop.pdf,"Pliego: ovino, vacuno o mixto (vaca ≤ 80 %, oveja ≥ 20 %)."
+2,dim_cheese,Formaggio di Fossa,tratamiento_termico,,None,no_verificado,https://WWW.REGIONE.MARCHE.IT/Portals/0/Agricoltura/qualita/Formaggio_Fossa_Sogliano%20dop.pdf,No disponible en el extracto consultado.
+2,dim_cheese,Formaggio di Fossa,cuajo_cultivo,,None,no_verificado,https://WWW.REGIONE.MARCHE.IT/Portals/0/Agricoltura/qualita/Formaggio_Fossa_Sogliano%20dop.pdf,No disponible en el extracto consultado.
+2,dim_cheese,Formaggio di Fossa,maduracion,,"(60.0, None)",verificado_con_fuente,https://WWW.REGIONE.MARCHE.IT/Portals/0/Agricoltura/qualita/Formaggio_Fossa_Sogliano%20dop.pdf,Pliego regional: mínimo 60 días (incluida la infossatura).
+2,dim_cheese,"Fresco (queso fresco, generic)",leche,,None,no_verificado,,Categoría genérica (queso fresco).
+2,dim_cheese,"Fresco (queso fresco, generic)",tratamiento_termico,,None,no_verificado,,Categoría genérica.
+2,dim_cheese,"Fresco (queso fresco, generic)",cuajo_cultivo,,None,no_verificado,,Categoría genérica.
+2,dim_cheese,"Fresco (queso fresco, generic)",maduracion,,"(0.0, 0.0)",inferencia_documentada,,"Por definición, queso fresco."
+2,dim_cheese,Goat Cheddar,tratamiento_termico,,None,no_verificado,,"Queso de un estudio, sin especificación de tipo."
+2,dim_cheese,Goat Cheddar,cuajo_cultivo,,None,no_verificado,,"Queso de un estudio, sin especificación de tipo."
+2,dim_cheese,Gorgonzola,tratamiento_termico,,pasteurized,verificado_con_fuente,https://en.gorgonzola.com/news/gorgonzola-pdo-secrets-of-production-and-storage/,Consorcio: leche de vaca entera pasteurizada.
+2,dim_cheese,Gorgonzola,maduracion,,"(50.0, 270.0)",verificado_con_fuente,https://en.gorgonzola.com/news/gorgonzola-pdo-secrets-of-production-and-storage/,Consorcio: dulce 50–150 días; picante 80–270 días.
+2,dim_cheese,Gouda,tratamiento_termico,,pasteurized,verificado_con_fuente,https://www.gob.mx/cms/uploads/attachment/file/245731/NL_Gouda_Holland.pdf,Documento único IGP Gouda Holland: leche pasteurizada ≥ 72 °C 15 s.
+2,dim_cheese,Gouda,maduracion,,"(28.0, None)",inferencia_documentada,https://www.gob.mx/cms/uploads/attachment/file/245731/NL_Gouda_Holland.pdf,"El Excel (Papademas 2018) da '4 weeks to > 52 weeks': mínimo 28 días, máximo abierto."
+2,dim_cheese,Grana Padano,leche,,cow,verificado_con_fuente,https://www.granapadano.it/public/file/SpecificationsGBOct2022-50252.pdf,Pliego: leche de vaca cruda parcialmente desnatada por afloramiento.
+2,dim_cheese,Grana Padano,tratamiento_termico,,raw,verificado_con_fuente,https://www.granapadano.it/public/file/SpecificationsGBOct2022-50252.pdf,Pliego: leche no tratada térmicamente.
+2,dim_cheese,Grana Padano,cuajo_cultivo,,calf rennet; natural whey culture,verificado_con_fuente,https://www.granapadano.it/public/file/SpecificationsGBOct2022-50252.pdf,Pliego: cuajo de ternero tras añadir suero-cultivo natural.
+2,dim_cheese,Grana Padano,maduracion,,"(270.0, None)",verificado_con_fuente,https://www.onaf.it/uploads/public/13739_grana-padano.pdf,"Ficha ONAF: mínimo 9 meses (máx. ~24 m en la ficha). El '≥ 15 months' del Excel describe muestras de estudios, no el pliego."
+2,dim_cheese,Grana Trentino,tratamiento_termico,,raw,verificado_con_fuente,https://www.onaf.it/uploads/public/13739_grana-padano.pdf,Tipología del Grana Padano (leche cruda; lisozima no admitida).
+2,dim_cheese,Grana Trentino,cuajo_cultivo,,calf rennet; natural whey culture,inferencia_documentada,https://www.granapadano.it/public/file/SpecificationsGBOct2022-50252.pdf,"Se aplica el pliego del Grana Padano, del que es tipología."
+2,dim_cheese,Grana Trentino,maduracion,,"(270.0, None)",inferencia_documentada,https://www.onaf.it/uploads/public/13739_grana-padano.pdf,Mínimo del Grana Padano (9 meses).
+2,dim_cheese,Gruyère,maduracion,,"(150.0, None)",verificado_con_fuente,https://gruyere.com/fr/cahier-des-charges,Pliego Gruyère AOP (CH): mínimo 5 meses. El Gruyère francés (IGP) tiene otro pliego.
+2,dim_cheese,Limburger,leche,,cow,inferencia_documentada,https://en.wikipedia.org/wiki/Limburger,Fuente secundaria: queso de leche de vaca.
+2,dim_cheese,Limburger,tratamiento_termico,,None,no_verificado,https://en.wikipedia.org/wiki/Limburger,Las fuentes no lo confirman.
+2,dim_cheese,Limburger,maduracion,,"(None, None)",no_verificado,https://en.wikipedia.org/wiki/Limburger,Las fuentes dan cifras contradictorias (≈ 30 días a 3 meses).
+2,dim_cheese,Livarot,leche,,None,no_verificado,https://extranet.inao.gouv.fr/fichier/PNOCDCLivarot.pdf,El extracto del pliego consultado no lo indica.
+2,dim_cheese,Livarot,tratamiento_termico,,None,no_verificado,https://extranet.inao.gouv.fr/fichier/PNOCDCLivarot.pdf,El extracto del pliego consultado no lo indica.
+2,dim_cheese,Livarot,maduracion,,"(21.0, None)",verificado_con_fuente,https://extranet.inao.gouv.fr/fichier/PNOCDCLivarot.pdf,Resumen del pliego AOP: mínimo 3 semanas de maduración.
+2,dim_cheese,Majorero,tratamiento_termico,,None,no_verificado,https://www.foodswinesfromspain.com/en/food/products/cheese/queso-majorero-pdo,"Las fuentes discrepan (cruda / pasteurizada). Se conserva el 'raw' del Excel, sin verificar."
+2,dim_cheese,Majorero,maduracion,,"(8.0, None)",verificado_con_fuente,https://www.foodswinesfromspain.com/en/food/products/cheese/queso-majorero-pdo,"Consejo Regulador: tierno 8–20 d, semicurado 20–60 d, curado > 60 d."
+2,dim_cheese,Manchego,tratamiento_termico,,raw_or_pasteurized,verificado_con_fuente,https://apliagri.castillalamancha.es/sites/default/files/2026-07/Pliego_Condiciones_DOP_Queso_Manchego_2025_0.pdf,Pliego 2025: leche cruda o pasteurizada.
+2,dim_cheese,Manchego,maduracion,,"(30.0, 730.0)",verificado_con_fuente,https://apliagri.castillalamancha.es/sites/default/files/2026-07/Pliego_Condiciones_DOP_Queso_Manchego_2025_0.pdf,"Pliego 2025: mínimo 30 d (≤ 1,5 kg) o 60 d (resto); máximo 2 años."
+2,dim_cheese,Milk fan,leche,,cow,inferencia_documentada,https://www.foodguessr.com/food/rushan-cheese,Fuente secundaria: leche de vaca (a veces de búfala).
+2,dim_cheese,Milk fan,tratamiento_termico,,None,no_verificado,,No disponible.
+2,dim_cheese,Milk fan,cuajo_cultivo,,acid coagulation (heat),inferencia_documentada,https://www.foodguessr.com/food/rushan-cheese,Fuente secundaria: coagulación con agente acidificante y calor; las fuentes discrepan sobre el cuajo.
+2,dim_cheese,Milk fan,maduracion,,"(None, None)",no_verificado,,"Producto secado, no madurado; sin dato."
+2,dim_cheese,Minas Frescal,leche,,None,no_verificado,https://www.scielo.br/j/rca/a/MZDt5CDnv66x63ThkT54twn/abstract/?lang=en,La definición legal no especifica la especie en la fuente consultada.
+2,dim_cheese,Minas Frescal,tratamiento_termico,,pasteurized,verificado_con_fuente,https://www.scielo.br/j/rca/a/MZDt5CDnv66x63ThkT54twn/abstract/?lang=en,La legislación brasileña exige leche pasteurizada para este queso fresco.
+2,dim_cheese,Minas Frescal,maduracion,,"(0.0, 0.0)",verificado_con_fuente,https://www.scielo.br/j/rca/a/MZDt5CDnv66x63ThkT54twn/abstract/?lang=en,Queso fresco (no madurado) por definición legal.
+2,dim_cheese,Mozzarella,tratamiento_termico,,None,no_verificado,,Mozzarella de vaca no tiene pliego único; no se puede asignar un valor tipo.
+2,dim_cheese,Mozzarella,cuajo_cultivo,,None,no_verificado,,Igual que el tratamiento térmico.
+2,dim_cheese,Mozzarella,maduracion,,"(0.0, 0.0)",inferencia_documentada,,El Excel la describe como 'fresh' (queso de consumo fresco).
+2,dim_cheese,Mozzarella (buffalo),tratamiento_termico,,raw_or_pasteurized,verificado_con_fuente,https://www.arsial.it/wp-content/uploads/2025/06/MozzarellaBufalaCampanaDOP.pdf,"Pliego DOP: leche cruda o, opcionalmente, termizada o pasteurizada."
+2,dim_cheese,Mozzarella (buffalo),cuajo_cultivo,,calf rennet; natural whey culture,verificado_con_fuente,https://www.arsial.it/wp-content/uploads/2025/06/MozzarellaBufalaCampanaDOP.pdf,Pliego DOP: suero-cultivo natural y cuajo natural de ternero.
+2,dim_cheese,Mozzarella (buffalo),maduracion,,"(0.0, 0.0)",verificado_con_fuente,https://www.arsial.it/wp-content/uploads/2025/06/MozzarellaBufalaCampanaDOP.pdf,Pliego DOP: queso fresco (sin maduración).
+2,dim_cheese,Palmero,cuajo_cultivo,,kid rennet (natural),verificado_con_fuente,https://www.mapa.gob.es/images/es/queso-palmero_2002_07_11_tcm30-211309.pdf,Pliego / productores: cuajo natural artesanal de cabrito.
+2,dim_cheese,Palmero,maduracion,,"(None, None)",no_verificado,https://www.mapa.gob.es/images/es/queso-palmero_2002_07_11_tcm30-211309.pdf,El pliego no indica la maduración en el extracto consultado.
+2,dim_cheese,Parmesan,maduracion,,"(None, None)",no_verificado,https://www.law.cornell.edu/cfr/text/21/part-133/subpart-B,Identidad ambigua (Parmigiano Reggiano en la UE: ≥ 12 m; norma de EE. UU.: ≥ 10 m): no se puede elegir sin el origen de las muestras.
+2,dim_cheese,Parmigiano Reggiano,maduracion,,"(360.0, None)",verificado_con_fuente,https://backend.parmigianoreggiano.com/uploads/disciplinare_PR_EN_clean_02072025_55f8b10686.pdf,Pliego 2025: mínimo 12 meses desde el moldeado.
+2,dim_cheese,Parmigiano Reggiano,cuajo_cultivo,,calf rennet; natural whey culture,verificado_con_fuente,https://backend.parmigianoreggiano.com/uploads/disciplinare_PR_EN_clean_02072025_55f8b10686.pdf,Pliego 2025: suero-cultivo natural; solo cuajo de ternero; no se permiten fermentos comerciales.
+2,dim_cheese,Pecorino (generic),tratamiento_termico,,None,no_verificado,,Categoría genérica: no existe una especificación única.
+2,dim_cheese,Pecorino (generic),cuajo_cultivo,,None,no_verificado,,Categoría genérica.
+2,dim_cheese,Pecorino (generic),maduracion,,"(None, None)",no_verificado,,Categoría genérica.
+2,dim_cheese,Pecorino Crotonese,tratamiento_termico,,None,no_verificado,https://onaf.it/uploads/public/formaggi/19423_3-rich-dop-pecorino-crotonese-discipl-e-celex-52014xc0702-02-it-txt.pdf,No disponible en los extractos consultados.
+2,dim_cheese,Pecorino Crotonese,cuajo_cultivo,,None,no_verificado,https://onaf.it/uploads/public/formaggi/19423_3-rich-dop-pecorino-crotonese-discipl-e-celex-52014xc0702-02-it-txt.pdf,No disponible en los extractos consultados.
+2,dim_cheese,Pecorino Crotonese,maduracion,,"(60.0, None)",inferencia_documentada,https://onaf.it/uploads/public/formaggi/19423_3-rich-dop-pecorino-crotonese-discipl-e-celex-52014xc0702-02-it-txt.pdf,Pliego: semiduro 60–90 días; curado > 6 meses (documento único 2014). Se registra el mínimo común.
+2,dim_cheese,Pecorino Romano,tratamiento_termico,,raw_or_thermized,verificado_con_fuente,https://www.onaf.it/uploads/public/11795_pecorino-romano.pdf,Ficha del pliego: leche cruda o termizada.
+2,dim_cheese,Pecorino Romano,maduracion,,"(150.0, None)",verificado_con_fuente,https://www.onaf.it/uploads/public/11795_pecorino-romano.pdf,Mínimo 5 meses (mesa) y 8 meses (para rallar).
+2,dim_cheese,Pecorino Siciliano,tratamiento_termico,,raw,verificado_con_fuente,https://www.onaf.it/uploads/public/formaggi/1872_1-dop-pecorino-siciliano-disciplinare-iniziale.pdf,Pliego: leche de oveja entera cruda.
+2,dim_cheese,Polish smoked cheese,leche,,None,no_verificado,,Solo existe la etiqueta del estudio.
+2,dim_cheese,Polish smoked cheese,tratamiento_termico,,None,no_verificado,,Solo existe la etiqueta del estudio.
+2,dim_cheese,Polish smoked cheese,cuajo_cultivo,,None,no_verificado,,Solo existe la etiqueta del estudio.
+2,dim_cheese,Polish smoked cheese,maduracion,,"(None, None)",no_verificado,,Solo existe la etiqueta del estudio.
+2,dim_cheese,Proosdij,leche,,None,no_verificado,https://issuu.com/epicurefoods/docs/private_label_exclusive_presentation_2023/s/27379755,"Una sola fuente comercial, sin datos de leche."
+2,dim_cheese,Proosdij,tratamiento_termico,,None,no_verificado,,Sin fuente.
+2,dim_cheese,Proosdij,cuajo_cultivo,,mixed-strain starter cultures,inferencia_documentada,https://issuu.com/epicurefoods/docs/private_label_exclusive_presentation_2023/s/27379755,"Fuente comercial: cultivos iniciadores de cepas mixtas, como el Gouda."
+2,dim_cheese,Proosdij,maduracion,,"(None, None)",no_verificado,,Sin fuente.
+2,dim_cheese,Ragusano,maduracion,,"(90.0, None)",verificado_con_fuente,https://www.quotidianodiragusa.it/2026/10/15/cucina/ragusano-dop-disciplinare-stagionatura/,Mínimo 3 meses desde el moldeado (resumen del pliego); leche cruda y cuajo en pasta según el pliego de 1995.
+2,dim_cheese,Roncal,maduracion,,"(120.0, None)",verificado_con_fuente,https://ec.europa.eu/geographical-indications-register/eambrosia-public-api/api/v1/attachments/59790,Pliego DOP: mínimo 4 meses desde el salado. Las '7 weeks' del Excel (Tunick 2014) describen otra muestra o etapa.
+2,dim_cheese,Sainte-Maure,tratamiento_termico,,raw,verificado_con_fuente,https://extranet.inao.gouv.fr/fichier/DUPNOSainteMauredeTouraine.pdf,Documento único AOP: leche de cabra entera y cruda.
+1.1,bridge_evidence_cheese,EV_00054-1,cheese,check in the table,Cheddar; Emmental; Gorgonzola; Grana Padano; Pecorino (generic),inferencia_documentada,,"El texto copiado del PDF (p. 12, 14, 15) cita el furaneol como odorante de 'Cheddar, Emmental, creamy Gorgonzola, Grana Padano and Pecorino'."
+1.1,bridge_evidence_cheese,EV_00056-4,cheese,check in the table,Mozzarella (buffalo),inferencia_documentada,,El texto (p. 9) da la abreviatura de tabla 'Mozz WB' (water buffalo Mozzarella).
+1.1,bridge_evidence_cheese,EV_00065-1,cheese,check in the table,Cheddar; Emmental; Gorgonzola; Grana Padano; Pecorino (generic),inferencia_documentada,,Mismo texto que EV_00054-1.
+1.1,bridge_evidence_cheese,EV_00066-1,cheese,check in the table,Farmhouse Cheddar,inferencia_documentada,,"El texto (p. 14) da 'Ched BF' (Cheddar British Farmhouse), igual que la etiqueta 'Cheddar (British Farmhouse)'."
+1.1,bridge_evidence_cheese,EV_00069-2,cheese,check in the table,Gruyère,inferencia_documentada,,"El texto (p. 19, 22) relaciona las notas de lipólisis con 'Gruyère'."
+1.1,bridge_evidence_cheese,EV_00220-1,cheese,check in the table,Farmhouse Cheddar,inferencia_documentada,,"El texto (p. 7) da 'Rosy, styrene Ched BF FD 27'."
+1.1,bridge_evidence_cheese,EV_00258-1,cheese,check in the table,Mozzarella (buffalo),inferencia_documentada,,Mismo texto que EV_00056-4 ('Mozz WB').
+1.1,bridge_evidence_cheese,EV_00269-1,cheese,check in the table,Gruyère,inferencia_documentada,,Mismo texto que EV_00069-2.

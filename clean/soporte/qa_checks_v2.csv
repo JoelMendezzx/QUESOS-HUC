@@ -1,0 +1,31 @@
+﻿comprobacion,resultado,detalle
+Filas de Evidence conservadas,OK,1836 / 1836
+Filas de Process and Volatiles conservadas,OK,341 / 341
+Clave única dim_cheese.cheese_id,OK,0 duplicados
+Clave única dim_compound.compound_id,OK,0 duplicados
+Clave única dim_descriptor.descriptor_id,OK,0 duplicados
+Clave única dim_source.source_id,OK,0 duplicados
+Clave única fact_evidence.evidence_id,OK,0 duplicados
+Clave única ml_evidence_flat.row_id,OK,0 duplicados
+Clave única fact_process_effect.process_effect_id,OK,0 duplicados
+Nombres de queso únicos,OK,
+Integridad ml.cheese_id -> cheese_id,OK,0 referencias rotas
+Integridad ml.descriptor_id -> descriptor_id,OK,0 referencias rotas
+Integridad ml.compound_id -> compound_id,OK,0 referencias rotas
+Integridad bridge_evidence_cheese.cheese_id -> cheese_id,OK,0 referencias rotas
+Integridad bridge_evidence_source.source_id -> source_id,OK,0 referencias rotas
+Integridad fact_compound_odor.descriptor_id -> descriptor_id,OK,0 referencias rotas
+Integridad fact_cheese_descriptor.cheese_id -> cheese_id,OK,0 referencias rotas
+Integridad fact_process_effect.cheese_id -> cheese_id,OK,0 referencias rotas
+Integridad dim_cheese.parent.parent_cheese_id -> cheese_id,OK,0 referencias rotas
+Todas las evidencias están en la tabla plana,OK,
+Sin duplicados evidencia x queso en la tabla plana,OK,0 duplicados
+Fase 1.1: 282 equivalencias evaluadas,OK,282
+Fase 1.1: 11 'check in the table' evaluados,OK,
+Fase 1.4: 72 quesos clasificados/evaluados,OK,
+Fase 2: 160 registros evaluados,OK,
+Fase 2: todo valor final tiene estado verificado o inferido,OK,
+Fase 3: 169 descriptores evaluados,OK,
+Fase 3: términos de Drake dentro del léxico verificado,OK,
+Fase 3: familias de nivel 1 dentro de Bérodier,OK,
+Valores de producción del tipo separados de los de muestra (ctx_ sin cambios),OK,

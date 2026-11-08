@@ -1,0 +1,68 @@
+﻿cheese_id,cheese_name_std,cheese_family,spec_milk,spec_heat_treatment,spec_coagulant_culture,spec_ripening_days_min,spec_ripening_days_max,spec_completeness
+CH_004,Beyaz peynir,brined,"cow, sheep, goat or mixed",pasteurized,rennet,90.0,,1.0
+CH_039,Emmental,swiss_type_eyes,cow,raw,propionic bacteria,120.0,,1.0
+CH_022,Cheddar,hard_pressed,cow,raw_or_pasteurized,animal rennet,270.0,360.0,1.0
+CH_098,Ragusano,pasta_filata,cow,raw,lamb/kid rennet paste (with pregastric esterase),90.0,,1.0
+CH_103,San Simón da Costa,semi_hard,cow,raw_or_pasteurized,rennet (enzymatic coagulation),30.0,,1.0
+CH_024,Cheddar (low-fat),hard_pressed,cow,raw_or_pasteurized,animal rennet,270.0,360.0,1.0
+CH_023,Cheddar (aged),hard_pressed,cow,raw_or_pasteurized,animal rennet,270.0,,1.0
+CH_057,Gouda,semi_hard,cow,pasteurized,animal rennet,28.0,,1.0
+CH_059,Grana Padano,grana_extra_hard,cow,raw,calf rennet; natural whey culture,270.0,,1.0
+CH_056,Gorgonzola,blue,cow,pasteurized,Penicillium roqueforti,50.0,270.0,1.0
+CH_044,Feta,brined,sheep (or with ≤ 30% goat),pasteurized,rennet,60.0,,1.0
+CH_060,Grana Trentino,grana_extra_hard,cow,raw,calf rennet; natural whey culture,270.0,,1.0
+CH_061,Gruyère,hard_cooked,cow,raw,washed-rind flora,150.0,,1.0
+CH_102,Sainte-Maure,goat_lactic,goat,raw,lactic coagulation; surface mold,31.0,31.0,1.0
+CH_091,Pecorino Siciliano,hard_pressed,sheep,raw,lamb rennet paste,0.0,120.0,1.0
+CH_086,Parmigiano Reggiano,grana_extra_hard,cow,raw,calf rennet; natural whey culture,360.0,,1.0
+CH_090,Pecorino Romano,hard_pressed,sheep,raw_or_thermized,lamb rennet paste,150.0,,1.0
+CH_079,Mozzarella (buffalo),pasta_filata,buffalo,raw_or_pasteurized,calf rennet; natural whey culture,0.0,0.0,1.0
+CH_072,Manchego,hard_pressed,sheep,raw_or_pasteurized,calf rennet,30.0,730.0,1.0
+CH_099,Roncal,hard_pressed,sheep,raw,acidification by the natural microflora,120.0,,1.0
+CH_001,Afuega'l Pitu,fresh_acid_lactic,cow,raw_or_pasteurized,rennet,,,0.75
+CH_010,Bouton de Culotte,goat_lactic,goat,raw,,10.0,,0.75
+CH_081,Palmero,semi_hard,goat (Palmera breed),raw,kid rennet (natural),,,0.75
+CH_100,Roquefort,blue,sheep,raw,Penicillium roqueforti,,,0.75
+CH_106,Serra da Estrela,other,sheep,raw,vegetable rennet (Cynara cardunculus),,,0.75
+CH_115,Svecia,semi_hard,cow,pasteurized,calf rennet,,,0.75
+CH_083,Parmesan,grana_extra_hard,cow,raw,natural whey culture,,,0.75
+CH_073,Mihalic,hard_pressed,"sheep, goat, cow or mixed",,animal rennet,90.0,90.0,0.75
+CH_076,Minas Frescal,fresh_rennet,,pasteurized,control vs probiotic culture,0.0,0.0,0.75
+CH_070,Majorero,hard_pressed,goat,,kid rennet paste,8.0,,0.75
+CH_043,Farmhouse Cheddar,hard_pressed,cow,raw_or_pasteurized,,270.0,,0.75
+CH_019,Castelmagno,semi_hard,cow (+5–20% sheep/goat),raw,,60.0,,0.75
+CH_016,Camembert,soft_bloomy_rind,cow,raw_or_pasteurized,calf rennet; Penicillium camemberti,,,0.75
+CH_014,Cabrales,blue,"cow, sheep and goat (mixed)",raw,kid rennet; Penicillium roqueforti,,,0.75
+CH_031,Cottage,fresh_acid_lactic,,,Citrate+ Lactococcus lactis,0.0,0.0,0.5
+CH_078,Mozzarella,pasta_filata,cow,,,0.0,0.0,0.5
+CH_075,Milk fan,pasta_filata,cow,,acid coagulation (heat),,,0.5
+CH_089,Pecorino Crotonese,hard_pressed,sheep,,,60.0,,0.5
+CH_092,Piacentinu Ennese,hard_pressed,sheep,raw,,,,0.5
+CH_096,Quarg,fresh_acid_lactic,,,"mesophilic culture (Lactococcus, Leuconostoc)",0.0,,0.5
+CH_048,Formaggio di Fossa,semi_hard,sheep / cow / mixed (≥ 20% sheep),,,60.0,,0.5
+CH_067,Limburger,washed_rind_smear,cow,,washed-rind flora (B. linens),,,0.5
+CH_046,Flor de Guia,semi_hard,sheep (≥ 60%) and cow,,vegetable rennet (Cynara cardunculus),,,0.5
+CH_054,Goat Cheddar,hard_pressed,goat,,,1.0,84.0,0.5
+CH_069,Livarot,washed_rind_smear,,,washed-rind flora,21.0,,0.5
+CH_047,Formaella,hard_pressed,sheep_or_goat,,,,,0.25
+CH_011,Brie,soft_bloomy_rind,,,surface mold (Penicillium),,,0.25
+CH_036,Domiati,brined,buffalo or buffalo/cow,,,,,0.25
+CH_119,Tilsit,washed_rind_smear,,,washed-rind flora,,,0.25
+CH_071,Malatya,,,raw,,,,0.25
+CH_095,Proosdij,semi_hard,,,mixed-strain starter cultures,,,0.25
+CH_065,Idiazabal,hard_pressed,,,,,,0.0
+CH_052,Ġbejna,fresh_rennet,,,,,,0.0
+CH_013,Bryndza,other,,,,,,0.0
+CH_018,Castellano,hard_pressed,,,,,,0.0
+CH_021,Castelo Branco,other,,,,,,0.0
+CH_030,Chihuahua,semi_hard,,,,,,0.0
+CH_034,Cremoso,other,,,,,,0.0
+CH_033,Cream cheese,fresh_acid_lactic,,,,,,0.0
+CH_082,Parenica,pasta_filata,,,,,,0.0
+CH_080,Munster,washed_rind_smear,,,,,,0.0
+CH_093,Polish smoked cheese,other,,,,,,0.0
+CH_105,Serpa,other,,,,,,0.0
+CH_113,Stilton,blue,,,,,,0.0
+CH_118,Teleme,brined,,,,,,0.0
+CH_121,Turkish Motal,,,,,,,0.0
+CH_125,White Herby,brined,,,,,,0.0

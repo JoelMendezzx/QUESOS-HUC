@@ -7,7 +7,28 @@
 
 ---
 
-## Veredicto
+## Actualización con la base v2-harmonized (tras las Fases 1–3)
+
+Se volvió a ejecutar la auditoría sobre la base armonizada. Ahora las etiquetas solo usan notas de aroma válidas (`use_as_cheese_aroma_label`) y las familias son las de Bérodier (1997). Las secciones siguientes (v1) se conservan como referencia.
+
+| Pregunta | v1 | v2 |
+|---|---|---|
+| 1. Quesos concretos con los 4 bloques de producción | 12 (7 sin ambigüedad) | **20** (13 sin ambigüedad), usando la producción del tipo de queso (`spec_*`) |
+| 2. Quesos con etiquetas de aroma (todas / fuertes / primaria) | 40 / 20 / 7 | 37 / 19 / 7 (Pecorino, Chèvre y Fresco pasan a categorías genéricas) |
+| 3. Estudios primarios (todas / fuertes) | 44 / 20 | 44 / 20 (sin cambio: la armonización no crea estudios) |
+| 4. Familias con ≥ 10 quesos y ≥ 10 estudios | 8 (familias de la fuente, sin armonizar) | **7 familias de Bérodier**; **6 candidatas** para ML: fruity, vegetal, lactic, floral, toasted, animal ('other' no es una clase coherente) |
+| 5. Combinaciones de producción con etiquetas de aroma (todas / fuertes) | 8 / 5 | **15 / 11** con la producción del tipo de queso |
+
+**Veredicto actualizado:**
+- **Compuesto → familia aromática: viable.** Hay 144 compuestos, 284 pares compuesto–familia y 6 familias con soporte.
+- **Producción → aroma directo: sigue sin ser viable.** Pasar de 5 a 11 combinaciones con evidencia fuerte es una mejora real, pero insuficiente para un modelo. Además, las variables siguen siendo del **tipo** de queso, no de la muestra.
+- La recomendación principal se mantiene: **extraer los datos por muestra de los estudios primarios** (Fase 6 del plan).
+
+Detalle: [`clean/auditoria/`](clean/auditoria/) (incluye `q1_completitud_quesos_v2.csv`).
+
+---
+
+## Veredicto (v1)
 
 | Modelo | Pregunta que responde | ¿Viable hoy? | Motivo principal |
 |---|---|---|---|

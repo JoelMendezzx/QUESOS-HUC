@@ -4,6 +4,53 @@ Registro de lo que se hizo en cada sesión. La entrada más reciente va primero.
 
 ---
 
+## 2026-11-08 · Sesión 4 — Fases 1, 2 y 3 ejecutadas → base `v2-harmonized`
+
+Instrucción seguida: [`corrections/fases123.md`](corrections/fases123.md).
+
+### Qué se hizo
+1. **Investigación de fuentes.**
+   - Rueda de Bérodier et al. (1997) en sus tres niveles, leída en el protocolo del ITA St-Hyacinthe (pp. 2–3).
+   - Léxico de Drake et al. (2001), con sus 32 términos.
+   - Lista de quesos con DOP/IGP de la UE.
+   - Unos 30 pliegos DOP/IGP y normas: Grana Padano, Parmigiano Reggiano, Gorgonzola, Gruyère, Emmental, Ragusano, Mozzarella di Bufala, pecorinos, Manchego, Idiazabal, Roncal, Majorero, Palmero, Flor de Guía, San Simón, Camembert, Livarot, Sainte-Maure, West Country Farmhouse Cheddar, Gouda Holland, 21 CFR, Minas Frescal…
+
+   Todo está en [REFERENCIAS_VERIFICADAS.md](REFERENCIAS_VERIFICADAS.md).
+2. **Decisiones registradas** en [`scripts/harmonization_decisions.py`](scripts/harmonization_decisions.py), con estado (`verificado_con_fuente` / `inferencia_documentada` / `no_verificado`), fuente y criterio para cada registro.
+3. **Integración en la base:** [`scripts/build_clean_db.py`](scripts/build_clean_db.py) aplica las decisiones, escribe los 4 registros completados en `corrections/`, el registro de cambios y las comprobaciones de calidad.
+4. **Base regenerada** y **auditoría** repetida.
+5. **Documentación nueva:** [FASE1](FASE1_Armonizacion_Quesos.md), [FASE2](FASE2_Armonizacion_Produccion.md), [FASE3](FASE3_Armonizacion_Descriptores.md), [REFERENCIAS_VERIFICADAS](REFERENCIAS_VERIFICADAS.md) e [INFORME_FINAL](INFORME_FINAL_FASES_1_2_3.md).
+6. **Eliminado:** el generador de plantillas y los archivos de "revisión IA pendiente de validación" (a pedido de la usuaria).
+
+### Cifras clave
+| Registro | Revisados | Verificados | Inferidos | Sin verificar |
+|---|---|---|---|---|
+| Equivalencias de queso | 282 | 107 | 174 | 1 |
+| «Check in the table» | 11 | 0 | 8 | 3 |
+| Familia tecnológica / país-DOP | 72 / 72 | 20 / 32 | 45 / 18 | 7 / 22 |
+| Valores de producción | 160 | 96 | 20 | 44 |
+| Descriptores de aroma | 169 | 61 | 108 | 0 |
+
+- **Quesos con producción completa:** de 12 a **20**.
+- **Combinaciones de producción con aroma (fuertes):** de 5 a **11**.
+- **Clases para ML:** 6 familias de Bérodier (fruity, vegetal, lactic, floral, toasted, animal).
+- **Control de calidad:** 30/30 OK. Sin pérdida de registros y sin referencias rotas.
+
+### Correcciones durante la sesión
+- Al unificar nombres aparecían 14 duplicados evidencia × queso; se fusionaron (la tabla plana pasa de 2.029 a 2.023 filas).
+- Ubicaciones de descriptores corregidas con la rueda de Bérodier: miel → floral, vainilla → torréfié, menta → épicé, frutos secos → fruité.
+- Formaella no es pasta hilada según la fuente: pasa a `hard_pressed`.
+
+### Decisiones a revisar por la usuaria
+1. La categoría añadida `hard_pressed` (pasta prensada no cocida).
+2. La exclusión de «other/autres» como clase de ML.
+3. Si consigue un segundo experto: revisar una muestra de las 378 inferencias para poder publicar un índice de acuerdo.
+
+### Versión
+Etiqueta git **`v2-harmonized`**. La anterior sigue disponible como `v1-clean`.
+
+---
+
 ## 2026-11-08 · Sesión 3 — Control de versiones y plantillas de revisión (Fases 1–3)
 
 ### Qué se hizo

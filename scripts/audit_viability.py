@@ -88,6 +88,20 @@ q1["all4_known"] = milk & heat & cult & ripe
 q1["all4_strict"] = milk & heat_exact & cult & ripe_num
 q1.sort_values(["profile_completeness", "cheese_name_std"], ascending=[False, True]).to_csv(
     os.path.join(OUT, "q1_completitud_quesos.csv"), index=False, encoding="utf-8-sig")
+# v2: producción armonizada del tipo (spec_*), con valores verificados en pliegos
+sp = spec.copy()
+sp_m, sp_h = sp.spec_milk.notna(), sp.spec_heat_treatment.notna()
+sp_c = sp.spec_coagulant_culture.notna()
+sp_r = sp.spec_ripening_days_min.notna() | sp.spec_ripening_days_max.notna()
+sp_hx = sp.spec_heat_treatment.isin(["raw", "pasteurized", "thermized"])
+res["q1_v2"] = dict(milk=int(sp_m.sum()), heat=int(sp_h.sum()), heat_exact=int(sp_hx.sum()),
+                    cult=int(sp_c.sum()), ripe=int(sp_r.sum()), all4=int((sp_m & sp_h & sp_c & sp_r).sum()),
+                    strict=int((sp_m & sp_hx & sp_c & sp_r).sum()),
+                    all4_names=sorted(sp.loc[sp_m & sp_h & sp_c & sp_r, "cheese_name_std"]))
+sp[["cheese_id", "cheese_name_std", "cheese_family", "spec_milk", "spec_heat_treatment", "spec_coagulant_culture",
+    "spec_ripening_days_min", "spec_ripening_days_max", "spec_completeness"]].sort_values(
+    "spec_completeness", ascending=False).to_csv(os.path.join(OUT, "q1_completitud_quesos_v2.csv"),
+                                                  index=False, encoding="utf-8-sig")
 res["q1"] = dict(n_dim=len(ch), n_specific=len(spec), n_profile=len(prof),
                  milk=int(milk.sum()), heat=int(heat.sum()), heat_exact=int(heat_exact.sum()),
                  cult=int(cult.sum()), ripe=int(ripe.sum()), ripe_num=int(ripe_num.sum()),
@@ -97,7 +111,7 @@ res["q1"] = dict(n_dim=len(ch), n_specific=len(spec), n_profile=len(prof),
                  dist=prof.profile_completeness.value_counts().sort_index().to_dict())
 
 # ---------------------------------------------------------------- Q2
-lab = ml[ml.use_as_cheese_descriptor_label & (ml.cheese_label_type == "specific")].copy()
+lab = ml[ml.use_as_cheese_aroma_label & (ml.cheese_label_type == "specific")].copy()
 lab["is_primary"] = lab.verification_status == "CONFIRMED_PRIMARY"
 lab["is_gco"] = lab.method_hint_gc_olfactometry == True
 levels = {
@@ -149,7 +163,7 @@ res["q3"] = dict(all=len(all_ps), lab=len(lab_ps), labC=len(labC_ps), pv=len(pv_
 # ---------------------------------------------------------------- Q4
 def fam_table(d):
     rows = []
-    for fam, g in d.groupby("family_l1_as_in_source"):
+    for fam, g in d.groupby("aroma_family"):
         rows.append(dict(familia=fam, filas=len(g), quesos=g.cheese_id.nunique(),
                          descriptores=g.descriptor_id.nunique(), compuestos=g.compound_id.nunique(),
                          estudios_primarios=len(primary_studies(g)),
@@ -159,8 +173,8 @@ def fam_table(d):
 
 q4 = fam_table(levels["A_amplio"])
 q4.to_csv(os.path.join(OUT, "q4_familias_aromaticas.csv"), index=False, encoding="utf-8-sig")
-co_fam = co.merge(R("soporte/dim_descriptor.csv")[["descriptor_id", "family_l1_as_in_source"]], on="descriptor_id")
-q4b = co_fam.groupby("family_l1_as_in_source").agg(pares=("compound_id", "size"),
+co_fam = co[co.is_aroma_target == True]
+q4b = co_fam.groupby("aroma_family").agg(pares=("compound_id", "size"),
                                                    compuestos=("compound_id", "nunique")).sort_values(
     "compuestos", ascending=False)
 q4b.to_csv(os.path.join(OUT, "q4_familias_compuesto_olor.csv"), encoding="utf-8-sig")
@@ -185,6 +199,19 @@ q5 = pd.DataFrame([
          quesos=fullC.cheese_id.nunique(), vectores_produccion_distintos=fullC.prod_vector.nunique(),
          pares_queso_descriptor=fullC[["cheese_id", "descriptor_id"]].drop_duplicates().shape[0]),
 ])
+SPEC = [c for c in ml.columns if c.startswith("cheese_spec_") and c != "cheese_spec_completeness"]
+lab5["spec_vector"] = lab5[SPEC + ["cheese_cheese_family"]].fillna("NA").astype(str).apply(lambda r: "|".join(r.tolist()), axis=1)
+full2 = lab5[lab5.cheese_spec_completeness == 1.0]
+full2C = full2[(full2.is_primary | full2.is_gco) & ~full2.possible_double_count]
+q5 = pd.concat([q5, pd.DataFrame([
+    dict(subconjunto="v2: con los 4 bloques del TIPO de queso armonizados (spec_*)", filas=len(full2),
+         quesos=full2.cheese_id.nunique(), vectores_produccion_distintos=full2.spec_vector.nunique(),
+         pares_queso_descriptor=full2[["cheese_id", "descriptor_id"]].drop_duplicates().shape[0]),
+    dict(subconjunto="v2: ... y además GC-O/primaria sin doble conteo", filas=len(full2C),
+         quesos=full2C.cheese_id.nunique(), vectores_produccion_distintos=full2C.spec_vector.nunique(),
+         pares_queso_descriptor=full2C[["cheese_id", "descriptor_id"]].drop_duplicates().shape[0]),
+])], ignore_index=True)
+res["q5_v2_cheeses"] = sorted(full2.cheese_name_std.unique())
 q5.to_csv(os.path.join(OUT, "q5_produccion_aroma.csv"), index=False, encoding="utf-8-sig")
 odor_cmp = set(co.compound_id)
 pv_link = pv_comp[pv_comp.compound_id.isin(odor_cmp)]

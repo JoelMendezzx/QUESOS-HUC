@@ -31,9 +31,22 @@ clean/
     └── qa_*                           control de calidad para revisar a mano
 ```
 
+## Versión actual: `v2-harmonized`
+
+Incluye las Fases 1–3 de armonización:
+- **Quesos:** familia tecnológica, país y DOP/IGP.
+- **Producción:** valores del tipo de queso en columnas `spec_*`.
+- **Descriptores:** ontología de Bérodier (1997) en 3 niveles.
+
+Los registros de cada decisión están en [`corrections/`](../corrections/) y la documentación en los archivos `FASE*_*.md`, `REFERENCIAS_VERIFICADAS.md` e `INFORME_FINAL_FASES_1_2_3.md` de la raíz del proyecto. La versión anterior se conserva en git con la etiqueta `v1-clean`.
+
+Archivos nuevos en `soporte/`:
+- `harmonization_log.csv`: cada cambio aplicado.
+- `qa_checks_v2.csv`: 30 comprobaciones de calidad, todas OK.
+
 ## Archivo principal para Machine Learning
 
-**`modelo/ml_evidence_flat.csv`** — 2.029 filas × 107 columnas. Una fila = una evidencia × un queso.
+**`modelo/ml_evidence_flat.csv`** — 2.023 filas × 128 columnas. Una fila = una evidencia × un queso.
 Une descriptor + compuesto + queso + variables de producción + calidad de la evidencia.
 
 Columnas clave para filtrar:
@@ -41,8 +54,14 @@ Columnas clave para filtrar:
 | Columna | Uso |
 |---|---|
 | `claim_scope` | Qué afirma la fila (ver abajo). **Filtrar siempre por esto.** |
-| `use_as_cheese_descriptor_label` | `True` → "este queso tiene este descriptor" (972 filas) |
-| `use_as_compound_odor_label` | `True` → "este compuesto huele a este descriptor" (1.400 filas) |
+| **`use_as_cheese_aroma_label`** | `True` → "este queso tiene esta nota de aroma" (974 filas). **Recomendado** (v2) |
+| **`use_as_compound_aroma_label`** | `True` → "este compuesto huele a esta nota" (1.402 filas). **Recomendado** (v2) |
+| `aroma_family` | Familia de aroma armonizada (Bérodier). Clases recomendadas para ML: fruity, vegetal, lactic, floral, toasted, animal |
+| `berodier_subfamily`, `aroma_terms` | Niveles 2 y 3 de la ontología |
+| `cheese_cheese_family`, `cheese_spec_*` | Familia tecnológica y producción del **tipo** de queso (no de la muestra) |
+| `ctx_*` | Producción asignada a la evidencia en la fuente (sin cambios) |
+| `use_as_cheese_descriptor_label` | Etiqueta de la v1, sin excluir los términos que no son aroma (980 filas) |
+| `use_as_compound_odor_label` | Ídem para compuestos (1.408 filas) |
 | `evidence_score` | Peso sugerido: 1.0 primaria, 0.6 secundaria, 0.4 probable, 0 resto |
 | `possible_double_count` | Alerta de doble conteo del Excel |
 | `cheese_label_type` | `specific`, `generic_category`, `multi_cheese`, `not_cheese`, `unresolved` |
@@ -54,8 +73,8 @@ Columnas clave para filtrar:
 - `unsupported` / `not_verified`: sin apoyo o sin verificar.
 
 Filtros recomendados antes de entrenar:
-- Aroma del queso: `use_as_cheese_descriptor_label == True`.
-- Olor del compuesto: `use_as_compound_odor_label == True`.
+- Aroma del queso: `use_as_cheese_aroma_label == True`.
+- Olor del compuesto: `use_as_compound_aroma_label == True` (o `fact_compound_odor.csv` con `is_aroma_target == True`).
 - Opcional: quitar `cheese_label_type` en (`not_cheese`, `unresolved`) y usar `evidence_score` como peso.
 
 ## Todas las tablas
@@ -64,10 +83,10 @@ Filtros recomendados antes de entrenar:
 
 | Archivo | Filas | Contenido |
 |---|---|---|
-| `ml_evidence_flat.csv` | 2.029 | Tabla principal (ver arriba) |
+| `ml_evidence_flat.csv` | 2.023 | Tabla principal (ver arriba) |
 | `fact_process_effect.csv` | 341 | Proceso → volátiles, con valores numéricos, unidades estandarizadas, `ratio_vs_reference`, `log2_ratio`, `direction` (modelo A) |
-| `fact_compound_odor.csv` | 488 | Pares compuesto → descriptor (modelo B) |
-| `data_dictionary.csv` | 495 | Descripción de cada columna de cada tabla |
+| `fact_compound_odor.csv` | 488 | Pares compuesto → descriptor, con `aroma_family` (modelo B) |
+| `data_dictionary.csv` | 571 | Descripción de cada columna de cada tabla |
 
 **En `soporte/`:**
 
@@ -75,8 +94,8 @@ Filtros recomendados antes de entrenar:
 |---|---|---|
 | `fact_evidence.csv` | 1.836 | Hoja Evidence limpia, 1 fila por evidencia (mismas filas que el Excel) |
 | `fact_cheese_compound.csv` | 747 | Pares queso → compuesto (presencia; incluye ND de la hoja de proceso) |
-| `fact_cheese_descriptor.csv` | 519 | Pares queso → descriptor |
-| `dim_cheese.csv` | 129 | Quesos estandarizados + variables de producción del perfil |
+| `fact_cheese_descriptor.csv` | 528 | Pares queso → descriptor |
+| `dim_cheese.csv` | 127 | Quesos estandarizados + perfil del Excel + familia tecnológica, país/DOP y producción del tipo (`spec_*`) |
 | `cheese_alias.csv` | 282 | Cada nombre original de queso → `cheese_id` |
 | `dim_compound.csv` | 204 | Un compuesto por CAS (antes 215 nombres con duplicados) |
 | `compound_alias.csv` | 239 | Todos los nombres vistos de cada compuesto |
@@ -89,7 +108,7 @@ Filtros recomendados antes de entrenar:
 | `bridge_*.csv` | — | Relaciones evidencia↔queso, evidencia↔fuente, evidencia↔ID de proceso, compuesto↔ruta |
 | `nonaroma_*.csv`, `taste_compound.csv` | — | Sabor, trigeminal y textura, separados del dataset de aroma |
 | `qa_pending_confirmation.csv` | 138 | Hoja Articles to Confirm con IDs |
-| `qa_issues.csv` | 602 | **Problemas detectados que requieren revisión humana** |
+| `qa_issues.csv` | 603 | **Problemas detectados que requieren revisión humana** |
 
 ---
 

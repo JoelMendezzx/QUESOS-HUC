@@ -8,6 +8,9 @@ modelo/fact_compound_odor.csv,max_evidence_score,float64,Máximo evidence_score
 modelo/fact_compound_odor.csv,any_primary_confirmation,bool,True si alguna evidencia es CONFIRMED_PRIMARY
 modelo/fact_compound_odor.csv,all_possible_double_count,bool,True si todas sus evidencias tienen alerta de doble conteo
 modelo/fact_compound_odor.csv,evidence_ids,str,IDs de evidencia (|)
+modelo/fact_compound_odor.csv,is_aroma_target,bool,True si el descriptor es una nota de aroma utilizable como objetivo (Fase 3)
+modelo/fact_compound_odor.csv,aroma_family,str,"Familia de aroma armonizada (nivel 1, Bérodier et al. 1997): lactic, vegetal, floral, fruity, toasted, animal, spicy, other"
+modelo/fact_compound_odor.csv,berodier_subfamily,str,Nivel 2: subfamilia de Bérodier; '[proyecto] …' = subfamilia añadida por la armonización
 modelo/fact_process_effect.csv,process_effect_id,str,ID original de la hoja Process and Volatiles
 modelo/fact_process_effect.csv,factor_studied_raw,str,Factor estudiado (texto original)
 modelo/fact_process_effect.csv,factor_category,str,Factor estudiado armonizado
@@ -107,6 +110,11 @@ modelo/ml_evidence_flat.csv,evidence_id,str,ID de la evidencia (original del Exc
 modelo/ml_evidence_flat.csv,evidence_id_generated,bool,True si el ID no existía en el Excel y se generó
 modelo/ml_evidence_flat.csv,descriptor_id,str,FK a dim_descriptor
 modelo/ml_evidence_flat.csv,descriptor_label,str,Descriptor tal como está en la fuente (sin espacios sobrantes)
+modelo/ml_evidence_flat.csv,is_aroma_target,bool,True si el descriptor es una nota de aroma utilizable como objetivo (Fase 3)
+modelo/ml_evidence_flat.csv,aroma_family,str,"Familia de aroma armonizada (nivel 1, Bérodier et al. 1997): lactic, vegetal, floral, fruity, toasted, animal, spicy, other"
+modelo/ml_evidence_flat.csv,berodier_subfamily,str,Nivel 2: subfamilia de Bérodier; '[proyecto] …' = subfamilia añadida por la armonización
+modelo/ml_evidence_flat.csv,aroma_terms,str,Nivel 3: término(s) del descriptor separados por ';'
+modelo/ml_evidence_flat.csv,harmonization_status,str,verificado_con_fuente | inferencia_documentada | no_verificado
 modelo/ml_evidence_flat.csv,family_l1_as_in_source,str,Primera familia de descriptor indicada en la fuente (no es una ontología nueva)
 modelo/ml_evidence_flat.csv,is_off_flavor,bool,True si alguna familia de la fuente es Off-flavor/Defect/Oxidized/Rancid
 modelo/ml_evidence_flat.csv,family_is_general_or_character,bool,True si todas las familias de la fuente son General/Character/Body/Stable
@@ -123,6 +131,20 @@ modelo/ml_evidence_flat.csv,cheese_label_type,str,specific | generic_category | 
 modelo/ml_evidence_flat.csv,sample_qualifier,str,"Información de la muestra que venía dentro del nombre (p. ej. '12 months', 'cow milk')"
 modelo/ml_evidence_flat.csv,cheese_label_raw,str,Texto original del queso en la fuente
 modelo/ml_evidence_flat.csv,n_cheeses,float64,Nº de quesos en la celda original
+modelo/ml_evidence_flat.csv,cheese_cheese_family,str,Del tipo de queso (dim_cheese): Familia tecnológica del queso (Fase 1.4)
+modelo/ml_evidence_flat.csv,cheese_secondary_technology,str,Del tipo de queso (dim_cheese): Tecnologías secundarias (separadas por ';')
+modelo/ml_evidence_flat.csv,cheese_country_iso,str,Del tipo de queso (dim_cheese): País de origen (ISO 3166)
+modelo/ml_evidence_flat.csv,cheese_pdo_pgi,str,Del tipo de queso (dim_cheese): Protección (PDO/PGI/none/unknown)
+modelo/ml_evidence_flat.csv,cheese_spec_milk_cow,float64,Del tipo de queso (dim_cheese): 1 = vaca en la especificación
+modelo/ml_evidence_flat.csv,cheese_spec_milk_sheep,float64,Del tipo de queso (dim_cheese): 1 = oveja en la especificación
+modelo/ml_evidence_flat.csv,cheese_spec_milk_goat,float64,Del tipo de queso (dim_cheese): 1 = cabra en la especificación
+modelo/ml_evidence_flat.csv,cheese_spec_milk_buffalo,float64,Del tipo de queso (dim_cheese): 1 = búfala en la especificación
+modelo/ml_evidence_flat.csv,cheese_spec_heat_treatment,str,Del tipo de queso (dim_cheese): Tratamiento térmico del tipo de queso
+modelo/ml_evidence_flat.csv,cheese_spec_coagulant_culture,str,Del tipo de queso (dim_cheese): Coagulante/cultivos del tipo de queso
+modelo/ml_evidence_flat.csv,cheese_spec_ripening_days_min,float64,Del tipo de queso (dim_cheese): Maduración mínima del tipo de queso (días)
+modelo/ml_evidence_flat.csv,cheese_spec_ripening_days_max,float64,Del tipo de queso (dim_cheese): Maduración máxima del tipo de queso (días; vacío = abierto)
+modelo/ml_evidence_flat.csv,cheese_spec_ripening_class,str,Del tipo de queso (dim_cheese): Clase de maduración del tipo de queso
+modelo/ml_evidence_flat.csv,cheese_spec_completeness,float64,Del tipo de queso (dim_cheese): Fracción de los 4 bloques del tipo de queso con valor
 modelo/ml_evidence_flat.csv,ctx_milk_species_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de especie de leche
 modelo/ml_evidence_flat.csv,ctx_milk_cow,float64,Contexto de producción asignado a la fila en la fuente. 1 = vaca mencionada; vacío = no mencionada
 modelo/ml_evidence_flat.csv,ctx_milk_sheep,float64,Contexto de producción asignado a la fila en la fuente. 1 = oveja mencionada
@@ -184,6 +206,8 @@ modelo/ml_evidence_flat.csv,evidence_level_raw,str,"Nivel de evidencia tal como 
 modelo/ml_evidence_flat.csv,evidence_score,float64,"Peso sugerido en el análisis (.md): 1.0 primaria, 0.6 secundaria, 0.4 probable, 0 resto"
 modelo/ml_evidence_flat.csv,use_as_cheese_descriptor_label,bool,True si sirve como etiqueta 'este queso tiene este descriptor'
 modelo/ml_evidence_flat.csv,use_as_compound_odor_label,bool,True si sirve como etiqueta 'este compuesto huele a este descriptor'
+modelo/ml_evidence_flat.csv,use_as_cheese_aroma_label,bool,use_as_cheese_descriptor_label y además descriptor de aroma válido (Fase 3)
+modelo/ml_evidence_flat.csv,use_as_compound_aroma_label,bool,use_as_compound_odor_label y además descriptor de aroma válido (Fase 3)
 modelo/ml_evidence_flat.csv,reported_value_raw,str,"Valor reportado en la fuente, sin interpretar"
 modelo/ml_evidence_flat.csv,rv_FD,float64,Número tras 'FD' en reported_value
 modelo/ml_evidence_flat.csv,rv_DF,float64,Número tras 'DF='
@@ -218,6 +242,8 @@ soporte/bridge_evidence_cheese.csv,cheese_id,str,FK a dim_cheese
 soporte/bridge_evidence_cheese.csv,cheese_name_std,str,Nombre de queso estandarizado
 soporte/bridge_evidence_cheese.csv,sample_qualifier,str,"Información de la muestra que venía dentro del nombre (p. ej. '12 months', 'cow milk')"
 soporte/bridge_evidence_cheese.csv,label_type,str,specific | generic_category | multi_cheese | not_cheese | unresolved
+soporte/bridge_evidence_cheese.csv,resolution_status,str,Estado de la resolución de 'check in the table' (Fase 1.1)
+soporte/bridge_evidence_cheese.csv,resolution_criterion,str,Criterio de la resolución de 'check in the table'
 soporte/bridge_evidence_process.csv,evidence_id,str,ID de la evidencia (original del Excel; EVX_ = generado porque faltaba)
 soporte/bridge_evidence_process.csv,process_effect_id,str,ID original de la hoja Process and Volatiles
 soporte/bridge_evidence_process.csv,marked_with_asterisk,bool,El ID llevaba '*' en el Excel
@@ -303,6 +329,34 @@ soporte/dim_cheese.csv,profile_source_raw,str,Fuente del perfil
 soporte/dim_cheese.csv,profile_source_ids,str,Fuentes del perfil (|)
 soporte/dim_cheese.csv,profile_from_label_only,object,True si el perfil cita 'cheese label in the source' (deducido de la etiqueta)
 soporte/dim_cheese.csv,profile_completeness,float64,"Fracción de 4 bloques conocidos (leche, tratamiento térmico, cuajo/cultivo, maduración)"
+soporte/dim_cheese.csv,cheese_family,str,Familia tecnológica del queso (Fase 1.4)
+soporte/dim_cheese.csv,secondary_technology,str,Tecnologías secundarias (separadas por ';')
+soporte/dim_cheese.csv,cheese_family_status,str,Estado de la clasificación tecnológica
+soporte/dim_cheese.csv,cheese_family_reference,str,Fuente de la clasificación tecnológica
+soporte/dim_cheese.csv,cheese_family_criterion,str,Criterio de la clasificación tecnológica
+soporte/dim_cheese.csv,country_iso,str,País de origen (ISO 3166)
+soporte/dim_cheese.csv,pdo_pgi,str,Protección (PDO/PGI/none/unknown)
+soporte/dim_cheese.csv,pdo_pgi_status,str,Estado de la verificación DOP/IGP
+soporte/dim_cheese.csv,pdo_pgi_reference,str,Fuente de la DOP/IGP
+soporte/dim_cheese.csv,spec_milk,str,Leche del TIPO de queso (especificación; no de la muestra)
+soporte/dim_cheese.csv,spec_milk_cow,float64,1 = vaca en la especificación
+soporte/dim_cheese.csv,spec_milk_sheep,float64,1 = oveja en la especificación
+soporte/dim_cheese.csv,spec_milk_goat,float64,1 = cabra en la especificación
+soporte/dim_cheese.csv,spec_milk_buffalo,float64,1 = búfala en la especificación
+soporte/dim_cheese.csv,spec_milk_status,str,Estado (Fase 2)
+soporte/dim_cheese.csv,spec_milk_reference,str,Fuente (Fase 2)
+soporte/dim_cheese.csv,spec_heat_treatment,str,Tratamiento térmico del tipo de queso
+soporte/dim_cheese.csv,spec_heat_status,str,Estado (Fase 2)
+soporte/dim_cheese.csv,spec_heat_reference,str,Fuente (Fase 2)
+soporte/dim_cheese.csv,spec_coagulant_culture,str,Coagulante/cultivos del tipo de queso
+soporte/dim_cheese.csv,spec_coagulant_status,str,Estado (Fase 2)
+soporte/dim_cheese.csv,spec_coagulant_reference,str,Fuente (Fase 2)
+soporte/dim_cheese.csv,spec_ripening_days_min,float64,Maduración mínima del tipo de queso (días)
+soporte/dim_cheese.csv,spec_ripening_days_max,float64,Maduración máxima del tipo de queso (días; vacío = abierto)
+soporte/dim_cheese.csv,spec_ripening_class,str,Clase de maduración del tipo de queso
+soporte/dim_cheese.csv,spec_ripening_status,str,Estado (Fase 2)
+soporte/dim_cheese.csv,spec_ripening_reference,str,Fuente (Fase 2)
+soporte/dim_cheese.csv,spec_completeness,float64,Fracción de los 4 bloques del tipo de queso con valor
 soporte/dim_compound.csv,compound_id,str,FK a dim_compound
 soporte/dim_compound.csv,cas,str,Nº CAS (formato validado)
 soporte/dim_compound.csv,cas_checksum_valid,object,True si el dígito de control del CAS es correcto
@@ -327,6 +381,16 @@ soporte/dim_descriptor.csv,in_texture,bool,Aparece en textura
 soporte/dim_descriptor.csv,is_off_flavor,bool,True si alguna familia de la fuente es Off-flavor/Defect/Oxidized/Rancid
 soporte/dim_descriptor.csv,family_is_general_or_character,bool,True si todas las familias de la fuente son General/Character/Body/Stable
 soporte/dim_descriptor.csv,in_master_sheet,bool,Aparece en la hoja maestra 1. Odor & Aroma
+soporte/dim_descriptor.csv,is_aroma_target,object,True si el descriptor es una nota de aroma utilizable como objetivo (Fase 3)
+soporte/dim_descriptor.csv,aroma_family,str,"Familia de aroma armonizada (nivel 1, Bérodier et al. 1997): lactic, vegetal, floral, fruity, toasted, animal, spicy, other"
+soporte/dim_descriptor.csv,berodier_family_fr,str,Familia de Bérodier en francés
+soporte/dim_descriptor.csv,berodier_subfamily,str,Nivel 2: subfamilia de Bérodier; '[proyecto] …' = subfamilia añadida por la armonización
+soporte/dim_descriptor.csv,aroma_terms,str,Nivel 3: término(s) del descriptor separados por ';'
+soporte/dim_descriptor.csv,berodier_term,str,Término literal de Bérodier equivalente (si existe)
+soporte/dim_descriptor.csv,drake_term,str,Término equivalente del léxico de Drake et al. (2001)
+soporte/dim_descriptor.csv,split_terms,object,True si el descriptor original agrupa notas distintas que conviene separar
+soporte/dim_descriptor.csv,harmonization_status,str,verificado_con_fuente | inferencia_documentada | no_verificado
+soporte/dim_descriptor.csv,harmonization_criterion,str,Justificación de la decisión de armonización
 soporte/dim_pathway.csv,pathway_id,str,FK a dim_pathway
 soporte/dim_pathway.csv,pathway_label,str,Ruta bioquímica asignada en la hoja Evidence
 soporte/dim_pathway.csv,is_unassigned,bool,Ruta 'not assigned'
@@ -448,6 +512,15 @@ soporte/fact_evidence.csv,ctx_proc_transhumance_milk,float64,Contexto de producc
 soporte/fact_evidence.csv,ctx_proc_wooden_utensils,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_wooden_utensils
 soporte/fact_evidence.csv,ctx_proc_artisanal_handmade,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_artisanal_handmade
 soporte/fact_evidence.csv,ctx_curd_cooking_temp_c,float64,Contexto de producción asignado a la fila en la fuente. Temperatura de cocción citada (°C)
+soporte/harmonization_log.csv,fase,float64,Fase del plan
+soporte/harmonization_log.csv,tabla,str,Tabla afectada
+soporte/harmonization_log.csv,clave,str,Registro afectado
+soporte/harmonization_log.csv,campo,str,Campo
+soporte/harmonization_log.csv,valor_anterior,str,Valor en v1
+soporte/harmonization_log.csv,valor_nuevo,str,Valor en v2
+soporte/harmonization_log.csv,estado,str,Estado de la decisión
+soporte/harmonization_log.csv,referencia,str,Fuente
+soporte/harmonization_log.csv,criterio,str,Justificación
 soporte/nonaroma_context.csv,record_id,str,ID del registro
 soporte/nonaroma_context.csv,cheese_context,str,"Columna original del Excel, renombrada a snake_case"
 soporte/nonaroma_descriptor.csv,record_id,str,ID del registro
@@ -474,6 +547,9 @@ soporte/pathway_steps.csv,resulting_compound_family,str,"Columna original del Ex
 soporte/pathway_steps.csv,figure_in_source,str,"Columna original del Excel, renombrada a snake_case"
 soporte/pathway_steps.csv,source_raw,str,Texto original de la fuente (sin interpretar)
 soporte/pathway_steps.csv,source_id,str,FK a dim_source
+soporte/qa_checks_v2.csv,comprobacion,str,Comprobación de calidad
+soporte/qa_checks_v2.csv,resultado,str,OK / FALLO
+soporte/qa_checks_v2.csv,detalle,str,Detalle
 soporte/qa_issues.csv,table,str,Tabla
 soporte/qa_issues.csv,record_key,str,Clave del registro
 soporte/qa_issues.csv,field,str,Campo

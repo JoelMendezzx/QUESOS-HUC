@@ -1,4 +1,6 @@
 ﻿subconjunto,filas,quesos,vectores_produccion_distintos,pares_queso_descriptor
-Etiquetas queso-descriptor (queso concreto),752,40,35,403
-... con los 4 bloques de producción conocidos,274,11,9,153
-... y además GC-O/primaria sin doble conteo,173,6,5,115
+Etiquetas queso-descriptor (queso concreto),720,37,33,383
+... con los 4 bloques de producción conocidos,264,10,8,143
+... y además GC-O/primaria sin doble conteo,170,6,5,112
+v2: con los 4 bloques del TIPO de queso armonizados (spec_*),479,17,15,256
+v2: ... y además GC-O/primaria sin doble conteo,297,12,11,197

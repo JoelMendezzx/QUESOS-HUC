@@ -3,6 +3,11 @@
 **Punto de partida:** base limpia en [`clean/`](clean/) y [Auditoría de viabilidad](Auditoria_viabilidad_predictiva.md)
 **Fecha:** 2026-11-08
 
+> **Estado (2026-11-08):**
+> - **Fases 1, 2 y 3: completadas** (versión `v2-harmonized`). Ver el [informe final](INFORME_FINAL_FASES_1_2_3.md).
+> - Respecto al plan original: no hubo doble revisión humana, así que no se calculó kappa (la limitación queda documentada); se añadió la familia tecnológica `hard_pressed`; las clases para ML son 6 familias de Bérodier.
+> - **Siguientes:** Fase 4 (pendientes de calidad) y Fase 5 (modelo compuesto → familia).
+
 ---
 
 ## 0. Cómo leer el título del proyecto con los datos actuales
