@@ -1,0 +1,496 @@
+﻿table,column,dtype,description
+modelo/fact_compound_odor.csv,compound_id,str,FK a dim_compound
+modelo/fact_compound_odor.csv,descriptor_id,str,FK a dim_descriptor
+modelo/fact_compound_odor.csv,n_evidence,int64,Nº de evidencias que lo apoyan
+modelo/fact_compound_odor.csv,n_sources,int64,Nº de fuentes en la celda original
+modelo/fact_compound_odor.csv,best_verification_status,str,Mejor estado de verificación
+modelo/fact_compound_odor.csv,max_evidence_score,float64,Máximo evidence_score
+modelo/fact_compound_odor.csv,any_primary_confirmation,bool,True si alguna evidencia es CONFIRMED_PRIMARY
+modelo/fact_compound_odor.csv,all_possible_double_count,bool,True si todas sus evidencias tienen alerta de doble conteo
+modelo/fact_compound_odor.csv,evidence_ids,str,IDs de evidencia (|)
+modelo/fact_process_effect.csv,process_effect_id,str,ID original de la hoja Process and Volatiles
+modelo/fact_process_effect.csv,factor_studied_raw,str,Factor estudiado (texto original)
+modelo/fact_process_effect.csv,factor_category,str,Factor estudiado armonizado
+modelo/fact_process_effect.csv,season,str,Estación si se indica (spring/summer/fall/winter)
+modelo/fact_process_effect.csv,cheese_label_raw,str,Texto original del queso en la fuente
+modelo/fact_process_effect.csv,cheese_id,str,FK a dim_cheese
+modelo/fact_process_effect.csv,cheese_name_std,str,Nombre de queso estandarizado
+modelo/fact_process_effect.csv,cheese_label_type,str,specific | generic_category | multi_cheese | not_cheese | unresolved
+modelo/fact_process_effect.csv,sample_qualifier,str,"Información de la muestra que venía dentro del nombre (p. ej. '12 months', 'cow milk')"
+modelo/fact_process_effect.csv,milk_species_raw,str,Texto original de especie de leche
+modelo/fact_process_effect.csv,milk_cow,float64,1 = vaca mencionada; vacío = no mencionada
+modelo/fact_process_effect.csv,milk_sheep,float64,1 = oveja mencionada
+modelo/fact_process_effect.csv,milk_goat,float64,1 = cabra mencionada
+modelo/fact_process_effect.csv,milk_buffalo,float64,1 = búfala mencionada
+modelo/fact_process_effect.csv,milk_species_logic,str,single | mixture | alternatives | mixture_or_alternatives | comparison | unknown
+modelo/fact_process_effect.csv,milk_heat_treatment_raw,str,Texto original del tratamiento de la leche
+modelo/fact_process_effect.csv,milk_heat_treatment,str,raw | pasteurized | thermized | raw_or_pasteurized | raw_or_thermized | comparison | other | unknown
+modelo/fact_process_effect.csv,rennet_culture_raw,str,Texto original de cuajo/cultivo
+modelo/fact_process_effect.csv,coag_calf_rennet,float64,1 = mencionado en cuajo/cultivo: coag_calf_rennet
+modelo/fact_process_effect.csv,coag_rennet_paste,float64,1 = mencionado en cuajo/cultivo: coag_rennet_paste
+modelo/fact_process_effect.csv,coag_lamb_rennet,float64,1 = mencionado en cuajo/cultivo: coag_lamb_rennet
+modelo/fact_process_effect.csv,coag_kid_rennet,float64,1 = mencionado en cuajo/cultivo: coag_kid_rennet
+modelo/fact_process_effect.csv,coag_vegetable_rennet,float64,1 = mencionado en cuajo/cultivo: coag_vegetable_rennet
+modelo/fact_process_effect.csv,coag_animal_rennet_unspecified,float64,1 = mencionado en cuajo/cultivo: coag_animal_rennet_unspecified
+modelo/fact_process_effect.csv,coag_lactic_acid,float64,1 = mencionado en cuajo/cultivo: coag_lactic_acid
+modelo/fact_process_effect.csv,enz_pregastric_esterase_or_lipase,float64,1 = mencionado en cuajo/cultivo: enz_pregastric_esterase_or_lipase
+modelo/fact_process_effect.csv,enz_lipase_mentioned,float64,1 = mencionado en cuajo/cultivo: enz_lipase_mentioned
+modelo/fact_process_effect.csv,cult_starter_mentioned,float64,1 = mencionado en cuajo/cultivo: cult_starter_mentioned
+modelo/fact_process_effect.csv,cult_adjunct_mentioned,float64,1 = mencionado en cuajo/cultivo: cult_adjunct_mentioned
+modelo/fact_process_effect.csv,cult_natural_whey,float64,1 = mencionado en cuajo/cultivo: cult_natural_whey
+modelo/fact_process_effect.csv,cult_indigenous_lab,float64,1 = mencionado en cuajo/cultivo: cult_indigenous_lab
+modelo/fact_process_effect.csv,cult_mesophilic,float64,1 = mencionado en cuajo/cultivo: cult_mesophilic
+modelo/fact_process_effect.csv,cult_citrate_positive,float64,1 = mencionado en cuajo/cultivo: cult_citrate_positive
+modelo/fact_process_effect.csv,cult_diacetylactis,float64,1 = mencionado en cuajo/cultivo: cult_diacetylactis
+modelo/fact_process_effect.csv,cult_leuconostoc,float64,1 = mencionado en cuajo/cultivo: cult_leuconostoc
+modelo/fact_process_effect.csv,cult_lactobacillus,float64,1 = mencionado en cuajo/cultivo: cult_lactobacillus
+modelo/fact_process_effect.csv,cult_probiotic,float64,1 = mencionado en cuajo/cultivo: cult_probiotic
+modelo/fact_process_effect.csv,cult_propionibacteria,float64,1 = mencionado en cuajo/cultivo: cult_propionibacteria
+modelo/fact_process_effect.csv,mold_p_roqueforti,float64,1 = mencionado en cuajo/cultivo: mold_p_roqueforti
+modelo/fact_process_effect.csv,mold_p_camemberti,float64,1 = mencionado en cuajo/cultivo: mold_p_camemberti
+modelo/fact_process_effect.csv,mold_penicillium_unspecified,float64,1 = mencionado en cuajo/cultivo: mold_penicillium_unspecified
+modelo/fact_process_effect.csv,flora_washed_rind_smear,float64,1 = mencionado en cuajo/cultivo: flora_washed_rind_smear
+modelo/fact_process_effect.csv,coag_rennet_unspecified,float64,1 = menciona 'rennet' sin tipo concreto
+modelo/fact_process_effect.csv,ripening_raw,str,Texto original de maduración
+modelo/fact_process_effect.csv,ripening_days_min,float64,"Días mínimos (1 mes = 30 d, 1 semana = 7 d); vacío si no se indica"
+modelo/fact_process_effect.csv,ripening_days_max,float64,"Días máximos; vacío si es abierto (≥, >) o no se indica"
+modelo/fact_process_effect.csv,ripening_label,str,fresh | aged | long | young | extended | unknown (texto cualitativo de la fuente)
+modelo/fact_process_effect.csv,ripening_class,str,"Clase por punto medio de min/max: fresh, lt_1m, 1_3m, 3_6m, 6_12m, 12_24m, gt_24m"
+modelo/fact_process_effect.csv,other_process_factor_raw,str,Texto original de otros factores
+modelo/fact_process_effect.csv,proc_smoked,float64,1 = mencionado en 'otros factores': proc_smoked
+modelo/fact_process_effect.csv,proc_pasta_filata,float64,1 = mencionado en 'otros factores': proc_pasta_filata
+modelo/fact_process_effect.csv,proc_brine,float64,1 = mencionado en 'otros factores': proc_brine
+modelo/fact_process_effect.csv,proc_low_fat,float64,1 = mencionado en 'otros factores': proc_low_fat
+modelo/fact_process_effect.csv,proc_acid_coagulation,float64,1 = mencionado en 'otros factores': proc_acid_coagulation
+modelo/fact_process_effect.csv,proc_natural_creaming,float64,1 = mencionado en 'otros factores': proc_natural_creaming
+modelo/fact_process_effect.csv,proc_no_silage_feed,float64,1 = mencionado en 'otros factores': proc_no_silage_feed
+modelo/fact_process_effect.csv,proc_cooked_or_scalded,float64,1 = mencionado en 'otros factores': proc_cooked_or_scalded
+modelo/fact_process_effect.csv,proc_milk_salting,float64,1 = mencionado en 'otros factores': proc_milk_salting
+modelo/fact_process_effect.csv,proc_curd_salting,float64,1 = mencionado en 'otros factores': proc_curd_salting
+modelo/fact_process_effect.csv,proc_light_pressing,float64,1 = mencionado en 'otros factores': proc_light_pressing
+modelo/fact_process_effect.csv,proc_transhumance_milk,float64,1 = mencionado en 'otros factores': proc_transhumance_milk
+modelo/fact_process_effect.csv,proc_wooden_utensils,float64,1 = mencionado en 'otros factores': proc_wooden_utensils
+modelo/fact_process_effect.csv,proc_artisanal_handmade,float64,1 = mencionado en 'otros factores': proc_artisanal_handmade
+modelo/fact_process_effect.csv,curd_cooking_temp_c,float64,Temperatura de cocción citada (°C)
+modelo/fact_process_effect.csv,fat_content_raw,str,Grasa (texto original)
+modelo/fact_process_effect.csv,fat_content,str,full_fat | low_fat | reduced_50pct | comparison | other | unknown
+modelo/fact_process_effect.csv,condition,str,Condición medida
+modelo/fact_process_effect.csv,reference_condition,str,Condición de referencia
+modelo/fact_process_effect.csv,is_reference_row,bool,True si la fila es la propia condición de referencia
+modelo/fact_process_effect.csv,compound_or_family_raw,str,Compuesto o familia (texto original)
+modelo/fact_process_effect.csv,is_family_level,bool,"True si es una familia (Esters, Alcohols...) y no un compuesto"
+modelo/fact_process_effect.csv,compound_id,str,FK a dim_compound
+modelo/fact_process_effect.csv,cas,str,Nº CAS (formato validado)
+modelo/fact_process_effect.csv,iupac_name,str,Nombre IUPAC del compuesto tal como en la fuente
+modelo/fact_process_effect.csv,pathway_according_to_source,str,Ruta bioquímica según la fuente
+modelo/fact_process_effect.csv,value_raw,str,Valor original
+modelo/fact_process_effect.csv,value,float64,Valor numérico
+modelo/fact_process_effect.csv,detected,object,False si la fuente dice ND
+modelo/fact_process_effect.csv,reference_value_raw,str,Valor de referencia original
+modelo/fact_process_effect.csv,reference_value,float64,Valor de referencia numérico
+modelo/fact_process_effect.csv,reference_detected,object,False si la referencia es ND
+modelo/fact_process_effect.csv,unit_raw,str,Unidad original
+modelo/fact_process_effect.csv,unit_std,str,"ug/kg (concentración) o unidad relativa base (ARU, TIC, AU, RA)"
+modelo/fact_process_effect.csv,value_type,str,concentration | relative
+modelo/fact_process_effect.csv,value_std,float64,Valor en unit_std
+modelo/fact_process_effect.csv,reference_value_std,float64,Referencia en unit_std
+modelo/fact_process_effect.csv,ratio_vs_reference,float64,value / reference_value
+modelo/fact_process_effect.csv,log2_ratio,float64,log2(ratio_vs_reference)
+modelo/fact_process_effect.csv,direction,str,reference | up | down | equal | appears_vs_ND | not_detected_vs_reference
+modelo/fact_process_effect.csv,source_id,str,FK a dim_source
+modelo/fact_process_effect.csv,cited_primary_source_raw,str,Texto original de la fuente primaria citada
+modelo/fact_process_effect.csv,cited_primary_source_id,str,FK a dim_source si la celda cita UNA sola fuente primaria presente en la base
+modelo/fact_process_effect.csv,location_in_source,str,Página/tabla en la fuente
+modelo/fact_process_effect.csv,notes,str,Notas originales
+modelo/ml_evidence_flat.csv,row_id,str,ID de fila de la tabla plana (una fila = evidencia x queso)
+modelo/ml_evidence_flat.csv,evidence_id,str,ID de la evidencia (original del Excel; EVX_ = generado porque faltaba)
+modelo/ml_evidence_flat.csv,evidence_id_generated,bool,True si el ID no existía en el Excel y se generó
+modelo/ml_evidence_flat.csv,descriptor_id,str,FK a dim_descriptor
+modelo/ml_evidence_flat.csv,descriptor_label,str,Descriptor tal como está en la fuente (sin espacios sobrantes)
+modelo/ml_evidence_flat.csv,family_l1_as_in_source,str,Primera familia de descriptor indicada en la fuente (no es una ontología nueva)
+modelo/ml_evidence_flat.csv,is_off_flavor,bool,True si alguna familia de la fuente es Off-flavor/Defect/Oxidized/Rancid
+modelo/ml_evidence_flat.csv,family_is_general_or_character,bool,True si todas las familias de la fuente son General/Character/Body/Stable
+modelo/ml_evidence_flat.csv,compound_id,str,FK a dim_compound
+modelo/ml_evidence_flat.csv,cas,str,Nº CAS (formato validado)
+modelo/ml_evidence_flat.csv,pubchem_cid,float64,CID de PubChem (de la hoja Synonyms)
+modelo/ml_evidence_flat.csv,iupac_name,str,Nombre IUPAC del compuesto tal como en la fuente
+modelo/ml_evidence_flat.csv,chemical_class,str,Clase química deducida por regla sobre el nombre IUPAC (vacía si la regla no aplica)
+modelo/ml_evidence_flat.csv,pathway_id,str,FK a dim_pathway
+modelo/ml_evidence_flat.csv,pathway_label,str,Ruta bioquímica asignada en la hoja Evidence
+modelo/ml_evidence_flat.csv,cheese_id,str,FK a dim_cheese
+modelo/ml_evidence_flat.csv,cheese_name_std,str,Nombre de queso estandarizado
+modelo/ml_evidence_flat.csv,cheese_label_type,str,specific | generic_category | multi_cheese | not_cheese | unresolved
+modelo/ml_evidence_flat.csv,sample_qualifier,str,"Información de la muestra que venía dentro del nombre (p. ej. '12 months', 'cow milk')"
+modelo/ml_evidence_flat.csv,cheese_label_raw,str,Texto original del queso en la fuente
+modelo/ml_evidence_flat.csv,n_cheeses,float64,Nº de quesos en la celda original
+modelo/ml_evidence_flat.csv,ctx_milk_species_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de especie de leche
+modelo/ml_evidence_flat.csv,ctx_milk_cow,float64,Contexto de producción asignado a la fila en la fuente. 1 = vaca mencionada; vacío = no mencionada
+modelo/ml_evidence_flat.csv,ctx_milk_sheep,float64,Contexto de producción asignado a la fila en la fuente. 1 = oveja mencionada
+modelo/ml_evidence_flat.csv,ctx_milk_goat,float64,Contexto de producción asignado a la fila en la fuente. 1 = cabra mencionada
+modelo/ml_evidence_flat.csv,ctx_milk_buffalo,float64,Contexto de producción asignado a la fila en la fuente. 1 = búfala mencionada
+modelo/ml_evidence_flat.csv,ctx_milk_species_logic,str,Contexto de producción asignado a la fila en la fuente. single | mixture | alternatives | mixture_or_alternatives | comparison | unknown
+modelo/ml_evidence_flat.csv,ctx_milk_heat_treatment_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original del tratamiento de la leche
+modelo/ml_evidence_flat.csv,ctx_milk_heat_treatment,str,Contexto de producción asignado a la fila en la fuente. raw | pasteurized | thermized | raw_or_pasteurized | raw_or_thermized | comparison | other | unknown
+modelo/ml_evidence_flat.csv,ctx_rennet_culture_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de cuajo/cultivo
+modelo/ml_evidence_flat.csv,ctx_coag_calf_rennet,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_calf_rennet
+modelo/ml_evidence_flat.csv,ctx_coag_rennet_paste,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_rennet_paste
+modelo/ml_evidence_flat.csv,ctx_coag_lamb_rennet,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_lamb_rennet
+modelo/ml_evidence_flat.csv,ctx_coag_kid_rennet,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_kid_rennet
+modelo/ml_evidence_flat.csv,ctx_coag_vegetable_rennet,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_vegetable_rennet
+modelo/ml_evidence_flat.csv,ctx_coag_animal_rennet_unspecified,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_animal_rennet_unspecified
+modelo/ml_evidence_flat.csv,ctx_coag_lactic_acid,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_lactic_acid
+modelo/ml_evidence_flat.csv,ctx_enz_pregastric_esterase_or_lipase,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: enz_pregastric_esterase_or_lipase
+modelo/ml_evidence_flat.csv,ctx_enz_lipase_mentioned,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: enz_lipase_mentioned
+modelo/ml_evidence_flat.csv,ctx_cult_starter_mentioned,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_starter_mentioned
+modelo/ml_evidence_flat.csv,ctx_cult_adjunct_mentioned,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_adjunct_mentioned
+modelo/ml_evidence_flat.csv,ctx_cult_natural_whey,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_natural_whey
+modelo/ml_evidence_flat.csv,ctx_cult_indigenous_lab,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_indigenous_lab
+modelo/ml_evidence_flat.csv,ctx_cult_mesophilic,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_mesophilic
+modelo/ml_evidence_flat.csv,ctx_cult_citrate_positive,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_citrate_positive
+modelo/ml_evidence_flat.csv,ctx_cult_diacetylactis,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_diacetylactis
+modelo/ml_evidence_flat.csv,ctx_cult_leuconostoc,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_leuconostoc
+modelo/ml_evidence_flat.csv,ctx_cult_lactobacillus,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_lactobacillus
+modelo/ml_evidence_flat.csv,ctx_cult_probiotic,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_probiotic
+modelo/ml_evidence_flat.csv,ctx_cult_propionibacteria,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_propionibacteria
+modelo/ml_evidence_flat.csv,ctx_mold_p_roqueforti,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: mold_p_roqueforti
+modelo/ml_evidence_flat.csv,ctx_mold_p_camemberti,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: mold_p_camemberti
+modelo/ml_evidence_flat.csv,ctx_mold_penicillium_unspecified,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: mold_penicillium_unspecified
+modelo/ml_evidence_flat.csv,ctx_flora_washed_rind_smear,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: flora_washed_rind_smear
+modelo/ml_evidence_flat.csv,ctx_coag_rennet_unspecified,float64,Contexto de producción asignado a la fila en la fuente. 1 = menciona 'rennet' sin tipo concreto
+modelo/ml_evidence_flat.csv,ctx_ripening_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de maduración
+modelo/ml_evidence_flat.csv,ctx_ripening_days_min,float64,"Contexto de producción asignado a la fila en la fuente. Días mínimos (1 mes = 30 d, 1 semana = 7 d); vacío si no se indica"
+modelo/ml_evidence_flat.csv,ctx_ripening_days_max,float64,"Contexto de producción asignado a la fila en la fuente. Días máximos; vacío si es abierto (≥, >) o no se indica"
+modelo/ml_evidence_flat.csv,ctx_ripening_label,str,Contexto de producción asignado a la fila en la fuente. fresh | aged | long | young | extended | unknown (texto cualitativo de la fuente)
+modelo/ml_evidence_flat.csv,ctx_ripening_class,str,"Contexto de producción asignado a la fila en la fuente. Clase por punto medio de min/max: fresh, lt_1m, 1_3m, 3_6m, 6_12m, 12_24m, gt_24m"
+modelo/ml_evidence_flat.csv,ctx_other_process_factor_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de otros factores
+modelo/ml_evidence_flat.csv,ctx_proc_smoked,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_smoked
+modelo/ml_evidence_flat.csv,ctx_proc_pasta_filata,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_pasta_filata
+modelo/ml_evidence_flat.csv,ctx_proc_brine,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_brine
+modelo/ml_evidence_flat.csv,ctx_proc_low_fat,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_low_fat
+modelo/ml_evidence_flat.csv,ctx_proc_acid_coagulation,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_acid_coagulation
+modelo/ml_evidence_flat.csv,ctx_proc_natural_creaming,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_natural_creaming
+modelo/ml_evidence_flat.csv,ctx_proc_no_silage_feed,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_no_silage_feed
+modelo/ml_evidence_flat.csv,ctx_proc_cooked_or_scalded,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_cooked_or_scalded
+modelo/ml_evidence_flat.csv,ctx_proc_milk_salting,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_milk_salting
+modelo/ml_evidence_flat.csv,ctx_proc_curd_salting,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_curd_salting
+modelo/ml_evidence_flat.csv,ctx_proc_light_pressing,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_light_pressing
+modelo/ml_evidence_flat.csv,ctx_proc_transhumance_milk,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_transhumance_milk
+modelo/ml_evidence_flat.csv,ctx_proc_wooden_utensils,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_wooden_utensils
+modelo/ml_evidence_flat.csv,ctx_proc_artisanal_handmade,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_artisanal_handmade
+modelo/ml_evidence_flat.csv,ctx_curd_cooking_temp_c,float64,Contexto de producción asignado a la fila en la fuente. Temperatura de cocción citada (°C)
+modelo/ml_evidence_flat.csv,claim_scope,str,Qué afirma la evidencia: descriptor_compound_in_cheese | compound_odor_note_only | compound_in_cheese_no_descriptor | unsupported | not_verified
+modelo/ml_evidence_flat.csv,verification_status,str,Estado de verificación normalizado del Excel
+modelo/ml_evidence_flat.csv,evidence_level_raw,str,"Nivel de evidencia tal como en el Excel (S, B, C, A/B, B/C); la fuente no define su escala"
+modelo/ml_evidence_flat.csv,evidence_score,float64,"Peso sugerido en el análisis (.md): 1.0 primaria, 0.6 secundaria, 0.4 probable, 0 resto"
+modelo/ml_evidence_flat.csv,use_as_cheese_descriptor_label,bool,True si sirve como etiqueta 'este queso tiene este descriptor'
+modelo/ml_evidence_flat.csv,use_as_compound_odor_label,bool,True si sirve como etiqueta 'este compuesto huele a este descriptor'
+modelo/ml_evidence_flat.csv,reported_value_raw,str,"Valor reportado en la fuente, sin interpretar"
+modelo/ml_evidence_flat.csv,rv_FD,float64,Número tras 'FD' en reported_value
+modelo/ml_evidence_flat.csv,rv_DF,float64,Número tras 'DF='
+modelo/ml_evidence_flat.csv,rv_OI,float64,Número tras 'OI'
+modelo/ml_evidence_flat.csv,rv_OP,float64,Número tras 'OP'
+modelo/ml_evidence_flat.csv,rv_c,float64,Número tras 'c'
+modelo/ml_evidence_flat.csv,rv_pct,float64,Número tras '%'
+modelo/ml_evidence_flat.csv,rv_vol,float64,Número tras 'vol'
+modelo/ml_evidence_flat.csv,method_hint_gc_olfactometry,object,"True si el texto de evidencia menciona términos de GC-O (Charm, AEDA, FD, OAV, DF, OI, OP...)"
+modelo/ml_evidence_flat.csv,descriptor_in_source,str,Descriptor literal en el documento fuente
+modelo/ml_evidence_flat.csv,evidence_text,str,Texto copiado del PDF
+modelo/ml_evidence_flat.csv,location_in_source,str,Página/tabla en la fuente
+modelo/ml_evidence_flat.csv,source_ids,str,Fuentes de la evidencia (separadas por |)
+modelo/ml_evidence_flat.csv,n_sources,float64,Nº de fuentes en la celda original
+modelo/ml_evidence_flat.csv,source_type,str,primary | review | book (según el Excel)
+modelo/ml_evidence_flat.csv,cited_primary_source_id,str,FK a dim_source si la celda cita UNA sola fuente primaria presente en la base
+modelo/ml_evidence_flat.csv,cited_primary_source_raw,str,Texto original de la fuente primaria citada
+modelo/ml_evidence_flat.csv,possible_double_count,bool,True si el Excel tiene alerta de doble conteo
+modelo/ml_evidence_flat.csv,double_counting_alert_raw,str,Texto de la alerta de doble conteo
+modelo/ml_evidence_flat.csv,unsupporting_sources_raw,str,Fuentes de la fila maestra que no confirman el par
+modelo/ml_evidence_flat.csv,split_status,str,Estado de desglose en el Excel
+modelo/ml_evidence_flat.csv,process_refs_truncated,bool,True si la lista de IDs de proceso estaba cortada con '…' en el Excel
+modelo/ml_evidence_flat.csv,n_process_refs_visible,int64,Nº de IDs de proceso legibles
+modelo/ml_evidence_flat.csv,master_row,float64,Fila de la hoja '1. Odor & Aroma' de la que procede (source_row)
+modelo/ml_evidence_flat.csv,notes,str,Notas originales
+soporte/bridge_compound_pathway.csv,compound_id,str,FK a dim_compound
+soporte/bridge_compound_pathway.csv,pathway_id,str,FK a dim_pathway
+soporte/bridge_compound_pathway.csv,n_evidence,int64,Nº de evidencias que lo apoyan
+soporte/bridge_evidence_cheese.csv,evidence_id,str,ID de la evidencia (original del Excel; EVX_ = generado porque faltaba)
+soporte/bridge_evidence_cheese.csv,cheese_label_raw,str,Texto original del queso en la fuente
+soporte/bridge_evidence_cheese.csv,cheese_id,str,FK a dim_cheese
+soporte/bridge_evidence_cheese.csv,cheese_name_std,str,Nombre de queso estandarizado
+soporte/bridge_evidence_cheese.csv,sample_qualifier,str,"Información de la muestra que venía dentro del nombre (p. ej. '12 months', 'cow milk')"
+soporte/bridge_evidence_cheese.csv,label_type,str,specific | generic_category | multi_cheese | not_cheese | unresolved
+soporte/bridge_evidence_process.csv,evidence_id,str,ID de la evidencia (original del Excel; EVX_ = generado porque faltaba)
+soporte/bridge_evidence_process.csv,process_effect_id,str,ID original de la hoja Process and Volatiles
+soporte/bridge_evidence_process.csv,marked_with_asterisk,bool,El ID llevaba '*' en el Excel
+soporte/bridge_evidence_process.csv,list_truncated_in_source,bool,La lista original estaba truncada
+soporte/bridge_evidence_source.csv,evidence_id,str,ID de la evidencia (original del Excel; EVX_ = generado porque faltaba)
+soporte/bridge_evidence_source.csv,source_id,str,FK a dim_source
+soporte/cheese_alias.csv,cheese_id,str,FK a dim_cheese
+soporte/cheese_alias.csv,cheese_label_raw,str,Texto original del queso en la fuente
+soporte/cheese_alias.csv,cheese_name_std,str,Nombre de queso estandarizado
+soporte/cheese_alias.csv,sample_qualifier,str,"Información de la muestra que venía dentro del nombre (p. ej. '12 months', 'cow milk')"
+soporte/cheese_alias.csv,label_type,str,specific | generic_category | multi_cheese | not_cheese | unresolved
+soporte/compound_alias.csv,compound_id,str,FK a dim_compound
+soporte/compound_alias.csv,alias,str,Nombre alternativo visto en las fuentes
+soporte/compound_alias.csv,is_preferred,bool,True si es el nombre preferido
+soporte/compound_alias.csv,n_occurrences,int64,Nº de apariciones
+soporte/descriptor_family.csv,descriptor_id,str,FK a dim_descriptor
+soporte/descriptor_family.csv,family_token,str,Familia de descriptor (token de la fuente)
+soporte/descriptor_family.csv,order_in_source,int64,Orden en la fuente
+soporte/descriptor_term.csv,descriptor_id,str,FK a dim_descriptor
+soporte/descriptor_term.csv,term,str,Término individual del descriptor (separado por '/')
+soporte/dim_cheese.csv,cheese_id,str,FK a dim_cheese
+soporte/dim_cheese.csv,cheese_name_std,str,Nombre de queso estandarizado
+soporte/dim_cheese.csv,parent_cheese_id,str,Queso padre (variantes con perfil propio)
+soporte/dim_cheese.csv,label_type,str,specific | generic_category | multi_cheese | not_cheese | unresolved
+soporte/dim_cheese.csv,has_profile,bool,True si existe en Cheese Profiles
+soporte/dim_cheese.csv,profile_name_original,str,Nombre en Cheese Profiles
+soporte/dim_cheese.csv,milk_species_raw,str,Texto original de especie de leche
+soporte/dim_cheese.csv,milk_cow,float64,1 = vaca mencionada; vacío = no mencionada
+soporte/dim_cheese.csv,milk_sheep,float64,1 = oveja mencionada
+soporte/dim_cheese.csv,milk_goat,float64,1 = cabra mencionada
+soporte/dim_cheese.csv,milk_buffalo,float64,1 = búfala mencionada
+soporte/dim_cheese.csv,milk_species_logic,str,single | mixture | alternatives | mixture_or_alternatives | comparison | unknown
+soporte/dim_cheese.csv,milk_heat_treatment_raw,str,Texto original del tratamiento de la leche
+soporte/dim_cheese.csv,milk_heat_treatment,str,raw | pasteurized | thermized | raw_or_pasteurized | raw_or_thermized | comparison | other | unknown
+soporte/dim_cheese.csv,rennet_culture_raw,str,Texto original de cuajo/cultivo
+soporte/dim_cheese.csv,coag_calf_rennet,float64,1 = mencionado en cuajo/cultivo: coag_calf_rennet
+soporte/dim_cheese.csv,coag_rennet_paste,float64,1 = mencionado en cuajo/cultivo: coag_rennet_paste
+soporte/dim_cheese.csv,coag_lamb_rennet,float64,1 = mencionado en cuajo/cultivo: coag_lamb_rennet
+soporte/dim_cheese.csv,coag_kid_rennet,float64,1 = mencionado en cuajo/cultivo: coag_kid_rennet
+soporte/dim_cheese.csv,coag_vegetable_rennet,float64,1 = mencionado en cuajo/cultivo: coag_vegetable_rennet
+soporte/dim_cheese.csv,coag_animal_rennet_unspecified,float64,1 = mencionado en cuajo/cultivo: coag_animal_rennet_unspecified
+soporte/dim_cheese.csv,coag_lactic_acid,float64,1 = mencionado en cuajo/cultivo: coag_lactic_acid
+soporte/dim_cheese.csv,enz_pregastric_esterase_or_lipase,float64,1 = mencionado en cuajo/cultivo: enz_pregastric_esterase_or_lipase
+soporte/dim_cheese.csv,enz_lipase_mentioned,float64,1 = mencionado en cuajo/cultivo: enz_lipase_mentioned
+soporte/dim_cheese.csv,cult_starter_mentioned,float64,1 = mencionado en cuajo/cultivo: cult_starter_mentioned
+soporte/dim_cheese.csv,cult_adjunct_mentioned,float64,1 = mencionado en cuajo/cultivo: cult_adjunct_mentioned
+soporte/dim_cheese.csv,cult_natural_whey,float64,1 = mencionado en cuajo/cultivo: cult_natural_whey
+soporte/dim_cheese.csv,cult_indigenous_lab,float64,1 = mencionado en cuajo/cultivo: cult_indigenous_lab
+soporte/dim_cheese.csv,cult_mesophilic,float64,1 = mencionado en cuajo/cultivo: cult_mesophilic
+soporte/dim_cheese.csv,cult_citrate_positive,float64,1 = mencionado en cuajo/cultivo: cult_citrate_positive
+soporte/dim_cheese.csv,cult_diacetylactis,float64,1 = mencionado en cuajo/cultivo: cult_diacetylactis
+soporte/dim_cheese.csv,cult_leuconostoc,float64,1 = mencionado en cuajo/cultivo: cult_leuconostoc
+soporte/dim_cheese.csv,cult_lactobacillus,float64,1 = mencionado en cuajo/cultivo: cult_lactobacillus
+soporte/dim_cheese.csv,cult_probiotic,float64,1 = mencionado en cuajo/cultivo: cult_probiotic
+soporte/dim_cheese.csv,cult_propionibacteria,float64,1 = mencionado en cuajo/cultivo: cult_propionibacteria
+soporte/dim_cheese.csv,mold_p_roqueforti,float64,1 = mencionado en cuajo/cultivo: mold_p_roqueforti
+soporte/dim_cheese.csv,mold_p_camemberti,float64,1 = mencionado en cuajo/cultivo: mold_p_camemberti
+soporte/dim_cheese.csv,mold_penicillium_unspecified,float64,1 = mencionado en cuajo/cultivo: mold_penicillium_unspecified
+soporte/dim_cheese.csv,flora_washed_rind_smear,float64,1 = mencionado en cuajo/cultivo: flora_washed_rind_smear
+soporte/dim_cheese.csv,coag_rennet_unspecified,float64,1 = menciona 'rennet' sin tipo concreto
+soporte/dim_cheese.csv,ripening_raw,str,Texto original de maduración
+soporte/dim_cheese.csv,ripening_days_min,float64,"Días mínimos (1 mes = 30 d, 1 semana = 7 d); vacío si no se indica"
+soporte/dim_cheese.csv,ripening_days_max,float64,"Días máximos; vacío si es abierto (≥, >) o no se indica"
+soporte/dim_cheese.csv,ripening_label,str,fresh | aged | long | young | extended | unknown (texto cualitativo de la fuente)
+soporte/dim_cheese.csv,ripening_class,str,"Clase por punto medio de min/max: fresh, lt_1m, 1_3m, 3_6m, 6_12m, 12_24m, gt_24m"
+soporte/dim_cheese.csv,other_process_factor_raw,str,Texto original de otros factores
+soporte/dim_cheese.csv,proc_smoked,float64,1 = mencionado en 'otros factores': proc_smoked
+soporte/dim_cheese.csv,proc_pasta_filata,float64,1 = mencionado en 'otros factores': proc_pasta_filata
+soporte/dim_cheese.csv,proc_brine,float64,1 = mencionado en 'otros factores': proc_brine
+soporte/dim_cheese.csv,proc_low_fat,float64,1 = mencionado en 'otros factores': proc_low_fat
+soporte/dim_cheese.csv,proc_acid_coagulation,float64,1 = mencionado en 'otros factores': proc_acid_coagulation
+soporte/dim_cheese.csv,proc_natural_creaming,float64,1 = mencionado en 'otros factores': proc_natural_creaming
+soporte/dim_cheese.csv,proc_no_silage_feed,float64,1 = mencionado en 'otros factores': proc_no_silage_feed
+soporte/dim_cheese.csv,proc_cooked_or_scalded,float64,1 = mencionado en 'otros factores': proc_cooked_or_scalded
+soporte/dim_cheese.csv,proc_milk_salting,float64,1 = mencionado en 'otros factores': proc_milk_salting
+soporte/dim_cheese.csv,proc_curd_salting,float64,1 = mencionado en 'otros factores': proc_curd_salting
+soporte/dim_cheese.csv,proc_light_pressing,float64,1 = mencionado en 'otros factores': proc_light_pressing
+soporte/dim_cheese.csv,proc_transhumance_milk,float64,1 = mencionado en 'otros factores': proc_transhumance_milk
+soporte/dim_cheese.csv,proc_wooden_utensils,float64,1 = mencionado en 'otros factores': proc_wooden_utensils
+soporte/dim_cheese.csv,proc_artisanal_handmade,float64,1 = mencionado en 'otros factores': proc_artisanal_handmade
+soporte/dim_cheese.csv,curd_cooking_temp_c,float64,Temperatura de cocción citada (°C)
+soporte/dim_cheese.csv,profile_source_raw,str,Fuente del perfil
+soporte/dim_cheese.csv,profile_source_ids,str,Fuentes del perfil (|)
+soporte/dim_cheese.csv,profile_from_label_only,object,True si el perfil cita 'cheese label in the source' (deducido de la etiqueta)
+soporte/dim_cheese.csv,profile_completeness,float64,"Fracción de 4 bloques conocidos (leche, tratamiento térmico, cuajo/cultivo, maduración)"
+soporte/dim_compound.csv,compound_id,str,FK a dim_compound
+soporte/dim_compound.csv,cas,str,Nº CAS (formato validado)
+soporte/dim_compound.csv,cas_checksum_valid,object,True si el dígito de control del CAS es correcto
+soporte/dim_compound.csv,pubchem_cid,float64,CID de PubChem (de la hoja Synonyms)
+soporte/dim_compound.csv,pubchem_cid_conflict,bool,True si hay CID distintos para el mismo CAS
+soporte/dim_compound.csv,iupac_name,str,Nombre IUPAC del compuesto tal como en la fuente
+soporte/dim_compound.csv,n_aliases,int64,Nº de nombres distintos
+soporte/dim_compound.csv,chemical_class,str,Clase química deducida por regla sobre el nombre IUPAC (vacía si la regla no aplica)
+soporte/dim_compound.csv,chemical_class_method,str,Método usado para chemical_class
+soporte/dim_compound.csv,is_reference_standard_only,bool,"True para patrones de panel sensorial (cafeína, quinina), no compuestos del queso"
+soporte/dim_compound.csv,only_in_taste_sheet,bool,True si el compuesto solo aparece en la hoja 2. Taste
+soporte/dim_compound.csv,origin_sheets,str,Hojas del Excel donde aparece
+soporte/dim_descriptor.csv,descriptor_id,str,FK a dim_descriptor
+soporte/dim_descriptor.csv,descriptor_label,str,Descriptor tal como está en la fuente (sin espacios sobrantes)
+soporte/dim_descriptor.csv,n_terms,int64,Nº de términos en el descriptor
+soporte/dim_descriptor.csv,family_l1_as_in_source,str,Primera familia de descriptor indicada en la fuente (no es una ontología nueva)
+soporte/dim_descriptor.csv,n_family_tokens,int64,Nº de familias
+soporte/dim_descriptor.csv,in_odor_aroma,bool,Aparece en olor/aroma
+soporte/dim_descriptor.csv,in_taste,bool,Aparece en sabor
+soporte/dim_descriptor.csv,in_trigeminal,bool,Aparece en trigeminal
+soporte/dim_descriptor.csv,in_texture,bool,Aparece en textura
+soporte/dim_descriptor.csv,is_off_flavor,bool,True si alguna familia de la fuente es Off-flavor/Defect/Oxidized/Rancid
+soporte/dim_descriptor.csv,family_is_general_or_character,bool,True si todas las familias de la fuente son General/Character/Body/Stable
+soporte/dim_descriptor.csv,in_master_sheet,bool,Aparece en la hoja maestra 1. Odor & Aroma
+soporte/dim_pathway.csv,pathway_id,str,FK a dim_pathway
+soporte/dim_pathway.csv,pathway_label,str,Ruta bioquímica asignada en la hoja Evidence
+soporte/dim_pathway.csv,is_unassigned,bool,Ruta 'not assigned'
+soporte/dim_pathway.csv,n_evidence,int64,Nº de evidencias que lo apoyan
+soporte/dim_source.csv,source_id,str,FK a dim_source
+soporte/dim_source.csv,short_citation,str,Cita corta 'Autor año'
+soporte/dim_source.csv,first_author,str,Primer autor
+soporte/dim_source.csv,year,int64,Año
+soporte/dim_source.csv,source_type,str,primary | review | book (según el Excel)
+soporte/dim_source.csv,n_mentions,int64,Nº de veces que se menciona en el Excel
+soporte/fact_cheese_compound.csv,cheese_id,str,FK a dim_cheese
+soporte/fact_cheese_compound.csv,compound_id,str,FK a dim_compound
+soporte/fact_cheese_compound.csv,n_evidence,float64,Nº de evidencias que lo apoyan
+soporte/fact_cheese_compound.csv,best_verification_status,str,Mejor estado de verificación
+soporte/fact_cheese_compound.csv,n_process_measurements,float64,Nº de mediciones en Process and Volatiles
+soporte/fact_cheese_compound.csv,n_detected,float64,Nº de mediciones detectadas
+soporte/fact_cheese_compound.csv,n_not_detected,float64,Nº de mediciones ND
+soporte/fact_cheese_compound.csv,reported_present,bool,True si alguna evidencia o medición lo reporta presente
+soporte/fact_cheese_descriptor.csv,cheese_id,str,FK a dim_cheese
+soporte/fact_cheese_descriptor.csv,descriptor_id,str,FK a dim_descriptor
+soporte/fact_cheese_descriptor.csv,n_evidence,int64,Nº de evidencias que lo apoyan
+soporte/fact_cheese_descriptor.csv,n_linked_compounds,int64,Nº de compuestos asociados
+soporte/fact_cheese_descriptor.csv,best_verification_status,str,Mejor estado de verificación
+soporte/fact_cheese_descriptor.csv,max_evidence_score,float64,Máximo evidence_score
+soporte/fact_cheese_descriptor.csv,linked_compound_ids,str,Compuestos asociados (|)
+soporte/fact_evidence.csv,evidence_id,str,ID de la evidencia (original del Excel; EVX_ = generado porque faltaba)
+soporte/fact_evidence.csv,evidence_id_generated,bool,True si el ID no existía en el Excel y se generó
+soporte/fact_evidence.csv,master_row,float64,Fila de la hoja '1. Odor & Aroma' de la que procede (source_row)
+soporte/fact_evidence.csv,descriptor_id,str,FK a dim_descriptor
+soporte/fact_evidence.csv,descriptor_label,str,Descriptor tal como está en la fuente (sin espacios sobrantes)
+soporte/fact_evidence.csv,compound_id,str,FK a dim_compound
+soporte/fact_evidence.csv,cas,str,Nº CAS (formato validado)
+soporte/fact_evidence.csv,iupac_name,str,Nombre IUPAC del compuesto tal como en la fuente
+soporte/fact_evidence.csv,cheese_label_raw,str,Texto original del queso en la fuente
+soporte/fact_evidence.csv,n_cheeses,float64,Nº de quesos en la celda original
+soporte/fact_evidence.csv,n_sources,float64,Nº de fuentes en la celda original
+soporte/fact_evidence.csv,pathway_id,str,FK a dim_pathway
+soporte/fact_evidence.csv,claim_scope,str,Qué afirma la evidencia: descriptor_compound_in_cheese | compound_odor_note_only | compound_in_cheese_no_descriptor | unsupported | not_verified
+soporte/fact_evidence.csv,verification_status,str,Estado de verificación normalizado del Excel
+soporte/fact_evidence.csv,evidence_level_raw,str,"Nivel de evidencia tal como en el Excel (S, B, C, A/B, B/C); la fuente no define su escala"
+soporte/fact_evidence.csv,evidence_score,float64,"Peso sugerido en el análisis (.md): 1.0 primaria, 0.6 secundaria, 0.4 probable, 0 resto"
+soporte/fact_evidence.csv,use_as_cheese_descriptor_label,bool,True si sirve como etiqueta 'este queso tiene este descriptor'
+soporte/fact_evidence.csv,use_as_compound_odor_label,bool,True si sirve como etiqueta 'este compuesto huele a este descriptor'
+soporte/fact_evidence.csv,source_type,str,primary | review | book (según el Excel)
+soporte/fact_evidence.csv,location_in_source,str,Página/tabla en la fuente
+soporte/fact_evidence.csv,descriptor_in_source,str,Descriptor literal en el documento fuente
+soporte/fact_evidence.csv,evidence_text,str,Texto copiado del PDF
+soporte/fact_evidence.csv,reported_value_raw,str,"Valor reportado en la fuente, sin interpretar"
+soporte/fact_evidence.csv,rv_FD,float64,Número tras 'FD' en reported_value
+soporte/fact_evidence.csv,rv_DF,float64,Número tras 'DF='
+soporte/fact_evidence.csv,rv_OI,float64,Número tras 'OI'
+soporte/fact_evidence.csv,rv_OP,float64,Número tras 'OP'
+soporte/fact_evidence.csv,rv_c,float64,Número tras 'c'
+soporte/fact_evidence.csv,rv_pct,float64,Número tras '%'
+soporte/fact_evidence.csv,rv_vol,float64,Número tras 'vol'
+soporte/fact_evidence.csv,method_hint_gc_olfactometry,object,"True si el texto de evidencia menciona términos de GC-O (Charm, AEDA, FD, OAV, DF, OI, OP...)"
+soporte/fact_evidence.csv,cited_primary_source_raw,str,Texto original de la fuente primaria citada
+soporte/fact_evidence.csv,cited_primary_source_id,str,FK a dim_source si la celda cita UNA sola fuente primaria presente en la base
+soporte/fact_evidence.csv,n_cited_primary_sources,int64,Nº de citas primarias en la celda
+soporte/fact_evidence.csv,possible_double_count,bool,True si el Excel tiene alerta de doble conteo
+soporte/fact_evidence.csv,double_counting_alert_raw,str,Texto de la alerta de doble conteo
+soporte/fact_evidence.csv,unsupporting_sources_raw,str,Fuentes de la fila maestra que no confirman el par
+soporte/fact_evidence.csv,split_status,str,Estado de desglose en el Excel
+soporte/fact_evidence.csv,process_refs_truncated,bool,True si la lista de IDs de proceso estaba cortada con '…' en el Excel
+soporte/fact_evidence.csv,n_process_refs_visible,int64,Nº de IDs de proceso legibles
+soporte/fact_evidence.csv,notes,str,Notas originales
+soporte/fact_evidence.csv,ctx_milk_species_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de especie de leche
+soporte/fact_evidence.csv,ctx_milk_cow,float64,Contexto de producción asignado a la fila en la fuente. 1 = vaca mencionada; vacío = no mencionada
+soporte/fact_evidence.csv,ctx_milk_sheep,float64,Contexto de producción asignado a la fila en la fuente. 1 = oveja mencionada
+soporte/fact_evidence.csv,ctx_milk_goat,float64,Contexto de producción asignado a la fila en la fuente. 1 = cabra mencionada
+soporte/fact_evidence.csv,ctx_milk_buffalo,float64,Contexto de producción asignado a la fila en la fuente. 1 = búfala mencionada
+soporte/fact_evidence.csv,ctx_milk_species_logic,str,Contexto de producción asignado a la fila en la fuente. single | mixture | alternatives | mixture_or_alternatives | comparison | unknown
+soporte/fact_evidence.csv,ctx_milk_heat_treatment_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original del tratamiento de la leche
+soporte/fact_evidence.csv,ctx_milk_heat_treatment,str,Contexto de producción asignado a la fila en la fuente. raw | pasteurized | thermized | raw_or_pasteurized | raw_or_thermized | comparison | other | unknown
+soporte/fact_evidence.csv,ctx_rennet_culture_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de cuajo/cultivo
+soporte/fact_evidence.csv,ctx_coag_calf_rennet,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_calf_rennet
+soporte/fact_evidence.csv,ctx_coag_rennet_paste,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_rennet_paste
+soporte/fact_evidence.csv,ctx_coag_lamb_rennet,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_lamb_rennet
+soporte/fact_evidence.csv,ctx_coag_kid_rennet,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_kid_rennet
+soporte/fact_evidence.csv,ctx_coag_vegetable_rennet,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_vegetable_rennet
+soporte/fact_evidence.csv,ctx_coag_animal_rennet_unspecified,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_animal_rennet_unspecified
+soporte/fact_evidence.csv,ctx_coag_lactic_acid,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: coag_lactic_acid
+soporte/fact_evidence.csv,ctx_enz_pregastric_esterase_or_lipase,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: enz_pregastric_esterase_or_lipase
+soporte/fact_evidence.csv,ctx_enz_lipase_mentioned,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: enz_lipase_mentioned
+soporte/fact_evidence.csv,ctx_cult_starter_mentioned,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_starter_mentioned
+soporte/fact_evidence.csv,ctx_cult_adjunct_mentioned,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_adjunct_mentioned
+soporte/fact_evidence.csv,ctx_cult_natural_whey,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_natural_whey
+soporte/fact_evidence.csv,ctx_cult_indigenous_lab,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_indigenous_lab
+soporte/fact_evidence.csv,ctx_cult_mesophilic,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_mesophilic
+soporte/fact_evidence.csv,ctx_cult_citrate_positive,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_citrate_positive
+soporte/fact_evidence.csv,ctx_cult_diacetylactis,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_diacetylactis
+soporte/fact_evidence.csv,ctx_cult_leuconostoc,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_leuconostoc
+soporte/fact_evidence.csv,ctx_cult_lactobacillus,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_lactobacillus
+soporte/fact_evidence.csv,ctx_cult_probiotic,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_probiotic
+soporte/fact_evidence.csv,ctx_cult_propionibacteria,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: cult_propionibacteria
+soporte/fact_evidence.csv,ctx_mold_p_roqueforti,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: mold_p_roqueforti
+soporte/fact_evidence.csv,ctx_mold_p_camemberti,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: mold_p_camemberti
+soporte/fact_evidence.csv,ctx_mold_penicillium_unspecified,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: mold_penicillium_unspecified
+soporte/fact_evidence.csv,ctx_flora_washed_rind_smear,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en cuajo/cultivo: flora_washed_rind_smear
+soporte/fact_evidence.csv,ctx_coag_rennet_unspecified,float64,Contexto de producción asignado a la fila en la fuente. 1 = menciona 'rennet' sin tipo concreto
+soporte/fact_evidence.csv,ctx_ripening_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de maduración
+soporte/fact_evidence.csv,ctx_ripening_days_min,float64,"Contexto de producción asignado a la fila en la fuente. Días mínimos (1 mes = 30 d, 1 semana = 7 d); vacío si no se indica"
+soporte/fact_evidence.csv,ctx_ripening_days_max,float64,"Contexto de producción asignado a la fila en la fuente. Días máximos; vacío si es abierto (≥, >) o no se indica"
+soporte/fact_evidence.csv,ctx_ripening_label,str,Contexto de producción asignado a la fila en la fuente. fresh | aged | long | young | extended | unknown (texto cualitativo de la fuente)
+soporte/fact_evidence.csv,ctx_ripening_class,str,"Contexto de producción asignado a la fila en la fuente. Clase por punto medio de min/max: fresh, lt_1m, 1_3m, 3_6m, 6_12m, 12_24m, gt_24m"
+soporte/fact_evidence.csv,ctx_other_process_factor_raw,str,Contexto de producción asignado a la fila en la fuente. Texto original de otros factores
+soporte/fact_evidence.csv,ctx_proc_smoked,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_smoked
+soporte/fact_evidence.csv,ctx_proc_pasta_filata,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_pasta_filata
+soporte/fact_evidence.csv,ctx_proc_brine,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_brine
+soporte/fact_evidence.csv,ctx_proc_low_fat,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_low_fat
+soporte/fact_evidence.csv,ctx_proc_acid_coagulation,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_acid_coagulation
+soporte/fact_evidence.csv,ctx_proc_natural_creaming,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_natural_creaming
+soporte/fact_evidence.csv,ctx_proc_no_silage_feed,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_no_silage_feed
+soporte/fact_evidence.csv,ctx_proc_cooked_or_scalded,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_cooked_or_scalded
+soporte/fact_evidence.csv,ctx_proc_milk_salting,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_milk_salting
+soporte/fact_evidence.csv,ctx_proc_curd_salting,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_curd_salting
+soporte/fact_evidence.csv,ctx_proc_light_pressing,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_light_pressing
+soporte/fact_evidence.csv,ctx_proc_transhumance_milk,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_transhumance_milk
+soporte/fact_evidence.csv,ctx_proc_wooden_utensils,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_wooden_utensils
+soporte/fact_evidence.csv,ctx_proc_artisanal_handmade,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_artisanal_handmade
+soporte/fact_evidence.csv,ctx_curd_cooking_temp_c,float64,Contexto de producción asignado a la fila en la fuente. Temperatura de cocción citada (°C)
+soporte/nonaroma_context.csv,record_id,str,ID del registro
+soporte/nonaroma_context.csv,cheese_context,str,"Columna original del Excel, renombrada a snake_case"
+soporte/nonaroma_descriptor.csv,record_id,str,ID del registro
+soporte/nonaroma_descriptor.csv,sensory_modality,str,taste | trigeminal | texture
+soporte/nonaroma_descriptor.csv,descriptor_id,str,FK a dim_descriptor
+soporte/nonaroma_descriptor.csv,descriptor_label,str,Descriptor tal como está en la fuente (sin espacios sobrantes)
+soporte/nonaroma_descriptor.csv,family_raw,str,Texto original de la fuente (sin interpretar)
+soporte/nonaroma_descriptor.csv,family_l1_as_in_source,str,Primera familia de descriptor indicada en la fuente (no es una ontología nueva)
+soporte/nonaroma_descriptor.csv,cheese_context_raw,str,Texto original de la fuente (sin interpretar)
+soporte/nonaroma_descriptor.csv,compounds_raw,str,Texto original de la fuente (sin interpretar)
+soporte/nonaroma_descriptor.csv,chemical_family_raw,str,Texto original de la fuente (sin interpretar)
+soporte/nonaroma_descriptor.csv,source_raw,str,Texto original de la fuente (sin interpretar)
+soporte/nonaroma_descriptor.csv,location_deduplicated,str,"Columna original del Excel, renombrada a snake_case"
+soporte/nonaroma_descriptor.csv,notes,str,Notas originales
+soporte/nonaroma_source.csv,record_id,str,ID del registro
+soporte/nonaroma_source.csv,source_id,str,FK a dim_source
+soporte/pathway_steps.csv,step_id,str,"Columna original del Excel, renombrada a snake_case"
+soporte/pathway_steps.csv,pathway_group,str,"Columna original del Excel, renombrada a snake_case"
+soporte/pathway_steps.csv,substrate_or_precursor,str,"Columna original del Excel, renombrada a snake_case"
+soporte/pathway_steps.csv,step_or_reaction,str,"Columna original del Excel, renombrada a snake_case"
+soporte/pathway_steps.csv,enzyme_or_microorganism,str,"Columna original del Excel, renombrada a snake_case"
+soporte/pathway_steps.csv,product,str,"Columna original del Excel, renombrada a snake_case"
+soporte/pathway_steps.csv,resulting_compound_family,str,"Columna original del Excel, renombrada a snake_case"
+soporte/pathway_steps.csv,figure_in_source,str,"Columna original del Excel, renombrada a snake_case"
+soporte/pathway_steps.csv,source_raw,str,Texto original de la fuente (sin interpretar)
+soporte/pathway_steps.csv,source_id,str,FK a dim_source
+soporte/qa_issues.csv,table,str,Tabla
+soporte/qa_issues.csv,record_key,str,Clave del registro
+soporte/qa_issues.csv,field,str,Campo
+soporte/qa_issues.csv,problem,str,Problema detectado
+soporte/qa_issues.csv,value,str,Valor numérico
+soporte/qa_pending_confirmation.csv,descriptor_id,str,FK a dim_descriptor
+soporte/qa_pending_confirmation.csv,compound_id,str,FK a dim_compound
+soporte/qa_pending_confirmation.csv,descriptor_label,str,Descriptor tal como está en la fuente (sin espacios sobrantes)
+soporte/qa_pending_confirmation.csv,descriptor_family_raw,str,Texto original de la fuente (sin interpretar)
+soporte/qa_pending_confirmation.csv,compound_name,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_confirmation.csv,cas_raw,str,Texto original de la fuente (sin interpretar)
+soporte/qa_pending_confirmation.csv,cheeses_raw,str,Texto original de la fuente (sin interpretar)
+soporte/qa_pending_confirmation.csv,sources_raw,str,Texto original de la fuente (sin interpretar)
+soporte/qa_pending_confirmation.csv,reason,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_confirmation.csv,master_row,int64,Fila de la hoja '1. Odor & Aroma' de la que procede (source_row)
+soporte/taste_compound.csv,record_id,str,ID del registro
+soporte/taste_compound.csv,descriptor_id,str,FK a dim_descriptor
+soporte/taste_compound.csv,compound_name_raw,str,Texto original de la fuente (sin interpretar)
+soporte/taste_compound.csv,compound_id,str,FK a dim_compound
+soporte/taste_compound.csv,is_reference_standard_only,bool,"True para patrones de panel sensorial (cafeína, quinina), no compuestos del queso"

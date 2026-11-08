@@ -1,0 +1,205 @@
+﻿compound_id,cas,cas_checksum_valid,pubchem_cid,pubchem_cid_conflict,iupac_name,n_aliases,chemical_class,chemical_class_method,is_reference_standard_only,only_in_taste_sheet,origin_sheets
+CP_0001,551-93-9,True,11086.0,False,1-(2-aminophenyl)ethan-1-one,2,ketone,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0002,107-92-6,True,264.0,False,butanoic acid,2,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | 2. Taste | Evidence | Process and Volatiles | Synonyms
+CP_0003,50-21-5,True,612.0,False,2-hydroxypropanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,2. Taste | Evidence | Synonyms
+CP_0004,71-41-0,True,6276.0,False,pentan-1-ol,2,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0005,123-51-3,True,31260.0,False,3-methylbutan-1-ol,3,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0006,64-17-5,True,702.0,False,ethanol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0007,66-25-1,True,6184.0,False,hexanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0008,124-19-6,True,31289.0,False,nonanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0009,28588-74-1,True,34286.0,False,2-methylfuran-3-thiol,1,sulfur_compound,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0010,2179-57-9,True,16590.0,False,di(prop-2-en-1-yl) disulfide,1,sulfur_compound,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0011,100-52-7,True,240.0,False,benzaldehyde,2,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0012,16493-80-4,True,61840.0,False,4-ethyloctanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0013,71-23-8,True,1031.0,False,propan-1-ol,3,alcohol,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0014,75-07-0,True,177.0,False,acetaldehyde,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0015,105-54-4,True,7762.0,False,ethyl butanoate,2,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0016,123-66-0,True,31265.0,False,ethyl hexanoate,2,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0017,105-79-3,True,7775.0,False,isobutyl hexanoate,2,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0018,106-32-1,True,7799.0,False,ethyl octanoate,2,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0019,590-86-3,True,11552.0,False,3-methylbutanal,2,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0020,23726-93-4,True,5366074.0,False,"(2E)-1-(2,6,6-trimethylcyclohexa-1,3-dien-1-yl)but-2-en-1-one",1,ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0021,2050-01-3,True,519786.0,False,3-methylbutyl 2-methylpropanoate,1,ester,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0022,122-78-1,True,998.0,False,2-phenylacetaldehyde,2,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0023,90-05-1,True,460.0,False,2-methoxyphenol,1,phenol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0024,106-44-5,True,2879.0,False,4-methylphenol,1,phenol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0025,3268-49-3,True,18635.0,False,3-(methylsulfanyl)propanal,1,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0026,103-45-7,True,7654.0,False,2-phenylethyl acetate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0027,65-85-0,True,243.0,False,benzoic acid,2,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0028,107-87-9,True,7895.0,False,pentan-2-one,2,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0029,123-92-2,True,31276.0,False,3-methylbutyl acetate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0030,628-63-7,True,12348.0,False,pentyl acetate,1,ester,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0031,108-39-4,True,342.0,False,3-methylphenol,1,phenol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0032,109-52-4,True,7991.0,False,pentanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0033,24683-00-9,True,32594.0,False,2-methoxy-3-(2-methylpropyl)pyrazine,1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0034,6728-31-0,True,5362814.0,False,(4Z)-hept-4-enal,2,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0035,4077-47-8,True,61325.0,False,"4-methoxy-2,5-dimethylfuran-3(2H)-one",1,furan,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0036,556-24-1,True,11160.0,False,methyl 3-methylbutanoate,1,ester,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0037,110-43-0,True,8051.0,False,heptan-2-one,2,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0038,591-78-6,True,11583.0,False,hexan-2-one,2,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0039,124-07-2,True,379.0,False,octanoic acid,2,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0040,1534-08-3,True,73750.0,False,S-methyl ethanethioate,1,sulfur_compound,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0041,67-71-0,True,6213.0,False,dimethyl sulfone,1,sulfur_compound,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0042,106-30-9,True,7797.0,False,ethyl heptanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0043,108-38-3,True,7929.0,False,"1,3-dimethylbenzene",1,hydrocarbon,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0044,57124-87-5,True,62128.0,False,2-methyltetrahydrofuran-3-thiol,1,sulfur_compound,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0045,56-86-0,True,33032.0,False,(2S)-2-aminopentanedioic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0046,110-15-6,True,1110.0,False,butanedioic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0047,13360-65-1,True,25916.0,False,"3-ethyl-2,5-dimethylpyrazine",2,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0048,3658-77-3,True,19309.0,False,"4-hydroxy-2,5-dimethylfuran-3(2H)-one",2,furan,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0049,513-86-0,True,179.0,False,3-hydroxybutan-2-one,1,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0050,431-03-8,True,650.0,False,"butane-2,3-dione",1,ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0051,600-14-6,True,11747.0,False,"pentane-2,3-dione",3,ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0052,78-93-3,True,6569.0,False,butan-2-one,1,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0053,75-18-3,True,1068.0,False,dimethyl sulfide,2,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0054,28664-35-9,True,62835.0,False,"3-hydroxy-4,5-dimethylfuran-2(5H)-one",1,furan,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0055,18829-56-6,True,5283335.0,False,(2E)-non-2-enal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0056,124-13-0,True,454.0,False,octanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0057,503-74-2,True,10430.0,False,3-methylbutanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0058,110-62-3,True,8063.0,False,pentanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0059,123-32-0,True,31252.0,False,"2,5-dimethylpyrazine",1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0060,14667-55-1,True,26808.0,False,"2,3,5-trimethylpyrazine",1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0061,13925-07-0,True,26334.0,False,"2-ethyl-3,5-dimethylpyrazine",2,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0062,18138-05-1,True,28906.0,False,"3,5-diethyl-2-methylpyrazine",1,pyrazine,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0063,14371-10-9,True,637511.0,False,(2E)-3-phenylprop-2-enal,1,aldehyde,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0064,97-53-0,True,3314.0,False,2-methoxy-4-(prop-2-en-1-yl)phenol,1,phenol,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0065,7786-61-0,True,332.0,False,4-ethenyl-2-methoxyphenol,1,phenol,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0066,705-86-2,True,12810.0,False,6-pentyloxan-2-one,1,lactone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0067,706-14-9,True,12813.0,False,5-hexyloxolan-2-one,1,lactone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0068,5910-89-4,True,22201.0,False,"2,3-dimethylpyrazine",1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0069,98-00-0,True,7361.0,False,furan-2-ylmethanol,1,furan,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0070,29926-41-8,True,169110.0,False,"2-acetyl-4,5-dihydro-1,3-thiazole",1,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0071,557-48-2,True,643731.0,False,"(2E,6Z)-nona-2,6-dienal",1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0072,624-92-0,True,12232.0,False,dimethyl disulfide,2,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0073,5910-87-2,True,5283339.0,False,"(2E,4E)-nona-2,4-dienal",1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0074,112-40-3,True,8182.0,False,dodecane,1,hydrocarbon,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0075,543-49-7,True,10976.0,False,heptan-2-ol,2,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0076,111-70-6,True,8129.0,False,heptan-1-ol,3,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0077,111-13-7,True,8093.0,False,octan-2-one,1,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0078,16423-19-1,True,15559490.0,False,"(4S,4aS,8aR)-4,8a-dimethyloctahydronaphthalen-4a(2H)-ol",1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0079,2371-42-8,True,11062802.0,False,"1,2,7,7-tetramethylbicycloheptan-2-ol",1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0080,120-72-9,True,798.0,False,1H-indole,1,indole,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0081,83-34-1,True,6736.0,False,3-methyl-1H-indole,1,indole,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0082,7783-06-4,True,402.0,False,hydrogen sulfide,1,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0083,142-62-1,True,8892.0,False,hexanoic acid,3,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0084,4312-99-6,True,61346.0,False,oct-1-en-3-one,1,ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0085,60-12-8,True,6054.0,False,2-phenylethan-1-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0086,556-82-1,True,11173.0,False,3-methylbut-2-en-1-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0087,79-92-5,True,6616.0,False,"2,2-dimethyl-3-methylidenebicycloheptane",1,hydrocarbon,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0088,71-36-3,True,263.0,False,butan-1-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0089,105-46-4,True,7758.0,False,butan-2-yl acetate,1,ester,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0090,112-05-0,True,8158.0,False,nonanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0091,334-48-5,True,2969.0,False,decanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0092,54947-74-9,True,62089.0,False,4-methyloctanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0093,100113-52-8,True,44256565.0,False,"(2E,4E,6Z)-nona-2,4,6-trienal",1,aldehyde,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0094,554-61-0,True,79044.0,False,"3,7,7-trimethylbicyclohept-2-ene",1,hydrocarbon,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0095,110-38-3,True,8048.0,False,ethyl decanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0096,67-64-1,True,180.0,False,propan-2-one,1,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0097,593-08-8,True,11622.0,False,tridecan-2-one,1,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0098,123-72-8,True,261.0,False,butanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0099,6485-40-1,True,439570.0,False,(5R)-2-methyl-5-(prop-1-en-2-yl)cyclohex-2-en-1-one,1,ketone,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0100,103-82-2,True,999.0,False,2-phenylacetic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0101,821-55-6,True,13187.0,False,nonan-2-one,1,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0102,96-17-3,True,7284.0,False,2-methylbutanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0103,21662-16-8,True,5367530.0,False,"(2E,4E)-dodeca-2,4-dienal",1,aldehyde,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0104,91-62-3,True,7059.0,False,6-methylquinoline,1,,,True,False,Evidence | Synonyms
+CP_0105,156318-46-6,True,5352428.0,False,5-[(2Z)-oct-2-en-1-yl]oxolan-2-one,1,lactone,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0106,78-84-2,True,6561.0,False,2-methylpropanal,2,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0107,628-99-9,True,12367.0,False,nonan-2-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0108,24415-26-7,True,181106.0,False,non-1-en-3-one,1,ketone,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0109,2721-22-4,True,520296.0,False,6-nonyloxan-2-one,1,lactone,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0110,2601-13-0,True,102855.0,False,2-methylbutyl hexanoate,1,ester,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0111,5989-27-5,True,440917.0,False,(4R)-1-methyl-4-(prop-1-en-2-yl)cyclohex-1-ene,1,hydrocarbon,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0112,2216-51-5,True,16666.0,False,"(1R,2S,5R)-5-methyl-2-(propan-2-yl)cyclohexan-1-ol",1,alcohol,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0113,470-82-6,True,2758.0,False,"1,3,3-trimethyl-2-oxabicycloctane",1,hydrocarbon,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0114,3391-86-4,True,18827.0,False,oct-1-en-3-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0115,123-69-3,True,5365703.0,False,(9Z)-oxacycloheptadec-9-en-2-one,1,ketone,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0116,112-12-9,True,8163.0,False,undecan-2-one,1,methyl_ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0117,108-50-9,True,7938.0,False,"2,6-dimethylpyrazine",1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0118,104-67-6,True,7714.0,False,5-heptyloxolan-2-one,2,lactone,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0119,78-70-6,True,6549.0,False,"3,7-dimethylocta-1,6-dien-3-ol",1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0120,111-11-5,True,8091.0,False,methyl octanoate,1,ester,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0121,112-31-2,True,8175.0,False,decanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0122,123-86-4,True,31272.0,False,butyl acetate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0123,79-31-2,True,6590.0,False,2-methylpropanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0124,80-56-8,True,6654.0,False,α-pinene,1,hydrocarbon,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0125,141-78-6,True,8857.0,False,ethyl acetate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0126,78-83-1,True,6560.0,False,2-methylpropan-1-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0127,100-42-5,True,7501.0,False,styrene,1,hydrocarbon,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0128,22047-25-2,True,30914.0,False,2-acetylpyrazine,1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0129,85213-22-5,True,522834.0,False,"2-acetyl-3,4-dihydro-2H-pyrrole",1,,,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0130,24295-03-2,True,520108.0,False,"1-(1,3-thiazol-2-yl)ethanone",1,sulfur_compound,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0131,3658-80-8,True,19310.0,False,dimethyl trisulfide,1,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0132,698-10-2,True,61199.0,False,5-ethyl-3-hydroxy-4-methylfuran-2(5H)-one,1,furan,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0133,108-95-2,True,996.0,False,phenol,1,phenol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0134,91-10-1,True,7041.0,False,"2,6-dimethoxyphenol",1,phenol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0135,143-07-7,True,3893.0,False,dodecanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0136,79-09-4,True,1032.0,False,propanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0137,64-19-7,True,176.0,False,acetic acid,2,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | 2. Taste | Evidence | Process and Volatiles | Synonyms
+CP_0138,111-14-8,True,8094.0,False,heptanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0139,74-93-1,True,878.0,False,methanethiol,1,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0140,2305-05-7,True,16821.0,False,5-octyloxolan-2-one,1,lactone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0141,18640-74-9,True,62725.0,False,"2-(2-methylpropyl)-1,3-thiazole",1,sulfur_compound,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0142,698-76-0,True,12777.0,False,6-propyloxan-2-one,1,lactone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0143,713-95-1,True,12844.0,False,6-heptyloxan-2-one,1,lactone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0144,121-33-5,True,1183.0,False,4-hydroxy-3-methoxybenzaldehyde,1,aldehyde,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0145,121-32-4,True,8467.0,False,3-ethoxy-4-hydroxybenzaldehyde,1,aldehyde,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0146,118-71-8,True,8369.0,False,3-hydroxy-2-methyl-4H-pyran-4-one,1,ketone,regla_sobre_nombre,False,False,Evidence | Synonyms
+CP_0147,137-32-6,True,8723.0,False,2-methylbutan-1-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0148,110-42-9,True,8050.0,False,methyl decanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0149,6032-29-7,True,22386.0,False,pentan-2-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0150,123-73-9,True,447466.0,False,(2E)-but-2-enal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0151,539-82-2,True,10882.0,False,ethyl pentanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0152,111-71-7,True,8130.0,False,heptanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0153,116-53-0,True,8314.0,False,2-methylbutanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0154,123-96-6,True,20083.0,False,octan-2-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0155,111-27-3,True,8103.0,False,hexan-1-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0156,106-68-3,True,246728.0,False,octan-3-one,1,ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0157,25773-40-4,True,33166.0,False,2-methoxy-3-(propan-2-yl)pyrazine,1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0158,98-86-2,True,7410.0,False,1-phenylethan-1-one,1,ketone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0159,105-37-3,True,7749.0,False,ethyl propanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0160,505-10-2,True,10448.0,False,3-(methylsulfanyl)propan-1-ol,1,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0161,1618-26-4,True,,False,bis(methylsulfanyl)methane,1,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0162,111-31-9,True,,False,hexane-1-thiol,1,sulfur_compound,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0163,96-48-0,True,,False,oxolan-2-one,1,lactone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0164,104-50-7,True,,False,5-butyloxolan-2-one,1,lactone,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0165,27538-09-6,True,,False,2-ethyl-4-hydroxy-5-methylfuran-3(2H)-one,1,furan,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0166,78-92-2,True,6568.0,False,butan-2-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Process and Volatiles | Synonyms
+CP_0167,513-85-9,True,262.0,False,"butane-2,3-diol",1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0168,626-93-7,True,,False,hexan-2-ol,1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0169,123-38-6,True,,False,propanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0170,6728-26-3,True,,False,(2E)-hex-2-enal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0171,25152-84-5,True,,False,"(2E,4E)-deca-2,4-dienal",1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0172,112-54-9,True,,False,dodecanal,1,aldehyde,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0173,105-68-0,True,,False,3-methylbutyl propanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0174,105-66-8,True,,False,propyl butanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0175,106-27-4,True,,False,3-methylbutyl butanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0176,106-70-7,True,,False,methyl hexanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0177,122-70-3,True,,False,2-phenylethyl propanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0178,103-52-6,True,,False,2-phenylethyl butanoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0179,13360-64-0,True,,False,2-ethyl-5-methylpyrazine,1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0180,18138-04-0,True,,False,"2,3-diethyl-5-methylpyrazine",1,pyrazine,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0181,106-24-1,True,,False,"(2E)-3,7-dimethylocta-2,6-dien-1-ol",1,alcohol,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0182,151-10-0,True,,False,"1,3-dimethoxybenzene",1,hydrocarbon,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0183,103-26-4,True,,False,methyl (2E)-3-phenylprop-2-enoate,1,ester,regla_sobre_nombre,False,False,1. Odor & Aroma | Evidence | Synonyms
+CP_0184,,,,False,"2-hydroxypropane-1,2,3-tricarboxylic acid",1,carboxylic_acid,regla_sobre_nombre,False,False,2. Taste | Synonyms
+CP_0185,97-62-1,True,7342.0,False,ethyl 2-methylpropanoate,1,ester,regla_sobre_nombre,False,False,Synonyms
+CP_0186,100-51-6,True,244.0,False,phenylmethanol,1,alcohol,regla_sobre_nombre,False,False,Synonyms
+CP_0187,93-89-0,True,7165.0,False,ethyl benzoate,1,ester,regla_sobre_nombre,False,False,Synonyms
+CP_0188,463-58-1,True,10039.0,False,carbonyl sulfide,1,sulfur_compound,regla_sobre_nombre,False,False,Synonyms
+CP_0189,108-64-5,True,,False,ethyl 3-methylbutanoate,1,ester,regla_sobre_nombre,False,False,Synonyms
+CP_0190,,,,False,"1,3-pentadieno",1,,,False,False,Synonyms
+CP_0191,,,,False,2-hydroxybutanedioic acid,1,carboxylic_acid,regla_sobre_nombre,False,True,2. Taste
+CP_0192,,,,False,"1,3,7-Trimethylpurine-2,6-dione",1,ketone,regla_sobre_nombre,True,True,2. Taste
+CP_0193,,,,False,"(R)-(6-methoxyquinolin-4-yl)((2S,4S,5R)-5-vinylquinuclidin-2-yl)methanol hydrochloride",1,,,True,True,2. Taste
+CP_0194,,,,False,(2S)-2-amino-4-methylpentanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,True,2. Taste
+CP_0195,,,,False,Sodium chloride,1,,,False,True,2. Taste
+CP_0196,,,,False,potassium chloride,1,,,False,True,2. Taste
+CP_0197,,,,False,mineral salts,1,,,False,True,2. Taste
+CP_0198,,,,False,beta-D-fructofuranosy-alpha-D-glucopyranoside,1,furan,regla_sobre_nombre,False,True,2. Taste
+CP_0199,,,,False,"(2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanal",1,aldehyde,regla_sobre_nombre,False,True,2. Taste
+CP_0200,,,,False,(2R)-2-amino-4-methylpentanoic acid,1,carboxylic_acid,regla_sobre_nombre,False,True,2. Taste
+CP_0201,,,,False,(2S)-2-amino-5-hydroxy-5-oxopentanoate,1,ester,regla_sobre_nombre,False,True,2. Taste
+CP_0202,,,,False,(2S)-2-aminobutanedioate,1,ester,regla_sobre_nombre,False,True,2. Taste
+CP_0203,,,,False,"[(2R,3S,4R,5R)-3,4-dihydroxy-5-(6-oxo-1H-purin-9-yl)oxolan-2-yl]methyl dihydrogen phosphate",1,,,False,True,2. Taste
+CP_0204,,,,False,"[(2R,3S,4R,5R)-5-(2-amino-6-oxo-1H-purin-9-yl)-3,4-dihydroxyoxolan-2-yl]methyl dihydrogen phosphate",1,,,False,True,2. Taste

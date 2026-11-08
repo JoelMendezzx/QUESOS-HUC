@@ -1,0 +1,139 @@
+﻿descriptor_id,compound_id,descriptor_label,descriptor_family_raw,compound_name,cas_raw,cheeses_raw,sources_raw,reason,master_row
+DS_0001,CP_0001,Acacia,Floral,2-aminoacetophenone,551-93-9,Grana Padano,Curioni 2002; Moio 1998,Descriptor with no confirmed pair,2
+DS_0003,CP_0002,Acidic,Acidic,Butanoic acid,107-92-6,Cheddar; Minas Frescal,Milo 1997; Tunick 2023,Unconfirmed pair,3
+DS_0003,CP_0003,Acidic,Acidic,2-hydroxypropanoic acid,50-21-5,Cheddar; Minas Frescal,Milo 1997; Tunick 2023,Unconfirmed pair,3
+DS_0011,CP_0007,Aldehydic,Chemical,hexanal,66-25-1,Swiss Hard Cheese,Tintrop 2025,Descriptor with no confirmed pair,5
+DS_0011,CP_0008,Aldehydic,Chemical,nonanal,124-19-6,Swiss Hard Cheese,Tintrop 2025,Descriptor with no confirmed pair,5
+DS_0012,CP_0009,Alliaceous / meaty,Savory,2-methylfuran-3-thiol,28588-74-1,Camembert; Cheddar; Blue cheeses (generic),Curioni 2002; Tunick 2023,Unconfirmed pair,6
+DS_0012,CP_0010,Alliaceous / meaty,Savory,di(prop-2-en-1-yl) disulfide,2179-57-9,Camembert; Cheddar; Blue cheeses (generic),Curioni 2002; Tunick 2023,Unconfirmed pair,6
+DS_0015,CP_0013,Apple / Apple-like,Fruity,1-propanol,71-23-8,Gouda; Grana Padano; Gorgonzola; Cheddar; Feta-type; ġbejna; Quarg; Cottage; Camembert; Gruyère; Sheep/goat cheeses with vegetable rennet; Sheep/goat cheeses with lamb/kid rennet paste; Goat cheeses,Tom 2025; Chen 2022; Curioni 2002; Moio 1998; Moio 2000; Chen 2022; Curioni 2002; Preedy 2014,Unconfirmed pair,9
+DS_0015,CP_0014,Apple / Apple-like,Fruity,acetaldehyde,75-07-0,Gouda; Grana Padano; Gorgonzola; Cheddar; Feta-type; ġbejna; Quarg; Cottage; Camembert; Gruyère; Sheep/goat cheeses with vegetable rennet; Sheep/goat cheeses with lamb/kid rennet paste; Goat cheeses,Tom 2025; Chen 2022; Curioni 2002; Moio 1998; Moio 2000; Chen 2022; Curioni 2002; Preedy 2014,Unconfirmed pair,9
+DS_0017,CP_0021,Apricot,Fruity,3-methylbutyl 2-methylpropanoate,2050-01-3,Grana Padano; Camembert; Cheddar,Moio 1998; Tunick 2023,Unconfirmed pair,11
+DS_0018,CP_0022,Aromatic,General Intensity,2-phenylacetaldehyde,122-78-1,Smoked Formaella,Bintsis 2026,Descriptor with no confirmed pair,12
+DS_0019,CP_0023,Ashy / Sooty,Toasted / Off-flavor,2-methoxyphenol,90-05-1,French,Talavera 2007,Descriptor with no confirmed pair,13
+DS_0019,CP_0024,Ashy / Sooty,Toasted / Off-flavor,4-methylphenol,106-44-5,French,Talavera 2007,Descriptor with no confirmed pair,13
+DS_0021,CP_0002,Baby vomit,Animal / Off-flavor,butanoic acid,107-92-6,Aged natural cheese,Dopieralska 2020,Descriptor with no confirmed pair,14
+DS_0023,CP_0026,Balsamic,Sweet; Resin,2-phenylethyl acetate,103-45-7,Gorgonzola; Grana Padano,Moio 1998; Moio 2000; Curioni 2002; Tom 2025; Tunick 2014,Unconfirmed pair,16
+DS_0024,CP_0030,Banana,Fruity,pentyl acetate,628-63-7,Gouda; Gorgonzola; Grana Padano; Cheddar; Sheep/goat cheeses with vegetable rennet; Camembert; Parmesan (Parmigiano-Reggiano); Blue cheeses (generic),Chen 2022; Moio 1998; Moio 2000; Reineccius 2006; Preedy 2014; Tunick 2023,Unconfirmed pair,17
+DS_0025,CP_0031,Barny/Barnyard / Cowy / Stables,Animal / Barnyard,3-methylphenol,108-39-4,Aged Cheddar; Livarot; Munster; Buffalo Mozzarella; Cheddar (British Farmhouse); Cheddar; Camembert; Blue cheeses (generic); Fresco; Mozzarella (cow),Nollet 2009; Tunick 2014; Tunick 2023,Unconfirmed pair,18
+DS_0032,CP_0035,Black Walnut,Woody / Nutty,"4-methoxy-2,5-dimethylfuran-3(2H)-one",4077-47-8,Goat,Talavera 2016,Descriptor with no confirmed pair,22
+DS_0032,CP_0036,Black Walnut,Woody / Nutty,methyl 3-methylbutanoate,556-24-1,Goat,Talavera 2016,Descriptor with no confirmed pair,22
+DS_0038,CP_0040,Boiled cauliflower,Vegetable,S-methyl ethanethioate,1534-08-3,Limburger,Collin 1993,Descriptor with no confirmed pair,26
+DS_0206,,Hot milk,Lactic,dimethylsulphone,??,bovine Mozzarella; water buffalo Mozzarella; Roncal,Curioni 2002; Tunick 2014,Unconfirmed pair,27
+DS_0040,,Bread,Toasted,m-xylene,??,Swiss Tilsit red label; Parmesan (Parmigiano-Reggiano); Cheddar,Fuchsman 2015; Reineccius 2006; Tunick 2023,Unconfirmed pair,29
+DS_0047,CP_0022,Broom,Floral,2-feniletanal,122-78-1,Gorgonzola,Moio 2000,Descriptor with no confirmed pair,30
+DS_0048,CP_0044,Broth / Brothy,Savory,2-methyltetrahydrofuran-3-thiol,57124-87-5,Gouda; Cheddar; Low-fat Cheddar,Chen 2022; Talavera 2007; Nollet 2009; McSweeney 2017,Unconfirmed pair,31
+DS_0048,CP_0045,Broth / Brothy,Savory,(2S)-2-aminopentanedioic acid,56-86-0,Gouda; Cheddar; Low-fat Cheddar,Chen 2022; Talavera 2007; Nollet 2009; McSweeney 2017,Unconfirmed pair,31
+DS_0048,CP_0046,Broth / Brothy,Savory,butanedioic acid,110-15-6,Gouda; Cheddar; Low-fat Cheddar,Chen 2022; Talavera 2007; Nollet 2009; McSweeney 2017,Unconfirmed pair,31
+DS_0054,CP_0050,Butterscotch,Sweet,"butane-2,3-dione",431-03-8,Cheddar,Curioni 2002; Jelen 2012 ; McGee 2020 ; Burdock 2004,Unconfirmed pair,36
+DS_0059,,Candy / Bonbon,Sweet,2- pentanone,??,Grana Padano; Flor de Guia; Parmesan (Parmigiano-Reggiano),Moio 1998; Reineccius 2006,Unconfirmed pair,39
+DS_0060,CP_0054,Caramel / Caramel-like / Caramelic,Toasted; Sweet,"3-hydroxy-4,5-dimethylfuran-2(5H)-one",28664-35-9,Cheddar; Grana Padano; Gorgonzola; Gouda; European; Grana cheeses; Blue cheeses (generic); Parmesan,Milo 1997; Moio 1998; Moio 2000; Chen 2022; Curioni 2002; Dopieralska 2020; Talavera 2007; Tom 2025; Boscaini 2003; Tunick 2023; Tunick 2014,Unconfirmed pair,40
+DS_0061,CP_0056,Cardboard-like / Cardboard / Paper board,Off-flavor; Oxidized; Defect,octanal,124-13-0,Cheddar; Low-fat Cheddar,Curioni 2002; Dopieralska 2020; Milo 1997,Unconfirmed pair,41
+DS_0072,CP_0059,Chocolate,Savory / Toasted,"2,5-dimethylpyrazine",123-32-0,Swiss Hard Cheese; Cheddar; Camembert,Tintrop 2025; Tunick 2023,Unconfirmed pair,44
+DS_0072,CP_0060,Chocolate,Savory / Toasted,"2,3,5-trimethylpyrazine",14667-55-1,Swiss Hard Cheese; Cheddar; Camembert,Tintrop 2025; Tunick 2023,Unconfirmed pair,44
+DS_0072,CP_0061,Chocolate,Savory / Toasted,"pyrazine-2-ethyl-3,5-dimethyl",13925-07-0,Swiss Hard Cheese; Cheddar; Camembert,Tintrop 2025; Tunick 2023,Unconfirmed pair,44
+DS_0072,,Chocolate,Savory / Toasted,"pyrazine-3,5-diethyl-2-methyl.",??,Swiss Hard Cheese; Cheddar; Camembert,Tintrop 2025; Tunick 2023,Unconfirmed pair,44
+DS_0073,CP_0063,Cinnamon / Clove,Spicy,(2E)-3-phenylprop-2-enal,14371-10-9,Grana Padano; Gorgonzola; Cheddar,Moio 1998; Moio 2000,Unconfirmed pair,45
+DS_0073,CP_0064,Cinnamon / Clove,Spicy,2-methoxy-4-(prop-2-en-1-yl)phenol,97-53-0,Grana Padano; Gorgonzola; Cheddar,Moio 1998; Moio 2000,Unconfirmed pair,45
+DS_0073,CP_0065,Cinnamon / Clove,Spicy,4-ethenyl-2-methoxyphenol,7786-61-0,Grana Padano; Gorgonzola; Cheddar,Moio 1998; Moio 2000,Unconfirmed pair,45
+DS_0074,CP_0029,Circus,Sweet,3-methylbutyl acetate,123-92-2,Grana Padano,Moio 1998,Descriptor with no confirmed pair,46
+DS_0079,CP_0026,Cocoa,Toasted; Savory,2-phenylethyl acetate,103-45-7,Grana Padano; Gouda; Parmesan (Parmigiano-Reggiano),Moio 1998; Chen 2022; Tom 2025; Reineccius 2006,Unconfirmed pair,48
+DS_0090,CP_0053,Cooked,Toasted,(methylsulfanyl)methane,75-18-3,Domiati; Goat cheeses,Collin 1993; Preedy 2014,Unconfirmed pair,51
+DS_0090,CP_0025,Cooked,Toasted,3-(methylsulfanyl)propanal,3268-49-3,Domiati; Goat cheeses,Collin 1993; Preedy 2014,Unconfirmed pair,51
+DS_0092,CP_0069,Cooked sugar,Sweet,furan-2-ylmethanol,98-00-0,Grana Padano,Moio 1998,Descriptor with no confirmed pair,53
+DS_0097,CP_0050,Cream / Creamy,Lactic; Fatty,"butane-2,3-dione",431-03-8,Gouda; Grana Padano; Gorgonzola; Cheddar; Minas Frescal,Curioni 2002; Moio 1998; Moio 2000; Tunick 2023; Tunick 2014,Unconfirmed pair,56
+DS_0113,CP_0072,Decaying animal,Animal / Off-flavor,Dimethyl disulfide,624-92-0,European; Goat,,Descriptor with no confirmed pair,60
+DS_0114,CP_0073,Deep-fried,Toasted,"(2E,4E)-nona-2,4-dienal",5910-87-2,Gruyère,Curioni 2002,Descriptor with no confirmed pair,61
+DS_0120,CP_0074,Dirt / Dirty,Earthy / Off-flavor,dodecane,112-40-3,Cheddar,Curioni 2002,Descriptor with no confirmed pair,62
+DS_0128,CP_0006,Dusty / Papery,Earthy,ethanol,64-17-5,Cheddar; Goat,Talavera 2016,Descriptor with no confirmed pair,64
+DS_0129,CP_0076,Earthy / Musty,Earthy; Earthy; Mineral,1-heptanol,111-70-6,"Gorgonzola; Gruyère; Grana Padano; Grana cheeses; European; Goat; Swiss; Camembert; Cheddar (rind); Fossa cheese; Sheep/goat cheeses with vegetable rennet; Sheep/goat cheeses with lamb/kid rennet paste; Blue cheeses (generic); Washed-rind cheeses (generic); Cheddar; White-mold cheeses (Camembert); Parmesan, Grana Padano and Pecorino",Curioni 2002; Moio 1998; Moio 2000; Talavera 2007; Talavera 2016; McSweeney 2007; McSweeney 2017; Papademas 2018; Preedy 2014; Tunick 2023; Tunick 2014,Unconfirmed pair,65
+DS_0129,CP_0047,Earthy / Musty,Earthy; Earthy; Mineral,"3-ethyl-2,5-dimethylpyrazine",13360-65-1,"Gorgonzola; Gruyère; Grana Padano; Grana cheeses; European; Goat; Swiss; Camembert; Cheddar (rind); Fossa cheese; Sheep/goat cheeses with vegetable rennet; Sheep/goat cheeses with lamb/kid rennet paste; Blue cheeses (generic); Washed-rind cheeses (generic); Cheddar; White-mold cheeses (Camembert); Parmesan, Grana Padano and Pecorino",Curioni 2002; Moio 1998; Moio 2000; Talavera 2007; Talavera 2016; McSweeney 2007; McSweeney 2017; Papademas 2018; Preedy 2014; Tunick 2023; Tunick 2014,Unconfirmed pair,65
+DS_0140,CP_0080,Fecal / Putrid / Rotten egg,Animal / Decomposition,1H-indole,120-72-9,Cheddar; Gruyère; Parmesan; Gorgonzola; Parmesan (Parmigiano-Reggiano); Aged cheeses; Camembert; Blue cheeses (generic); Fresco; Farmhouse Cheddar; Washed-rind cheeses (generic),Milo 1997; Moio 2000; Curioni 2002; Nollet 2009; Reineccius 2006; Tunick 2014; Tunick 2023,Unconfirmed pair,66
+DS_0138,CP_0083,Fatty,Fatty,Hexanoic acid (caproic),142-62-1,Cheddar; Grana Padano; Gorgonzola; Smoked Formaella; Swiss Hard Cheese; Goat cheeses; Camembert; Sheep/goat cheeses with lamb/kid rennet paste; Blue cheeses (generic); Minas Frescal; Gruyère,Milo 1997; Moio 1998; Moio 2000; Bintsis 2026; Tom 2025; Nollet 2009; Preedy 2014; Papademas 2018; Tunick 2023; Tunick 2014,Unconfirmed pair,67
+DS_0141,CP_0015,Fermented,Fermented / Fruity,ethyl butanoate,105-54-4,Gorgonzola;European; Goat,Talavera 2007; Talavera 2016,Descriptor with no confirmed pair,68
+DS_0141,CP_0016,Fermented,Fermented / Fruity,ethyl hexanoate,123-66-0,Gorgonzola;European; Goat,Talavera 2007; Talavera 2016,Descriptor with no confirmed pair,68
+DS_0142,CP_0084,Fermented cabbage,Vegetable / Sulfur,oct-1-en-3-one,4312-99-6,Grana cheeses,Boscaini 2003,Descriptor with no confirmed pair,69
+DS_0142,CP_0016,Fermented cabbage,Vegetable / Sulfur,ethyl hexanoate,123-66-0,Grana cheeses,Boscaini 2003,Descriptor with no confirmed pair,69
+DS_0159,CP_0087,Fresh,General,"2,2-dimethyl-3-methylidenebicycloheptane",79-92-5,Grana Padano,Moio 1998; Tom 2025,Unconfirmed pair,72
+DS_0160,CP_0034,Fresh milk,Lactic,(4Z)-hept-4-enal,6728-31-0,Gouda,Chen 2022,Descriptor with no confirmed pair,73
+DS_0160,CP_0007,Fresh milk,Lactic,Hexanal,66-25-1,Gouda,Chen 2022,Descriptor with no confirmed pair,73
+DS_0160,CP_0071,Fresh milk,Lactic,"(2E,6Z)-nona-2,6-dienal",557-48-2,Gouda,Chen 2022,Descriptor with no confirmed pair,73
+DS_0175,CP_0001,Glue,Chemical,1-(2-aminophenyl)ethan-1-one,551-93-9,Parmigiano Reggiano; Cheddar; Camembert,Boscaini 2003; Tunick 2023,Unconfirmed pair,77
+DS_0175,CP_0089,Glue,Chemical,butan-2-yl acetate,105-46-4,Parmigiano Reggiano; Cheddar; Camembert,Boscaini 2003; Tunick 2023,Unconfirmed pair,77
+DS_0177,CP_0019,Grain / Grainy,Cereal,3-Methylbutanal,590-86-3,European; Goat; Cheddar,Talavera 2007; Talavera 2016; Tunick 2023,Unconfirmed pair,79
+DS_0177,CP_0093,Grain / Grainy,Cereal,"(2E,4E,6Z)-nona-2,4,6-trienal",100113-52-8,European; Goat; Cheddar,Talavera 2007; Talavera 2016; Tunick 2023,Unconfirmed pair,79
+DS_0177,CP_0094,Grain / Grainy,Cereal,"3,7,7-trimethylbicyclohept-2-ene",554-61-0,European; Goat; Cheddar,Talavera 2007; Talavera 2016; Tunick 2023,Unconfirmed pair,79
+DS_0196,CP_0055,Hay,Green; Earthy,(2E)-non-2-enal,18829-56-6,Cheddar; Ragusano; Gorgonzola; Pasta Filata,Moio 2000; Tom 2025; Puleo 2020,Descriptor with no confirmed pair,83
+DS_0196,CP_0096,Hay,Green; Earthy,propan-2-one,67-64-1,Cheddar; Ragusano; Gorgonzola; Pasta Filata,Moio 2000; Tom 2025; Puleo 2020,Descriptor with no confirmed pair,83
+DS_0196,CP_0087,Hay,Green; Earthy,"2,2-dimethyl-3-methylidenebicycloheptane",79-92-5,Cheddar; Ragusano; Gorgonzola; Pasta Filata,Moio 2000; Tom 2025; Puleo 2020,Descriptor with no confirmed pair,83
+DS_0198,CP_0097,Heated milk-like,Toasted,tridecan-2-one,593-08-8,Gorgonzola,Moio 2000,Descriptor with no confirmed pair,84
+DS_0200,CP_0098,Herbaceous,Green; Herbal,butanal,123-72-8,Grana Padano; Gorgonzola; Ragusano; Grana cheeses; Sheep/goat cheeses with vegetable rennet; Sheep/goat cheeses with lamb/kid rennet paste; Camembert; Buffalo Mozzarella,Moio 1998; Moio 2000; Curioni 2002; Boscaini 2003; Nollet 2009; Preedy 2014; Tunick 2014,Unconfirmed pair,85
+DS_0200,CP_0099,Herbaceous,Green; Herbal,(5R)-2-methyl-5-(prop-1-en-2-yl)cyclohex-2-en-1-one,6485-40-1,Grana Padano; Gorgonzola; Ragusano; Grana cheeses; Sheep/goat cheeses with vegetable rennet; Sheep/goat cheeses with lamb/kid rennet paste; Camembert; Buffalo Mozzarella,Moio 1998; Moio 2000; Curioni 2002; Boscaini 2003; Nollet 2009; Preedy 2014; Tunick 2014,Unconfirmed pair,85
+DS_0200,CP_0076,Herbaceous,Green; Herbal,1-heptanol,111-70-6,Grana Padano; Gorgonzola; Ragusano; Grana cheeses; Sheep/goat cheeses with vegetable rennet; Sheep/goat cheeses with lamb/kid rennet paste; Camembert; Buffalo Mozzarella,Moio 1998; Moio 2000; Curioni 2002; Boscaini 2003; Nollet 2009; Preedy 2014; Tunick 2014,Unconfirmed pair,85
+DS_0204,,Honey / Honey-like,Sweet,3-methylbutyl 2-methylpropanoate.,??,European; Grana Padano; Gruyère; Camembert; Sheep/goat cheeses with vegetable rennet; Cheddar,Talavera 2007; Tom 2025; Moio 1998; Curioni 2002; Preedy 2014; Tunick 2023; Tunick 2014,Unconfirmed pair,86
+DS_0209,CP_0102,Iodoform-like,Chemical,2-methylbutanal,96-17-3,Grana Padano; Gorgonzola,Moio 1998; Moio 2000,Unconfirmed pair,88
+DS_0214,CP_0103,Lactic,Lactic,"(2E,4E)-dodeca-2,4-dienal",21662-16-8,Flor de Guia,Curioni 2002,Descriptor with no confirmed pair,90
+DS_0216,CP_0104,Leathery,Animal / Off-flavor,6-methylquinoline,91-62-3,Cheddar; Goat,Tom 2025,Descriptor with no confirmed pair,92
+DS_0217,CP_0105,Lemon,Fruity,5-[(2Z)-oct-2-en-1-yl]oxolan-2-one,156318-46-6,Roncal; Goat,Curioni 2002; Talavera 2016,Descriptor with no confirmed pair,93
+DS_0219,CP_0105,Liqueur,Alcoholic / Sweet,5-[(2Z)-oct-2-en-1-yl]oxolan-2-one,156318-46-6,Roncal,Curioni 2002,Descriptor with no confirmed pair,94
+DS_0229,CP_0009,Meaty-brothy,Savory,2-methylfuran-3-thiol,28588-74-1,European; Low-fat Cheddar; Low-fat Cheddar,Talavera 2007; Milo 1997; Nollet 2009; McSweeney 2017,Unconfirmed pair,97
+DS_0238,CP_0108,Milk / Milky,Lactic,non-1-en-3-one,24415-26-7,Pasta Filata; Gouda; Cheddar; Swiss Hard; Roncal,Puleo 2020; Chen 2022; Piggott 1991; Talavera 2007; Tintrop 2025; Tunick 2014,Unconfirmed pair,100
+DS_0238,CP_0109,Milk / Milky,Lactic,6-nonyloxan-2-one,2721-22-4,Pasta Filata; Gouda; Cheddar; Swiss Hard; Roncal,Puleo 2020; Chen 2022; Piggott 1991; Talavera 2007; Tintrop 2025; Tunick 2014,Unconfirmed pair,100
+DS_0238,CP_0051,Milk / Milky,Lactic,"Pentane-2,3-dione",600-14-6,Pasta Filata; Gouda; Cheddar; Swiss Hard; Roncal,Puleo 2020; Chen 2022; Piggott 1991; Talavera 2007; Tintrop 2025; Tunick 2014,Unconfirmed pair,100
+DS_0239,CP_0110,Mint / Minty / Eucalyptus-like,Green; Herbal; Spicy,2-methylbutyl hexanoate,2601-13-0,Grana Padano; Halloumi,Tom 2025; Curioni 2002,Descriptor with no confirmed pair,101
+DS_0239,CP_0087,Mint / Minty / Eucalyptus-like,Green; Herbal; Spicy,"2,2-dimethyl-3-methylidenebicycloheptane",79-92-5,Grana Padano; Halloumi,Tom 2025; Curioni 2002,Descriptor with no confirmed pair,101
+DS_0239,CP_0111,Mint / Minty / Eucalyptus-like,Green; Herbal; Spicy,(4R)-1-methyl-4-(prop-1-en-2-yl)cyclohex-1-ene,5989-27-5,Grana Padano; Halloumi,Tom 2025; Curioni 2002,Descriptor with no confirmed pair,101
+DS_0239,CP_0112,Mint / Minty / Eucalyptus-like,Green; Herbal; Spicy,"(1R,2S,5R)-5-methyl-2-(propan-2-yl)cyclohexan-1-ol",2216-51-5,Grana Padano; Halloumi,Tom 2025; Curioni 2002,Descriptor with no confirmed pair,101
+DS_0239,CP_0113,Mint / Minty / Eucalyptus-like,Green; Herbal; Spicy,"1,3,3-trimethyl-2-oxabicycloctane",470-82-6,Grana Padano; Halloumi,Tom 2025; Curioni 2002,Descriptor with no confirmed pair,101
+DS_0253,CP_0115,Musk / Musky,Animal,(9Z)-oxacycloheptadec-9-en-2-one,123-69-3,Swiss Hard; Camembert,Tintrop 2025; Tom 2025; Tunick 2023,Unconfirmed pair,103
+DS_0255,CP_0039,Muttony,Animal,octanoic acid,124-07-2,Sainte-Maure; Goat and sheep milk cheeses (generic); Goat milk Cheddar,Le Quéret 1998; Preedy 2014; Tunick 2023,Unconfirmed pair,105
+DS_0256,CP_0002,Nacho cheese,Savory / Lactic,butanoic acid,107-92-6,Aged Cheddar,Curioni 2002,Descriptor with no confirmed pair,106
+DS_0258,CP_0025,Oil / Oily,Fatty,3-(methylsulfanyl)propanal,3268-49-3,Gorgonzola; Cheddar; Grana Padano; Camembert,Curioni 2002; Moio 1998; Moio 2000; Tom 2025; Tunick 2023,Unconfirmed pair,108
+DS_0263,CP_0118,Old cheese,Character,5-heptyloxolan-2-one,104-67-6,Flor de Guia,Curioni 2002,Descriptor with no confirmed pair,109
+DS_0267,CP_0120,Orange / Orange peel / Orange peel-like,Fruity,methyl octanoate,111-11-5,Cheddar; Pecorino; Grana Padano; Gorgonzola; Camembert; Pecorino Siciliano; Ragusano,Tom 2025; Curioni 2002; Moio 1998; Moio 2000; McSweeney 2017; Tunick 2023; Tunick 2014,Unconfirmed pair,111
+DS_0269,CP_0066,Overall dairy,Lactic,6-pentyloxan-2-one,705-86-2,Goat,Talavera 2016,Descriptor with no confirmed pair,112
+DS_0269,CP_0050,Overall dairy,Lactic,"butane-2,3-dione",431-03-8,Goat,Talavera 2016,Descriptor with no confirmed pair,112
+DS_0272,CP_0118,Peach / Peach-like,Fruity,5-heptyloxolan-2-one,104-67-6,Cheddar; Grana Padano; Gorgonzola; Gouda; Mozzarella; Sheep/goat cheeses with lamb/kid rennet paste; Blue cheeses (generic); Camembert; Farmhouse Cheddar; Mozzarella (cow); Buffalo Mozzarella; Roncal,Milo 1997; Moio 1998; Moio 2000; Chen 2022; Preedy 2014; Papademas 2018; Tunick 2023; Tunick 2014,Unconfirmed pair,113
+DS_0274,CP_0013,Pear / Pear-like,Fruity,1-propanol,71-23-8,Gouda; Cheddar; Camembert,Tom 2025; Chen 2022; Tunick 2023,Unconfirmed pair,115
+DS_0280,CP_0087,Pine,Woody,"2,2-dimethyl-3-methylidenebicycloheptane",79-92-5,Aged Cheddar; Cheddar,Curioni 2002; Tom 2025; Tunick 2023; Tunick 2014,Unconfirmed pair,117
+DS_0285,CP_0088,Pomace,Fermented,butan-1-ol,71-36-3,Gorgonzola,Curioni 2002; Moio 2000; Tunick 2014,Unconfirmed pair,120
+DS_0286,CP_0053,Pomegranate,Fruity,dimethyl sulfide,75-18-3,Cheddar,Curioni 2002,Descriptor with no confirmed pair,121
+DS_0287,CP_0129,Popcorn / Toasty / Biscuit-like,Toasted; Toasted; Maillard,"2-acetyl-3,4-dihydro-2H-pyrrole",85213-22-5,British Cheddar; Cheddar; Gruyère; Black tea; Processed cheeses,Curioni 2002; Tunick 2014; Tunick 2023,Unconfirmed pair,122
+DS_0287,CP_0130,Popcorn / Toasty / Biscuit-like,Toasted; Toasted; Maillard,"1-(1,3-thiazol-2-yl)ethanone",24295-03-2,British Cheddar; Cheddar; Gruyère; Black tea; Processed cheeses,Curioni 2002; Tunick 2014; Tunick 2023,Unconfirmed pair,122
+DS_0277,CP_0078,Petrichor,Earthy,"(4S,4aS,8aR)-4,8a-dimethyloctahydronaphthalen-4a(2H)-ol",16423-19-1,Aged Cheddar,Curioni 2002,Descriptor with no confirmed pair,125
+DS_0277,CP_0079,Petrichor,Earthy,"1,2,7,7-tetramethylbicycloheptan-2-ol",2371-42-8,Aged Cheddar,Curioni 2002,Descriptor with no confirmed pair,125
+DS_0299,CP_0032,Rancid / Hydrolytic rancidity,Off-flavor; Animal; Fatty Acid; Rancid,pentanoic acid,109-52-4,Grana Padano; Gorgonzola; Cheddar; Gouda; Domiati; Grana Trentino; Swiss; Chihuahua; Camembert; Gruyère; Pecorino; Ragusano; Milk fan; Sheep/goat cheeses with vegetable rennet; Pecorino Crotonese; Goat cheeses; Swiss-type cheese; Blue cheeses (generic); Minas Frescal; Emmental; Aged cheeses; Sheep/goat cheeses with lamb/kid rennet paste; Majorero; Goat and sheep cheeses; Bouton de Culotte (goat),McSweeney 2017; Tunick 2014; Rammirez 2025; Sable 1999; Nollet 2009; Nollet 2024; Preedy 2014; McSweeney 2007; Papademas 2018; Tunick 2023,Unconfirmed pair,126
+DS_0310,CP_0002,Ripe cheese,Lactic / Savory,butanoic acid,107-92-6,Roncal; Aged cheeses; Cheddar; Blue cheeses (generic),Curioni 2002; Nollet 2009; Tunick 2023,Unconfirmed pair,127
+DS_0311,CP_0002,Ripe flavor,Fermented,butanoic acid,107-92-6,Pasta Filata,Puleo 2020,Descriptor with no confirmed pair,128
+DS_0311,CP_0019,Ripe flavor,Fermented,3-Methylbutanal,590-86-3,Pasta Filata,Puleo 2020,Descriptor with no confirmed pair,128
+DS_0311,CP_0037,Ripe flavor,Fermented,heptan-2-one,110-43-0,Pasta Filata,Puleo 2020,Descriptor with no confirmed pair,128
+DS_0313,CP_0069,Roast / Roasted / Roasty,Toasted,furan-2-ylmethanol,98-00-0,Cheddar; Grana Padano; Gorgonzola; Smoked Formaella; Camembert; Gruyère,Milo 1997; Moio 1998; Moio 2000; Bintsis 2026; Curioni 2002; Tunick 2023,Unconfirmed pair,129
+DS_0314,CP_0059,Roast beef,Savory,"2,5-dimethylpyrazine",123-32-0,Grana Padano,Moio 1998,Descriptor with no confirmed pair,130
+DS_0314,CP_0061,Roast beef,Savory,"2-ethyl-3,5-dimethylpyrazine",13925-07-0,Grana Padano,Moio 1998,Descriptor with no confirmed pair,130
+DS_0315,CP_0068,Roasted nuts,Nutty,"2,3-dimethylpyrazine",5910-89-4,Grana Padano,Curioni 2002,Descriptor with no confirmed pair,131
+DS_0321,CP_0072,Sauerkraut,Fermented,Dimethyl disulfide,624-92-0,European; Goat,Retiveau 2005,Descriptor with no confirmed pair,133
+DS_0322,CP_0132,Seasoned flavor,Fermented,5-ethyl-3-hydroxy-4-methylfuran-2(5H)-one,698-10-2,Pasta Filata,Puleo 2020,Descriptor with no confirmed pair,134
+DS_0331,CP_0032,Sheep / Sheepy-like,Animal,pentanoic acid,109-52-4,Gorgonzola; Grana Padano; Serra da Estrela; Pecorino Romano; Camembert,Tavaria 2004; McSweeney 2017; Tunick 2023,Unconfirmed pair,136
+DS_0331,CP_0032,Sheep / Sheepy-like,Animal,pentanoic acid,109-52-4,Gorgonzola; Grana Padano; Serra da Estrela; Pecorino Romano; Camembert,Tavaria 2004; McSweeney 2017; Tunick 2023,Unconfirmed pair,136
+DS_0355,CP_0136,Solvent,Chemical,propanoic acid,79-09-4,Aged Cheddar; Swiss-type cheeses; Cheddar; Camembert,Curioni 2002; Papademas 2018; Tunick 2023,Unconfirmed pair,140
+DS_0373,CP_0022,Styrene,Chemical,2-phenylacetaldehyde,122-78-1,British Cheddar,Curioni 2002,Descriptor with no confirmed pair,147
+DS_0379,CP_0013,Sweet-candy,Sweet,1-propanol,71-23-8,Cheddar,Arora 1995,Descriptor with no confirmed pair,150
+DS_0381,CP_0016,Syrup,Sweet,ethyl hexanoate,123-66-0,Flor de Guia,Curioni 2002,Descriptor with no confirmed pair,152
+DS_0387,CP_0140,Toffee,Sweet,5-octyloxolan-2-one,2305-05-7;,Roncal,Curioni 2002,Descriptor with no confirmed pair,155
+DS_0388,CP_0072,Tomato-like,Vegetable,Dimethyl disulfide,624-92-0,Limburger,Parliment 1982,Descriptor with no confirmed pair,156
+DS_0389,CP_0019,Tootsie Rolls,Sweet / Savory,3-methylbutanal,590-86-3,Cheddar,Curioni 2002,Descriptor with no confirmed pair,157
+DS_0393,CP_0142,Tropical,Fruity,6-propyloxan-2-one,698-76-0,Swiss Hard,Tom 2025,Descriptor with no confirmed pair,158
+DS_0393,CP_0066,Tropical,Fruity,6-pentyloxan-2-one,705-86-2,Swiss Hard,Tom 2025,Descriptor with no confirmed pair,158
+DS_0393,CP_0143,Tropical,Fruity,6-heptyloxan-2-one,713-95-1,Swiss Hard,Tom 2025,Descriptor with no confirmed pair,158
+DS_0394,,Truffle,Earthy / SAVORY,2- pentanone,??,Water Buffalo Mozz.,Curioni 2002,Descriptor with no confirmed pair,159
+DS_0396,CP_0114,Unclean,Off-flavor,oct-1-en-3-ol,3391-86-4,Feta-type; Cheddar; Camembert; Blue cheeses (generic),Bintsis 2004; Tunick 2023,Unconfirmed pair,160
+DS_0402,CP_0027,Urine-like,Off-flavor,benzoic acid,65-85-0,Gorgonzola,Moio 2000,Descriptor with no confirmed pair,162
+DS_0403,CP_0144,Vanilla,Sweet,4-hydroxy-3-methoxybenzaldehyde,121-33-5,Ragusano,Tom 2025,Descriptor with no confirmed pair,163
+DS_0403,CP_0145,Vanilla,Sweet,3-ethoxy-4-hydroxybenzaldehyde,121-32-4,Ragusano,Tom 2025,Descriptor with no confirmed pair,163
+DS_0404,CP_0120,Vegetable / Vegetal,Vegetable,methyl octanoate,111-11-5,Roncal; Aged Cheddar; Camembert,Tom 2025; Curioni 2002; Tunick 2014,Unconfirmed pair,164
+DS_0420,CP_0002,Whey,Lactic,butanoic acid,107-92-6,Cheddar; Gouda; Pasta Filata,Talavera 2007; Puleo 2020,Descriptor with no confirmed pair,168
+DS_0420,CP_0146,Whey,Lactic,3-hydroxy-2-methyl-4H-pyran-4-one,118-71-8,Cheddar; Gouda; Pasta Filata,Talavera 2007; Puleo 2020,Descriptor with no confirmed pair,168
+DS_0420,CP_0053,Whey,Lactic,(methylsulfanyl)methane,75-18-3,Cheddar; Gouda; Pasta Filata,Talavera 2007; Puleo 2020,Descriptor with no confirmed pair,168
+DS_0421,,Whiskey / Whisky,Fermented,2-methyl-1-butanol,??,Grana Padano; Gorgonzola,Moio 1998; Moio 2000,Unconfirmed pair,169
+DS_0423,,Wine / Winey / Wine-like,Fermented,pentan-2-ol (2-pentanol),??,Gouda; Gorgonzola; Goat; Grana Padano; Sheep/goat cheeses with vegetable rennet; Sheep/goat cheeses with lamb/kid rennet paste; Cheddar; Camembert,Chen 2022; Tom 2025; Preedy 2014; Tunick 2023,Unconfirmed pair,170
+DS_0424,CP_0024,Wood / Wood pulp / Woody,Woody; Earthy,4-methylphenol,106-44-5,Cheddar; Grana Padano; Gorgonzola; Camembert; Blue cheeses (generic),Curioni 2002; Moio 1998; Tom 2025; Tunick 2023,Unconfirmed pair,171

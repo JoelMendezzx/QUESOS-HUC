@@ -1,0 +1,107 @@
+﻿step_id,pathway_group,substrate_or_precursor,step_or_reaction,enzyme_or_microorganism,product,resulting_compound_family,figure_in_source,source_raw,source_id
+PS_001,Enzyme sources,Milk,,"Plasmin, lipase, cathepsin D",,Indigenous milk enzymes,Fig. 28.1,Andiç 2015,AND15
+PS_002,Enzyme sources,Rennet,,"Chymosin, pepsin, esterase",,Rennet enzymes,Fig. 28.1,Andiç 2015,AND15
+PS_003,Enzyme sources,"Lactic acid bacteria (LAB), NSLAB and secondary microflora",,"Proteinase, peptidases (tri-, di- and aminopeptidase), lipase",,Microbial enzymes,Fig. 28.1,Andiç 2015,AND15
+PS_004,Enzyme sources,Exogenous enzyme preparations,,"Lipase, protease, β-galactosidase",,Added enzymes,Fig. 28.1,Andiç 2015,AND15
+PS_005,Lactose and lactate metabolism,Lactose → pyruvate → L-lactate,Fermentation,LAB (lactic acid bacteria),"Acetic acid, formic acid, ethanol, CO₂",Organic acids; alcohols,Fig. 28.3,Andiç 2015,AND15
+PS_006,Lactose and lactate metabolism,L-lactate,Propionic fermentation,Propionibacterium sp.,"Propionic acid, acetic acid, H₂O, CO₂",Organic acids,Fig. 28.3,Andiç 2015,AND15
+PS_007,Lactose and lactate metabolism,L-lactate,Butyric fermentation,Clostridium sp.,"Butyric acid, H₂",Organic acids,Fig. 28.3,Andiç 2015,AND15
+PS_008,Lactose and lactate metabolism,L-lactate,Oxidation,"Penicillium sp., yeasts","CO₂, H₂",,Fig. 28.3,Andiç 2015,AND15
+PS_009,Lactose and lactate metabolism,L-lactate,Fermentation,NSLAB,"Formic acid, acetic acid, CO₂",Organic acids,Fig. 28.3,Andiç 2015,AND15
+PS_010,Lactose and lactate metabolism,L-lactate,Racemization,NSLAB,DL-lactate,,Fig. 28.3,Andiç 2015,AND15
+PS_011,Citrate metabolism,Citrate,Citrate metabolism,not specified,Volatile compounds,not detailed in the source,Fig. 28.2,Andiç 2015,AND15
+PS_012,Proteolysis,Caseins → intermediate peptides → short peptides → amino acids,Hydrolysis,"Proteinases and peptidases (rennet, milk, LAB, NSLAB)",Free amino acids,Precursors,Fig. 28.4,Andiç 2015,AND15
+PS_013,Proteolysis,Amino acids,Decarboxylation,not specified,Amines → aldehydes,Amines; aldehydes,Fig. 28.4,Andiç 2015,AND15
+PS_014,Proteolysis,Amino acids,Transamination,not specified,Amino acids → aldehydes,Aldehydes,Fig. 28.4,Andiç 2015,AND15
+PS_015,Proteolysis,Amino acids,Deamination,not specified,α-keto acids → aldehydes,Aldehydes,Fig. 28.4,Andiç 2015,AND15
+PS_016,Proteolysis,Amino acids,Degradation,not specified,Sulfur compounds,Sulfur compounds,Fig. 28.4,Andiç 2015,AND15
+PS_017,Proteolysis,Aldehydes,Oxidation / reduction,not specified,Acids and alcohols,Acids; alcohols,Fig. 28.4,Andiç 2015,AND15
+PS_018,Lipolysis,Triglycerides,Hydrolysis,"Lipase, esterase",Fatty acids,Precursors,Fig. 28.5,Andiç 2015,AND15
+PS_019,Lipolysis,Short- and intermediate-chain free fatty acids (C2:0–C12:0),Direct release,"Lipase, esterase",Volatile free fatty acids,Fatty acids,Fig. 28.5,Andiç 2015,AND15
+PS_020,Lipolysis,Saturated fatty acids,Oxidation,not specified,Methyl ketones → secondary alcohols,Methyl ketones; secondary alcohols,Fig. 28.5,Andiç 2015,AND15
+PS_021,Lipolysis,Fatty acids,β-oxidation,not specified,γ/δ-hydroxy fatty acids → γ/δ-lactones,Lactones,Fig. 28.5,Andiç 2015,AND15
+PS_022,Lipolysis,Unsaturated fatty acids,Oxidation,not specified,Hydroperoxides → linear aldehydes → alcohols and acids,Linear aldehydes; alcohols; acids,Fig. 28.5,Andiç 2015,AND15
+PS_023,Lipolysis,Alcohols + acids,Esterification,not specified,Esters,Esters,Fig. 28.5,Andiç 2015,AND15
+PS_024,Metabolism of sulfur amino acids,Methionine,Degradation,not specified,Metional,Sulfur compounds,"Secc. 5.4.8, p. 130",Reineccius 2006,REI06
+PS_025,Metabolism of sulfur amino acids,Methionine,Microbial lyases,Microorganisms,"Methanethiol → sulfides, disulfides, tetrasulfides, thioesters",Sulfur compounds,Fig. 5.15,Reineccius 2006,REI06
+PS_026,Metabolism of sulfur amino acids,Cysteine,Decarboxylation / deamination / degradation,not specified,Cysteamine; α-keto-3-thiopropionic acid; H₂S,Sulfur compounds,"Secc. 5.4.8, p. 130",Reineccius 2006,REI06
+PS_027,Metabolism of sulfur amino acids,H₂S + carbonyls or free radicals,Chemical reaction,,"Ethyl sulfide, diethyl disulfide, amyl mercaptan, 3-methyl-2-butenethiol",Sulfur compounds,"Secc. 5.4.8, p. 130",Reineccius 2006,REI06
+PS_028,Diacetyl metabolism,Diacetyl,Reduction,Diacetyl reductase (from the same microorganisms that produce it),"Acetoin → 2,3-butanediol",Ketones; alcohols,Fig. 5.9,Reineccius 2006,REI06
+PS_029,Pyrazine formation,Acetoin + ammonia,Condensation,Bacillus subtilis,Tetramethylpyrazine,Pyrazines,Fig. 5.14,Reineccius 2006,REI06
+PS_030,Lipolysis,Triglycerides,Hydrolysis,Microbial lipases,"Glycerol, mono- and diglycerides, free fatty acids",Fatty acids,"Secc. 5.4, p. 125",Reineccius 2006,REI06
+PS_031,Lipolysis,β-keto acids from triglycerides,Hydrolysis + decarboxylation,Microbial lipases (starter culture),Odd-carbon methyl ketones,Methyl ketones,"Secc. 5.4, p. 126",Reineccius 2006,REI06
+PS_032,Lipolysis / proteolysis,Carbonyls (aldehydes and ketones),Reduction,not specified,Primary and secondary alcohols,Alcohols,Fig. 5.12,Reineccius 2006,REI06
+PS_033,Proteolysis,Amino acids,Deamination,not specified,Aliphatic (linear and branched-chain) and aromatic acids,Acids,"Secc. 5.4, p. 125",Reineccius 2006,REI06
+PS_034,Degradation of preservatives,Sorbic acid,Decarboxylation,Molds (Penicillium spp.),"1,3-pentadiene",Hydrocarbons (kerosene defect),Fig. 7.6,Reineccius 2006,REI06
+PS_035,Glycolysis,Lactose,Hydrolysis,Starter cultures,Glucose + galactose,Precursors,Fig. 12.2,Nollet 2009,NOL09
+PS_036,Glycolysis,Glucose / galactose,Embden-Meyerhof; Leloir; tagatose (lactococci),BAL,Pyruvate,Precursors,Fig. 12.2,Nollet 2009,NOL09
+PS_037,Glycolysis,Pyruvate,Various,BAL,"Acetaldehyde, acetate, diacetyl, ethanol, acetoin",Aldehydes; acids; ketones; alcohols,Fig. 12.2,Nollet 2009,NOL09
+PS_038,Citrate metabolism,Citrate,Citrate lyase,Citrate-utilizing LAB,Oxaloacetate + acetate,Acids,p. 283,Nollet 2009,NOL09
+PS_039,Citrate metabolism,Oxaloacetate → pyruvate → α-acetolactate,Decarboxylation; α-acetolactate synthase,"Lactococcus, Leuconostoc",Diacetyl (oxidative) or acetoin (non-oxidative) + CO₂,Ketones,p. 283,Nollet 2009,NOL09
+PS_040,Proteolysis,Casein → peptides → amino acids,Proteases; peptidases,BAL,Free amino acids,Precursors,Fig. 12.3,Nollet 2009,NOL09
+PS_041,Proteolysis,Amino acids,Decarboxylase / aminotransferase / lyases,"LAB, coryneforms, yeasts, Geotrichum",Amines; α-keto acids; tioles; phenol; indol,Amines; sulfur compounds; phenols,Fig. 12.3,Nollet 2009,NOL09
+PS_042,Proteolysis,α-keto acids,Decarboxylation; dehydrogenase,BAL,Aldehydes; carboxylic acids; hydroxy acids,Aldehydes; acids,Fig. 12.3,Nollet 2009,NOL09
+PS_043,Proteolysis,Aldehydes + acids,Alcohol dehydrogenase; acyltransferases / esterases,BAL,Alcohols; esters; tioésteres,Alcohols; esters,Fig. 12.3,Nollet 2009,NOL09
+PS_044,Branched-chain amino acids,Leucine → α-ketoisocaproate,Transamination; decarboxylation,Aminotransferases,3-methylbutanal → isovaleric acid (ALDH) or 3-methylbutanol,Aldehydes; acids; alcohols,p. 285,Nollet 2009,NOL09
+PS_045,Branched-chain amino acids,Isoleucine / valine,Transamination; decarboxylation,Aminotransferases,"2-methylbutanal / 2-methylpropanal → 2-methylbutyric / isobutyric acids, or alcohols",Aldehydes; acids; alcohols,p. 285,Nollet 2009,NOL09
+PS_046,Aromatic amino acids,"Tryptophan, phenylalanine, tyrosine",Transamination,Aminotransferases,"Indole pyruvate, phenyl pyruvate, p-hydroxyphenyl pyruvate","Precursors (benzaldehyde, phenylacetaldehyde, phenylethanol)",p. 285,Nollet 2009,NOL09
+PS_047,Aromatic amino acids,Tyrosine / tryptophan,Elimination (lyases),"Yeasts, micrococci, B. linens",Phenol / indole,Phenols; indoles,p. 286,Nollet 2009,NOL09
+PS_048,Methionine,Methionine,Demethiolation (γ-lyase),B. linens; L. lactis,"Metanotiol → DMDS, DMTS",Sulfur compounds,p. 286,Nollet 2009,NOL09
+PS_049,Methionine,Methionine,Transamination,Aminotransferases,α-keto acid → methanethiol (via methional),Sulfur compounds,p. 286,Nollet 2009,NOL09
+PS_050,Lipolysis,Triglycerides,Hydrolysis,Lipases / esterases,Free fatty acids,Fatty acids,Fig. 12.4,Nollet 2009,NOL09
+PS_051,Lipolysis,Free fatty acids,β-oxidation; β-ketoacyl decarboxylase,Molds (Penicillium),β-keto acids → methyl ketones → secondary alcohols (reductase),Methyl ketones; secondary alcohols,Fig. 12.4,Nollet 2009,NOL09
+PS_052,Lipolysis,4- or 5-hydroxy acids,Cyclization,,γ- or δ-lactones,Lactones,Fig. 12.4,Nollet 2009,NOL09
+PS_053,Lipolysis,Unsaturated fatty acids,Lactoperoxidase; hydroperoxide lyase,,Hydroperoxides → aldehydes → acids and alcohols,Aldehydes; acids; alcohols,Fig. 12.4,Nollet 2009,NOL09
+PS_054,Esters,Short- and medium-chain fatty acids + alcohols,Esterification,,"Esters; thioesters (with methional, in Cheddar)",Esters,p. 287,Nollet 2009,NOL09
+PS_055,Heated milk,Lactose → methylglyoxal + glycine,Thermal reaction,,Diacetyl,Ketones,p. 279,Nollet 2009,NOL09
+PS_056,Heated milk,denatured β-lactoglobulin,Oxidation of sulfhydryl groups,,H₂S (cooked flavor),Sulfur compounds,p. 280,Nollet 2009,NOL09
+PS_057,Heated milk,Lactose + casein,Maillard (> 80 °C),,Furfural; hidroximetilfurfural,Furans,p. 280,Nollet 2009,NOL09
+PS_058,Light-induced oxidation,Methionine + singlet oxygen (riboflavin),Strecker degradation,,Metional; dimethyl sulfide,Sulfur compounds,p. 281,Nollet 2009,NOL09
+PS_059,Glycolysis,Residual lactose,Fermentation by LAB,Starter culture / NSLAB,"Lactic, propionic, citric and acetic acids",Acids,Table 4.2,Preedy 2014,PRE14
+PS_060,Proteolysis,"Caseins (αs1, αs2, β, κ)",Primary proteolysis,"Animal rennet (chymosin, pepsin), plasmin",Large peptides,Precursors,Fig. 4.4,Preedy 2014,PRE14
+PS_061,Proteolysis,Large peptides,Secondary proteolysis,"CEP, endo- and aminopeptidases of LAB",Small peptides and free amino acids,Precursors,Fig. 4.4,Preedy 2014,PRE14
+PS_062,Amino acid catabolism,Free amino acids,"Deamination, decarboxylation",Microbial enzymes,"Amines, sulfur compounds, volatile fatty acids",Amines; sulfur compounds; acids,Fig. 4.4,Preedy 2014,PRE14
+PS_063,Amino acid catabolism,Leucine,Transamination + reduction,Microbiota,3-methylbutanal → 3-methyl-1-butanol; 3-methylbutanoic acid,Aldehydes; alcohols; branched-chain acids,pp. 476–477,Preedy 2014,PRE14
+PS_064,Lipolysis,Milk triglycerides,Hydrolysis,"Milk lipase, PGE from rennet paste, lipases from LAB and molds",Free fatty acids (C4:0–C18:3) and glycerol,Acids,Fig. 4.5,Preedy 2014,PRE14
+PS_065,Fatty acid catabolism,Free fatty acids,β-oxidation → β-keto acids → decarboxylation,Molds (P. roqueforti) and bacteria,Methyl ketones (alkan-2-ones),Ketones,Fig. 4.5,Preedy 2014,PRE14
+PS_066,Fatty acid catabolism,Methyl ketones,Reduction,Microbiota,Secondary alcohols (alkan-2-ols),Alcohols,Fig. 4.5,Preedy 2014,PRE14
+PS_067,Fatty acid catabolism,Hydroxy acids (4- or 5-),Intramolecular esterification,Spontaneous,γ- and δ-lactones,Lactones,Fig. 4.5,Preedy 2014,PRE14
+PS_068,Fatty acid catabolism,Free fatty acids + ethanol,Esterification / alcoholysis,Lipases and esterases (rennet paste),Ethyl esters,Esters,Fig. 4.5; p. 118,Preedy 2014,PRE14
+PS_069,Fatty acid catabolism,Free fatty acids + sulfhydryls,Thioesterification,Microbiota,Tioésteres,Sulfur compounds,Fig. 4.5,Preedy 2014,PRE14
+PS_070,Citrate metabolism,Citrate,Fermentation,L. lactis biovar. diacetylactis,Diacetyl and acetoin,Ketones,p. 200,Preedy 2014,PRE14
+PS_071,Lactate metabolism (defect),Lactate,Butyric fermentation,Clostridium tyrobutyricum,"Butyric acid, acetic acid, CO₂, H₂",Acids,Fig. 50.2,Preedy 2014,PRE14
+PS_072,Citrate metabolism,Citrate,Fermentation,Leuconostoc spp.; Citrate+ L. lactis,"Acetate, CO₂, diacetyl, acetoin, 2,3-butanediol",Acids; ketones; alcohols,p. 128,McSweeney 2007,MCS07
+PS_073,Lactate metabolism (defect),Lactate,Butyric fermentation,Clostridium tyrobutyricum,Butyric acid,Acids,p. 263,McSweeney 2007,MCS07
+PS_074,Lactate metabolism,Lactate,Propionic fermentation,Propionibacterias,Propionic acid (sweet and nutty flavor of Swiss cheese),Acids,p. 263,McSweeney 2007,MCS07
+PS_075,Amino acid catabolism,Phenylalanine,Phenylalanine ammonia lyase → cinnamic acid → decarboxylation,Penicillium camemberti,Styrene,Aromatic hydrocarbons,p. 282,McSweeney 2007,MCS07
+PS_076,Fatty acid catabolism,Unsaturated fatty acids,Oxidation,Penicillium spp.,"1-octen-3-ol, 3-octanone, 1,5-octadien-3-one",Alcohols; ketones,pp. 282–283,McSweeney 2007,MCS07
+PS_077,Fatty acid catabolism,Short-chain fatty acids,Various,Molds and bacteria,"Thioesters, ethyl esters, γ/δ-lactones, methyl ketones",Esters; lactones; ketones,p. 193,McSweeney 2007,MCS07
+PS_078,Amino acid catabolism,Tyrosine,Tyrosine phenol-lyase,Brevibacterium linens,Phenol,Phenols,p. 920,McSweeney 2017,MCS17
+PS_079,Amino acid catabolism,Tryptophan,Tryptophan indole-lyase,Brevibacterium linens,Indol,Indoles,p. 920,McSweeney 2017,MCS17
+PS_080,Amino acid catabolism,Methionine,Elimination (one step) or transamination,"Surface bacteria, yeasts","Metanotiol → DMDS, DMTS; tioésteres",Sulfur compounds,"pp. 921, 973",McSweeney 2017,MCS17
+PS_081,Amino acid catabolism,"Leucine, isoleucine, valine",Ehrlich pathway: transamination → decarboxylation → reduction or oxidation,Molds and yeasts,"Branched-chain aldehydes, alcohols and acids (isobutyric, 2-methylbutyric, isovaleric)",Aldehydes; alcohols; acids,pp. 919–920,McSweeney 2017,MCS17
+PS_082,Fatty acid catabolism,Linoleic and linolenic acids,Intrachain oxidation (lipoxygenase / hydroperoxide lyase),Penicillium camemberti,"1-octen-3-ol, octan-2-ol, 1-octen-3-ona, octa-1,5-dien-3-ona",Alcohols; ketones,p. 918,McSweeney 2017,MCS17
+PS_083,Amino acid catabolism,Threonine,not specified,not specified,"2,5-dimethylpyrazine",Pyrazines,p. 923,McSweeney 2017,MCS17
+PS_084,Amino acid catabolism,Valine,not specified,Penicillium spp.,2-methoxy-3-isopropylpyrazine,Pyrazines,p. 923,McSweeney 2017,MCS17
+PS_085,Glycolysis,Glucose,Oxidation,BAL,"Pyruvate → lactate, diacetyl, acetoin, acetaldehyde, ethanol",Acids; ketones; aldehydes; alcohols,Fig. 3.1,Papademas 2018,PAP18
+PS_086,Citrate metabolism,Citrate,Fermentation,Citrate+ LAB,"Acetic acid, diacetyl, acetoin, 2,3-butanediol, CO₂",Acids; ketones; alcohols,p. 48,Papademas 2018,PAP18
+PS_087,Lactate metabolism (defect),Lactate,Butyric fermentation,Clostridium spp.,"CO₂, H₂O and butyric acid",Acids,p. 47,Papademas 2018,PAP18
+PS_088,Fatty acid catabolism,Free fatty acids,β-oxidation and decarboxylation,Penicillium spp.,Methyl ketones (one carbon fewer),Ketones,p. 50,Papademas 2018,PAP18
+PS_089,Fatty acid catabolism,Methyl ketones,Reduction,Penicillium spp.,"2-pentanol, 2-heptanol, 2-nonanol",Alcohols,p. 51,Papademas 2018,PAP18
+PS_090,Fatty acid catabolism,Alcohols + acylglycerols or acyl-CoA,Alcoholysis (main route in LAB) / esterification,"LAB, yeasts","Ethyl, methyl and propyl esters",Esters,p. 51,Papademas 2018,PAP18
+PS_091,Amino acid catabolism,Amino acids,Transamination (α-ketoglutarate acceptor),"LAB, NSLAB, yeasts, molds","α-keto acids → aldehydes, alcohols, acids, thiols, thioesters",Various families,Fig. 3.3; Table 3.2,Papademas 2018,PAP18
+PS_092,Fatty acid catabolism,Fatty acids + methanethiol,Thioesterification,Microbiota,S-metiltioésteres,Sulfur compounds,p. 54,Papademas 2018,PAP18
+PS_093,Citrate metabolism,Citrate,Fermentation,LAB and NSLAB,"Diacetyl, acetate, acetoin, 2,3-butanediol, CO₂",Ketones; acids; alcohols,p. 137,Tunick 2023,TUN23
+PS_094,Lactate metabolism,Lactate,Oxidation / anaerobic fermentation,LAB and NSLAB,"CO₂ and acetate; or butyrate, H₂ and CO₂",Acids,p. 137,Tunick 2023,TUN23
+PS_095,Fatty acid catabolism,Free fatty acids,β-oxidation and decarboxylation (low redox potential),Molds and bacteria,Methyl ketones,Ketones,p. 138,Tunick 2023,TUN23
+PS_096,Fatty acid catabolism,Methyl ketones,Enzymatic reduction,Microbiota,"Secondary alcohols (2-propanol from acetone, 2-butanol from butanone)",Alcohols,p. 138,Tunick 2023,TUN23
+PS_097,Fatty acid catabolism,Hydroxy fatty acids,Intramolecular esterification,,γ- and δ-lactones,Lactones,p. 138,Tunick 2023,TUN23
+PS_098,Fatty acid catabolism,Short-chain fatty acids + ethanol,Esterification,BAL,Ethyl esters (ethyl butanoate),Esters,p. 138,Tunick 2023,TUN23
+PS_099,Amino acid catabolism,"Leu, Ile, Val, Met, Phe, Trp","Transamination → α-keto acid → acid, aldehyde, alcohol, ester (enzymatic and chemical routes)",BAL,"3-methylbutanal, 2-methylpropanal, 2-methylbutanal, methional, methanethiol, phenylacetaldehyde, benzaldehyde",Aldehydes; alcohols; acids; esters; sulfur compounds,"Table 5.1, p. 95",Tunick 2023,TUN23
+PS_100,Amino acid catabolism,"Tyrosine, phenylalanine, tryptophan",Degradation of aromatic amino acids,,"p-cresol, benzaldehyde, skatole",Phenols; aldehydes; indoles,p. 94,Tunick 2023,TUN23
+PS_101,Amino acid catabolism,Cystine and methionine,Degradation of sulfur amino acids,,Methanethiol and other volatile sulfur compounds,Sulfur compounds,p. 94,Tunick 2023,TUN23
+PS_102,Citrate metabolism,Citric acid,Acetolactate pathway (favored by acidic pH),Lactococcus lactis,"Diacetyl (2,3-butanedione)",Ketones,p. 150,Taylor 2010,TAY10
+PS_103,Lactate metabolism,Lactic acid,Propionic fermentation,Propionibacterium shermanii,Propionic acid,Acids,p. 150,Taylor 2010,TAY10
+PS_104,Fatty acid catabolism,Free fatty acids,β-oxidation and decarboxylation of 2-oxo acids,Penicillium roqueforti,"Methyl ketones (2-heptanone, 2-nonanone, 2-undecanone) and δ-lactones",Ketones; lactones,"pp. 113, 150",Taylor 2010,TAY10
+PS_105,Amino acid catabolism,Methionine,Methionine aminotransferase / γ-lyase,"Lactococcus, Lactobacillus, Brevibacterium, Geotrichum candidum","Methanethiol, di- and trisulfides, thioacids",Sulfur compounds,p. 100,Taylor 2010,TAY10
+PS_106,Amino acid catabolism,Amino acids,"Decarboxylation, deamination, transamination",Brevibacterium linens,"3-metilbutanol, 2-feniletanol, metanotiol",Alcohols; sulfur compounds,p. 151,Taylor 2010,TAY10

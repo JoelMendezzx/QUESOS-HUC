@@ -1,0 +1,802 @@
+﻿descriptor_id,family_token,order_in_source
+DS_0001,Floral,1
+DS_0002,Sour,1
+DS_0003,Acidic,1
+DS_0004,Chemical irritation,1
+DS_0005,Cohesion,1
+DS_0005,Breakdown,2
+DS_0006,Tactile,1
+DS_0007,Adhesiveness,1
+DS_0007,Sticky,2
+DS_0007,Cohesion,3
+DS_0007,Breakdown,4
+DS_0007,Mouth Adhesiveness,5
+DS_0008,Maturity,1
+DS_0008,Age category,2
+DS_0009,Tactile (Hardness),1
+DS_0010,Chemical,1
+DS_0010,Fermented,2
+DS_0011,Chemical,1
+DS_0012,Savory,1
+DS_0012,Sulfur,2
+DS_0013,Nutty,1
+DS_0013,Toasted,2
+DS_0014,Animal,1
+DS_0015,Fruity,1
+DS_0016,Fruity,1
+DS_0017,Fruity,1
+DS_0018,General Intensity,1
+DS_0019,Toasted,1
+DS_0019,Off-flavor,2
+DS_0020,Mouthfeel (Drying),1
+DS_0020,Mucosal Contraction,2
+DS_0020,Drying,3
+DS_0020,Trigeminal,4
+DS_0020,Mouthfeel,5
+DS_0020,Astringency,6
+DS_0021,Animal,1
+DS_0021,Off-flavor,2
+DS_0022,Toasted,1
+DS_0022,Vegetable,2
+DS_0023,Sweet,1
+DS_0023,Resin,2
+DS_0024,Fruity,1
+DS_0025,Animal,1
+DS_0025,Barnyard,2
+DS_0026,Animal,1
+DS_0027,Vegetable,1
+DS_0028,Toasted,1
+DS_0030,Trigeminal,1
+DS_0030,Mouthfeel,2
+DS_0030,Hardness,3
+DS_0030,Firmness,4
+DS_0031,Bitter,1
+DS_0032,Woody,1
+DS_0032,Nutty,2
+DS_0033,Fungal,1
+DS_0033,Character,2
+DS_0034,Geometrical,1
+DS_0034,Appearance,2
+DS_0034,Structure,3
+DS_0035,General Structural Properties,1
+DS_0036,Animal,1
+DS_0036,Off-flavor,2
+DS_0037,Vegetable,1
+DS_0038,Vegetable,1
+DS_0039,Fermented,1
+DS_0040,Toasted,1
+DS_0041,Cohesion,1
+DS_0041,Breakdown,2
+DS_0042,Mechanical,1
+DS_0042,Structural breakdown,2
+DS_0043,Mechanical,1
+DS_0043,Instrumental Hardness,2
+DS_0044,Mechanical,1
+DS_0044,Instrumental toughness,2
+DS_0045,Cohesion,1
+DS_0045,Breakdown,2
+DS_0046,Cohesion,1
+DS_0046,Breakdown,2
+DS_0047,Floral,1
+DS_0048,Savory,1
+DS_0049,Sweet,1
+DS_0049,Fruity,2
+DS_0050,Tactile (Effervescence),1
+DS_0051,Toasted,1
+DS_0052,Toasted,1
+DS_0052,Sweet,2
+DS_0053,Lactic,1
+DS_0053,Fatty,2
+DS_0053,Dairy,3
+DS_0053,Culture,4
+DS_0054,Sweet,1
+DS_0055,Mouthfeel,1
+DS_0055,Viscosity,2
+DS_0056,Body,1
+DS_0056,Stable,2
+DS_0057,Physical Form,1
+DS_0057,Structure,2
+DS_0058,Vegetable,1
+DS_0058,Sulfur,2
+DS_0059,Sweet,1
+DS_0060,Toasted,1
+DS_0060,Sweet,2
+DS_0061,Off-flavor,1
+DS_0061,Oxidized,2
+DS_0061,Defect,3
+DS_0062,Instrumental cohesiveness,1
+DS_0063,Tactile,1
+DS_0064,Cohesion,1
+DS_0064,Breakdown,2
+DS_0065,Physical Form,1
+DS_0065,Structure,2
+DS_0066,Lactic,1
+DS_0067,Physical Form,1
+DS_0067,Structure,2
+DS_0068,Cohesion,1
+DS_0068,Breakdown,2
+DS_0069,Chemical,1
+DS_0070,Tactile (Mechanical),1
+DS_0070,Tactile (Texture),2
+DS_0071,Chewiness,1
+DS_0071,Cohesiveness attributes,2
+DS_0071,Cohesion,3
+DS_0071,Breakdown,4
+DS_0072,Savory,1
+DS_0072,Toasted,2
+DS_0073,Spicy,1
+DS_0074,Sweet,1
+DS_0075,Fruity,1
+DS_0076,Cohesion,1
+DS_0076,Breakdown,2
+DS_0077,Cohesion,1
+DS_0077,Breakdown,2
+DS_0078,Cohesion,1
+DS_0078,Breakdown,2
+DS_0079,Toasted,1
+DS_0079,Savory,2
+DS_0080,Fruit,1
+DS_0080,Sweet,2
+DS_0080,Fatty,3
+DS_0080,Fruity,4
+DS_0080,Dairy,5
+DS_0081,Toasted,1
+DS_0081,Savory,2
+DS_0082,Cohesion,1
+DS_0082,Structural strength,2
+DS_0082,Breakdown,3
+DS_0082,Cohesiveness,4
+DS_0083,Cohesion,1
+DS_0083,Breakdown,2
+DS_0084,Tactile (Mechanical),1
+DS_0085,Hardness,1
+DS_0085,Firmness,2
+DS_0086,Tactile (Density),1
+DS_0087,Processing,1
+DS_0087,Textural density,2
+DS_0087,Cohesion,3
+DS_0087,Breakdown,4
+DS_0088,Mechanical,1
+DS_0088,General texture,2
+DS_0088,Hardness,3
+DS_0088,Firmness,4
+DS_0089,Mouthfeel,1
+DS_0089,Koku attribute,2
+DS_0090,Toasted,1
+DS_0091,Lactic,1
+DS_0092,Sweet,1
+DS_0093,Cold Irritation,1
+DS_0093,Pseudo-cold,2
+DS_0094,Hardness,1
+DS_0094,Firmness,2
+DS_0095,Toasted,1
+DS_0096,Animal,1
+DS_0097,Lactic,1
+DS_0097,Fatty,2
+DS_0098,Mouthfeel (Tactile),1
+DS_0098,Tactile (Mouthfeel),2
+DS_0098,Mouthfeel,3
+DS_0098,Disintegration,4
+DS_0098,Cohesion,5
+DS_0098,Breakdown,6
+DS_0098,Viscosity,7
+DS_0098,Unctuousness,8
+DS_0099,Instrumental Rheology,1
+DS_0100,Tactile (Mechanical),1
+DS_0101,Mechanical,1
+DS_0101,Fracture property,2
+DS_0101,Cohesion,3
+DS_0101,Breakdown,4
+DS_0101,Brittle Fracturability,5
+DS_0102,Tactile (Granularity),1
+DS_0103,Cohesion,1
+DS_0103,Breakdown,2
+DS_0104,Geometrical,1
+DS_0104,Particle perception,2
+DS_0104,Cohesion,3
+DS_0104,Breakdown,4
+DS_0105,Mechanical,1
+DS_0105,Hardness at first bite,2
+DS_0105,Cohesion,3
+DS_0105,Breakdown,4
+DS_0106,Green,1
+DS_0107,Geometrical,1
+DS_0107,Particle perception,2
+DS_0108,Spicy,1
+DS_0109,Lactic,1
+DS_0109,Fatty,2
+DS_0110,Lactic,1
+DS_0110,Acidic,2
+DS_0111,Lactic,1
+DS_0111,Sweet,2
+DS_0112,Floral,1
+DS_0113,Animal,1
+DS_0113,Off-flavor,2
+DS_0114,Toasted,1
+DS_0115,Hardness,1
+DS_0115,Firmness,2
+DS_0116,Cohesion,1
+DS_0116,Breakdown,2
+DS_0117,Rheology,1
+DS_0117,Fracture properties,2
+DS_0117,Mechanical,3
+DS_0117,Instrumental Rheology,4
+DS_0118,Tactile (Geometrical),1
+DS_0118,Physical Form,2
+DS_0118,Structure,3
+DS_0119,Instrumental deformability,1
+DS_0120,Earthy,1
+DS_0120,Off-flavor,2
+DS_0121,Animal,1
+DS_0121,Off-flavor,2
+DS_0122,Cohesion,1
+DS_0122,Breakdown,2
+DS_0123,Hardness,1
+DS_0123,Moisture category,2
+DS_0124,Moisture,1
+DS_0124,Category,2
+DS_0124,Texture,3
+DS_0124,Dehydration,4
+DS_0124,Moisture (Low),5
+DS_0125,Tactile (Moisture),1
+DS_0126,Cohesion,1
+DS_0126,Breakdown,2
+DS_0127,Moisture,1
+DS_0127,Dehydration,2
+DS_0128,Earthy,1
+DS_0129,Earthy,1
+DS_0129,Mineral,2
+DS_0130,Rheology,1
+DS_0130,Springiness,2
+DS_0130,Cohesion,3
+DS_0130,Breakdown,4
+DS_0131,Cohesion,1
+DS_0131,Breakdown,2
+DS_0132,Tactile (Mechanical),1
+DS_0133,Cohesion,1
+DS_0133,Breakdown,2
+DS_0134,Hardness,1
+DS_0134,Firmness,2
+DS_0135,Hardness,1
+DS_0135,Moisture category,2
+DS_0136,Conformation,1
+DS_0136,Structural attribute,2
+DS_0137,Mouthfeel,1
+DS_0137,Viscosity,2
+DS_0138,Fatty,1
+DS_0139,Mouthfeel,1
+DS_0139,Viscosity,2
+DS_0140,Animal,1
+DS_0140,Decomposition,2
+DS_0141,Fermented,1
+DS_0141,Fruity,2
+DS_0142,Vegetable,1
+DS_0142,Sulfur,2
+DS_0143,Cohesion,1
+DS_0143,Breakdown,2
+DS_0144,Cohesion,1
+DS_0144,Breakdown,2
+DS_0145,Firmness,1
+DS_0145,Hardness,2
+DS_0145,Moderate Hardness,3
+DS_0146,Firmness,1
+DS_0146,Body,2
+DS_0147,Tactile (Texture),1
+DS_0148,Adhesiveness,1
+DS_0148,Stickiness at first bite,2
+DS_0148,Cohesion,3
+DS_0148,Breakdown,4
+DS_0149,Conformation,1
+DS_0149,Structural attribute,2
+DS_0150,Floral,1
+DS_0151,Cohesion,1
+DS_0151,Breakdown,2
+DS_0152,Cohesion,1
+DS_0152,Breakdown,2
+DS_0153,Large-strain fracture mechanics,1
+DS_0154,Cohesion,1
+DS_0154,Breakdown,2
+DS_0155,Mechanical,1
+DS_0155,Fracture property,2
+DS_0156,Cohesion,1
+DS_0156,Breakdown,2
+DS_0157,Cohesion,1
+DS_0157,Breakdown,2
+DS_0158,General,1
+DS_0159,General,1
+DS_0159,Moisture,2
+DS_0159,Category,3
+DS_0159,Dehydration,4
+DS_0160,Lactic,1
+DS_0161,Tactile (Texture),1
+DS_0161,Mechanical,2
+DS_0161,Fracture property,3
+DS_0161,Cohesion,4
+DS_0161,Breakdown,5
+DS_0162,Physical Form,1
+DS_0162,Structure,2
+DS_0163,Fruity,1
+DS_0164,Cohesion,1
+DS_0164,Breakdown,2
+DS_0165,Functional,1
+DS_0165,Rheological property,2
+DS_0166,Fermented,1
+DS_0167,Fundamental small-strain viscoelasticity,1
+DS_0168,Fundamental small-strain viscoelasticity,1
+DS_0169,Fundamental small-strain viscoelasticity,1
+DS_0170,Vegetable,1
+DS_0170,Sulfur,2
+DS_0171,Physical Form,1
+DS_0171,Structure,2
+DS_0172,Coagulation,1
+DS_0172,Physical state,2
+DS_0173,Cohesion,1
+DS_0173,Breakdown,2
+DS_0174,Large-strain fracture property,1
+DS_0175,Chemical,1
+DS_0176,Animal,1
+DS_0176,Caprine,2
+DS_0177,Cereal,1
+DS_0178,Tactile (Texture),1
+DS_0179,Geometrical,1
+DS_0179,Particle perception,2
+DS_0179,Cohesion,3
+DS_0179,Breakdown,4
+DS_0179,Geometry,5
+DS_0179,Particles,6
+DS_0180,Cohesion,1
+DS_0180,Breakdown,2
+DS_0181,Fruity,1
+DS_0182,Green,1
+DS_0183,Functional texture category,1
+DS_0184,Geometrical,1
+DS_0184,Fatty mouthfeel,2
+DS_0184,Moisture,3
+DS_0184,Dehydration,4
+DS_0185,Green,1
+DS_0186,Geometrical,1
+DS_0186,Particle perception,2
+DS_0186,Cohesion,3
+DS_0186,Breakdown,4
+DS_0187,Tactile (Mechanical),1
+DS_0188,Cohesion,1
+DS_0188,Breakdown,2
+DS_0189,Rheology,1
+DS_0189,Springiness,2
+DS_0190,Rheology,1
+DS_0190,Springiness,2
+DS_0191,Hardness,1
+DS_0191,Category,2
+DS_0191,Firmness,3
+DS_0191,Rheological Hardness,4
+DS_0192,Maturity,1
+DS_0192,Ripening category,2
+DS_0193,Tactile (Density),1
+DS_0194,Mouthfeel,1
+DS_0194,Astringency,2
+DS_0195,Harsh Pungency,1
+DS_0195,Acridity,2
+DS_0196,Green,1
+DS_0196,Earthy,2
+DS_0198,Toasted,1
+DS_0199,Physical Form,1
+DS_0199,Structure,2
+DS_0200,Green,1
+DS_0200,Herbal,2
+DS_0201,Processing,1
+DS_0201,Textural density,2
+DS_0202,Moisture,1
+DS_0202,Dehydration,2
+DS_0203,Cohesion,1
+DS_0203,Breakdown,2
+DS_0204,Sweet,1
+DS_0205,Thermal Irritation,1
+DS_0205,Burning,2
+DS_0206,Lactic,1
+DS_0207,Cohesion,1
+DS_0207,Breakdown,2
+DS_0208,Compositional,1
+DS_0208,Fat-replacement category,2
+DS_0209,Chemical,1
+DS_0211,Floral,1
+DS_0212,Coagulation,1
+DS_0212,Physical state,2
+DS_0213,Moisture,1
+DS_0213,Dehydration,2
+DS_0214,Lactic,1
+DS_0215,Floral,1
+DS_0216,Animal,1
+DS_0216,Off-flavor,2
+DS_0217,Fruity,1
+DS_0218,Physical Form,1
+DS_0218,Structure,2
+DS_0219,Alcoholic,1
+DS_0219,Sweet,2
+DS_0220,Moisture,1
+DS_0220,Dehydration,2
+DS_0221,Moisture,1
+DS_0221,Dehydration,2
+DS_0222,Cohesion,1
+DS_0222,Breakdown,2
+DS_0223,Toasted,1
+DS_0223,Cereal,2
+DS_0223,Malt,3
+DS_0224,Animal,1
+DS_0224,Off-flavor,2
+DS_0225,Hardness,1
+DS_0225,Moisture category,2
+DS_0226,Mechanical,1
+DS_0226,Instrumental Hardness,2
+DS_0227,Instrumental elasticity,1
+DS_0228,Geometrical,1
+DS_0228,Particle perception,2
+DS_0228,Cohesion,3
+DS_0228,Breakdown,4
+DS_0229,Savory,1
+DS_0230,Chemical,1
+DS_0231,Maturity,1
+DS_0231,Age category,2
+DS_0232,Fruity,1
+DS_0233,Tactile (Mouthfeel),1
+DS_0234,Chewiness,1
+DS_0234,Cohesiveness attributes,2
+DS_0234,Cohesion,3
+DS_0234,Breakdown,4
+DS_0234,Thermal Property,5
+DS_0236,Chemical,1
+DS_0236,Electric Shock,2
+DS_0237,General intensity,1
+DS_0238,Lactic,1
+DS_0239,Green,1
+DS_0239,Herbal,2
+DS_0239,Spicy,3
+DS_0240,Moisture,1
+DS_0240,Dehydration,2
+DS_0241,Tactile (Texture),1
+DS_0242,Compositional texture,1
+DS_0242,Moisture,2
+DS_0243,Moisture,1
+DS_0243,Dehydration,2
+DS_0244,Physical Form,1
+DS_0244,Structure,2
+DS_0245,Hardness,1
+DS_0245,Firmness,2
+DS_0246,Tactile (Mouthfeel),1
+DS_0247,Mouthfeel,1
+DS_0247,Tactile,2
+DS_0247,Physical Form,3
+DS_0247,Structure,4
+DS_0248,Mouthfeel,1
+DS_0248,Astringency,2
+DS_0249,General tactile,1
+DS_0249,Mouthfeel,2
+DS_0249,Viscosity,3
+DS_0250,Mouthfeel,1
+DS_0250,Kokumi attribute,2
+DS_0251,Physical Form,1
+DS_0251,Structure,2
+DS_0252,Fungal,1
+DS_0252,Molds,2
+DS_0253,Animal,1
+DS_0254,Earthy,1
+DS_0254,Fungal,2
+DS_0254,Moisture,3
+DS_0255,Animal,1
+DS_0256,Savory,1
+DS_0256,Lactic,2
+DS_0257,Nutty,1
+DS_0257,Nuts,2
+DS_0258,Fatty,1
+DS_0259,Tactile (Mouthfeel),1
+DS_0259,Tactile (Oily),2
+DS_0260,Thermal Fat Property,1
+DS_0261,Geometrical,1
+DS_0261,Fatty mouthfeel,2
+DS_0261,Moisture,3
+DS_0261,Dehydration,4
+DS_0262,Age category,1
+DS_0263,Character,1
+DS_0264,Vegetable,1
+DS_0264,Sulfur,2
+DS_0265,Physical Form,1
+DS_0265,Structure,2
+DS_0266,Cohesion,1
+DS_0266,Breakdown,2
+DS_0267,Fruity,1
+DS_0268,Hardness,1
+DS_0268,Firmness,2
+DS_0269,Lactic,1
+DS_0270,Cohesion,1
+DS_0270,Breakdown,2
+DS_0271,Cohesion,1
+DS_0271,Breakdown,2
+DS_0272,Fruity,1
+DS_0273,Nutty,1
+DS_0274,Fruity,1
+DS_0275,Chemical,1
+DS_0276,Compositional,1
+DS_0276,Surface category,2
+DS_0277,Earthy,1
+DS_0278,Fundamental small-strain viscoelasticity,1
+DS_0279,Physical Form,1
+DS_0279,Structure,2
+DS_0280,Woody,1
+DS_0281,Fruity,1
+DS_0282,Piquant (Enzymatic Pungency),1
+DS_0283,Chemical,1
+DS_0284,Cohesion,1
+DS_0284,Breakdown,2
+DS_0285,Fermented,1
+DS_0286,Fruity,1
+DS_0287,Toasted,1
+DS_0287,Maillard,2
+DS_0288,Cohesion,1
+DS_0288,Breakdown,2
+DS_0289,Vegetable,1
+DS_0289,Toasted,2
+DS_0289,Savory,3
+DS_0289,Cooked Vegetable,4
+DS_0290,Processing,1
+DS_0290,Hardness development,2
+DS_0291,Cohesion,1
+DS_0291,Breakdown,2
+DS_0292,Chemical feeling factor,1
+DS_0292,Trigeminal mouthfeel,2
+DS_0293,Effervescence,1
+DS_0293,Tingling,2
+DS_0294,Hardness,1
+DS_0294,Structural category,2
+DS_0295,Mouthfeel,1
+DS_0295,Astringency,2
+DS_0296,Mouthfeel,1
+DS_0296,Astringency,2
+DS_0297,Pungency,1
+DS_0297,Physical Irritation,2
+DS_0298,Off-flavor,1
+DS_0299,Off-flavor,1
+DS_0299,Animal,2
+DS_0299,Fatty Acid,3
+DS_0299,Rancid,4
+DS_0300,Cohesion,1
+DS_0300,Breakdown,2
+DS_0301,Instrumental Rheology,1
+DS_0302,Coagulation property,1
+DS_0303,Cohesion,1
+DS_0303,Breakdown,2
+DS_0304,Cohesion,1
+DS_0304,Breakdown,2
+DS_0305,Tactile,1
+DS_0305,Geometrical residual property,2
+DS_0306,Cohesion,1
+DS_0306,Breakdown,2
+DS_0307,Moisture,1
+DS_0307,Dehydration,2
+DS_0308,Mouthfeel,1
+DS_0308,Koku attribute,2
+DS_0309,Mechanical,1
+DS_0309,Firmness,2
+DS_0310,Lactic,1
+DS_0310,Savory,2
+DS_0311,Fermented,1
+DS_0312,Hardness,1
+DS_0312,Age category,2
+DS_0313,Toasted,1
+DS_0314,Savory,1
+DS_0315,Nutty,1
+DS_0316,Cohesion,1
+DS_0316,Breakdown,2
+DS_0317,Floral,1
+DS_0318,Tactile (Texture),1
+DS_0318,Cohesion,2
+DS_0318,Breakdown,3
+DS_0319,Cohesion,1
+DS_0319,Breakdown,2
+DS_0320,Salty,1
+DS_0321,Fermented,1
+DS_0322,Fermented,1
+DS_0323,Spicy,1
+DS_0324,Hardness,1
+DS_0324,Firmness,2
+DS_0325,Tactile (Density),1
+DS_0326,Hardness,1
+DS_0326,Category,2
+DS_0326,Firmness,3
+DS_0327,Hardness,1
+DS_0327,Category,2
+DS_0327,Firmness,3
+DS_0328,Hardness,1
+DS_0328,Firmness,2
+DS_0329,Chemical Irritation,1
+DS_0329,Tingling,2
+DS_0330,Cohesion,1
+DS_0330,Breakdown,2
+DS_0331,Animal,1
+DS_0332,Cohesion,1
+DS_0332,Breakdown,2
+DS_0333,Mouthfeel,1
+DS_0333,Astringency,2
+DS_0334,Off-flavor,1
+DS_0335,Physical,1
+DS_0335,Tactile,2
+DS_0335,Functional property,3
+DS_0336,Moisture,1
+DS_0336,Dehydration,2
+DS_0337,Mouthfeel,1
+DS_0337,Viscous lipid perception,2
+DS_0337,Cohesion,3
+DS_0337,Breakdown,4
+DS_0338,Tactile,1
+DS_0339,Physical,1
+DS_0339,Process-induced texture,2
+DS_0340,Toasted,1
+DS_0340,Smoky,2
+DS_0340,Smoke,3
+DS_0340,Wood,4
+DS_0341,Surface,1
+DS_0341,Geometrical property,2
+DS_0341,Cohesion,3
+DS_0341,Breakdown,4
+DS_0341,Tactile Smoothness,5
+DS_0342,Geometrical,1
+DS_0342,Surface property,2
+DS_0342,Cohesion,3
+DS_0342,Breakdown,4
+DS_0343,Tactile (Texture),1
+DS_0344,Cohesion,1
+DS_0344,Breakdown,2
+DS_0345,Chemical,1
+DS_0345,Off-flavor,2
+DS_0346,Cohesion,1
+DS_0346,Breakdown,2
+DS_0347,Hardness,1
+DS_0347,Category,2
+DS_0347,Firmness,3
+DS_0347,Hardness (Low),4
+DS_0348,Hardness,1
+DS_0348,Firmness,2
+DS_0349,Hardness,1
+DS_0349,Ripening category,2
+DS_0349,Physical Form,3
+DS_0349,Structure,4
+DS_0350,Maturity,1
+DS_0350,Ripening category,2
+DS_0351,Hardness,1
+DS_0351,Body,2
+DS_0352,Structural breakdown,1
+DS_0352,Hardness,2
+DS_0352,Firmness,3
+DS_0353,Tactile (Density),1
+DS_0354,Mouthfeel,1
+DS_0354,Disintegration,2
+DS_0354,Cohesion,3
+DS_0354,Breakdown,4
+DS_0355,Chemical,1
+DS_0356,Acidic,1
+DS_0357,Lactic,1
+DS_0358,Mouthfeel,1
+DS_0358,Astringency,2
+DS_0359,Spicy,1
+DS_0360,Physical Form,1
+DS_0360,Structure,2
+DS_0361,Multidimensional,1
+DS_0361,Other attributes,2
+DS_0362,Mechanical,1
+DS_0362,Functional property,2
+DS_0362,Hardness,3
+DS_0362,Firmness,4
+DS_0362,Viscous Malleability,5
+DS_0363,Rheology,1
+DS_0363,Springiness,2
+DS_0363,Cohesion,3
+DS_0363,Breakdown,4
+DS_0363,Rheological Elasticity,5
+DS_0364,Acoustic,1
+DS_0364,Mouthfeel,2
+DS_0364,Acoustic-Rheological Property,3
+DS_0365,Animal,1
+DS_0365,Earthy,2
+DS_0366,Adhesiveness,1
+DS_0366,Sticky,2
+DS_0366,Cohesion,3
+DS_0366,Breakdown,4
+DS_0367,Fruity,1
+DS_0368,Hardness,1
+DS_0368,Firmness,2
+DS_0369,Functional,1
+DS_0369,Rheological property,2
+DS_0369,Cohesion,3
+DS_0369,Breakdown,4
+DS_0369,Thermal Elasticity Property,5
+DS_0370,General intensity,1
+DS_0371,Coagulation properties,1
+DS_0371,Curd texture,2
+DS_0372,Cohesion,1
+DS_0372,Breakdown,2
+DS_0373,Chemical,1
+DS_0374,Sulfur,1
+DS_0374,Sulfurous,2
+DS_0374,Mineral,3
+DS_0375,Geometrical,1
+DS_0375,Surface property,2
+DS_0376,Physical Form,1
+DS_0376,Structure,2
+DS_0377,Animal,1
+DS_0377,Off-flavor,2
+DS_0378,Sweet,1
+DS_0379,Sweet,1
+DS_0380,Character,1
+DS_0381,Sweet,1
+DS_0382,Fatty,1
+DS_0383,Hardness,1
+DS_0383,Mechanical attribute,2
+DS_0383,Firmness,3
+DS_0384,Tactile (Texture),1
+DS_0385,Tactile (Viscosity),1
+DS_0385,Cohesion,2
+DS_0385,Breakdown,3
+DS_0386,Toasted,1
+DS_0387,Sweet,1
+DS_0388,Vegetable,1
+DS_0389,Sweet,1
+DS_0389,Savory,2
+DS_0390,Cohesion,1
+DS_0390,Breakdown,2
+DS_0391,Cohesion,1
+DS_0391,Breakdown,2
+DS_0392,Tactile,1
+DS_0392,Surface tribological property,2
+DS_0393,Fruity,1
+DS_0394,Earthy,1
+DS_0394,SAVORY,2
+DS_0395,Umami,1
+DS_0395,Umami (Savory),2
+DS_0396,Off-flavor,1
+DS_0397,Cohesion,1
+DS_0397,Breakdown,2
+DS_0398,Cohesion,1
+DS_0398,Breakdown,2
+DS_0399,Fruity,1
+DS_0400,Hardness,1
+DS_0400,Age category,2
+DS_0401,Hardness,1
+DS_0401,Firmness,2
+DS_0402,Off-flavor,1
+DS_0403,Sweet,1
+DS_0404,Vegetable,1
+DS_0405,Cohesion,1
+DS_0405,Breakdown,2
+DS_0406,Hardness,1
+DS_0406,Firmness,2
+DS_0407,Acidic,1
+DS_0408,Rheology,1
+DS_0408,Viscoelasticity,2
+DS_0409,Tactile (Mechanical),1
+DS_0410,Viscosity,1
+DS_0410,Mechanical attribute,2
+DS_0410,Cohesion,3
+DS_0410,Breakdown,4
+DS_0410,Fluid Rheology,5
+DS_0411,Nutty,1
+DS_0412,Compositional,1
+DS_0412,Physical state,2
+DS_0413,Moisture,1
+DS_0413,Dehydration,2
+DS_0414,Fatty,1
+DS_0415,Cohesion,1
+DS_0415,Breakdown,2
+DS_0416,Hardness,1
+DS_0416,Firmness,2
+DS_0417,Hardness,1
+DS_0417,Firmness,2
+DS_0418,Cohesion,1
+DS_0418,Breakdown,2
+DS_0419,Instrumental cohesiveness,1
+DS_0420,Lactic,1
+DS_0421,Fermented,1
+DS_0422,Cohesion,1
+DS_0422,Breakdown,2
+DS_0423,Fermented,1
+DS_0424,Woody,1
+DS_0424,Earthy,2
+DS_0425,Age category,1
+DS_0426,Fundamental elastic stiffness,1

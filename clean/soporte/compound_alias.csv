@@ -1,0 +1,240 @@
+﻿compound_id,alias,is_preferred,n_occurrences
+CP_0001,1-(2-aminophenyl)ethan-1-one,True,3
+CP_0001,2-aminoacetophenone,False,1
+CP_0002,butanoic acid,True,86
+CP_0002,Butanoic acid,False,1
+CP_0003,2-hydroxypropanoic acid,True,3
+CP_0004,pentan-1-ol,True,18
+CP_0004,1-pentanol,False,4
+CP_0005,3-methylbutan-1-ol,True,27
+CP_0005,3-methyl-1-butanol,False,11
+CP_0005,3-methyl-butan-1-ol,False,2
+CP_0006,ethanol,True,14
+CP_0007,hexanal,True,21
+CP_0008,nonanal,True,42
+CP_0009,2-methylfuran-3-thiol,True,3
+CP_0010,di(prop-2-en-1-yl) disulfide,True,2
+CP_0011,benzaldehyde,True,14
+CP_0011,Benzaldehyde,False,2
+CP_0012,4-ethyloctanoic acid,True,19
+CP_0013,propan-1-ol,True,5
+CP_0013,1-propanol,False,2
+CP_0013,propanol,False,1
+CP_0014,acetaldehyde,True,17
+CP_0015,ethyl butanoate,True,82
+CP_0015,Ethyl butanoate,False,2
+CP_0016,ethyl hexanoate,True,92
+CP_0016,Ethyl hexanoate,False,1
+CP_0017,isobutyl hexanoate,True,3
+CP_0017,Isobutyl hexanoate,False,2
+CP_0018,ethyl octanoate,True,49
+CP_0018,Ethyl octanoate,False,1
+CP_0019,3-methylbutanal,True,70
+CP_0019,3-Methyl butanal,False,2
+CP_0020,"(2E)-1-(2,6,6-trimethylcyclohexa-1,3-dien-1-yl)but-2-en-1-one",True,8
+CP_0021,3-methylbutyl 2-methylpropanoate,True,3
+CP_0022,2-phenylacetaldehyde,True,40
+CP_0022,2-feniletanal,False,1
+CP_0023,2-methoxyphenol,True,10
+CP_0024,4-methylphenol,True,26
+CP_0025,3-(methylsulfanyl)propanal,True,72
+CP_0026,2-phenylethyl acetate,True,17
+CP_0027,benzoic acid,True,4
+CP_0027,Benzoic acid,False,1
+CP_0028,pentan-2-one,True,18
+CP_0028,2-pentanone,False,3
+CP_0029,3-methylbutyl acetate,True,25
+CP_0030,pentyl acetate,True,3
+CP_0031,3-methylphenol,True,4
+CP_0032,pentanoic acid,True,28
+CP_0033,2-methoxy-3-(2-methylpropyl)pyrazine,True,5
+CP_0034,(4Z)-hept-4-enal,True,9
+CP_0034,c(4Z)-hept-4-enal,False,2
+CP_0035,"4-methoxy-2,5-dimethylfuran-3(2H)-one",True,2
+CP_0036,methyl 3-methylbutanoate,True,2
+CP_0037,heptan-2-one,True,80
+CP_0037,2-heptanone,False,4
+CP_0038,hexan-2-one,True,6
+CP_0038,2-hexanone,False,2
+CP_0039,octanoic acid,True,61
+CP_0039,Octanoic acid (caprylic),False,2
+CP_0040,S-methyl ethanethioate,True,2
+CP_0041,dimethyl sulfone,True,3
+CP_0042,ethyl heptanoate,True,4
+CP_0043,"1,3-dimethylbenzene",True,2
+CP_0044,2-methyltetrahydrofuran-3-thiol,True,2
+CP_0045,(2S)-2-aminopentanedioic acid,True,2
+CP_0046,butanedioic acid,True,2
+CP_0047,"3-ethyl-2,5-dimethylpyrazine",True,3
+CP_0047,"3-Ethyl-2,5-dimethylpyrazine",False,1
+CP_0048,"4-hydroxy-2,5-dimethylfuran-3(2H)-one",True,23
+CP_0048,"4-hydroxy-2,5-dimethyl-3(2H)-furanone",False,2
+CP_0049,3-hydroxybutan-2-one,True,28
+CP_0050,"butane-2,3-dione",True,33
+CP_0051,"pentane-2,3-dione",True,2
+CP_0051,"2,3-pentanedione",False,2
+CP_0051,"Pentane-2,3-dione",False,1
+CP_0052,butan-2-one,True,6
+CP_0053,dimethyl sulfide,True,20
+CP_0053,(methylsulfanyl)methane,False,1
+CP_0054,"3-hydroxy-4,5-dimethylfuran-2(5H)-one",True,15
+CP_0055,(2E)-non-2-enal,True,15
+CP_0056,octanal,True,18
+CP_0057,3-methylbutanoic acid,True,58
+CP_0058,pentanal,True,7
+CP_0059,"2,5-dimethylpyrazine",True,7
+CP_0060,"2,3,5-trimethylpyrazine",True,8
+CP_0061,"2-ethyl-3,5-dimethylpyrazine",True,5
+CP_0061,"pyrazine-2-ethyl-3,5-dimethyl",False,1
+CP_0062,"3,5-diethyl-2-methylpyrazine",True,2
+CP_0063,(2E)-3-phenylprop-2-enal,True,2
+CP_0064,2-methoxy-4-(prop-2-en-1-yl)phenol,True,2
+CP_0065,4-ethenyl-2-methoxyphenol,True,2
+CP_0066,6-pentyloxan-2-one,True,30
+CP_0067,5-hexyloxolan-2-one,True,18
+CP_0068,"2,3-dimethylpyrazine",True,17
+CP_0069,furan-2-ylmethanol,True,5
+CP_0070,"2-acetyl-4,5-dihydro-1,3-thiazole",True,3
+CP_0071,"(2E,6Z)-nona-2,6-dienal",True,8
+CP_0072,dimethyl disulfide,True,37
+CP_0072,Dimethyl disulfide,False,1
+CP_0073,"(2E,4E)-nona-2,4-dienal",True,4
+CP_0074,dodecane,True,2
+CP_0075,heptan-2-ol,True,25
+CP_0075,2-heptanol,False,13
+CP_0076,heptan-1-ol,True,12
+CP_0076,1-heptanol,False,4
+CP_0076,heptanol,False,1
+CP_0077,octan-2-one,True,37
+CP_0078,"(4S,4aS,8aR)-4,8a-dimethyloctahydronaphthalen-4a(2H)-ol",True,5
+CP_0079,"1,2,7,7-tetramethylbicycloheptan-2-ol",True,8
+CP_0080,1H-indole,True,14
+CP_0081,3-methyl-1H-indole,True,8
+CP_0082,hydrogen sulfide,True,6
+CP_0083,hexanoic acid,True,54
+CP_0083,caproic acid,False,2
+CP_0083,Hexanoic acid (caproic),False,1
+CP_0084,oct-1-en-3-one,True,23
+CP_0085,2-phenylethan-1-ol,True,43
+CP_0086,3-methylbut-2-en-1-ol,True,5
+CP_0087,"2,2-dimethyl-3-methylidenebicycloheptane",True,5
+CP_0088,butan-1-ol,True,17
+CP_0089,butan-2-yl acetate,True,2
+CP_0090,nonanoic acid,True,8
+CP_0091,decanoic acid,True,59
+CP_0092,4-methyloctanoic acid,True,32
+CP_0093,"(2E,4E,6Z)-nona-2,4,6-trienal",True,2
+CP_0094,"3,7,7-trimethylbicyclohept-2-ene",True,2
+CP_0095,ethyl decanoate,True,8
+CP_0096,propan-2-one,True,6
+CP_0097,tridecan-2-one,True,8
+CP_0098,butanal,True,8
+CP_0099,(5R)-2-methyl-5-(prop-1-en-2-yl)cyclohex-2-en-1-one,True,2
+CP_0100,2-phenylacetic acid,True,5
+CP_0101,nonan-2-one,True,55
+CP_0102,2-methylbutanal,True,19
+CP_0103,"(2E,4E)-dodeca-2,4-dienal",True,2
+CP_0104,6-methylquinoline,True,2
+CP_0105,5-[(2Z)-oct-2-en-1-yl]oxolan-2-one,True,3
+CP_0106,2-methylpropanal,True,18
+CP_0106,2-Methylpropanal,False,2
+CP_0107,nonan-2-ol,True,9
+CP_0108,non-1-en-3-one,True,2
+CP_0109,6-nonyloxan-2-one,True,2
+CP_0110,2-methylbutyl hexanoate,True,2
+CP_0111,(4R)-1-methyl-4-(prop-1-en-2-yl)cyclohex-1-ene,True,4
+CP_0112,"(1R,2S,5R)-5-methyl-2-(propan-2-yl)cyclohexan-1-ol",True,2
+CP_0113,"1,3,3-trimethyl-2-oxabicycloctane",True,2
+CP_0114,oct-1-en-3-ol,True,20
+CP_0115,(9Z)-oxacycloheptadec-9-en-2-one,True,2
+CP_0116,undecan-2-one,True,38
+CP_0117,"2,6-dimethylpyrazine",True,11
+CP_0118,5-heptyloxolan-2-one,True,3
+CP_0118,heptyloxolan-2-one,False,1
+CP_0119,"3,7-dimethylocta-1,6-dien-3-ol",True,10
+CP_0120,methyl octanoate,True,4
+CP_0121,decanal,True,17
+CP_0122,butyl acetate,True,8
+CP_0123,2-methylpropanoic acid,True,10
+CP_0124,α-pinene,True,7
+CP_0125,ethyl acetate,True,23
+CP_0126,2-methylpropan-1-ol,True,3
+CP_0127,styrene,True,5
+CP_0128,2-acetylpyrazine,True,4
+CP_0129,"2-acetyl-3,4-dihydro-2H-pyrrole",True,4
+CP_0130,"1-(1,3-thiazol-2-yl)ethanone",True,2
+CP_0131,dimethyl trisulfide,True,39
+CP_0132,5-ethyl-3-hydroxy-4-methylfuran-2(5H)-one,True,2
+CP_0133,phenol,True,11
+CP_0134,"2,6-dimethoxyphenol",True,5
+CP_0135,dodecanoic acid,True,14
+CP_0136,propanoic acid,True,11
+CP_0137,acetic acid,True,33
+CP_0137,Ethanoic acid,False,2
+CP_0138,heptanoic acid,True,6
+CP_0139,methanethiol,True,28
+CP_0140,5-octyloxolan-2-one,True,11
+CP_0141,"2-(2-methylpropyl)-1,3-thiazole",True,2
+CP_0142,6-propyloxan-2-one,True,24
+CP_0143,6-heptyloxan-2-one,True,13
+CP_0144,4-hydroxy-3-methoxybenzaldehyde,True,2
+CP_0145,3-ethoxy-4-hydroxybenzaldehyde,True,2
+CP_0146,3-hydroxy-2-methyl-4H-pyran-4-one,True,2
+CP_0147,2-methylbutan-1-ol,True,5
+CP_0148,methyl decanoate,True,3
+CP_0149,pentan-2-ol,True,16
+CP_0150,(2E)-but-2-enal,True,3
+CP_0151,ethyl pentanoate,True,3
+CP_0152,heptanal,True,13
+CP_0153,2-methylbutanoic acid,True,4
+CP_0154,octan-2-ol,True,15
+CP_0155,hexan-1-ol,True,12
+CP_0156,octan-3-one,True,4
+CP_0157,2-methoxy-3-(propan-2-yl)pyrazine,True,8
+CP_0158,1-phenylethan-1-one,True,13
+CP_0159,ethyl propanoate,True,17
+CP_0160,3-(methylsulfanyl)propan-1-ol,True,7
+CP_0161,bis(methylsulfanyl)methane,True,4
+CP_0162,hexane-1-thiol,True,13
+CP_0163,oxolan-2-one,True,3
+CP_0164,5-butyloxolan-2-one,True,5
+CP_0165,2-ethyl-4-hydroxy-5-methylfuran-3(2H)-one,True,12
+CP_0166,butan-2-ol,True,5
+CP_0167,"butane-2,3-diol",True,3
+CP_0168,hexan-2-ol,True,10
+CP_0169,propanal,True,3
+CP_0170,(2E)-hex-2-enal,True,10
+CP_0171,"(2E,4E)-deca-2,4-dienal",True,9
+CP_0172,dodecanal,True,3
+CP_0173,3-methylbutyl propanoate,True,5
+CP_0174,propyl butanoate,True,7
+CP_0175,3-methylbutyl butanoate,True,5
+CP_0176,methyl hexanoate,True,3
+CP_0177,2-phenylethyl propanoate,True,5
+CP_0178,2-phenylethyl butanoate,True,7
+CP_0179,2-ethyl-5-methylpyrazine,True,7
+CP_0180,"2,3-diethyl-5-methylpyrazine",True,3
+CP_0181,"(2E)-3,7-dimethylocta-2,6-dien-1-ol",True,3
+CP_0182,"1,3-dimethoxybenzene",True,3
+CP_0183,methyl (2E)-3-phenylprop-2-enoate,True,3
+CP_0184,"2-hydroxypropane-1,2,3-tricarboxylic acid",True,2
+CP_0185,ethyl 2-methylpropanoate,True,1
+CP_0186,phenylmethanol,True,1
+CP_0187,ethyl benzoate,True,1
+CP_0188,carbonyl sulfide,True,1
+CP_0189,ethyl 3-methylbutanoate,True,1
+CP_0190,"1,3-pentadieno",True,1
+CP_0191,2-hydroxybutanedioic acid,True,1
+CP_0192,"1,3,7-Trimethylpurine-2,6-dione",True,1
+CP_0193,"(R)-(6-methoxyquinolin-4-yl)((2S,4S,5R)-5-vinylquinuclidin-2-yl)methanol hydrochloride",True,1
+CP_0194,(2S)-2-amino-4-methylpentanoic acid,True,1
+CP_0195,Sodium chloride,True,1
+CP_0196,potassium chloride,True,1
+CP_0197,mineral salts,True,1
+CP_0198,beta-D-fructofuranosy-alpha-D-glucopyranoside,True,1
+CP_0199,"(2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanal",True,1
+CP_0200,(2R)-2-amino-4-methylpentanoic acid,True,1
+CP_0201,(2S)-2-amino-5-hydroxy-5-oxopentanoate,True,1
+CP_0202,(2S)-2-aminobutanedioate,True,1
+CP_0203,"[(2R,3S,4R,5R)-3,4-dihydroxy-5-(6-oxo-1H-purin-9-yl)oxolan-2-yl]methyl dihydrogen phosphate",True,1
+CP_0204,"[(2R,3S,4R,5R)-5-(2-amino-6-oxo-1H-purin-9-yl)-3,4-dihydroxyoxolan-2-yl]methyl dihydrogen phosphate",True,1

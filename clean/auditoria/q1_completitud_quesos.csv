@@ -1,0 +1,51 @@
+﻿cheese_id,cheese_name_std,profile_completeness,profile_from_label_only,milk_known,heat_known,heat_unambiguous,culture_known,ripening_known,ripening_numeric,all4_known,all4_strict
+CH_004,Beyaz peynir,1.0,False,True,True,True,True,True,True,True,True
+CH_022,Cheddar,1.0,False,True,True,False,True,True,True,True,False
+CH_023,Cheddar (aged),1.0,True,True,True,False,True,True,True,True,False
+CH_024,Cheddar (low-fat),1.0,True,True,True,False,True,True,True,True,False
+CH_045,Feta,1.0,False,True,True,True,True,True,True,True,True
+CH_051,Fresh,1.0,False,True,True,False,True,True,True,True,False
+CH_058,Gouda,1.0,False,True,True,True,True,True,True,True,True
+CH_060,Grana Padano,1.0,False,True,True,True,True,True,True,True,True
+CH_071,Majorero,1.0,False,True,True,True,True,True,True,True,True
+CH_080,Mozzarella (buffalo),1.0,False,True,True,True,True,True,True,True,True
+CH_091,Pecorino Romano,1.0,False,True,True,False,True,True,True,True,False
+CH_100,Roncal,1.0,False,True,True,True,True,True,True,True,True
+CH_104,San Simón da Costa,1.0,False,True,True,False,True,True,True,True,False
+CH_001,Afuega'l Pitu,0.75,False,True,True,False,True,False,False,False,False
+CH_014,Cabrales,0.75,False,True,True,True,True,False,False,False,False
+CH_016,Camembert,0.75,False,True,True,False,True,False,False,False,False
+CH_040,Emmental,0.75,False,True,True,True,True,False,False,False,False
+CH_057,Gorgonzola,0.75,False,True,True,False,True,False,False,False,False
+CH_062,Gruyère,0.75,False,True,True,True,True,False,False,False,False
+CH_073,Manchego,0.75,False,True,True,False,True,False,False,False,False
+CH_074,Mihalic,0.75,False,True,False,False,True,True,True,False,False
+CH_082,Palmero,0.75,False,True,True,True,False,True,True,False,False
+CH_084,Parmesan,0.75,False,True,True,True,True,False,False,False,False
+CH_087,Parmigiano Reggiano,0.75,False,True,True,True,True,False,False,False,False
+CH_092,Pecorino Siciliano,0.75,False,True,False,False,True,True,True,False,False
+CH_099,Ragusano,0.75,False,True,True,True,True,False,False,False,False
+CH_101,Roquefort,0.75,False,True,True,True,True,False,False,False,False
+CH_103,Sainte-Maure,0.75,False,True,False,False,True,True,True,False,False
+CH_107,Serra da Estrela,0.75,False,True,True,True,True,False,False,False,False
+CH_116,Svecia,0.75,False,True,True,True,True,False,False,False,False
+CH_030,Chèvre,0.5,True,True,False,False,False,True,True,False,False
+CH_032,Cottage,0.5,False,False,False,False,True,True,True,False,False
+CH_047,Flor de Guia,0.5,False,True,False,False,True,False,False,False,False
+CH_055,Goat Cheddar,0.5,False,True,False,False,False,True,True,False,False
+CH_077,Minas Frescal,0.5,True,False,False,False,True,True,True,False,False
+CH_079,Mozzarella,0.5,True,True,False,False,False,True,True,False,False
+CH_093,Piacentinu Ennese,0.5,False,True,True,True,False,False,False,False,False
+CH_097,Quarg,0.5,False,False,False,False,True,True,True,False,False
+CH_011,Brie,0.25,False,False,False,False,True,False,False,False,False
+CH_037,Domiati,0.25,False,True,False,False,False,False,False,False,False
+CH_044,Farmhouse Cheddar,0.25,False,True,False,False,False,False,False,False,False
+CH_048,Formaella,0.25,False,True,False,False,False,False,False,False,False
+CH_061,Grana Trentino,0.25,True,True,False,False,False,False,False,False,False
+CH_068,Limburger,0.25,False,False,False,False,True,False,False,False,False
+CH_070,Livarot,0.25,False,False,False,False,True,False,False,False,False
+CH_072,Malatya,0.25,True,False,True,True,False,False,False,False,False
+CH_089,Pecorino,0.25,True,True,False,False,False,False,False,False,False
+CH_090,Pecorino Crotonese,0.25,False,True,False,False,False,False,False,False,False
+CH_120,Tilsit,0.25,False,False,False,False,True,False,False,False,False
+CH_094,Polish smoked cheese,0.0,True,False,False,False,False,False,False,False,False

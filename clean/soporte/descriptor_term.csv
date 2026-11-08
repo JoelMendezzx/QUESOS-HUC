@@ -1,0 +1,662 @@
+﻿descriptor_id,term
+DS_0001,Acacia
+DS_0002,Acid
+DS_0002,Acidic
+DS_0003,Acidic
+DS_0004,Acrid
+DS_0005,Adhesive pasty
+DS_0006,Adhesiveness
+DS_0006,Sticky
+DS_0007,Adhesivity
+DS_0007,Adhesiveness
+DS_0007,Sticky
+DS_0008,Aged
+DS_0008,Age
+DS_0009,Al dente
+DS_0010,Alcohol
+DS_0010,Alcoholic
+DS_0011,Aldehydic
+DS_0012,Alliaceous
+DS_0012,meaty
+DS_0013,Almond
+DS_0013,Bitter almond
+DS_0013,Almond-like
+DS_0014,Animal
+DS_0014,Animalic
+DS_0015,Apple
+DS_0015,Apple-like
+DS_0016,Apple sauce
+DS_0017,Apricot
+DS_0018,Aromatic
+DS_0019,Ashy
+DS_0019,Sooty
+DS_0020,Astringent
+DS_0020,Astringency
+DS_0021,Baby vomit
+DS_0022,Baked
+DS_0022,Baked potato
+DS_0023,Balsamic
+DS_0024,Banana
+DS_0025,Barny
+DS_0025,Barnyard
+DS_0025,Cowy
+DS_0025,Stables
+DS_0026,Bedsteam
+DS_0027,Bell pepper
+DS_0028,Biscuit-like
+DS_0029,Bite
+DS_0030,Biting
+DS_0031,Bitter
+DS_0031,Bitterness
+DS_0032,Black Walnut
+DS_0033,Blue cheese
+DS_0034,Blue-veined
+DS_0034,Blue area
+DS_0035,Body & Texture
+DS_0035,Texture
+DS_0036,Body odour
+DS_0037,Boiled
+DS_0037,cooked potato
+DS_0038,Boiled cauliflower
+DS_0039,Brandy
+DS_0040,Bread
+DS_0041,Break
+DS_0042,Breakdown
+DS_0043,Breaking force
+DS_0043,Force at Fracture
+DS_0044,Breaking work
+DS_0044,Work for Fracture
+DS_0045,Brittle or gummy texture
+DS_0046,Brittleness
+DS_0046,Brittle
+DS_0047,Broom
+DS_0048,Broth
+DS_0048,Brothy
+DS_0049,Bubble gum
+DS_0050,Bubbly
+DS_0051,Burnt
+DS_0051,Burnt wood
+DS_0051,Smoke
+DS_0052,Burnt sugar
+DS_0053,Butter
+DS_0053,Butter-like
+DS_0053,Buttery
+DS_0054,Butterscotch
+DS_0055,Buttery
+DS_0056,Butyric
+DS_0056,Butyric acid
+DS_0056,Dirty sock
+DS_0057,Cabbage
+DS_0058,Cabbage
+DS_0058,Broccoli
+DS_0058,Cabbage-like
+DS_0059,Candy
+DS_0059,Bonbon
+DS_0060,Caramel
+DS_0060,Caramel-like
+DS_0060,Caramelic
+DS_0061,Cardboard-like
+DS_0061,Cardboard
+DS_0061,Paper board
+DS_0062,Cf (Fracture stress)
+DS_0063,Chalkiness
+DS_0064,Chalkiness
+DS_0064,Grittiness
+DS_0064,Chalky
+DS_0064,Chalky texture
+DS_0065,Checks
+DS_0065,Short Cracks
+DS_0066,Cheese rind
+DS_0067,Cheese surface layers
+DS_0068,Cheesy
+DS_0069,Chemical
+DS_0070,Chewiness
+DS_0070,Chewy
+DS_0071,Chewy
+DS_0071,Chewiness
+DS_0072,Chocolate
+DS_0073,Cinnamon
+DS_0073,Clove
+DS_0074,Circus
+DS_0075,Citrus
+DS_0076,Closed rind
+DS_0077,Coarse
+DS_0077,Coarseness
+DS_0078,Coarse particulate network
+DS_0079,Cocoa
+DS_0080,Coconut
+DS_0080,Coconut-like
+DS_0080,Peach
+DS_0081,Coffee
+DS_0082,Cohesive
+DS_0082,Cohesiveness
+DS_0083,Cohesive mass
+DS_0084,Cohesiveness
+DS_0085,Collapsed
+DS_0086,Compact
+DS_0087,Compacted
+DS_0087,Compact
+DS_0088,Consistency (of the paste)
+DS_0089,Continuity
+DS_0090,Cooked
+DS_0091,Cooked milk
+DS_0092,Cooked sugar
+DS_0093,Cooling
+DS_0094,Corky
+DS_0095,Corny
+DS_0096,Cowy
+DS_0097,Cream
+DS_0097,Creamy
+DS_0098,Creamy
+DS_0098,Creaminess
+DS_0099,Creep compliance
+DS_0099,Compliance
+DS_0099,J
+DS_0099,Jmax (maximum compliance)
+DS_0100,Crispy
+DS_0100,Crunchy
+DS_0101,Crumbliness
+DS_0101,Crumbly
+DS_0101,Crumbling
+DS_0101,Crumbs
+DS_0101,Desmoronable
+DS_0102,Crumbly
+DS_0103,Crumbly grainy texture
+DS_0104,Crunchiness
+DS_0104,Crunchy
+DS_0105,Crustiness
+DS_0106,Cucumber
+DS_0107,Curdiness
+DS_0108,Curry
+DS_0109,Dairy fat
+DS_0110,Dairy sour
+DS_0111,Dairy sweet
+DS_0112,Daisy
+DS_0113,Decaying animal
+DS_0114,Deep-fried
+DS_0115,Defective 'soft' texture
+DS_0116,Deform and fuse (or Fusion)
+DS_0117,Deformable
+DS_0117,Deformability
+DS_0117,Deformity
+DS_0117,Deformation
+DS_0117,% of deformation
+DS_0118,Denseness
+DS_0119,Df (Fracture strain)
+DS_0120,Dirt
+DS_0120,Dirty
+DS_0121,Dirty sock
+DS_0122,Dissolves quickly in mouth
+DS_0123,Dolce
+DS_0124,Dried
+DS_0124,Dry
+DS_0124,Dryness
+DS_0125,Drier
+DS_0126,Drier cheese
+DS_0127,Drier texture
+DS_0128,Dusty
+DS_0128,Papery
+DS_0129,Earthy
+DS_0129,Musty
+DS_0130,Elastic
+DS_0130,Elasticity
+DS_0131,Elastic fracture behavior
+DS_0132,Elasticity
+DS_0132,Elastic
+DS_0133,Emulsion
+DS_0134,Excessively firm texture
+DS_0135,Extra-hard
+DS_0136,Eyes
+DS_0137,Fattiness
+DS_0137,Fatty
+DS_0138,Fatty
+DS_0139,Fatty mouthfeel
+DS_0140,Fecal
+DS_0140,Putrid
+DS_0140,Rotten egg
+DS_0141,Fermented
+DS_0142,Fermented cabbage
+DS_0143,Fibrous texture
+DS_0144,Finer casein matrix
+DS_0145,Firm
+DS_0145,Firmness
+DS_0145,Firmer
+DS_0146,Firm-bodied
+DS_0147,Firmness
+DS_0147,Firm
+DS_0148,First-bite sticky
+DS_0148,Sticky sensation
+DS_0149,Flaky
+DS_0150,Floral
+DS_0150,Flowery
+DS_0150,Flower
+DS_0150,Lily
+DS_0151,Flowability
+DS_0152,Fluid
+DS_0153,Food toughness (R)
+DS_0154,Fracturability at first bite
+DS_0155,Fracturable
+DS_0155,Fracturability
+DS_0155,Mouth fracturability
+DS_0155,Hand fracturability
+DS_0155,Fracture
+DS_0156,Fracture strain (εf)
+DS_0157,Fracture stress (σf)
+DS_0158,Fragrant
+DS_0159,Fresh
+DS_0160,Fresh milk
+DS_0161,Friability
+DS_0162,Frogmouth
+DS_0163,Fruit
+DS_0163,Fruity
+DS_0163,Pineapple
+DS_0163,Banana
+DS_0164,Fully fused
+DS_0165,Functionality
+DS_0166,Fusel oil
+DS_0167,G' (Storage modulus)
+DS_0168,G'' (Loss modulus)
+DS_0169,G* (Complex modulus)
+DS_0170,Garlic-like
+DS_0170,Garlic
+DS_0171,Gassy
+DS_0172,Gel
+DS_0173,Gelatinous
+DS_0174,Gf (Fracture modulus)
+DS_0175,Glue
+DS_0176,Goat
+DS_0176,Goaty
+DS_0176,Caprine
+DS_0176,Sheepy
+DS_0177,Grain
+DS_0177,Grainy
+DS_0178,Graininess
+DS_0178,Grainy
+DS_0179,Grainy
+DS_0179,Granularity
+DS_0179,Graininess
+DS_0179,Granular
+DS_0179,Curdy
+DS_0179,Curdy texture
+DS_0179,Gritty
+DS_0180,Granules
+DS_0181,Grape-like
+DS_0182,Grass
+DS_0182,Grass-like
+DS_0182,Grassy
+DS_0183,Grating
+DS_0184,Greasy
+DS_0184,Greasiness
+DS_0184,Phase separation
+DS_0185,Green
+DS_0186,Gritty
+DS_0186,Grittiness
+DS_0186,Sandy
+DS_0186,Chalky
+DS_0186,Powdery
+DS_0186,Gritty mouthfeel
+DS_0187,Gumminess
+DS_0187,Gummy
+DS_0188,Gummy
+DS_0189,Hand rate of recovery
+DS_0190,Hand recovery
+DS_0191,Hard
+DS_0191,Hardness
+DS_0191,Harder
+DS_0191,Firmer
+DS_0192,Hard-ripening
+DS_0193,Hardness
+DS_0193,Hard
+DS_0194,Harsh
+DS_0194,Harsh sensation
+DS_0195,Harsh
+DS_0195,Slightly acrid
+DS_0196,Hay
+DS_0197,Heat burn
+DS_0198,Heated milk-like
+DS_0199,Heaviness
+DS_0199,Lightness
+DS_0200,Herbaceous
+DS_0201,High-cooked
+DS_0202,High-moisture
+DS_0203,Homogeneous structure
+DS_0204,Honey
+DS_0204,Honey-like
+DS_0205,Hot
+DS_0205,Burning
+DS_0205,Heat
+DS_0206,Hot milk
+DS_0207,Hot plastic consistency
+DS_0208,Imitation
+DS_0209,Iodoform-like
+DS_0210,Irritating sensation
+DS_0211,Jasmine
+DS_0212,Jelly-like curd
+DS_0213,Juiciness
+DS_0213,Juicy
+DS_0214,Lactic
+DS_0215,Lavender
+DS_0216,Leathery
+DS_0217,Lemon
+DS_0218,Light
+DS_0218,airy
+DS_0219,Liqueur
+DS_0220,Low-moisture
+DS_0221,Lowest water content
+DS_0222,Lumpy
+DS_0223,Malty
+DS_0224,Manure
+DS_0225,Maturo
+DS_0226,Maximum force for compression
+DS_0227,MD (Modulus of deformability
+DS_0227,Elasticity)
+DS_0228,Mealy
+DS_0229,Meaty-brothy
+DS_0230,Medicine
+DS_0230,Medicinal
+DS_0231,Medium
+DS_0232,Melon
+DS_0232,Melon-like
+DS_0233,Melt
+DS_0233,Melting
+DS_0234,Melting
+DS_0234,Melt
+DS_0234,Meltability
+DS_0235,Metal
+DS_0235,Metallic
+DS_0236,Metallic
+DS_0237,Mild
+DS_0238,Milk
+DS_0238,Milky
+DS_0239,Mint
+DS_0239,Minty
+DS_0239,Eucalyptus-like
+DS_0240,Moist
+DS_0241,Moist
+DS_0241,Moisture
+DS_0242,Moisture
+DS_0242,Humidity
+DS_0242,Dehydration
+DS_0242,Water content
+DS_0243,Moisture content
+DS_0244,Mold-ripened
+DS_0245,More tender
+DS_0246,Mouth Coating
+DS_0247,Mouth-coating
+DS_0247,Residual mouth coating
+DS_0247,Residual in mouth
+DS_0248,Mouth-drying
+DS_0249,Mouthfeel
+DS_0250,Mouthfulness
+DS_0251,Mozzarella strands
+DS_0252,Mushroom
+DS_0252,Mushroom-like
+DS_0253,Musk
+DS_0253,Musky
+DS_0254,Musty
+DS_0254,Moldy
+DS_0255,Muttony
+DS_0256,Nacho cheese
+DS_0257,Nut
+DS_0257,Nutty
+DS_0257,Hazelnut
+DS_0258,Oil
+DS_0258,Oily
+DS_0259,Oiliness
+DS_0259,Oily
+DS_0260,Oiling-off
+DS_0260,Oiliness
+DS_0261,Oily
+DS_0262,Old
+DS_0263,Old cheese
+DS_0264,Onion
+DS_0264,Onion-tomato
+DS_0264,Onion-like
+DS_0265,Open
+DS_0266,Open texture
+DS_0267,Orange
+DS_0267,Orange peel
+DS_0267,Orange peel-like
+DS_0268,Over-soft
+DS_0269,Overall dairy
+DS_0270,Pasta filata
+DS_0271,Pasty
+DS_0272,Peach
+DS_0272,Peach-like
+DS_0273,Peanut
+DS_0273,Peanut butter
+DS_0274,Pear
+DS_0274,Pear-like
+DS_0275,Penetrating
+DS_0276,Peppered
+DS_0277,Petrichor
+DS_0278,Phase angle (d)
+DS_0278,Loss tangent (tan d)
+DS_0279,Picks
+DS_0280,Pine
+DS_0281,Pineapple
+DS_0282,Piquant
+DS_0283,Plastic
+DS_0284,Pliable
+DS_0285,Pomace
+DS_0286,Pomegranate
+DS_0287,Popcorn
+DS_0287,Toasty
+DS_0287,Biscuit-like
+DS_0288,Porous protein matrix
+DS_0289,Potato
+DS_0289,Potato chips
+DS_0289,Potato-like
+DS_0289,Cooked potato
+DS_0289,Methional
+DS_0290,Pressed
+DS_0291,Pressed curd
+DS_0292,Prickle
+DS_0292,bite
+DS_0293,Prickle
+DS_0293,Tingling
+DS_0293,Bite
+DS_0294,Processed
+DS_0294,Processed cheese
+DS_0295,Puckering
+DS_0296,Pungency
+DS_0297,Pungent
+DS_0297,Pungency
+DS_0298,Putrid
+DS_0299,Rancid
+DS_0299,Hydrolytic rancidity
+DS_0300,Rate of recovery
+DS_0301,Relaxation time
+DS_0302,Rennet curd
+DS_0302,Rennet curd texture
+DS_0303,Residual mouthfeel
+DS_0304,Residual smoothness of mouth coating
+DS_0305,Residuals (Hand)
+DS_0306,Resilience
+DS_0306,Rate of recovery
+DS_0307,Retains its moisture
+DS_0308,Richness
+DS_0309,Rigid
+DS_0309,Rigidity
+DS_0310,Ripe cheese
+DS_0311,Ripe flavor
+DS_0312,Ripened
+DS_0312,Cured
+DS_0312,Mature
+DS_0312,Seasoned
+DS_0313,Roast
+DS_0313,Roasted
+DS_0313,Roasty
+DS_0314,Roast beef
+DS_0315,Roasted nuts
+DS_0316,Ropy texture
+DS_0317,Rose
+DS_0317,Rose flower
+DS_0317,Rosy
+DS_0317,Floral
+DS_0318,Rubbery
+DS_0318,Rubberiness
+DS_0319,Runny
+DS_0320,Saltiness
+DS_0320,Salty
+DS_0321,Sauerkraut
+DS_0322,Seasoned flavor
+DS_0323,Seasoning
+DS_0323,Curry
+DS_0324,Semi-firm
+DS_0325,Semi-hard
+DS_0326,Semi-hard
+DS_0326,Semihard (or Semi-hard)
+DS_0327,Semi-soft
+DS_0327,Semisoft (or Semi-soft)
+DS_0328,Sharp
+DS_0329,Sharp
+DS_0329,Sharpness
+DS_0329,Sharp note
+DS_0330,Shear resistance
+DS_0331,Sheep
+DS_0331,Sheepy-like
+DS_0332,Short
+DS_0332,Shortness
+DS_0332,Shorter
+DS_0333,Shrinking
+DS_0334,Sickening
+DS_0335,Slicing properties
+DS_0336,Slightly reduced water content
+DS_0337,Slimy
+DS_0338,Slippery
+DS_0339,Smoked
+DS_0340,Smoked
+DS_0340,Smoky
+DS_0341,Smooth
+DS_0341,Smoother
+DS_0341,Smoothness
+DS_0342,Smooth mass
+DS_0343,Smoothness
+DS_0343,Smooth
+DS_0344,Smoothness of the mass
+DS_0345,Soap
+DS_0345,Soapy
+DS_0346,Soapy
+DS_0347,Soft
+DS_0347,Softer
+DS_0347,Softness
+DS_0348,Soft consistency
+DS_0349,Soft smear
+DS_0350,Soft-ripening
+DS_0351,Soft-spread
+DS_0352,Softening
+DS_0353,Softness
+DS_0353,Soft
+DS_0354,Soluble
+DS_0354,Solubility
+DS_0355,Solvent
+DS_0356,Sour
+DS_0356,Sour aromatic
+DS_0357,Sour milk
+DS_0358,Spiciness
+DS_0359,Spicy
+DS_0360,Splits
+DS_0360,Sizable Cracks
+DS_0361,Spongy
+DS_0362,Spreadability
+DS_0362,Spreadable
+DS_0363,Springiness
+DS_0363,Hand springiness
+DS_0363,Springy
+DS_0363,Elasticity
+DS_0363,Elastic
+DS_0364,Squeak
+DS_0364,Squeaky
+DS_0365,Stable
+DS_0366,Sticky
+DS_0366,Stickier
+DS_0366,Stickiness
+DS_0367,Strawberry-like
+DS_0368,Strength
+DS_0369,Stretchability
+DS_0369,Stretch
+DS_0369,Stretching
+DS_0369,Stretchy
+DS_0369,Stringiness
+DS_0370,Strong cheese
+DS_0371,Stronger
+DS_0371,Firmer
+DS_0372,Structure
+DS_0373,Styrene
+DS_0374,Sulfur
+DS_0374,Sulfury
+DS_0374,Sulphide
+DS_0374,Rotten egg
+DS_0375,Surface rugosity
+DS_0375,Touch
+DS_0376,Surface-ripened
+DS_0377,Sweaty
+DS_0378,Sweet
+DS_0378,Sweetness
+DS_0379,Sweet-candy
+DS_0380,Swiss cheese
+DS_0381,Syrup
+DS_0382,Tallowy
+DS_0383,Tender
+DS_0383,Tenderness
+DS_0384,Tenderness
+DS_0385,Thickness
+DS_0385,Thick
+DS_0386,Toasted cheese
+DS_0387,Toffee
+DS_0388,Tomato-like
+DS_0389,Tootsie Rolls
+DS_0390,Tough and chewy
+DS_0391,Translucent
+DS_0392,Tribology
+DS_0392,Lubricity
+DS_0392,Friction
+DS_0393,Tropical
+DS_0394,Truffle
+DS_0395,Umami
+DS_0396,Unclean
+DS_0397,Uneven texture
+DS_0398,Unidirectional fibrous structure
+DS_0399,Unripe fruit
+DS_0400,Unripened
+DS_0401,Unripened cheese
+DS_0402,Urine-like
+DS_0403,Vanilla
+DS_0404,Vegetable
+DS_0404,Vegetal
+DS_0405,Velvety appearance
+DS_0406,Very hard
+DS_0407,Vinegar
+DS_0407,Vinegar-like
+DS_0408,Viscoelastic
+DS_0408,Viscoelastic properties
+DS_0408,Viscous
+DS_0409,Viscosity
+DS_0409,Viscous
+DS_0410,Viscous
+DS_0410,Viscosity
+DS_0410,Thickness
+DS_0411,Walnut
+DS_0412,Water activity (Aw)
+DS_0412,Water availability
+DS_0413,Water-binding capacity (or ability)
+DS_0414,Wax
+DS_0414,Wax-like
+DS_0415,Waxy
+DS_0416,Weak
+DS_0417,Weak body
+DS_0418,Wet shreds
+DS_0419,Wf (Work to fracture)
+DS_0420,Whey
+DS_0421,Whiskey
+DS_0421,Whisky
+DS_0422,White mold rind and creamy texture
+DS_0423,Wine
+DS_0423,Winey
+DS_0423,Wine-like
+DS_0424,Wood
+DS_0424,Wood pulp
+DS_0424,Woody
+DS_0425,Young
+DS_0426,Young's modulus (E)

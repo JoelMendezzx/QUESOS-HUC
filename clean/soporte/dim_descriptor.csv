@@ -1,0 +1,427 @@
+﻿descriptor_id,descriptor_label,n_terms,family_l1_as_in_source,n_family_tokens,in_odor_aroma,in_taste,in_trigeminal,in_texture,is_off_flavor,family_is_general_or_character,in_master_sheet
+DS_0001,Acacia,1,Floral,1,True,False,False,False,False,False,False
+DS_0002,Acid / Acidic,2,Sour,1,False,True,False,False,False,False,False
+DS_0003,Acidic,1,Acidic,1,True,False,False,False,False,False,True
+DS_0004,Acrid,1,Chemical irritation,1,False,False,True,False,False,False,False
+DS_0005,Adhesive pasty,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0006,Adhesiveness / Sticky,2,Tactile,1,False,False,True,False,False,False,False
+DS_0007,Adhesivity / Adhesiveness / Sticky,3,Adhesiveness,5,False,False,False,True,False,False,False
+DS_0008,Aged / Age,2,Maturity,2,False,False,False,True,False,False,False
+DS_0009,Al dente,1,Tactile (Hardness),1,False,False,True,False,False,False,False
+DS_0010,Alcohol / Alcoholic,2,Chemical,2,True,False,False,False,False,False,True
+DS_0011,Aldehydic,1,Chemical,1,True,False,False,False,False,False,False
+DS_0012,Alliaceous / meaty,2,Savory,2,True,False,False,False,False,False,True
+DS_0013,Almond / Bitter almond / Almond-like,3,Nutty,2,True,False,False,False,False,False,True
+DS_0014,Animal / Animalic,2,Animal,1,True,False,False,False,False,False,True
+DS_0015,Apple / Apple-like,2,Fruity,1,True,False,False,False,False,False,True
+DS_0016,Apple sauce,1,Fruity,1,True,False,False,False,False,False,True
+DS_0017,Apricot,1,Fruity,1,True,False,False,False,False,False,True
+DS_0018,Aromatic,1,General Intensity,1,True,False,False,False,False,True,False
+DS_0019,Ashy / Sooty,2,Toasted,2,True,False,False,False,True,False,False
+DS_0020,Astringent / Astringency,2,Mouthfeel (Drying),6,False,False,True,True,False,False,False
+DS_0021,Baby vomit,1,Animal,2,True,False,False,False,True,False,False
+DS_0022,Baked / Baked potato,2,Toasted,2,True,False,False,False,False,False,True
+DS_0023,Balsamic,1,Sweet,2,True,False,False,False,False,False,True
+DS_0024,Banana,1,Fruity,1,True,False,False,False,False,False,True
+DS_0025,Barny/Barnyard / Cowy / Stables,4,Animal,2,True,False,False,False,False,False,True
+DS_0026,Bedsteam,1,Animal,1,True,False,False,False,False,False,True
+DS_0027,Bell pepper,1,Vegetable,1,True,False,False,False,False,False,True
+DS_0028,Biscuit-like,1,Toasted,1,True,False,False,False,False,False,True
+DS_0029,Bite,1,,0,False,False,True,False,False,False,False
+DS_0030,Biting,1,Trigeminal,4,False,False,True,True,False,False,False
+DS_0031,Bitter / Bitterness,2,Bitter,1,False,True,False,False,False,False,False
+DS_0032,Black Walnut,1,Woody,2,True,False,False,False,False,False,False
+DS_0033,Blue cheese,1,Fungal,2,True,False,False,False,False,False,True
+DS_0034,Blue-veined / Blue area,2,Geometrical,3,False,False,False,True,False,False,False
+DS_0035,Body & Texture / Texture,2,General Structural Properties,1,False,False,False,True,False,False,False
+DS_0036,Body odour,1,Animal,2,True,False,False,False,True,False,True
+DS_0037,Boiled / cooked potato,2,Vegetable,1,True,False,False,False,False,False,True
+DS_0038,Boiled cauliflower,1,Vegetable,1,True,False,False,False,False,False,False
+DS_0039,Brandy,1,Fermented,1,True,False,False,False,False,False,True
+DS_0040,Bread,1,Toasted,1,True,False,False,False,False,False,True
+DS_0041,Break,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0042,Breakdown,1,Mechanical,2,False,False,False,True,False,False,False
+DS_0043,Breaking force / Force at Fracture,2,Mechanical,2,False,False,False,True,False,False,False
+DS_0044,Breaking work / Work for Fracture,2,Mechanical,2,False,False,False,True,False,False,False
+DS_0045,Brittle or gummy texture,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0046,Brittleness / Brittle,2,Cohesion,2,False,False,False,True,False,False,False
+DS_0047,Broom,1,Floral,1,True,False,False,False,False,False,False
+DS_0048,Broth / Brothy,2,Savory,1,True,False,False,False,False,False,True
+DS_0049,Bubble gum,1,Sweet,2,True,False,False,False,False,False,True
+DS_0050,Bubbly,1,Tactile (Effervescence),1,False,False,True,False,False,False,False
+DS_0051,Burnt / Burnt wood / Smoke,3,Toasted,1,True,False,False,False,False,False,True
+DS_0052,Burnt sugar,1,Toasted,2,True,False,False,False,False,False,True
+DS_0053,Butter / Butter-like / Buttery,3,Lactic,4,True,False,False,False,False,False,True
+DS_0054,Butterscotch,1,Sweet,1,True,False,False,False,False,False,True
+DS_0055,Buttery,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0056,Butyric / Butyric acid / Dirty sock,3,Body,2,True,False,False,False,False,True,True
+DS_0057,Cabbage,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0058,Cabbage / Broccoli / Cabbage-like,3,Vegetable,2,True,False,False,False,False,False,True
+DS_0059,Candy / Bonbon,2,Sweet,1,True,False,False,False,False,False,True
+DS_0060,Caramel / Caramel-like / Caramelic,3,Toasted,2,True,False,False,False,False,False,True
+DS_0061,Cardboard-like / Cardboard / Paper board,3,Off-flavor,3,True,False,False,False,True,False,True
+DS_0062,Cf (Fracture stress),1,Instrumental cohesiveness,1,False,False,False,True,False,False,False
+DS_0063,Chalkiness,1,Tactile,1,False,False,True,False,False,False,False
+DS_0064,Chalkiness / Grittiness / Chalky / Chalky texture,4,Cohesion,2,False,False,False,True,False,False,False
+DS_0065,Checks / Short Cracks,2,Physical Form,2,False,False,False,True,False,False,False
+DS_0066,Cheese rind,1,Lactic,1,True,False,False,False,False,False,True
+DS_0067,Cheese surface layers,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0068,Cheesy,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0069,Chemical,1,Chemical,1,True,False,False,False,False,False,True
+DS_0070,Chewiness / Chewy,2,Tactile (Mechanical),2,False,False,True,False,False,False,False
+DS_0071,Chewy / Chewiness,2,Chewiness,4,False,False,False,True,False,False,False
+DS_0072,Chocolate,1,Savory,2,True,False,False,False,False,False,True
+DS_0073,Cinnamon / Clove,2,Spicy,1,True,False,False,False,False,False,True
+DS_0074,Circus,1,Sweet,1,True,False,False,False,False,False,False
+DS_0075,Citrus,1,Fruity,1,True,False,False,False,False,False,True
+DS_0076,Closed rind,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0077,Coarse / Coarseness,2,Cohesion,2,False,False,False,True,False,False,False
+DS_0078,Coarse particulate network,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0079,Cocoa,1,Toasted,2,True,False,False,False,False,False,True
+DS_0080,Coconut / Coconut-like / Peach,3,Fruit,5,True,False,False,False,False,False,True
+DS_0081,Coffee,1,Toasted,2,True,False,False,False,False,False,True
+DS_0082,Cohesive / Cohesiveness,2,Cohesion,4,False,False,False,True,False,False,False
+DS_0083,Cohesive mass,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0084,Cohesiveness,1,Tactile (Mechanical),1,False,False,True,False,False,False,False
+DS_0085,Collapsed,1,Hardness,2,False,False,False,True,False,False,False
+DS_0086,Compact,1,Tactile (Density),1,False,False,True,False,False,False,False
+DS_0087,Compacted / Compact,2,Processing,4,False,False,False,True,False,False,False
+DS_0088,Consistency (of the paste),1,Mechanical,4,False,False,False,True,False,False,False
+DS_0089,Continuity,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0090,Cooked,1,Toasted,1,True,False,False,False,False,False,True
+DS_0091,Cooked milk,1,Lactic,1,True,False,False,False,False,False,True
+DS_0092,Cooked sugar,1,Sweet,1,True,False,False,False,False,False,False
+DS_0093,Cooling,1,Cold Irritation,2,False,False,True,False,False,False,False
+DS_0094,Corky,1,Hardness,2,False,False,False,True,False,False,False
+DS_0095,Corny,1,Toasted,1,True,False,False,False,False,False,True
+DS_0096,Cowy,1,Animal,1,True,False,False,False,False,False,True
+DS_0097,Cream / Creamy,2,Lactic,2,True,False,False,False,False,False,True
+DS_0098,Creamy / Creaminess,2,Mouthfeel (Tactile),8,False,False,True,True,False,False,False
+DS_0099,Creep compliance / Compliance / J / Jmax (maximum compliance),4,Instrumental Rheology,1,False,False,False,True,False,False,False
+DS_0100,Crispy / Crunchy,2,Tactile (Mechanical),1,False,False,True,False,False,False,False
+DS_0101,Crumbliness / Crumbly / Crumbling / Crumbs / Desmoronable,5,Mechanical,5,False,False,False,True,False,False,False
+DS_0102,Crumbly,1,Tactile (Granularity),1,False,False,True,False,False,False,False
+DS_0103,Crumbly grainy texture,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0104,Crunchiness / Crunchy,2,Geometrical,4,False,False,False,True,False,False,False
+DS_0105,Crustiness,1,Mechanical,4,False,False,False,True,False,False,False
+DS_0106,Cucumber,1,Green,1,True,False,False,False,False,False,True
+DS_0107,Curdiness,1,Geometrical,2,False,False,False,True,False,False,False
+DS_0108,Curry,1,Spicy,1,True,False,False,False,False,False,True
+DS_0109,Dairy fat,1,Lactic,2,False,False,False,True,False,False,False
+DS_0110,Dairy sour,1,Lactic,2,False,False,False,True,False,False,False
+DS_0111,Dairy sweet,1,Lactic,2,False,False,False,True,False,False,False
+DS_0112,Daisy,1,Floral,1,True,False,False,False,False,False,True
+DS_0113,Decaying animal,1,Animal,2,True,False,False,False,True,False,False
+DS_0114,Deep-fried,1,Toasted,1,True,False,False,False,False,False,False
+DS_0115,Defective 'soft' texture,1,Hardness,2,False,False,False,True,False,False,False
+DS_0116,Deform and fuse (or Fusion),1,Cohesion,2,False,False,False,True,False,False,False
+DS_0117,Deformable / Deformability / Deformity / Deformation / % of deformation,5,Rheology,4,False,False,False,True,False,False,False
+DS_0118,Denseness,1,Tactile (Geometrical),3,False,False,True,True,False,False,False
+DS_0119,Df (Fracture strain),1,Instrumental deformability,1,False,False,False,True,False,False,False
+DS_0120,Dirt / Dirty,2,Earthy,2,True,False,False,False,True,False,False
+DS_0121,Dirty sock,1,Animal,2,True,False,False,False,True,False,True
+DS_0122,Dissolves quickly in mouth,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0123,Dolce,1,Hardness,2,False,False,False,True,False,False,False
+DS_0124,Dried / Dry / Dryness,3,Moisture,5,False,False,False,True,False,False,False
+DS_0125,Drier,1,Tactile (Moisture),1,False,False,True,False,False,False,False
+DS_0126,Drier cheese,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0127,Drier texture,1,Moisture,2,False,False,False,True,False,False,False
+DS_0128,Dusty / Papery,2,Earthy,1,True,False,False,False,False,False,False
+DS_0129,Earthy / Musty,2,Earthy,2,True,False,False,False,False,False,True
+DS_0130,Elastic / Elasticity,2,Rheology,4,False,False,False,True,False,False,False
+DS_0131,Elastic fracture behavior,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0132,Elasticity / Elastic,2,Tactile (Mechanical),1,False,False,True,False,False,False,False
+DS_0133,Emulsion,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0134,Excessively firm texture,1,Hardness,2,False,False,False,True,False,False,False
+DS_0135,Extra-hard,1,Hardness,2,False,False,False,True,False,False,False
+DS_0136,Eyes,1,Conformation,2,False,False,False,True,False,False,False
+DS_0137,Fattiness / Fatty,2,Mouthfeel,2,False,False,True,True,False,False,False
+DS_0138,Fatty,1,Fatty,1,True,False,False,False,False,False,True
+DS_0139,Fatty mouthfeel,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0140,Fecal / Putrid / Rotten egg,3,Animal,2,True,False,False,False,False,False,True
+DS_0141,Fermented,1,Fermented,2,True,False,False,False,False,False,False
+DS_0142,Fermented cabbage,1,Vegetable,2,True,False,False,False,False,False,False
+DS_0143,Fibrous texture,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0144,Finer casein matrix,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0145,Firm / Firmness / Firmer,3,Firmness,3,False,False,False,True,False,False,False
+DS_0146,Firm-bodied,1,Firmness,2,False,False,False,True,False,False,False
+DS_0147,Firmness / Firm,2,Tactile (Texture),1,False,False,True,False,False,False,False
+DS_0148,First-bite sticky / Sticky sensation,2,Adhesiveness,4,False,False,False,True,False,False,False
+DS_0149,Flaky,1,Conformation,2,False,False,False,True,False,False,False
+DS_0150,Floral / Flowery / Flower / Lily,4,Floral,1,True,False,False,False,False,False,True
+DS_0151,Flowability,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0152,Fluid,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0153,Food toughness (R),1,Large-strain fracture mechanics,1,False,False,False,True,False,False,False
+DS_0154,Fracturability at first bite,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0155,Fracturable / Fracturability / Mouth fracturability / Hand fracturability / Fracture,5,Mechanical,2,False,False,False,True,False,False,False
+DS_0156,Fracture strain (εf),1,Cohesion,2,False,False,False,True,False,False,False
+DS_0157,Fracture stress (σf),1,Cohesion,2,False,False,False,True,False,False,False
+DS_0158,Fragrant,1,General,1,True,False,False,False,False,True,True
+DS_0159,Fresh,1,General,4,True,False,False,True,False,False,True
+DS_0160,Fresh milk,1,Lactic,1,True,False,False,False,False,False,False
+DS_0161,Friability,1,Tactile (Texture),5,False,False,True,True,False,False,False
+DS_0162,Frogmouth,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0163,Fruit / Fruity / Pineapple / Banana,4,Fruity,1,True,False,False,False,False,False,True
+DS_0164,Fully fused,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0165,Functionality,1,Functional,2,False,False,False,True,False,False,False
+DS_0166,Fusel oil,1,Fermented,1,True,False,False,False,False,False,True
+DS_0167,G' (Storage modulus),1,Fundamental small-strain viscoelasticity,1,False,False,False,True,False,False,False
+DS_0168,G'' (Loss modulus),1,Fundamental small-strain viscoelasticity,1,False,False,False,True,False,False,False
+DS_0169,G* (Complex modulus),1,Fundamental small-strain viscoelasticity,1,False,False,False,True,False,False,False
+DS_0170,Garlic-like / Garlic,2,Vegetable,2,True,False,False,False,False,False,True
+DS_0171,Gassy,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0172,Gel,1,Coagulation,2,False,False,False,True,False,False,False
+DS_0173,Gelatinous,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0174,Gf (Fracture modulus),1,Large-strain fracture property,1,False,False,False,True,False,False,False
+DS_0175,Glue,1,Chemical,1,True,False,False,False,False,False,True
+DS_0176,Goat / Goaty / Caprine / Sheepy,4,Animal,2,True,False,False,False,False,False,True
+DS_0177,Grain / Grainy,2,Cereal,1,True,False,False,False,False,False,True
+DS_0178,Graininess / Grainy,2,Tactile (Texture),1,False,False,True,False,False,False,False
+DS_0179,Grainy / Granularity / Graininess / Granular / Curdy / Curdy texture / Gritty,7,Geometrical,6,False,False,False,True,False,False,False
+DS_0180,Granules,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0181,Grape-like,1,Fruity,1,True,False,False,False,False,False,True
+DS_0182,Grass / Grass-like / Grassy,3,Green,1,True,False,False,False,False,False,True
+DS_0183,Grating,1,Functional texture category,1,False,False,False,True,False,False,False
+DS_0184,Greasy / Greasiness / Phase separation,3,Geometrical,4,False,False,False,True,False,False,False
+DS_0185,Green,1,Green,1,True,False,False,False,False,False,True
+DS_0186,Gritty / Grittiness / Sandy / Chalky / Powdery / Gritty mouthfeel,6,Geometrical,4,False,False,False,True,False,False,False
+DS_0187,Gumminess / Gummy,2,Tactile (Mechanical),1,False,False,True,False,False,False,False
+DS_0188,Gummy,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0189,Hand rate of recovery,1,Rheology,2,False,False,False,True,False,False,False
+DS_0190,Hand recovery,1,Rheology,2,False,False,False,True,False,False,False
+DS_0191,Hard / Hardness / Harder / Firmer,4,Hardness,4,False,False,False,True,False,False,False
+DS_0192,Hard-ripening,1,Maturity,2,False,False,False,True,False,False,False
+DS_0193,Hardness / Hard,2,Tactile (Density),1,False,False,True,False,False,False,False
+DS_0194,Harsh / Harsh sensation,2,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0195,Harsh / Slightly acrid,2,Harsh Pungency,2,False,False,True,False,False,False,False
+DS_0196,Hay,1,Green,2,True,False,False,False,False,False,False
+DS_0197,Heat burn,1,,0,False,False,True,False,False,False,False
+DS_0198,Heated milk-like,1,Toasted,1,True,False,False,False,False,False,False
+DS_0199,Heaviness / Lightness,2,Physical Form,2,False,False,False,True,False,False,False
+DS_0200,Herbaceous,1,Green,2,True,False,False,False,False,False,True
+DS_0201,High-cooked,1,Processing,2,False,False,False,True,False,False,False
+DS_0202,High-moisture,1,Moisture,2,False,False,False,True,False,False,False
+DS_0203,Homogeneous structure,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0204,Honey / Honey-like,2,Sweet,1,True,False,False,False,False,False,True
+DS_0205,Hot / Burning / Heat,3,Thermal Irritation,2,False,False,True,False,False,False,False
+DS_0206,Hot milk,1,Lactic,1,True,False,False,False,False,False,True
+DS_0207,Hot plastic consistency,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0208,Imitation,1,Compositional,2,False,False,False,True,False,False,False
+DS_0209,Iodoform-like,1,Chemical,1,True,False,False,False,False,False,True
+DS_0210,Irritating sensation,1,,0,False,False,True,False,False,False,False
+DS_0211,Jasmine,1,Floral,1,True,False,False,False,False,False,True
+DS_0212,Jelly-like curd,1,Coagulation,2,False,False,False,True,False,False,False
+DS_0213,Juiciness / Juicy,2,Moisture,2,False,False,False,True,False,False,False
+DS_0214,Lactic,1,Lactic,1,True,False,False,False,False,False,False
+DS_0215,Lavender,1,Floral,1,True,False,False,False,False,False,True
+DS_0216,Leathery,1,Animal,2,True,False,False,False,True,False,False
+DS_0217,Lemon,1,Fruity,1,True,False,False,False,False,False,False
+DS_0218,Light / airy,2,Physical Form,2,False,False,False,True,False,False,False
+DS_0219,Liqueur,1,Alcoholic,2,True,False,False,False,False,False,False
+DS_0220,Low-moisture,1,Moisture,2,False,False,False,True,False,False,False
+DS_0221,Lowest water content,1,Moisture,2,False,False,False,True,False,False,False
+DS_0222,Lumpy,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0223,Malty,1,Toasted,3,True,False,False,False,False,False,True
+DS_0224,Manure,1,Animal,2,True,False,False,False,True,False,True
+DS_0225,Maturo,1,Hardness,2,False,False,False,True,False,False,False
+DS_0226,Maximum force for compression,1,Mechanical,2,False,False,False,True,False,False,False
+DS_0227,MD (Modulus of deformability / Elasticity),2,Instrumental elasticity,1,False,False,False,True,False,False,False
+DS_0228,Mealy,1,Geometrical,4,False,False,False,True,False,False,False
+DS_0229,Meaty-brothy,1,Savory,1,True,False,False,False,False,False,True
+DS_0230,Medicine / Medicinal,2,Chemical,1,True,False,False,False,False,False,True
+DS_0231,Medium,1,Maturity,2,False,False,False,True,False,False,False
+DS_0232,Melon / Melon-like,2,Fruity,1,True,False,False,False,False,False,True
+DS_0233,Melt / Melting,2,Tactile (Mouthfeel),1,False,False,True,False,False,False,False
+DS_0234,Melting / Melt / Meltability,3,Chewiness,5,False,False,False,True,False,False,False
+DS_0235,Metal / Metallic,2,,0,False,False,True,False,False,False,False
+DS_0236,Metallic,1,Chemical,2,False,False,True,False,False,False,False
+DS_0237,Mild,1,General intensity,1,False,False,False,True,False,True,False
+DS_0238,Milk / Milky,2,Lactic,1,True,False,False,False,False,False,True
+DS_0239,Mint / Minty / Eucalyptus-like,3,Green,3,True,False,False,False,False,False,False
+DS_0240,Moist,1,Moisture,2,False,False,False,True,False,False,False
+DS_0241,Moist / Moisture,2,Tactile (Texture),1,False,False,True,False,False,False,False
+DS_0242,Moisture / Humidity / Dehydration / Water content,4,Compositional texture,2,False,False,False,True,False,False,False
+DS_0243,Moisture content,1,Moisture,2,False,False,False,True,False,False,False
+DS_0244,Mold-ripened,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0245,More tender,1,Hardness,2,False,False,False,True,False,False,False
+DS_0246,Mouth Coating,1,Tactile (Mouthfeel),1,False,False,True,False,False,False,False
+DS_0247,Mouth-coating / Residual mouth coating / Residual in mouth,3,Mouthfeel,4,False,False,False,True,False,False,False
+DS_0248,Mouth-drying,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0249,Mouthfeel,1,General tactile,3,False,False,True,True,False,False,False
+DS_0250,Mouthfulness,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0251,Mozzarella strands,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0252,Mushroom / Mushroom-like,2,Fungal,2,True,False,False,False,False,False,True
+DS_0253,Musk / Musky,2,Animal,1,True,False,False,False,False,False,True
+DS_0254,Musty / Moldy,2,Earthy,3,True,False,False,False,False,False,True
+DS_0255,Muttony,1,Animal,1,True,False,False,False,False,False,True
+DS_0256,Nacho cheese,1,Savory,2,True,False,False,False,False,False,False
+DS_0257,Nut / Nutty / Hazelnut,3,Nutty,2,True,False,False,False,False,False,True
+DS_0258,Oil / Oily,2,Fatty,1,True,False,False,False,False,False,True
+DS_0259,Oiliness / Oily,2,Tactile (Mouthfeel),2,False,False,True,False,False,False,False
+DS_0260,Oiling-off / Oiliness,2,Thermal Fat Property,1,False,False,False,True,False,False,False
+DS_0261,Oily,1,Geometrical,4,False,False,False,True,False,False,False
+DS_0262,Old,1,Age category,1,False,False,False,True,False,False,False
+DS_0263,Old cheese,1,Character,1,True,False,False,False,False,True,False
+DS_0264,Onion / Onion-tomato / Onion-like,3,Vegetable,2,True,False,False,False,False,False,True
+DS_0265,Open,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0266,Open texture,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0267,Orange / Orange peel / Orange peel-like,3,Fruity,1,True,False,False,False,False,False,True
+DS_0268,Over-soft,1,Hardness,2,False,False,False,True,False,False,False
+DS_0269,Overall dairy,1,Lactic,1,True,False,False,False,False,False,False
+DS_0270,Pasta filata,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0271,Pasty,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0272,Peach / Peach-like,2,Fruity,1,True,False,False,False,False,False,True
+DS_0273,Peanut / Peanut butter,2,Nutty,1,True,False,False,False,False,False,True
+DS_0274,Pear / Pear-like,2,Fruity,1,True,False,False,False,False,False,True
+DS_0275,Penetrating,1,Chemical,1,True,False,False,False,False,False,True
+DS_0276,Peppered,1,Compositional,2,False,False,False,True,False,False,False
+DS_0277,Petrichor,1,Earthy,1,True,False,False,False,False,False,False
+DS_0278,Phase angle (d) / Loss tangent (tan d),2,Fundamental small-strain viscoelasticity,1,False,False,False,True,False,False,False
+DS_0279,Picks,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0280,Pine,1,Woody,1,True,False,False,False,False,False,True
+DS_0281,Pineapple,1,Fruity,1,True,False,False,False,False,False,True
+DS_0282,Piquant,1,Piquant (Enzymatic Pungency),1,False,False,True,False,False,False,False
+DS_0283,Plastic,1,Chemical,1,True,False,False,False,False,False,True
+DS_0284,Pliable,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0285,Pomace,1,Fermented,1,True,False,False,False,False,False,True
+DS_0286,Pomegranate,1,Fruity,1,True,False,False,False,False,False,False
+DS_0287,Popcorn / Toasty / Biscuit-like,3,Toasted,2,True,False,False,False,False,False,True
+DS_0288,Porous protein matrix,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0289,Potato / Potato chips / Potato-like / Cooked potato / Methional,5,Vegetable,4,True,False,False,False,False,False,True
+DS_0290,Pressed,1,Processing,2,False,False,False,True,False,False,False
+DS_0291,Pressed curd,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0292,Prickle / bite,2,Chemical feeling factor,2,False,False,False,True,False,False,False
+DS_0293,Prickle / Tingling / Bite,3,Effervescence,2,False,False,True,False,False,False,False
+DS_0294,Processed / Processed cheese,2,Hardness,2,False,False,False,True,False,False,False
+DS_0295,Puckering,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0296,Pungency,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0297,Pungent / Pungency,2,Pungency,2,False,False,True,False,False,False,False
+DS_0298,Putrid,1,Off-flavor,1,True,False,False,False,True,False,True
+DS_0299,Rancid / Hydrolytic rancidity,2,Off-flavor,4,True,False,False,False,True,False,True
+DS_0300,Rate of recovery,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0301,Relaxation time,1,Instrumental Rheology,1,False,False,False,True,False,False,False
+DS_0302,Rennet curd / Rennet curd texture,2,Coagulation property,1,False,False,False,True,False,False,False
+DS_0303,Residual mouthfeel,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0304,Residual smoothness of mouth coating,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0305,Residuals (Hand),1,Tactile,2,False,False,False,True,False,False,False
+DS_0306,Resilience / Rate of recovery,2,Cohesion,2,False,False,False,True,False,False,False
+DS_0307,Retains its moisture,1,Moisture,2,False,False,False,True,False,False,False
+DS_0308,Richness,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0309,Rigid / Rigidity,2,Mechanical,2,False,False,False,True,False,False,False
+DS_0310,Ripe cheese,1,Lactic,2,True,False,False,False,False,False,True
+DS_0311,Ripe flavor,1,Fermented,1,True,False,False,False,False,False,False
+DS_0312,Ripened / Cured / Mature / Seasoned,4,Hardness,2,False,False,False,True,False,False,False
+DS_0313,Roast / Roasted / Roasty,3,Toasted,1,True,False,False,False,False,False,True
+DS_0314,Roast beef,1,Savory,1,True,False,False,False,False,False,False
+DS_0315,Roasted nuts,1,Nutty,1,True,False,False,False,False,False,False
+DS_0316,Ropy texture,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0317,Rose / Rose flower / Rosy / Floral,4,Floral,1,True,False,False,False,False,False,True
+DS_0318,Rubbery / Rubberiness,2,Tactile (Texture),3,False,False,True,True,False,False,False
+DS_0319,Runny,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0320,Saltiness / Salty,2,Salty,1,False,True,False,False,False,False,False
+DS_0321,Sauerkraut,1,Fermented,1,True,False,False,False,False,False,False
+DS_0322,Seasoned flavor,1,Fermented,1,True,False,False,False,False,False,False
+DS_0323,Seasoning / Curry,2,Spicy,1,True,False,False,False,False,False,True
+DS_0324,Semi-firm,1,Hardness,2,False,False,False,True,False,False,False
+DS_0325,Semi-hard,1,Tactile (Density),1,False,False,True,False,False,False,False
+DS_0326,Semi-hard / Semihard (or Semi-hard),2,Hardness,3,False,False,False,True,False,False,False
+DS_0327,Semi-soft / Semisoft (or Semi-soft),2,Hardness,3,False,False,False,True,False,False,False
+DS_0328,Sharp,1,Hardness,2,False,False,False,True,False,False,False
+DS_0329,Sharp / Sharpness / Sharp note,3,Chemical Irritation,2,False,False,True,False,False,False,False
+DS_0330,Shear resistance,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0331,Sheep / Sheepy-like,2,Animal,1,True,False,False,False,False,False,True
+DS_0332,Short / Shortness / Shorter,3,Cohesion,2,False,False,False,True,False,False,False
+DS_0333,Shrinking,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0334,Sickening,1,Off-flavor,1,True,False,False,False,True,False,True
+DS_0335,Slicing properties,1,Physical,3,False,False,False,True,False,False,False
+DS_0336,Slightly reduced water content,1,Moisture,2,False,False,False,True,False,False,False
+DS_0337,Slimy,1,Mouthfeel,4,False,False,False,True,False,False,False
+DS_0338,Slippery,1,Tactile,1,False,False,True,False,False,False,False
+DS_0339,Smoked,1,Physical,2,False,False,False,True,False,False,False
+DS_0340,Smoked / Smoky,2,Toasted,4,True,False,False,False,False,False,True
+DS_0341,Smooth / Smoother / Smoothness,3,Surface,5,False,False,False,True,False,False,False
+DS_0342,Smooth mass,1,Geometrical,4,False,False,False,True,False,False,False
+DS_0343,Smoothness / Smooth,2,Tactile (Texture),1,False,False,True,False,False,False,False
+DS_0344,Smoothness of the mass,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0345,Soap / Soapy,2,Chemical,2,True,False,False,False,True,False,True
+DS_0346,Soapy,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0347,Soft / Softer / Softness,3,Hardness,4,False,False,False,True,False,False,False
+DS_0348,Soft consistency,1,Hardness,2,False,False,False,True,False,False,False
+DS_0349,Soft smear,1,Hardness,4,False,False,False,True,False,False,False
+DS_0350,Soft-ripening,1,Maturity,2,False,False,False,True,False,False,False
+DS_0351,Soft-spread,1,Hardness,2,False,False,False,True,False,False,False
+DS_0352,Softening,1,Structural breakdown,3,False,False,False,True,False,False,False
+DS_0353,Softness / Soft,2,Tactile (Density),1,False,False,True,False,False,False,False
+DS_0354,Soluble / Solubility,2,Mouthfeel,4,False,False,False,True,False,False,False
+DS_0355,Solvent,1,Chemical,1,True,False,False,False,False,False,True
+DS_0356,Sour / Sour aromatic,2,Acidic,1,True,False,False,False,False,False,True
+DS_0357,Sour milk,1,Lactic,1,True,False,False,False,False,False,True
+DS_0358,Spiciness,1,Mouthfeel,2,False,False,False,True,False,False,False
+DS_0359,Spicy,1,Spicy,1,True,False,False,False,False,False,True
+DS_0360,Splits / Sizable Cracks,2,Physical Form,2,False,False,False,True,False,False,False
+DS_0361,Spongy,1,Multidimensional,2,False,False,False,True,False,False,False
+DS_0362,Spreadability / Spreadable,2,Mechanical,5,False,False,False,True,False,False,False
+DS_0363,Springiness / Hand springiness / Springy / Elasticity / Elastic,5,Rheology,5,False,False,False,True,False,False,False
+DS_0364,Squeak / Squeaky,2,Acoustic,3,False,False,False,True,False,False,False
+DS_0365,Stable,1,Animal,2,True,False,False,False,False,False,True
+DS_0366,Sticky / Stickier / Stickiness,3,Adhesiveness,4,False,False,False,True,False,False,False
+DS_0367,Strawberry-like,1,Fruity,1,True,False,False,False,False,False,True
+DS_0368,Strength,1,Hardness,2,False,False,False,True,False,False,False
+DS_0369,Stretchability / Stretch / Stretching / Stretchy / Stringiness,5,Functional,5,False,False,False,True,False,False,False
+DS_0370,Strong cheese,1,General intensity,1,True,False,False,False,False,True,True
+DS_0371,Stronger / Firmer,2,Coagulation properties,2,False,False,False,True,False,False,False
+DS_0372,Structure,1,Cohesion,2,False,False,True,True,False,False,False
+DS_0373,Styrene,1,Chemical,1,True,False,False,False,False,False,False
+DS_0374,Sulfur / Sulfury / Sulphide / Rotten egg,4,Sulfur,3,True,False,False,False,False,False,True
+DS_0375,Surface rugosity / Touch,2,Geometrical,2,False,False,False,True,False,False,False
+DS_0376,Surface-ripened,1,Physical Form,2,False,False,False,True,False,False,False
+DS_0377,Sweaty,1,Animal,2,True,False,False,False,True,False,True
+DS_0378,Sweet / Sweetness,2,Sweet,1,False,True,False,False,False,False,False
+DS_0379,Sweet-candy,1,Sweet,1,True,False,False,False,False,False,False
+DS_0380,Swiss cheese,1,Character,1,True,False,False,False,False,True,True
+DS_0381,Syrup,1,Sweet,1,True,False,False,False,False,False,False
+DS_0382,Tallowy,1,Fatty,1,True,False,False,False,False,False,True
+DS_0383,Tender / Tenderness,2,Hardness,3,False,False,False,True,False,False,False
+DS_0384,Tenderness,1,Tactile (Texture),1,False,False,True,False,False,False,False
+DS_0385,Thickness / Thick,2,Tactile (Viscosity),3,False,False,True,True,False,False,False
+DS_0386,Toasted cheese,1,Toasted,1,True,False,False,False,False,False,True
+DS_0387,Toffee,1,Sweet,1,True,False,False,False,False,False,False
+DS_0388,Tomato-like,1,Vegetable,1,True,False,False,False,False,False,False
+DS_0389,Tootsie Rolls,1,Sweet,2,True,False,False,False,False,False,False
+DS_0390,Tough and chewy,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0391,Translucent,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0392,Tribology / Lubricity / Friction,3,Tactile,2,False,False,False,True,False,False,False
+DS_0393,Tropical,1,Fruity,1,True,False,False,False,False,False,False
+DS_0394,Truffle,1,Earthy,2,True,False,False,False,False,False,False
+DS_0395,Umami,1,Umami,2,False,True,False,False,False,False,False
+DS_0396,Unclean,1,Off-flavor,1,True,False,False,False,True,False,True
+DS_0397,Uneven texture,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0398,Unidirectional fibrous structure,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0399,Unripe fruit,1,Fruity,1,True,False,False,False,False,False,True
+DS_0400,Unripened,1,Hardness,2,False,False,False,True,False,False,False
+DS_0401,Unripened cheese,1,Hardness,2,False,False,False,True,False,False,False
+DS_0402,Urine-like,1,Off-flavor,1,True,False,False,False,True,False,False
+DS_0403,Vanilla,1,Sweet,1,True,False,False,False,False,False,False
+DS_0404,Vegetable / Vegetal,2,Vegetable,1,True,False,False,False,False,False,True
+DS_0405,Velvety appearance,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0406,Very hard,1,Hardness,2,False,False,False,True,False,False,False
+DS_0407,Vinegar / Vinegar-like,2,Acidic,1,True,False,False,False,False,False,True
+DS_0408,Viscoelastic / Viscoelastic properties / Viscous,3,Rheology,2,False,False,False,True,False,False,False
+DS_0409,Viscosity / Viscous,2,Tactile (Mechanical),1,False,False,True,False,False,False,False
+DS_0410,Viscous / Viscosity / Thickness,3,Viscosity,5,False,False,False,True,False,False,False
+DS_0411,Walnut,1,Nutty,1,True,False,False,False,False,False,True
+DS_0412,Water activity (Aw) / Water availability,2,Compositional,2,False,False,False,True,False,False,False
+DS_0413,Water-binding capacity (or ability),1,Moisture,2,False,False,False,True,False,False,False
+DS_0414,Wax / Wax-like,2,Fatty,1,True,False,False,False,False,False,True
+DS_0415,Waxy,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0416,Weak,1,Hardness,2,False,False,False,True,False,False,False
+DS_0417,Weak body,1,Hardness,2,False,False,False,True,False,False,False
+DS_0418,Wet shreds,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0419,Wf (Work to fracture),1,Instrumental cohesiveness,1,False,False,False,True,False,False,False
+DS_0420,Whey,1,Lactic,1,True,False,False,False,False,False,False
+DS_0421,Whiskey / Whisky,2,Fermented,1,True,False,False,False,False,False,True
+DS_0422,White mold rind and creamy texture,1,Cohesion,2,False,False,False,True,False,False,False
+DS_0423,Wine / Winey / Wine-like,3,Fermented,1,True,False,False,False,False,False,True
+DS_0424,Wood / Wood pulp / Woody,3,Woody,2,True,False,False,False,False,False,True
+DS_0425,Young,1,Age category,1,False,False,False,True,False,False,False
+DS_0426,Young's modulus (E),1,Fundamental elastic stiffness,1,False,False,False,True,False,False,False

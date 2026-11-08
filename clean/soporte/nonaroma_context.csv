@@ -1,0 +1,773 @@
+﻿record_id,cheese_context
+TA_001,Cheddar
+TA_001,GP
+TA_001,Gorgonzola
+TA_001,Feta-type
+TA_001,European
+TA_001,Goat
+TA_001,Gouda
+TA_001,Polish Smoked
+TA_001,Pasta Filata
+TA_001,Yogurt
+TA_001,Cottage
+TA_001,Quark
+TA_001,Chihuahua
+TA_001,Young Cheddar
+TA_002,European
+TA_002,Goat
+TA_002,Cheddar
+TA_002,Pasta Filata
+TA_002,Gouda with unbalanced proteolysis
+TA_002,Reduced-fat dairy products
+TA_003,Pasta Filata
+TA_003,Domiati
+TA_003,European
+TA_003,Goat
+TA_003,Blue
+TA_003,Feta-type
+TA_003,Cheddar
+TA_003,Brined cheeses
+TA_003,Pecorino Romano
+TA_003,Batzos
+TA_003,Halloumi
+TA_004,European
+TA_004,Goat
+TA_004,Grana cheeses context
+TA_004,Cheddar
+TA_004,Gorgonzola
+TA_004,Emmental
+TA_004,Pasta Filata
+TA_004,Young cheeses
+TA_004,Swiss
+TA_004,Gouda
+TA_004,Quark
+TA_004,Fruits
+TA_005,Cheddar
+TA_005,Parmesan
+TA_005,Pasta Filata
+TA_005,Parmigiano-Reggiano
+TA_005,Grana Padano
+TA_005,Mature Cheddar
+TA_005,Meats
+TR_001,Gouda
+TR_001,Camembert
+TR_002,Pasta Filata
+TR_003,Dairy context
+TR_004,European
+TR_004,Goat
+TR_004,Low-fat Cheddar
+TR_004,Torta del Casar
+TR_004,Palmero
+TR_004,Té
+TR_004,Coffee
+TR_005,Dairy context
+TR_006,European
+TR_006,Goat
+TR_007,Dairy context
+TR_008,Dairy context
+TR_009,Dairy context
+TR_009,Cheddar
+TR_010,Dairy context
+TR_011,Grana Padano
+TR_011,Gorgonzola
+TR_012,Mints
+TR_012,Goat cheeses with essential oils
+TR_012,Chewing gums
+TR_013,Gorgonzola
+TR_013,Grana
+TR_013,Dairy context
+TR_013,Pasta Filata
+TR_014,Dairy context
+TR_015,Dairy context
+TR_016,Dairy context
+TR_017,Gorgonzola
+TR_018,Dairy context
+TR_019,Dairy context
+TR_020,Cheddar
+TR_020,Pasta Filata
+TR_021,Pasta Filata
+TR_022,Cheddar
+TR_022,Pasta Filata
+TR_023,Dairy context
+TR_024,Manchego
+TR_024,GP
+TR_024,Gorgonzola
+TR_025,Feta-type
+TR_025,Cottage
+TR_025,Quarg
+TR_025,Fromage Frais
+TR_025,Mustard
+TR_026,European
+TR_027,Cheeses with chiles (Pepper Jack)
+TR_027,Mustard
+TR_027,Horseradish
+TR_027,Wasabi
+TR_028,Pasta Filata context
+TR_029,Dairy context
+TR_030,Grana cheeses
+TR_030,Cheddar
+TR_030,GP
+TR_030,Gorgonzola
+TR_030,Polish Smoked
+TR_031,Low-sodium dairy products with KCl/MgCl2
+TR_031,Oxidized cheeses
+TR_032,Cheddar
+TR_032,Pasta Filata
+TR_033,Cheddar
+TR_035,Pasta Filata
+TR_035,Dairy context
+TR_036,Fiore Sardo
+TR_036,Serpa
+TR_036,Provolone Valpadana
+TR_036,Roncal
+TR_036,Pecorino Romano
+TR_037,Carbonated cheeses
+TR_037,Young Cheddar with trapped gas
+TR_038,European
+TR_038,Goat
+TR_038,Gorgonzola
+TR_038,Gouda
+TR_038,Domiati
+TR_038,Limburger
+TR_038,Cheddar
+TR_038,Pasta Filata
+TR_038,Aged Cheddar
+TR_038,Blue cheeses
+TR_038,Tulum
+TR_038,Wasabi
+TR_038,Mustard
+TR_039,Cheddar
+TR_039,Pasta Filata
+TR_040,Manchego
+TR_041,Cheddar
+TR_041,European
+TR_041,Goat
+TR_041,GP
+TR_041,Gorgonzola
+TR_041,Domiati
+TR_041,Polish Smoked
+TR_041,Feta-type
+TR_041,Mature Cheddar
+TR_041,Swiss
+TR_041,Grana
+TR_041,Danablu
+TR_041,Pecorino
+TR_042,Dairy context
+TR_043,Cheddar
+TR_043,Pasta Filata
+TR_044,Sainte-Maure
+TR_044,Gorgonzola
+TR_044,Cheddar
+TR_044,Feta-type
+TR_044,Dairy context
+TR_045,Smoked cheese
+TR_046,Pasta Filata
+TR_047,Dairy context
+TR_048,Dairy context
+TE_001,Salt-free cheeses with age
+TE_002,Traditional Spanish ewes' milk cheeses
+TE_002,Standard sensory evaluation and standard sensory lexicons
+TE_002,Sweet pasta filata cheeses (S-Mon
+TE_002,S-Val
+TE_002,S-Sil)
+TE_002,Low-fat Cheddar
+TE_002,Soft-paste cheeses
+TE_002,Spreads
+TE_002,Quarg
+TE_003,Gouda
+TE_003,smoked cheese
+TE_003,Pecorino di Farindola
+TE_003,Pecorino Romano
+TE_003,Cheddar
+TE_004,Aged natural cheese
+TE_004,Cheddar-type cheese
+TE_004,Stracciatella fresh cream cheese
+TE_004,Salles 2002 goat cheese study
+TE_005,Aged natural cheese
+TE_005,Descriptive flavor lexicon of 43 natural French cheeses
+TE_006,Blue cheese (Roquefort)
+TE_007,Domiati cheese with varying fat levels
+TE_007,Cheddar cheese
+TE_008,Plant-based processed cheese starch structuring
+TE_009,Cheddar
+TE_010,Cured ewes' milk cheeses
+TE_010,Cheddar
+TE_011,Cured ewes' milk cheeses
+TE_011,Cheddar
+TE_012,Plant-based cheese (absence of casein elastic network)
+TE_013,Hot-pack Cream cheese
+TE_013,high-fat Cream cheese with excessive shearing
+TE_014,Cheddar-type cheese
+TE_014,unsalted butter reference
+TE_014,Sable 1999 study
+TE_014,Su 2020 review
+TE_015,Swiss-type cheese eye defect
+TE_016,Uncooked pressed raclette-type cheese
+TE_016,Cheddar
+TE_017,Low-fat Cream cheese
+TE_017,Standard sensory evaluation
+TE_018,Swiss-type cheese eye defect
+TE_019,Munster
+TE_019,Livarot
+TE_019,Camembert Le rustique
+TE_019,Vacherin
+TE_020,Swiss hard cheese
+TE_021,Solid foods and model cheeses (BaGaTel database)
+TE_021,Unheated Mozzarella under salt reduction
+TE_021,Standard sensory evaluation
+TE_021,melted high-salt Mozzarella
+TE_021,Maturing Cheddar
+TE_021,Kraft Cheese Slices
+TE_021,low-fat Cheddar
+TE_021,Mozzarella (LMMC)
+TE_021,Pizza cheese
+TE_021,Hard cheeses
+TE_022,Pressing of semihard/hard cheese mass
+TE_023,Cheddar chewing profile early in the sequence
+TE_023,Casein matrix of Feta or unheated gels
+TE_024,Acid milk gel microstructure
+TE_025,Uncooked pressed raclette-type cheese
+TE_025,model cheese
+TE_025,Cheddar
+TE_025,Standard sensory evaluation
+TE_025,unheated low-salt Mozzarella
+TE_025,Mozzarella
+TE_025,Processed Cheese
+TE_026,Milling of Cheddar-type curd
+TE_026,aged cheese block
+TE_027,Swiss-type cheese eye defect
+TE_028,Gouda cheese curd
+TE_028,Cream cheese
+TE_028,Cheddar block
+TE_028,fresh Halloumi
+TE_029,Parmigiano-Reggiano bulk forms
+TE_029,Chilean goat cheeses profiling
+TE_030,Matured cheeses (e.g.
+TE_030,matured Gouda
+TE_030,mature Cheddar)
+TE_031,Cheddar-type hard cheese defect
+TE_032,Traditional Spanish ewes' milk cheeses (e.g.
+TE_032,Idiazábal
+TE_032,Manchego)
+TE_032,Mascarpone
+TE_032,Gorgonzola (creamy)
+TE_032,Gorgonzola
+TE_032,Cream cheese
+TE_032,Cheddar sensory language
+TE_032,standard sensory evaluation
+TE_032,Sweet pasta filata cheeses (S-Mon
+TE_032,S-Val
+TE_032,S-Sil)
+TE_032,Su 2020 review
+TE_032,Sour cream
+TE_032,Stirred yogurts
+TE_033,Cheddar
+TE_034,Cured ewes' milk cheeses
+TE_034,Cheddar
+TE_034,Standard sensory evaluation
+TE_034,high S/M
+TE_034,traditional Gorgonzola
+TE_034,Cheddar cheese descriptive analysis
+TE_034,Chilean goat cheeses profiling
+TE_034,Cheshire
+TE_034,Lancashire
+TE_034,Wensleydale
+TE_034,Feta
+TE_034,Stilton
+TE_034,Gamonedo
+TE_035,Parmigiano-Reggiano cheese aged 24 months
+TE_036,Aged Gouda
+TE_036,Calcium lactate crystals on surface of aged cheese
+TE_037,Crust-forming cheeses
+TE_037,Standard sensory evaluation
+TE_037,hard rind cheeses
+TE_038,Curdy cheeses
+TE_039,European
+TE_039,Goat
+TE_040,European
+TE_040,Goat
+TE_041,European
+TE_041,Goat
+TE_042,Reduced-sodium Cheddar made with high-activity proteases
+TE_043,Sedimented curd particles
+TE_044,Uncooked pressed raclette-type cheese
+TE_044,Cured ewes' milk cheeses
+TE_044,Cheddar
+TE_045,Plant-based cheese texture classification
+TE_046,Uncooked pressed raclette-type cheese
+TE_046,Cheddar
+TE_047,Plant-based cream cheese alternatives
+TE_048,Pecorino Sardo (PS)
+TE_049,Maltese sheep cheese (ġbejna niexfa)
+TE_049,Traditional Spanish ewes' milk cheeses
+TE_049,Cheddar
+TE_049,Standard sensory evaluation
+TE_049,high salt cheeses
+TE_049,rinds
+TE_049,Parmigiano-Reggiano
+TE_049,Sbrinz
+TE_049,Dry Quarg
+TE_050,Curd grains worked after removal from whey
+TE_051,Traditional (natural) Gorgonzola vs sweet/creamy Gorgonzola
+TE_052,Uncooked pressed raclette-type cheese
+TE_052,Idiazábal
+TE_052,Roncal
+TE_052,Manchego
+TE_052,Cheddar
+TE_052,Standard sensory evaluation
+TE_052,Edam with MF pre-treatment
+TE_052,fresh Halloumi
+TE_053,Model cheeses with low casein hydration
+TE_054,Plant-based processed cheese starch structuring
+TE_055,Cultured dairy products
+TE_055,high total solids mix
+TE_056,Parmigiano-Reggiano
+TE_056,Grana-type cheeses
+TE_057,Swiss cheese
+TE_058,3D-printed reduced-fat cheese analogues with canola oil
+TE_058,Swiss hard cheese compound classes
+TE_059,Cheddar-type cheese
+TE_059,cream
+TE_060,Cheddar and Mozzarella
+TE_061,Feta cheese made from caprine milk
+TE_062,Uncooked pressed raclette-type cheese
+TE_062,model cheese
+TE_062,ewes' milk cheeses (Idiazábal
+TE_062,Roncal
+TE_062,Manchego
+TE_062,Castellano)
+TE_062,Cheddar
+TE_062,General texture profile analysis
+TE_062,standard sensory lexicons
+TE_062,Cheddar cheese maturation descriptive lexicon
+TE_062,Low fat Cheddar-type cheese (St. Ivels Low Fat)
+TE_062,Caciocavallo Podolico from pasture-fed milk
+TE_062,Gouda
+TE_062,San Simón
+TE_062,Fossa cheese
+TE_062,Chihuahua
+TE_063,Domiati cheese made with hydrogen peroxide
+TE_064,General cheese
+TE_064,Standard sensory evaluation
+TE_065,Model cheeses
+TE_065,general foods
+TE_066,Melted part-skim and nonfat Mozzarella
+TE_067,Melted low-salt interior region of Mozzarella
+TE_068,General foods
+TE_068,cheese
+TE_069,Standard sensory evaluation
+TE_070,Cheddar
+TE_070,Gouda
+TE_071,Model Gouda
+TE_071,Camembert brittleness
+TE_072,Model Gouda
+TE_072,Akkerman study of curd grains
+TE_073,younger cheese varieties (e.g.
+TE_073,Coalho
+TE_073,Mascarpone
+TE_073,Idiazábal)
+TE_073,Domiati
+TE_073,Fresh cheese categories (Stracciatella
+TE_073,fresh Mozzarella
+TE_073,fresh Halloumi)
+TE_074,Traditional Spanish ewes' milk cheeses
+TE_074,Parmigiano-Reggiano
+TE_074,Pasta filata cheeses (sweet S-Mon
+TE_074,S-Val
+TE_074,S-Sil)
+TE_075,Swiss-type cheese eye defect
+TE_076,Rind of semihard and hard cheeses during pressing
+TE_077,Processed cheese (PC) and imitation cheese (Imi)
+TE_078,Viscoelastic solid cheeses (Mozzarella
+TE_078,Monterey Jack)
+TE_079,Viscoelastic solid cheeses (Mozzarella
+TE_079,Monterey Jack)
+TE_080,Viscoelastic solid cheeses
+TE_081,Cheddar-type hard cheese defect
+TE_082,Gouda cheese curd
+TE_083,Melted low-salt interior region of Mozzarella
+TE_084,Cheddar
+TE_084,Mozzarella
+TE_084,Monterey Jack
+TE_085,Uncooked pressed raclette-type cheese
+TE_085,Traditional Spanish ewes' milk cheeses (e.g.
+TE_085,Idiazábal
+TE_085,Roncal
+TE_085,Manchego)
+TE_085,Standard sensory lexicons
+TE_085,Cream cheese
+TE_085,Pungent pasta filata cheeses (Caciocavallo
+TE_085,Provolone) ripened for 12 months
+TE_085,Standard sensory evaluation
+TE_085,low-pH Cream cheese
+TE_085,low-fat Cream cheese
+TE_085,Cheddar cheese descriptive analysis
+TE_085,Kraft Cheese Slices
+TE_085,low-fat Cheddar
+TE_085,mature Canadian Cheddar
+TE_085,Cottage cheese
+TE_085,high S/M cheeses
+TE_085,Parmigiano-Reggiano
+TE_085,Grana Padano
+TE_085,Quarg
+TE_085,Ice cream
+TE_086,Cottage cheese curd cutting
+TE_087,Pecorino Romano (PR)
+TE_088,Parmigiano-Reggiano
+TE_088,Plant-based cheese fats (poor integration in matrix)
+TE_088,Casein matrix containing emulsified fat with poor surfactants
+TE_089,Model cheeses
+TE_089,general foods
+TE_089,Cream cheese containing large compacted protein aggregates
+TE_090,Plant-based cheese analogues containing starch and emulsifiers
+TE_091,Cheddar
+TE_092,Gouda
+TE_093,Cheddar
+TE_093,Conciato Romano
+TE_093,Idiazábal
+TE_093,Parmigiano-Reggiano
+TE_093,cured ewes' cheeses
+TE_093,Grana Padano
+TE_093,Pecorino Romano
+TE_093,General cheese classification
+TE_093,Roman cheesemaking context
+TE_093,Cheddar language
+TE_093,Salles 2002 study
+TE_093,Edam
+TE_093,HP- and heat-treated cheeses
+TE_093,chymosin-treated cheeses
+TE_093,Standard sensory evaluation and instrumental texture profile analysis
+TE_093,Berner Hobelkäse
+TE_094,Pecorino (Pecorino Sardo
+TE_094,Pecorino di Farindola)
+TE_095,Cheddar-type cheese
+TE_096,Plant-based cheese bulk and density classification
+TE_097,Parmigiano-Reggiano
+TE_097,Grana cheeses
+TE_097,Formaella-type cheese
+TE_098,Cheeses like Camembert
+TE_099,HP-treated cheeses after ripening
+TE_100,Pasta filata curd plasticization
+TE_101,Imitation cheese products
+TE_102,Soy cheese
+TE_103,Soy and paneer (pea/milk) fortified cheeses
+TE_103,Plant-based cheese analogues
+TE_104,Plant-based cream cheese alternatives
+TE_105,Cheeses like Emmental
+TE_105,Parmigiano-Reggiano
+TE_105,or low-moisture Mozzarella
+TE_106,Center of a large unsalted cheese loaf
+TE_107,Plant-based cheese analogue (pea protein
+TE_107,inulin)
+TE_108,Pecorino Sardo (PS)
+TE_109,Cured ewes' milk cheeses
+TE_110,Uncooked pressed raclette-type cheese
+TE_110,Cheddar
+TE_111,Hard/semi-hard cheeses
+TE_111,Standard sensory evaluation
+TE_111,weak Cheddar
+TE_111,low-fat Swiss
+TE_112,Gouda
+TE_113,Melting cheeses (e.g.
+TE_113,Swiss Emmental
+TE_113,Comté)
+TE_113,model cheeses
+TE_113,processed cheese (PC)
+TE_113,imitation cheese (Imi)
+TE_113,heated Edam
+TE_113,Emmental
+TE_113,and Gouda
+TE_113,Heated Mozzarella
+TE_113,processed cheese
+TE_113,Mozzarella
+TE_113,Raclette
+TE_113,Kashar
+TE_113,Fourme d'Ambert
+TE_113,Processed
+TE_114,Fresh Domiati
+TE_115,Standard sensory evaluation
+TE_115,HP-treated cheeses
+TE_115,Cheddar cheese descriptive analysis
+TE_115,Kraft Cheese Slices
+TE_116,General cheese curd
+TE_116,traditional Spanish ewes' milk cheeses
+TE_116,traditional Feta
+TE_116,Cheddar
+TE_116,Gouda
+TE_117,Standard cheese analysis
+TE_117,late-lactation milk Cheddar
+TE_117,Pasta filata cheeses
+TE_118,Camembert-type (Brie) with a white mold rind and Blue cheeses with internal blue/green-blue veins
+TE_119,Roman cheesemaking
+TE_119,cheese ripening stage
+TE_120,Cheddar
+TE_120,Processed cheese analogues containing modified starches
+TE_121,Cheddar-type cheese
+TE_122,Goat cheese
+TE_122,high-protein beverages
+TE_122,and dairy protein solutions
+TE_123,Blue-mould
+TE_123,smear-ripened
+TE_123,and hard yellow cheeses and cheese powders
+TE_124,Stracciatella cheese (mozzarella strands mixed with cream)
+TE_125,Pizza cheese
+TE_125,Mozzarella
+TE_125,Processed
+TE_125,Manchego
+TE_126,Specialty cheeses (e.g.
+TE_126,Chaumes)
+TE_126,Standard sensory evaluation
+TE_126,fat-replacers in cheese
+TE_126,Pungent pasta filata cheeses (Caciocavallo Silano/Podolico)
+TE_126,Sable 1999 study
+TE_127,Traditional Spanish ewes' milk cheeses
+TE_128,Cheddar-type hard cheese defect
+TE_129,Curd worked after whey removal
+TE_129,Blue cheese
+TE_129,Swiss-type
+TE_130,Cheddar cheese salted with CaCl2
+TE_130,MgCl2
+TE_130,or KCl substitutions
+TE_131,Mozzarella
+TE_131,Provolone
+TE_131,Kashkaval
+TE_131,Mozzarella di Gioia del Colle PDO
+TE_132,Standard sensory evaluation
+TE_132,salt-free cheeses
+TE_132,antibiotic-defected cheese
+TE_133,Maltese sheep cheese (ġbejna tal-bżar)
+TE_134,Viscoelastic solid cheeses (Mozzarella
+TE_134,Monterey Jack)
+TE_135,Swiss-type cheese eye defect
+TE_136,Brine-salted cheese interior
+TE_137,Camembert cheese made from reconstituted milk
+TE_138,Gouda cheese curd
+TE_139,Halloumi cheese manufacture
+TE_140,Cheddar cheese
+TE_141,Processed Cheddar cheese (12%)
+TE_141,La Maar cheese
+TE_142,Cheddar-type cheese
+TE_143,Descriptive flavor lexicon of 43 natural French cheeses
+TE_144,Standard sensory evaluation
+TE_145,Cheddar
+TE_146,Smoked cheese from native Polish breeds
+TE_147,Standard sensory evaluation
+TE_148,Standard sensory evaluation
+TE_148,Maturing Cheddar cheese descriptive analysis
+TE_149,General cheese
+TE_150,Standard sensory evaluation
+TE_150,Edam structure
+TE_151,Roman cheesemaking
+TE_151,thin-consistency soft cheese
+TE_152,Blue-mould
+TE_152,smear-ripened
+TE_152,and hard yellow cheeses and cheese powders
+TE_153,Cured ewes' milk cheeses
+TE_154,Idiazábal
+TE_154,Manchego
+TE_154,cured ewes' cheeses
+TE_154,traditional Feta
+TE_154,blue cheese
+TE_154,Cheddar
+TE_154,Gouda
+TE_154,Grana Padano
+TE_154,Parmigiano-Reggiano
+TE_155,Yogurts and cheeses
+TE_155,S. thermophilus EPS
+TE_156,Standard sensory evaluation
+TE_156,HP-treated fresh curd
+TE_156,Maturing Cheddar
+TE_156,Kraft Cheese Slices
+TE_156,low-fat Cheddar
+TE_156,Sweet pasta filata cheeses (S-Pod)
+TE_157,Surface mold soft-ripened cheeses (Brie
+TE_157,Camembert)
+TE_158,Claire de Lune raw aged goat cheese
+TE_159,Ibores
+TE_159,Montasio
+TE_159,Idiazábal
+TE_159,Tilsit
+TE_159,brick
+TE_159,Port Salut
+TE_159,Livarot
+TE_159,Limburger
+TE_159,Gouda
+TE_159,Fresh Jack style goat cheese
+TE_159,Swiss-type
+TE_159,General cheese classification
+TE_159,Edam/Gouda ripening context
+TE_160,Oaxaca
+TE_160,French surface-ripened cheeses
+TE_160,General cheese classification
+TE_160,Limburger cheese classification
+TE_160,Sable 1999 study
+TE_161,Descriptive flavor lexicon of 43 natural French cheeses
+TE_162,Processed cheese analogue made with soy protein and vegetable fats
+TE_163,Standard sensory evaluation
+TE_163,weak Cheddar
+TE_163,Muenster
+TE_163,Cheddar and Gouda maturation
+TE_163,high salt cheeses
+TE_164,Cheddar-type cheese
+TE_165,General cheese
+TE_166,Rind of unsalted spherical cheeses
+TE_167,Sticky or soft cheeses
+TE_167,Standard sensory evaluation and standard sensory lexicons
+TE_168,Polish native cow milk cheese
+TE_168,Formaella
+TE_169,Uncooked pressed raclette-type cheese
+TE_169,Standard sensory evaluation
+TE_169,Quarg
+TE_169,Cream cheese
+TE_169,processed cheese
+TE_169,Cheddar sensory language
+TE_169,Maturing Cheddar
+TE_169,Kraft Cheese Slices
+TE_169,Mozzarella di Bufala
+TE_169,Arzúa-Ulloa
+TE_170,Cheddar
+TE_170,Processed cheese manufacture
+TE_171,Cheddar chewing profile
+TE_172,Blue-veined cheeses (Gorgonzola
+TE_172,Blue cheese)
+TE_172,and soft cheeses
+TE_173,Domiati (soft pickled/white pickled cheese)
+TE_173,Surface-ripened cheeses (e.g.
+TE_173,Münster
+TE_173,Munster)
+TE_173,Roquefort-type
+TE_173,blue cheeses
+TE_173,Mascarpone
+TE_173,Domiati (white pickled soft)
+TE_173,Camembert
+TE_173,Pecorino (soft-ripening)
+TE_173,Feta-type cheese made with proteolytic adjunct cultures
+TE_173,General cheese classification
+TE_173,Roman cheesemaking
+TE_173,Gorgonzola
+TE_173,Cream cheese
+TE_173,Sable 1999 study
+TE_173,Sourabie 2008 study
+TE_173,Cottage cheese pH at cutting
+TE_173,mature Cheddar ripening
+TE_173,model cheeses
+TE_173,Standard sensory evaluation and standard sensory lexicons
+TE_173,Brie
+TE_173,Torta del Casar
+TE_173,Fresh cheeses
+TE_174,Mature surface mold-ripened cheeses (e.g. Camembert
+TE_174,Brie)
+TE_175,Surface-ripened soft cheeses (e.g. Limburger
+TE_175,Camembert)
+TE_175,Munster
+TE_175,Livarot
+TE_175,Pont-l'Evêque
+TE_175,Epoisses
+TE_175,Romadur
+TE_175,Limburger
+TE_176,Pecorino (Pecorino Sardo
+TE_176,Pecorino di Farindola)
+TE_177,Mascarpone
+TE_178,Brie
+TE_178,Camembert
+TE_178,Ripening of cheese
+TE_178,casein matrix breakdown
+TE_179,Uncooked pressed raclette-type cheese
+TE_179,general cheese
+TE_179,ewes' milk cheeses (e.g.
+TE_179,Idiazábal
+TE_179,Roncal
+TE_179,Manchego)
+TE_179,Plant-based cheese analogue (pea protein
+TE_179,inulin)
+TE_180,Spanish goat cheeses
+TE_181,Swiss-type cheese eye defect
+TE_182,Model cheeses and aerated foods
+TE_183,Mascarpone
+TE_183,Spreadable fresh cheese (Annabella cheese from Italy)
+TE_183,Butter
+TE_183,Cream cheese
+TE_183,Afuega'l Pitu
+TE_183,Galotyri
+TE_183,Spreads
+TE_184,Cheddar
+TE_184,Standard sensory evaluation
+TE_184,Halloumi
+TE_184,Swiss
+TE_184,Emmental
+TE_184,Grevé
+TE_184,Allgäu Mountain
+TE_184,Gouda
+TE_184,Chihuahua
+TE_185,Fresh cheese curds (less than a day old)
+TE_185,Fresh curd
+TE_185,Raw-milk Oaxaca cheese
+TE_185,Cheese curds (fresh)
+TE_186,Uncooked pressed raclette-type cheese
+TE_186,Standard sensory evaluation and standard sensory lexicons
+TE_187,Soymilk-cow's milk mixed enzyme modified cheese
+TE_188,general cheese
+TE_188,Pasta filata cheeses (Mozzarella
+TE_188,Provolone
+TE_188,Kashkaval)
+TE_188,Caciocavallo Podolico
+TE_188,Silano
+TE_188,Provolone del Monaco
+TE_188,Pasta filata curd kneading
+TE_188,Mozzarella
+TE_188,Pasta-Filata
+TE_188,Oaxaca
+TE_189,Ewe's milk curds
+TE_190,Low-fat cheese alternatives with tragacanth gum
+TE_191,Traditional Spanish ewes' milk cheeses
+TE_192,Limburger cheese ripening classification
+TE_193,Model cheeses
+TE_193,general foods
+TE_193,Pasta filata cheeses (Caciocavallo
+TE_193,Provolone)
+TE_194,3D-printed reduced-fat cheese analogues with canola oil
+TE_195,Melted high-salt surface region of brined Mozzarella
+TE_196,Brine-salted cheeses interior
+TE_197,General cheeses
+TE_198,Cheddar-type cheese made with antibiotic residues
+TE_199,Pasta filata curd structure
+TE_200,Mascarpone
+TE_200,Mozzarella (unripe)
+TE_200,Gouda curd prior to salting
+TE_201,Mozzarella (Zottarella) used as a clean base/model for sensory trials
+TE_202,Surface-ripened cheeses (Camembert
+TE_202,Brie
+TE_202,Raclette
+TE_202,Limburger)
+TE_203,General cheese classification based on moisture content
+TE_204,Cheddar
+TE_205,Liquid/semisolid dairy foods and model cheeses (BaGaTel database)
+TE_205,Cheddar
+TE_205,Mascarpone
+TE_205,Melted cheese
+TE_205,acid dairy gels
+TE_205,Cheddar sensory evaluation
+TE_205,Standard sensory evaluation
+TE_205,fresh acid cheeses
+TE_205,Yogurt
+TE_205,Semisolid desserts
+TE_205,Cheese sauces
+TE_205,Spreads
+TE_206,Blue cheese (Roquefort)
+TE_206,Cheddar
+TE_207,Casein hydration
+TE_207,salt-in-moisture levels
+TE_208,Brine-salted cheeses (Emmental
+TE_208,Gouda)
+TE_208,Sable 1999 study
+TE_209,Cheddar-type hard cheese defect
+TE_210,Cultured dairy products
+TE_210,low solids content mix
+TE_211,Shredded cheeses (Mozzarella
+TE_211,Cheddar)
+TE_212,Uncooked pressed raclette-type cheese
+TE_213,Traditional French soft-ripened Camembert
+TE_214,Traditional Spanish ewes' milk cheeses
+TE_214,Gouda
+TE_214,Cheddar
+TE_215,Hard/semi-hard cheeses (Cheddar)

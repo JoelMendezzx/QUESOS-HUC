@@ -1,0 +1,21 @@
+﻿pathway_id,pathway_label,is_unassigned,n_evidence
+PW_01,"Catabolism of branched-chain amino acids (Leu, Ile, Val",False,0
+PW_02,"Catabolism of branched-chain amino acids (Leu, Ile, Val; Ehrlich pathway)",False,191
+PW_03,Ehrlich pathway),False,0
+PW_04,Esterification / alcoholysis (acid + alcohol → ester),False,283
+PW_05,"Glycolysis and citrate metabolism (lactose, pyruvate, citrate)",False,140
+PW_06,Lipolysis → hydroxy acids → lactones,False,78
+PW_07,Lipolysis → methyl ketones → secondary alcohols,False,59
+PW_08,Lipolysis → β-oxidation → methyl ketones,False,198
+PW_09,Lipolysis: branched-chain fatty acids of the fat (goat/sheep),False,35
+PW_10,Lipolysis: triglycerides → free fatty acids,False,180
+PW_11,Maillard reaction / heat treatment,False,89
+PW_12,Methionine / cysteine catabolism → sulfur compounds,False,184
+PW_13,not assigned,True,8
+PW_14,"Oxidation of unsaturated fatty acids → C6–C10 aldehydes, ketones and alcohols",False,179
+PW_15,Phenylalanine catabolism (aromatic amino acid),False,113
+PW_16,Secondary metabolism of molds and actinomycetes,False,15
+PW_17,Smoking (smoke components),False,12
+PW_18,Transfer from forage (terpenes),False,26
+PW_19,Tryptophan catabolism → indole and skatole,False,17
+PW_20,Tyrosine catabolism → phenols and cresols,False,29

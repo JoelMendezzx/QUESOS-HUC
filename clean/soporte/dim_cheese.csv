@@ -1,0 +1,130 @@
+﻿cheese_id,cheese_name_std,parent_cheese_id,label_type,has_profile,profile_name_original,milk_species_raw,milk_cow,milk_sheep,milk_goat,milk_buffalo,milk_species_logic,milk_heat_treatment_raw,milk_heat_treatment,rennet_culture_raw,coag_calf_rennet,coag_rennet_paste,coag_lamb_rennet,coag_kid_rennet,coag_vegetable_rennet,coag_animal_rennet_unspecified,coag_lactic_acid,enz_pregastric_esterase_or_lipase,enz_lipase_mentioned,cult_starter_mentioned,cult_adjunct_mentioned,cult_natural_whey,cult_indigenous_lab,cult_mesophilic,cult_citrate_positive,cult_diacetylactis,cult_leuconostoc,cult_lactobacillus,cult_probiotic,cult_propionibacteria,mold_p_roqueforti,mold_p_camemberti,mold_penicillium_unspecified,flora_washed_rind_smear,coag_rennet_unspecified,ripening_raw,ripening_days_min,ripening_days_max,ripening_label,ripening_class,other_process_factor_raw,proc_smoked,proc_pasta_filata,proc_brine,proc_low_fat,proc_acid_coagulation,proc_natural_creaming,proc_no_silage_feed,proc_cooked_or_scalded,proc_milk_salting,proc_curd_salting,proc_light_pressing,proc_transhumance_milk,proc_wooden_utensils,proc_artisanal_handmade,curd_cooking_temp_c,profile_source_raw,profile_source_ids,profile_from_label_only,profile_completeness
+CH_001,Afuega'l Pitu,,specific,True,afuega'l pitu,cow,1.0,,,,single,pasteurized (raw if ripened > 60 days),raw_or_pasteurized,rennet,,,,,,,,,,,,,,,,,,,,,,,,,1.0,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 300),PAP18,False,0.75
+CH_002,Aged cheese (generic),,generic_category,True,aged cheese (generic),not specified,,,,,unknown,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,aged,,,aged,,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.25
+CH_003,Arzúa-Ulloa and Tetilla,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_004,Beyaz peynir,,specific,True,beyaz peynir,"cow, sheep, goat or mixed",1.0,1.0,1.0,,alternatives,pasteurized,pasteurized,rennet,,,,,,,,,,,,,,,,,,,,,,,,,1.0,≥ 90 days,90.0,,,,brine,,,1.0,,,,,,,,,,,,,Papademas 2018 (p. 350),PAP18,False,1.0
+CH_005,Black tea,,not_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_006,Blue and hard Italian cheeses,,generic_category,True,blue and hard italian cheeses,not specified,,,,,unknown,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.0
+CH_007,Blue cheese (generic),,generic_category,True,blue cheese,not specified,,,,,unknown,not specified,unknown,Penicillium roqueforti,,,,,,,,,,,,,,,,,,,,,1.0,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Preedy 2014 (ch. 19),PRE14,False,0.25
+CH_008,"Blue cheese, Camembert, Cheddar, processed cheese",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_009,Blue cheese; Emmental,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_010,Bouton de Culotte,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_011,Brie,,specific,True,brie,not specified,,,,,unknown,not specified,unknown,surface mold (Penicillium),,,,,,,,,,,,,,,,,,,,,,,1.0,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,McSweeney 2017 (ch. 11),MCS17,False,0.25
+CH_012,Brined cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_013,Bryndza,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_014,Cabrales,,specific,True,cabrales,"cow, sheep and goat (mixed)",1.0,1.0,1.0,,mixture,raw,raw,kid rennet; Penicillium roqueforti,,,,1.0,,,,,,,,,,,,,,,,,1.0,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 414),PAP18,False,0.75
+CH_015,Cacao,,not_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_016,Camembert,,specific,True,camembert,cow,1.0,,,,single,raw (PDO) or pasteurized,raw_or_pasteurized,calf rennet; Penicillium camemberti,1.0,,,,,,,,,,,,,,,,,,,,,1.0,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 393); McSweeney 2017 (ch. 36),PAP18|MCS17,False,0.75
+CH_017,Camembert; blue cheeses; Cheddar,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_018,Castellano,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_019,Castelmagno,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_020,Castelmagno / Formaggio di Fossa,,multi_cheese,True,castelmagno / fossa,"cow, sheep and goat",1.0,1.0,1.0,,mixture,raw,raw,liquid calf rennet,1.0,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 252),PAP18,False,0.75
+CH_021,Castelo Branco,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_022,Cheddar,,specific,True,cheddar,cow,1.0,,,,single,raw or pasteurized,raw_or_pasteurized,animal rennet,,,,,,1.0,,,,,,,,,,,,,,,,,,,,9–12 months,270.0,360.0,,6_12m,,,,,,,,,,,,,,,,,Papademas 2018 (p. 213),PAP18,False,1.0
+CH_023,Cheddar (aged),CH_022,specific,True,cheddar (aged),cow,1.0,,,,single,raw or pasteurized,raw_or_pasteurized,animal rennet,,,,,,1.0,,,,,,,,,,,,,,,,,,,,aged (> 9 months),270.0,,aged,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 213); cheese label in the source,PAP18,True,1.0
+CH_024,Cheddar (low-fat),CH_022,specific,True,cheddar (low-fat),cow,1.0,,,,single,raw or pasteurized,raw_or_pasteurized,animal rennet,,,,,,1.0,,,,,,,,,,,,,,,,,,,,9–12 months,270.0,360.0,,6_12m,low fat,,,,1.0,,,,,,,,,,,,Papademas 2018 (p. 213); cheese label in the source,PAP18,True,1.0
+CH_025,"Cheddar, Swiss, blue, grana/pecorino, Camembert, Cottage, Limburger…",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_026,Cheddar; blue cheeses,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_027,Cheddar; Camembert,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_028,Cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_029,Cheeses made with rennet paste (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_030,Chèvre,,specific,True,chèvre,goat,,,1.0,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,fresh,0.0,,fresh,fresh,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.5
+CH_031,Chihuahua,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_032,Cottage,,specific,True,cottage,not specified,,,,,unknown,not specified,unknown,Citrate+ Lactococcus lactis,,,,,,,,,,,,,,,1.0,,,,,,,,,,,fresh,0.0,,fresh,fresh,acid coagulation,,,,,1.0,,,,,,,,,,,McSweeney 2007 (p. 359),MCS07,False,0.5
+CH_033,Cottage cheese; Swiss cheeses,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_034,Cream cheese,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_035,Cremoso,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_036,Dairy products (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_037,Domiati,,specific,True,domiati,buffalo or buffalo/cow,1.0,,,1.0,alternatives,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,salting of the milk before coagulation; brine,,,1.0,,,,,,1.0,,,,,,,McSweeney 2017 (ch. 39),MCS17,False,0.25
+CH_038,Dutch-type (generic),,generic_category,True,dutch-type (generic),cow,1.0,,,,single,pasteurized,pasteurized,calf rennet; Leuconostoc,1.0,,,,,,,,,,,,,,,,1.0,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 325); McSweeney 2007 (p. 128),PAP18|MCS07,False,0.75
+CH_039,"Edam, Gouda, Quarg, Cottage",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_040,Emmental,,specific,True,emmental,cow,1.0,,,,single,raw,raw,propionic bacteria,,,,,,,,,,,,,,,,,,,,1.0,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 337); McSweeney 2017 (ch. 15),PAP18|MCS17,False,0.75
+CH_041,Emmental / Swiss cheeses,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_042,Enzyme-modified cheese (EMC),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_043,European (unspecified),,unresolved,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_044,Farmhouse Cheddar,CH_022,specific,True,farmhouse cheddar,cow,1.0,,,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,"Artisanal farmhouse Cheddar, handmade",,,,,,,,,,,,,,1.0,,Tunick 2014 (p. 118),TUN14,False,0.25
+CH_045,Feta,,specific,True,feta,sheep (or with ≤ 30% goat),,1.0,1.0,,alternatives,pasteurized,pasteurized,rennet,,,,,,,,,,,,,,,,,,,,,,,,,1.0,≥ 60 days,60.0,,,,brine,,,1.0,,,,,,,,,,,,,Papademas 2018 (p. 352),PAP18,False,1.0
+CH_046,Feta-type,,generic_category,True,feta-type,cow,1.0,,,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,brine,,,1.0,,,,,,,,,,,,,cheese label in the source,,True,0.25
+CH_047,Flor de Guia,,specific,True,flor de guia,sheep (≥ 60%) and cow,1.0,1.0,,,mixture,not specified,unknown,vegetable rennet (Cynara cardunculus),,,,,1.0,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,McSweeney 2017 (ch. 41),MCS17,False,0.5
+CH_048,Formaella,,specific,True,formaella (smoked),sheep or goat,,1.0,1.0,,alternatives,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,smoked,1.0,,,,,,,,,,,,,,,McSweeney 2017 (ch. 41),MCS17,False,0.25
+CH_049,Formaggio di Fossa,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_050,Fresco,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_051,Fresh,,specific,True,fresh,cow,1.0,,,,single,raw (also pasteurized),raw_or_pasteurized,commercial (or natural) rennet; Indigenous LAB from raw milk,,,,,,,,,,,,,1.0,,,,,,,,,,,,1.0,fresh (shelf life ~10 days),0.0,,fresh,fresh,curd salting; light pressing,,,,,,,,,,1.0,1.0,,,,,Tunick 2023 (pp. 227–229),TUN23,False,1.0
+CH_052,Fresh cheese (generic),,generic_category,True,fresh cheese (generic),not specified,,,,,unknown,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,fresh,0.0,,fresh,fresh,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.25
+CH_053,Ġbejna,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_054,Goat and sheep cheese (generic),,generic_category,True,goat and ewe cheeses,goat / sheep,,1.0,1.0,,mixture_or_alternatives,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.25
+CH_055,Goat Cheddar,CH_022,specific,True,goat cheddar,goat,,,1.0,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,1 day to 12 weeks,1.0,84.0,,1_3m,,,,,,,,,,,,,,,,,Tunick 2023 (pp. 272–273),TUN23,False,0.5
+CH_056,Goat cheese (generic),,generic_category,True,goat cheese,goat,,,1.0,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Preedy 2014 (ch. 31),PRE14,False,0.25
+CH_057,Gorgonzola,,specific,True,gorgonzola,cow,1.0,,,,single,raw or pasteurized,raw_or_pasteurized,Penicillium roqueforti,,,,,,,,,,,,,,,,,,,,,1.0,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,"Preedy 2014 (Table 19.1, p. 280); McSweeney 2017 (ch. 31)",PRE14|MCS17,False,0.75
+CH_058,Gouda,,specific,True,gouda,cow,1.0,,,,single,pasteurized,pasteurized,animal rennet,,,,,,1.0,,,,,,,,,,,,,,,,,,,,4 weeks to > 52 weeks,28.0,,,,,,,,,,,,,,,,,,,,Papademas 2018 (pp. 328–329),PAP18,False,1.0
+CH_059,Grana (generic),,generic_category,True,grana (generic),cow,1.0,,,,single,raw,raw,natural whey culture,,,,,,,,,,,,1.0,,,,,,,,,,,,,,long,,,long,,,,,,,,,,,,,,,,,,McSweeney 2017 (ch. 15: Grana Padano and Parmigiano Reggiano),MCS17,False,1.0
+CH_060,Grana Padano,,specific,True,grana padano,cow,1.0,,,,single,raw,raw,natural whey culture,,,,,,,,,,,,1.0,,,,,,,,,,,,,,≥ 15 months,450.0,,,,natural creaming of the milk,,,,,,1.0,,,,,,,,,,"McSweeney 2017 (Grana Padano and Parmigiano Reggiano: raw milk, whey culture, natural creaming); Preedy 2014 (p. 503)",MCS17|PRE14,False,1.0
+CH_061,Grana Trentino,,specific,True,grana trentino,cow,1.0,,,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.25
+CH_062,Gruyère,,specific,True,gruyere,cow,1.0,,,,single,raw,raw,washed-rind flora,,,,,,,,,,,,,,,,,,,,,,,,1.0,,not specified,,,unknown,,cooking at 57 °C,,,,,,,,1.0,,,,,,,57.0,"Papademas 2018 (pp. 143, 189, 227)",PAP18,False,0.75
+CH_063,Gruyère / Parmesan / Proosdij,,multi_cheese,True,gruyère / parmesan / proosdij,cow,1.0,,,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.25
+CH_064,Hard cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_065,Hard Italian cheeses (generic),,generic_category,True,hard italian cheeses,cow / sheep,1.0,1.0,,,mixture_or_alternatives,raw,raw,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,long,,,long,,,,,,,,,,,,,,,,,,McSweeney 2017 (ch. 15); cheese label in the source,MCS17,True,0.75
+CH_066,Idiazabal,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_067,"Idiazabal, Fiore Sardo, Feta, Pecorino Foggiano",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_068,Limburger,,specific,True,limburger,not specified,,,,,unknown,not specified,unknown,washed-rind flora (B. linens),,,,,,,,,,,,,,,,,,,,,,,,1.0,,not specified,,,unknown,,,,,,,,,,,,,,,,,,McSweeney 2017 (p. 920),MCS17,False,0.25
+CH_069,Limburger; Gruyère and Emmental,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_070,Livarot,,specific,True,livarot,not specified,,,,,unknown,not specified,unknown,washed-rind flora,,,,,,,,,,,,,,,,,,,,,,,,1.0,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Preedy 2014 (p. 362),PRE14,False,0.25
+CH_071,Majorero,,specific,True,majorero,goat,,,1.0,,single,raw,raw,kid rennet paste,,1.0,,1.0,,,,,,,,,,,,,,,,,,,,,,8 days to > 60 days,8.0,,,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 268),PAP18,False,1.0
+CH_072,Malatya,,specific,True,malatya,not specified,,,,,unknown,raw,raw,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,scalded,,,,,,,,1.0,,,,,,,,cheese label in the source,,True,0.25
+CH_073,Manchego,,specific,True,manchego,sheep,,1.0,,,single,pasteurized or raw,raw_or_pasteurized,calf rennet,1.0,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 270),PAP18,False,0.75
+CH_074,Mihalic,,specific,True,mihalic,"sheep, goat, cow or mixed",1.0,1.0,1.0,,alternatives,not specified,unknown,animal rennet,,,,,,1.0,,,,,,,,,,,,,,,,,,,,90 days,90.0,90.0,,1_3m,,,,,,,,,,,,,,,,,Papademas 2018 (p. 358),PAP18,False,0.75
+CH_075,Milk (not cheese),,not_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_076,Milk fan,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_077,Minas Frescal,,specific,True,minas frescal,not specified,,,,,unknown,not specified,unknown,control vs probiotic culture,,,,,,,,,,,,,,,,,,,1.0,,,,,,,fresh,0.0,,fresh,fresh,,,,,,,,,,,,,,,,,Tunick 2023 (pp. 269–271); cheese label in the source,TUN23,True,0.5
+CH_078,Mold-ripened cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_079,Mozzarella,,specific,True,mozzarella,cow,1.0,,,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,fresh,0.0,,fresh,fresh,pasta filata,,1.0,,,,,,,,,,,,,,cheese label in the source,,True,0.5
+CH_080,Mozzarella (buffalo),CH_079,specific,True,mozzarella (buffalo),buffalo,,,,1.0,single,raw,raw,liquid calf rennet,1.0,,,,,,,,,,,,,,,,,,,,,,,,,fresh,0.0,,fresh,fresh,pasta filata,,1.0,,,,,,,,,,,,,,Papademas 2018 (p. 375),PAP18,False,1.0
+CH_081,Munster,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_082,Palmero,,specific,True,palmero,goat (Palmera breed),,,1.0,,single,raw,raw,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,fresh or > 8 days,0.0,,fresh,fresh,smoked,1.0,,,,,,,,,,,,,,,"Preedy 2014 (Table 22.1, p. 316)",PRE14,False,0.75
+CH_083,Parenica,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_084,Parmesan,,specific,True,parmesan,cow,1.0,,,,single,raw,raw,natural whey culture,,,,,,,,,,,,1.0,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 193),PAP18,False,0.75
+CH_085,"Parmesan, Grana Padano",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_086,"Parmesan, Grana Padano and Pecorino",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_087,Parmigiano Reggiano,,specific,True,parmigiano reggiano,cow,1.0,,,,single,raw,raw,natural whey culture,,,,,,,,,,,,1.0,,,,,,,,,,,,,,not specified,,,unknown,,no silage in the feed,,,,,,,1.0,,,,,,,,,Papademas 2018 (p. 193); McSweeney 2017 (ch. 15); McSweeney 2007 (p. 211),PAP18|MCS17|MCS07,False,0.75
+CH_088,Pasta filata (generic),,generic_category,True,pasta filata (generic),not specified,,,,,unknown,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,pasta filata,,1.0,,,,,,,,,,,,,,cheese label in the source,,True,0.0
+CH_089,Pecorino,,specific,True,pecorino,sheep,,1.0,,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.25
+CH_090,Pecorino Crotonese,,specific,True,pecorino crotonese,sheep,,1.0,,,single,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Preedy 2014 (ch. 14),PRE14,False,0.25
+CH_091,Pecorino Romano,,specific,True,pecorino romano,sheep,,1.0,,,single,raw or thermized,raw_or_thermized,lamb rennet paste,,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,5–8 months,150.0,240.0,,6_12m,,,,,,,,,,,,,,,,,McSweeney 2017 (p. 1072),MCS17,False,1.0
+CH_092,Pecorino Siciliano,,specific,True,pecorino siciliano,sheep,,1.0,,,single,not specified,unknown,lamb rennet paste,,1.0,1.0,,,,,,,,,,,,,,,,,,,,,,,fresh to 4 months,0.0,120.0,fresh,1_3m,,,,,,,,,,,,,,,,,McSweeney 2017 (p. 1073),MCS17,False,0.75
+CH_093,Piacentinu Ennese,,specific,True,piacentinu ennese,sheep,,1.0,,,single,raw,raw,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,wooden utensils,,,,,,,,,,,,,1.0,,,Papademas 2018 (p. 163),PAP18,False,0.5
+CH_094,Polish smoked cheese,,specific,True,polish smoked cheese,not specified,,,,,unknown,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,smoked,1.0,,,,,,,,,,,,,,,cheese label in the source,,True,0.0
+CH_095,Processed cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_096,Proosdij,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_097,Quarg,,specific,True,quarg,not specified,,,,,unknown,not specified,unknown,"mesophilic culture (Lactococcus, Leuconostoc)",,,,,,,,,,,,,,1.0,,,1.0,,,,,,,,,fresh,0.0,,fresh,fresh,acid coagulation,,,,,1.0,,,,,,,,,,,McSweeney 2007 (p. 188),MCS07,False,0.5
+CH_098,Quarg / Cottage,,multi_cheese,True,quarg / cottage,not specified,,,,,unknown,not specified,unknown,citrate+ mesophilic culture,,,,,,,,,,,,,,1.0,1.0,,,,,,,,,,,fresh,0.0,,fresh,fresh,acid coagulation,,,,,1.0,,,,,,,,,,,Papademas 2018 (p. 48),PAP18,False,0.5
+CH_099,Ragusano,,specific,True,ragusano,cow,1.0,,,,single,raw,raw,lamb/kid rennet paste (with pregastric esterase),,1.0,1.0,1.0,,,,1.0,,,,,,,,,,,,,,,,,,not specified,,,unknown,,pasta filata,,1.0,,,,,,,,,,,,,,Papademas 2018 (p. 382),PAP18,False,0.75
+CH_100,Roncal,,specific,True,roncal,sheep,,1.0,,,single,raw,raw,acidification by the natural microflora,,,,,,,,,,,,,1.0,,,,,,,,,,,,,7 weeks,49.0,49.0,,1_3m,transhumance milk; cooked; smoked,1.0,,,,,,,1.0,,,,1.0,,,,Tunick 2014 (p. 152),TUN14,False,1.0
+CH_101,Roquefort,,specific,True,roquefort,sheep,,1.0,,,single,raw,raw,Penicillium roqueforti,,,,,,,,,,,,,,,,,,,,,1.0,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,"Preedy 2014 (Table 19.1, p. 280)",PRE14,False,0.75
+CH_102,Roquefort vs cow-milk blue cheeses,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_103,Sainte-Maure,,specific,True,sainte-maure,goat,,,1.0,,single,not specified,unknown,lactic coagulation; surface mold,,,,,,,1.0,,,,,,,,,,,,,,,,1.0,,,31 days,31.0,31.0,,1_3m,,,,,,,,,,,,,,,,,Preedy 2014 (pp. 473–474),PRE14,False,0.75
+CH_104,San Simón da Costa,,specific,True,san simón da costa,cow,1.0,,,,single,raw or pasteurized,raw_or_pasteurized,rennet (enzymatic coagulation),,,,,,,,,,,,,,,,,,,,,,,,,1.0,≥ 30–60 days,30.0,,,,smoked with birch,1.0,,,,,,,,,,,,,,,Papademas 2018 (pp. 281–283),PAP18,False,1.0
+CH_105,Semi-hard cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_106,Serpa,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_107,Serra da Estrela,,specific,True,serra da estrela,sheep,,1.0,,,single,raw,raw,vegetable rennet (Cynara cardunculus),,,,,1.0,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,"Papademas 2018 (p. 315); Preedy 2014 (Table 7.1, p. 107)",PAP18|PRE14,False,0.75
+CH_108,Sheep cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_109,Sheep/goat cheeses with lamb/kid rennet paste,,generic_category,True,ewe/goat cheeses (rennet paste),sheep / goat,,1.0,1.0,,mixture_or_alternatives,not specified,unknown,lamb/kid rennet paste (with pregastric esterase),,1.0,1.0,1.0,,,,1.0,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,"Preedy 2014 (ch. 7, Table 7.4)",PRE14,False,0.5
+CH_110,Sheep/goat cheeses with vegetable rennet,,generic_category,True,ewe/goat cheeses (vegetable rennet),sheep / goat,,1.0,1.0,,mixture_or_alternatives,not specified,unknown,vegetable rennet (Cynara cardunculus),,,,,1.0,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,"Preedy 2014 (ch. 7, Table 7.2)",PRE14,False,0.5
+CH_111,Smear-ripened cheese (generic),,generic_category,True,smear-ripened (generic),not specified,,,,,unknown,not specified,unknown,"washed-rind flora (B. linens, coryneforms)",,,,,,,,,,,,,,,,,,,,,,,,1.0,,not specified,,,unknown,,,,,,,,,,,,,,,,,,McSweeney 2017 (ch. 38),MCS17,False,0.25
+CH_112,Smoked cheese (generic),,generic_category,True,smoked cheese,not specified,,,,,unknown,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,smoked,1.0,,,,,,,,,,,,,,,cheese label in the source,,True,0.0
+CH_113,Soft cheese (generic),,generic_category,True,soft cheese (generic),not specified,,,,,unknown,not specified,unknown,L. plantarum / L. casei,,,,,,,,,,,,,,,,,,1.0,,,,,,,,not specified,,,unknown,,soft cheese,,,,,,,,,,,,,,,,cheese label in the source,,True,0.25
+CH_114,Stilton,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_115,Surface-ripened cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_116,Svecia,,specific,True,svecia,cow,1.0,,,,single,pasteurized,pasteurized,calf rennet,1.0,,,,,,,,,,,,,,,,,,,,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,Papademas 2018 (p. 284),PAP18,False,0.75
+CH_117,Swiss vs Cheddar,,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_118,Swiss-type (generic),,generic_category,True,swiss-type (generic),cow,1.0,,,,single,not specified,unknown,propionic bacteria (P. freudenreichii),,,,,,,,,,,,,,,,,,,,1.0,,,,,,not specified,,,unknown,,,,,,,,,,,,,,,,,,McSweeney 2017 (ch. 35),MCS17,False,0.5
+CH_119,Teleme,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_120,Tilsit,,specific,True,tilsit,not specified,,,,,unknown,not specified,unknown,washed-rind flora,,,,,,,,,,,,,,,,,,,,,,,,1.0,,not specified,,,unknown,,,,,,,,,,,,,,,,,,McSweeney 2017 (ch. 14),MCS17,False,0.25
+CH_121,"Toma Piemontese, Cantal, Idiazabal",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_122,Turkish Motal,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_123,Turkish white cheese,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_124,"Various (Brie, Edam … Roquefort)",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_125,"Various (Gouda, Camembert, La Serena)",,multi_cheese,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_126,Washed-rind cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_127,White Herby,,specific,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_128,White-mold cheese (generic),,generic_category,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0
+CH_129,Young cheese (generic),,generic_category,True,young cheese (generic),not specified,,,,,unknown,not specified,unknown,not specified,,,,,,,,,,,,,,,,,,,,,,,,,,young,,,young,,,,,,,,,,,,,,,,,,cheese label in the source,,True,0.25

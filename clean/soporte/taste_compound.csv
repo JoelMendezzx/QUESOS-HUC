@@ -1,0 +1,19 @@
+﻿record_id,descriptor_id,compound_name_raw,compound_id,is_reference_standard_only
+TA_001,DS_0002,Ethanoic acid,CP_0137,False
+TA_001,DS_0002,Butanoic acid,CP_0002,False
+TA_001,DS_0002,"2-hydroxypropane-1,2,3-tricarboxylic acid",CP_0184,False
+TA_001,DS_0002,2-hydroxypropanoic acid,CP_0003,False
+TA_001,DS_0002,2-hydroxybutanedioic acid,CP_0191,False
+TA_002,DS_0031,"1,3,7-Trimethylpurine-2,6-dione",CP_0192,True
+TA_002,DS_0031,"(R)-(6-methoxyquinolin-4-yl)((2S,4S,5R)-5-vinylquinuclidin-2-yl)methanol hydrochloride",CP_0193,True
+TA_002,DS_0031,(2S)-2-amino-4-methylpentanoic acid,CP_0194,False
+TA_003,DS_0320,Sodium chloride,CP_0195,False
+TA_003,DS_0320,potassium chloride,CP_0196,False
+TA_003,DS_0320,mineral salts,CP_0197,False
+TA_004,DS_0378,beta-D-fructofuranosy-alpha-D-glucopyranoside,CP_0198,False
+TA_004,DS_0378,"(2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanal",CP_0199,False
+TA_004,DS_0378,(2R)-2-amino-4-methylpentanoic acid,CP_0200,False
+TA_005,DS_0395,(2S)-2-amino-5-hydroxy-5-oxopentanoate,CP_0201,False
+TA_005,DS_0395,(2S)-2-aminobutanedioate,CP_0202,False
+TA_005,DS_0395,"[(2R,3S,4R,5R)-3,4-dihydroxy-5-(6-oxo-1H-purin-9-yl)oxolan-2-yl]methyl dihydrogen phosphate",CP_0203,False
+TA_005,DS_0395,"[(2R,3S,4R,5R)-5-(2-amino-6-oxo-1H-purin-9-yl)-3,4-dihydroxyoxolan-2-yl]methyl dihydrogen phosphate",CP_0204,False
