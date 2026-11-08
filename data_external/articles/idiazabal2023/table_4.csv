@@ -1,0 +1,117 @@
+﻿ID,LRIa,Volatile compounds,Ripening time (days)b,Ripening time (days)b,Ripening time (days)b,Ripening time (days)b,Ripening time (days)b,Ripening time (days)b,P-valuec,P-valuec
+ID,LRIa,Volatile compounds,1,7,14,30,60,120,RT,P
+Acids,Acids,Acids,Acids,Acids,Acids,Acids,Acids,Acids,Acids,Acids
+C1,1647,Acetic acidd,8.06 ± 22.8,353 ± 542,ND,24.3 ± 36.4,61.6 ± 101,120 ± 243,NS,NS
+C2,1698,n- Butanoic acidd,1681 ± 1594,6884 ± 5928,9289 ± 7950,10674 ± 6878,12053 ± 7633,6624 ± 8670,*,**
+C3,1880,n- Pentanoic acidd,10.5 ± 14.4,55.1 ± 50.4,1135 ± 3050,4166 ± 11566,48.1 ± 57.5,428 ± 942,NS,*
+C4,1921,n- Hexanoic acidd,3168 ± 2911,12617 ± 9968,16782 ± 13507,24546 ± 15744,25632 ± 19485,15567 ± 22362,NS,***
+C5,2067,"(E)-3-Hexenoic acidd,f",ND,ND,ND,682 ± 1692,196 ± 365,2682 ± 5030,NS,***
+C6,2105,n- Heptanoic acidd,ND,102 ± 113,435 ± 817,183 ± 199,192 ± 210,151 ± 237,NS,**
+C7,2192,n- Octanoic acidd,1174 ± 1231,3727 ± 2899,5186 ± 4099,7982 ± 5158,9623 ± 8291,6362 ± 7524,*,***
+C8,2395,n- Nonanoic acidd,ND,ND,ND,ND,ND,307 ± 617,,
+C9,2396,n- Decanoic acidd,490 ± 502,1439 ± 1119,2185 ± 1695,4073 ± 2525,4441 ± 3872,2959 ± 3862,*,**
+,,Total straight-chain acids,6532 ± 6275,25177 ± 20619,35012 ± 31119,52331 ± 43801,52247 ± 40014,35200 ± 49486,*,***
+Alcohols,Alcohols,Alcohols,Alcohols,Alcohols,Alcohols,Alcohols,Alcohols,Alcohols,Alcohols,Alcohols
+C10,936,Ethanold,171 ± 58.5,696 ± 931,743 ± 1065,1288 ± 2102,443 ± 505,145 ± 154,NS,NS
+C11,1040,1-Propanold,ND,ND,ND,ND,ND,287 ± 723,,
+C12,1145,1-Butanole,ND,4.76 ± 8.93,10.6 ± 19.8,10.6 ± 19.6,20.3 ± 31.4,22.4 ± 24.9,*,***
+C13,1205,3-Methyl-1-butanole,7.46 ± 15.1,34.1 ± 29.8,58.2 ± 87.8,52.3 ± 55.9,29.5 ± 16.7,6.51 ± 7.76,*,***
+C14,1249,1-Pentanole,7.76 ± 6.20,4.60 ± 8.55,ND,19.4 ± 52.6,ND,ND,**,NS
+C15,1351,1-Hexanole,ND,ND,8.12 ± 15.5,8.69 ± 16.1,17.4 ± 20.8,26.0 ± 20.6,***,NS
+C16,1482,2-Ethyl-1-hexanold,9.66 ± 7.22,18.2 ± 22.2,5.41 ± 5.99,62.9 ± 147,15.8 ± 8.09,6.71 ± 9.78,NS,*
+C17,1552,1-Octanole,ND,ND,ND,ND,ND,3.15 ± 4.24,,
+,,Total primary alcohols,196 ± 87.1,757 ± 1001,825 ± 1194,1442 ± 2393,526 ± 582,497 ± 945,NS,NS
+C18,1025,2-Butanole,ND,ND,ND,88.5 ± 124,812 ± 1102,424 ± 334,***,NS
+C19,1120,2-Pentanole,ND,ND,ND,1.60 ± 2.97,3.41 ± 8.25,27.0 ± 18.2,***,NS
+C20,1122,"3-Methyl-2-butanold,f",ND,ND,ND,ND,4.41 ± 8.43,7.14 ± 13.3,NS,NS
+C21,1218,2-Hexanole,ND,ND,ND,ND,ND,1.44 ± 2.75,,
+C22,1316,2-Heptanold,ND,ND,ND,30.7 ± 82.2,3.73 ± 6.99,12.2 ± 19.4,*,NS
+C23,1509,2-Nonanole,ND,ND,ND,ND,ND,7.29 ± 11.4,,
+C24,1640,"2,3-Butanediold",ND,27.1 ± 76.7,ND,32.1 ± 59.6,ND,ND,NS,*
+C25,1646,"Menthold,f",6.65 ± 6.63,13.0 ± 10.4,27.5 ± 41.2,11.2 ± 12.6,ND,ND,**,**
+,,Total secondary alcohols,6.65 ± 6.63,40.1 ± 87.1,27.5 ± 41.2,164 ± 281,823 ± 1126,479 ± 399,***,NS
+C26,1352,2-Methyl-3-pentanold,9.41 ± 17.4,ND,ND,ND,ND,ND,,
+,,Total tertiary alcohols,9.41 ± 17.4,ND,ND,ND,ND,ND,,
+C27,1115,"2-Propen-1-old,f",ND,ND,10.7 ± 20.9,26.8 ± 49.7,31.8 ± 81.4,1.79 ± 5.06,NS,***
+C28,1396,"2-Nonen-1-old,f",0.497 ± 0.921,ND,ND,ND,ND,ND,,
+C29,1407,"(E)-4-Hexen-1-old,f",ND,ND,ND,ND,ND,2.09 ± 3.94,,
+C30,1320,"6-Heptene-2,4-diold,f",8.00 ± 10.0,8.23 ± 18.7,ND,ND,ND,ND,**,*
+,,Total allyl alcohols,8.50 ± 11.0,805 ± 18.7,10.7 ± 20.9,26.8 ± 49.7,31.8 ± 81.4,3.88 ± 9.01,NS,***
+,,Total alcohols,221 ± 122,1602 ± 1107,863 ± 1256,1633 ± 2724,1381 ± 1789,980 ± 1353,*,NS
+Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes
+C31,1083,Hexanale,ND,ND,1.55 ± 2.88,ND,ND,ND,,
+C32,1187,Heptanald,3.62 ± 6.94,ND,ND,ND,ND,ND,,
+C33,1287,Octanale,0.0911 ± 0.258,ND,ND,ND,ND,ND,,
+C34,1399,Nonanale,7.93 ± 5.03,14.2 ± 4.22,15.2 ± 4.82,24.2 ± 35.2,14.4 ± 8.11,9.73 ± 12.1,NS,NS
+,,Total straight-chain aldehydes,11.6 ± 12.2,14.2 ± 4.22,16.7 ± 7.70,24.2 ± 35.2,14.4 ± 8.11,9.73 ± 12.1,NS,NS
+C35,919,3-Methyl-butanald,2.99 ± 5.54,3.96 ± 4.83,1.29 ± 2.44,2.44 ± 4.63,8.40 ± 10.8,43.5 ± 31.5,***,NS
+,,Total branched-chain aldehydes,2.99 ± 5.54,3.96 ± 4.83,1.29 ± 2.44,2.44 ± 4.63,8.40 ± 10.8,43.5 ± 31.5,***,NS
+C36,1541,Benzaldehydee,ND,ND,ND,3.90 ± 11.0,12.4 ± 23.0,1.80 ± 2.24,*,**
+C37,1667,"Benzeneacetaldehyded,f",ND,ND,7.98 ± 15.6,ND,ND,ND,,
+,,Total aromatic aldehydes,ND,ND,7.98 ± 15.6,3.90 ± 11.0,12.4 ± 23.0,1.80 ± 2.24,NS,NS
+,,Total aldehydes,14.6 ± 17.7,18.2 ± 9.05,26.0 ± 25.7,30.5 ± 50.8,35.2 ± 41.9,55.0 ± 45.8,*,NS
+Ketones,Ketones,Ketones,Ketones,Ketones,Ketones,Ketones,Ketones,Ketones,Ketones,Ketones
+C38,817,2-Propanoned,13.8 ± 16.0,13.1 ± 16.9,10.6 ± 12.6,56.9 ± 142,ND,ND,*,***
+C39,904,2-Butanonee,2.84 ± 5.25,ND,25.2 ± 21.3,1962 ± 2305,1465 ± 1572,243 ± 335,***,NS
+C40,978,2-Pentanonee,ND,ND,ND,107 ± 129,57.2 ± 77.8,98.9 ± 73.9,***,NS
+C41,1184,2-Heptanonee,17.5 ± 9.45,34.6 ± 12.7,39.7 ± 17.2,163 ± 226,82.1 ± 60.3,170 ± 211,**,*
+C42,1288,2-Octanonee,1.82 ± 2.83,28.4 ± 74.6,1.57 ± 2.90,22.5 ± 57.0,1.92 ± 3.82,3.28 ± 6.14,NS,***
+C43,1392,2-Nonanonee,12.4 ± 8.40,28.7 ± 13.1,34.5 ± 20.8,91.0 ± 69.7,64.7 ± 56.1,99.2 ± 111,*,*
+C44,1447,8-Nonen-2-oned,ND,ND,ND,ND,ND,8.91 ± 11.2,,
+C45,1604,2-Undecanonee,ND,ND,2.72 ± 5.07,7.09 ± 10.8,6.59 ± 7.77,0.716 ± 1.35,*,NS
+,,Total methyl ketones,48.4 ± 42.0,105 ± 117,114 ± 79.8,2409 ± 2940,1678 ± 1778,624 ± 749,***,NS
+C46,918,"(E,E)-6,10-Dimethyl-5,9- dodecadien-2-oned,f",ND,ND,ND,ND,29.2 ± 64.9,ND,,
+C47,981,"2,3-Butanedionee",60.3 ± 72.1,76.9 ± 79.1,86.2 ± 76.7,24.9 ± 46.4,22.7 ± 46.6,ND,**,**
+C48,1292,3-Hydroxy-2-butanoned,349 ± 564,477 ± 401,533 ± 451,380 ± 377,179 ± 245,66.8 ± 110,*,***
+C49,1367,"2-Hydroxy-3-pentanoned,f",ND,ND,4.69 ± 8.77,1.45 ± 2.85,ND,ND,NS,**
+,,Total diketones and other ketones,409 ± 636,554 ± 480,624 ± 536,406 ± 427,230 ± 357,66.8 ± 110,*,***
+,,Total ketones,457 ± 678,659 ± 597,738 ± 616,2815 ± 3367,1908 ± 2135,691 ± 859,**,*
+Esters,Esters,Esters,Esters,Esters,Esters,Esters,Esters,Esters,Esters,Esters
+C50,1186,Methyl hexanoatee,ND,3.81 ± 7.83,3.33 ± 6.17,ND,ND,ND,NS,**
+C51,1187,"Methyl 4-methyl pentanoated,f",2.87 ± 5.34,7.40 ± 8.64,3.33 ± 6.17,ND,3.84 ± 7.20,4.53 ± 8.66,NS,**
+,,Total methyl esters,2.87 ± 5.34,11.2 ± 16.5,6.66 ± 12.3,ND,3.84 ± 7.20,4.53 ± 8.66,NS,**
+C52,1038,Ethyl butanoated,4.32 ± 3.12,27.0 ± 45.3,53.8 ± 97.8,78.3 ± 116,62.8 ± 81.3,288 ± 362,**,**
+C53,1055,Ethyl 2-methyl butanoated,ND,ND,ND,ND,1.77 ± 3.28,3.11 ± 5.75,NS,**
+C54,1069,Ethyl 3-methyl butanoated,ND,ND,ND,ND,44.2 ± 112,33.9 ± 65.4,NS,**
+C55,1134,Ethyl pentanoatee,ND,ND,ND,ND,2.12 ± 4.92,2.42 ± 4.54,NS,**
+C56,1234,Ethyl hexanoatee,18.7 ± 12.0,183 ± 267,343 ± 554,453 ± 584,480 ± 647,216 ± 270,*,*
+C57,1292,"Ethyl hex-4-enoated,f",ND,ND,ND,7.24 ± 14.1,7.70 ± 15.1,0.292 ± 0.559,NS,***
+C58,1335,Ethyl heptanoatee,ND,ND,4.78 ± 8.89,5.77 ± 10.7,3.86 ± 9.01,33.8 ± 53.2,NS,***
+C59,1434,Ethyl octanoatee,5.27 ± 3.72,31.7 ± 45.9,71.5 ± 117,120 ± 139,101 ± 171,58.3 ± 95.9,*,**
+C60,1537,"Ethyl nonanoated,f",ND,ND,ND,ND,ND,1.18 ± 2.20,,
+C61,1641,Ethyl decanoated,4.47 ± 3.82,20.3 ± 24.1,458 ± 1275,1002 ± 2560,87.9 ± 140,320 ± 559,**,NS
+C62,1855,Ethyl dodecanoated,ND,ND,ND,ND,0.640 ± 1.80,1291 ± 2894,NS,*
+,,Total ethyl esters,32.7 ± 22.7,262 ± 383,930 ± 2051,1667 ± 3424,791 ± 1185,2248 ± 4312,***,**
+C63,1122,Propyl butanoatee,ND,ND,ND,ND,3.35 ± 8.57,6.74 ± 7.88,**,***
+C64,1320,Propyl hexanoatee,ND,ND,ND,ND,14.6 ± 19.6,27.1 ± 28.0,***,NS
+C65,1521,Propyl octanoatee,ND,ND,ND,ND,ND,5.68 ± 8.53,,
+,,Total propyl esters,ND,ND,ND,ND,18.0 ± 28.2,39.5 ± 44.4,***,NS
+C66,1218,Butyl butanoated,ND,ND,ND,ND,2.20 ± 5.05,2.98 ± 3.31,**,*
+C67,1412,Butyl hexanoated,ND,ND,ND,ND,3.34 ± 9.45,7.81 ± 7.31,***,NS
+,,Total butyl esters,ND,ND,ND,ND,5.54 ± 14.5,10.8 ± 10.6,***,NS
+C68,1267,"Pentyl butanoated,f",ND,ND,2.11 ± 3.90,3.62 ± 6.81,2.45 ± 5.45,127 ± 237,NS,***
+,,Total pentyl esters,ND,ND,2.11 ± 3.90,3.62 ± 6.81,2.45 ± 5.45,127 ± 237,NS,***
+C69,1414,Hexyl hexanoated,ND,ND,ND,ND,ND,3.08 ± 6.05,,
+,,Total hexyl esters,ND,ND,ND,ND,ND,3.08 ± 6.05,,
+C70,1131,"1-Methylpropyl butanoated,f",ND,ND,ND,ND,ND,5.56 ± 7.07,,
+C71,1323,2-Methylpropyl hexanoated,ND,ND,ND,ND,11.4 ± 22.1,35.5 ± 32.4,***,NS
+C72,1372,2-Propenyl hexanoated,ND,ND,ND,ND,2.54 ± 5.47,0.485 ± 0.900,NS,**
+C73,1461,"3-Methylbutyl hexanoated,f",ND,ND,ND,ND,1.55 ± 3.49,40.2 ± 74.8,NS,**
+,,Total branched-alkyl esters,ND,ND,ND,ND,15.5 ± 31.0,81.7 ± 115,***,NS
+,,Total esters,35.6 ± 28.0,273 ± 400,939 ± 2067,1671 ± 3431,836 ± 1271,2515 ± 4734,***,**
+Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons
+C74,700,Heptanee,7.46 ± 17.2,13.0 ± 17.6,7.10 ± 17.2,11.9 ± 14.2,5.45 ± 15.4,ND,NS,NS
+,,Total saturated hydrocarbons,7.46 ± 17.2,13.0 ± 17.6,7.10 ± 17.2,11.9 ± 14.2,5.45 ± 15.4,ND,NS,NS
+C75,688,"1,3-Pentadiened",ND,ND,ND,ND,ND,2.42 ± 4.55,,
+C76,837,t-3-Octened,35.6 ± 54.4,35.7 ± 44.8,36.9 ± 47.0,239 ± 621,16.3 ± 33.0,17.5 ± 33.5,NS,***
+C77,956,"1,3-Octadiened,f",5.93 ± 11.3,7.08 ± 13.9,7.50 ± 14.7,98.5 ± 268,6.71 ± 15.3,6.22 ± 11.7,NS,***
+C78,1041,Toluenee,20.2 ± 12.2,42.9 ± 28.4,24.9 ± 19.4,112 ± 261,19.9 ± 23.5,68.0 ± 112,NS,NS
+,,Total unsaturated hydrocarbons,61.7 ± 77.9,85.7 ± 87.1,69.3 ± 81.2,449 ± 1150,42.9 ± 71.8,94.1 ± 162,NS,***
+,,Total hydrocarbons,69.2 ± 95.1,98.7 ± 105,76.4 ± 98.4,461 ± 1164,48.4 ± 87.2,94.1 ± 162,NS,***
+Sulphur compounds,Sulphur compounds,Sulphur compounds,Sulphur compounds,Sulphur compounds,Sulphur compounds,Sulphur compounds,Sulphur compounds,Sulphur compounds,Sulphur compounds,Sulphur compounds
+C79,746,Dimethyl sulphidee,1.55 ± 2.86,ND,ND,17.2 ± 46.3,ND,ND,NS,**
+C80,1934,Dimethyl sulphoned,25.0 ± 34.0,8.05 ± 15.7,7.41 ± 14.0,61.4 ± 163,7.76 ± 14.5,6.77 ± 12.5,NS,***
+,,Total sulphur compounds,26.6 ± 36.8,8.05 ± 15.7,7.41 ± 14.0,78.6 ± 209,7.76 ± 14.5,6.77 ± 12.5,NS,***
+Terpenes,Terpenes,Terpenes,Terpenes,Terpenes,Terpenes,Terpenes,Terpenes,Terpenes,Terpenes,Terpenes
+C81,1195,D-Limonenee,0.151 ± 0.430,1.35 ± 3.83,ND,1.02 ± 2.89,ND,ND,NS,NS
+,,Total terpenes,0.151 ± 0.430,1.35 ± 3.83,ND,1.02 ± 2.89,ND,ND,NS,NS

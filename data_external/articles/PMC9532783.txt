@@ -1,0 +1,1126 @@
+
+ Characterisation of the key volatile compounds of commercial Gouda cheeses and their contribution to aromas according to Chinese consumers’ preferences - PMC
+ Skip to main content
+ An official website of the United States government
+ Here's how you know 
+ Here's how you know 
+ Official websites use .gov 
+ A
+ .gov website belongs to an official
+ government organization in the United States.
+ Secure .gov websites use HTTPS 
+ A lock (
+Lock 
+ Locked padlock icon
+ ) or https:// means you've safely
+ connected to the .gov website. Share sensitive
+ information only on official, secure websites.
+ Search
+ Log in 
+ Dashboard
+ Publications
+ Account settings
+ Log out
+ Search…
+ Search NCBI
+ Primary site navigation
+ Search
+ Logged in as:
+ Dashboard
+ Publications
+ Account settings
+ Log in
+ Search PMC Full-Text Archive 
+ Search in PMC 
+ Journal List
+ User Guide
+PERMALINK 
+ Copy 
+ As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+ the contents by NLM or the National Institutes of Health. 
+ Learn more:
+ PMC Disclaimer 
+ |
+ PMC Copyright Notice
+ Food Chem X . 2022 Aug 8;15:100416. doi: 10.1016/j.fochx.2022.100416 
+ Search in PMC 
+ Search in PubMed 
+ View in NLM Catalog 
+ Add to search 
+Characterisation of the key volatile compounds of commercial Gouda cheeses and their contribution to aromas according to Chinese consumers’ preferences 
+ Chen Chen 
+ Chen Chen 
+ a School of Perfume and Aroma Technology, Shanghai Institute of Technology, Shanghai, China 
+Find articles by Chen Chen 
+ a , Tonghui Tian 
+ Tonghui Tian 
+ a School of Perfume and Aroma Technology, Shanghai Institute of Technology, Shanghai, China 
+Find articles by Tonghui Tian 
+ a , Haiyan Yu 
+ Haiyan Yu 
+ a School of Perfume and Aroma Technology, Shanghai Institute of Technology, Shanghai, China 
+Find articles by Haiyan Yu 
+ a , Haibin Yuan 
+ Haibin Yuan 
+ a School of Perfume and Aroma Technology, Shanghai Institute of Technology, Shanghai, China 
+Find articles by Haibin Yuan 
+ a , Bei Wang 
+ Bei Wang 
+ b School of Food and Health, Beijing Technology and Business University, Beijing, China 
+Find articles by Bei Wang 
+ b , Zhiyuan Xu 
+ Zhiyuan Xu 
+ c State Key Laboratory of Dairy Biotechnology, Shanghai Engineering Research Center of Dairy Biotechnology, Dairy Research Institute, Bright Dairy & Food Co., Ltd, Shanghai, China 
+Find articles by Zhiyuan Xu 
+ c , Huaixiang Tian 
+ Huaixiang Tian 
+ a School of Perfume and Aroma Technology, Shanghai Institute of Technology, Shanghai, China 
+Find articles by Huaixiang Tian 
+ a, ⁎ 
+ Author information 
+ Article notes 
+ Copyright and License information 
+ a School of Perfume and Aroma Technology, Shanghai Institute of Technology, Shanghai, China 
+ b School of Food and Health, Beijing Technology and Business University, Beijing, China 
+ c State Key Laboratory of Dairy Biotechnology, Shanghai Engineering Research Center of Dairy Biotechnology, Dairy Research Institute, Bright Dairy & Food Co., Ltd, Shanghai, China 
+ ⁎ 
+Corresponding author at: School of Perfume and Aroma Technology, Shanghai Institute of Technology, 100 Haiquan Road, Shanghai 201418, China. tianhx@sit.edu.cn 
+Received 2022 May 22; Revised 2022 Jul 30; Accepted 2022 Aug 4; Collection date 2022 Oct 30. 
+© 2022 The Author(s) 
+This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/). 
+ PMC Copyright notice 
+PMCID: PMC9532783  PMID: 36211792 
+Graphical abstract 
+ Open in a new tab 
+ Keywords: Gouda cheese, Aroma compounds, Gas chromatography–mass spectrometry, Sensory evaluation, Gas chromatography–olfactometry, Aroma recombination and omission 
+Highlights 
+ • 
+The aroma preference of Chinese consumers for Gouda cheese was evaluated. 
+ • 
+The volatile compounds in Gouda cheese were identified by GC–MS, OAV and GC–O. 
+ • 
+The correlation between and volatile aroma compounds were analyzed by PLS. 
+ • 
+Key aroma compounds were validated by aroma reorganization and omission tests. 
+Abstract 
+A systematic flavoromics-based analysis of samples of 12 commercially available Gouda cheeses was performed to determine their key volatile components, the contribution of these components to the aromas of the cheeses, and which aromas were preferred by a panel of Chinese consumers. The sensory analysis results show that the Chinese consumers preferred young and medium cheeses, and that sensory attributes such as ‘milk’ and ‘cream’ were the most popular. Seventy-seven aroma compounds were identified by gas chromatography–mass spectrometry, and 28 of these were determined to be aroma-active compounds by gas chromatography–olfactometry analysis and calculation of their odour activity values. Partial least-squares analysis revealed that compounds such as diacetyl and acetoin correlated with aromas preferred by the Chinese consumers, while isobutyric acid, hexanoic acid and valeric acid correlated with aromas disliked by the Chinese consumers. Finally, the flavour contribution of each aroma-active compound was validated through aroma reorganisation and omission experiments. 
+1. Introduction 
+The consumption of cheese in China has been growing in recent years as Chinese consumers are increasing their healthy eating habits ( Wang, Yang, Xu, Wang, Zhang, Li, et al., 2021 ). As such, the cheese industry in China has an average annual growth rate of ∼ 30 %, with 90 % of cheese products being imported ( Wu, et al., 2018 ). Few varieties of cheese are currently available in China, with most being cheddar or mozzarella cheeses. Thus, to expand the cheese market in China, other varieties of cheese must be introduced to Chinese consumers. 
+Gouda cheese is a semi-hard cheese that originated in the Netherlands and is rich in nutrients ( Garcia-Cano, Rocha-Mendoza, Kosmerl, & Jimenez-Flores, 2020 ). It is usually made from pasteurised cow’s milk and acidified using a mesophilic starter culture that contains a variety of lactic acid bacteria ( Oh, Joung, Lee, Kim, & Kim, 2016 ). Gouda cheese is becoming increasingly popular with consumers worldwide ( Fusté-Forné, 2020 , Saravani et al., 2019 ), and its relatively mild aroma means it is a good basis for processed cheese products ( Go, Kim, & Chung, 2017 ). Gouda cheese therefore has broad market potential in China. 
+Flavour affects the overall sensory characteristics of cheese and consumer food choices ( Han, Fark, et al., 2019 ), and thus a full understanding of the flavour characteristics of Gouda cheese would aid the research and development of Gouda cheese-related products. The key aroma compounds in food can be better identified by using flavoromics methodologies ( Ronningen et al., 2018 , Yang et al., 2022 ), which employ high-resolution analytical instruments in combination with chemometric techniques ( Karametsi et al., 2019 , Yu et al., 2022 ). Flavoromics is thus widely used to study the aromas of various foods, including cheese ( Di Donato et al., 2021 , Feng et al., 2019 , Wang et al., 2022 ). In particular, Jo et al. (2018) used a flavoromics approach to identify the aroma-active compounds in Gouda cheese that were preferred by a panel of US consumers. Moreover, we used gas chromatography–mass spectrometry (GC–MS), gas chromatography–olfactometry (GC-O), odour activity value (OAV) calculations, and aroma reorganisation and omission experiments to identify and validate the key aroma-active compounds in cheese, and their contribution to the overall aroma of cheese ( Tian, Xu, Chen, Yu, 2019 ). In another study, we used a flavoromics approach to determine which cheddar cheeses were preferred by a panel of Chinese consumers ( Chen, Zhou, Yu, Yuan, & Tian, 2021 ). 
+However, although Gouda cheese products are sold in some areas of China, it is not known what Gouda cheese aromas are preferred by Chinese consumers. Accordingly, this study evaluated which aromas of 12 Gouda cheeses available in China were preferred by a panel of Chinese consumers. Solid-phase microextraction (SPME) and solvent-assisted flavour evaporation (SAFE) were used to extract the volatile aroma compounds from samples of the cheeses, and these compounds were subjected to GC–MS, OAV and GC–O to identify which were key aroma compounds. The correlation between aromas preferred by the Chinese consumers and volatile compounds were analyzed by partial least-squares analysis. Finally, aroma recombination and omission tests were used to confirm the overall sensory impact of the key aroma compounds. The results of this systematic analysis of the aroma characteristics of Gouda cheeses that are commercially available in China will aid in the development of Gouda cheeses and related products that accord with the preferences of Chinese consumers. 
+2. Materials and methods 
+2.1. Materials 
+Twelve samples of Gouda cheeses (C1–C12) were purchased from online shopping malls or large supermarkets in China, and were packed in ice boxes and cold-chain-transported to our laboratory. The samples were then divided into the following three categories according to maturity– young (C1-C4), medium (C5-C8) and aged (C9-C12), and then stored at –20 ℃ until analysis. Details of the samples are provided in the Supplementary Material ( Table S1 ). 
+2.2. Chemicals 
+2-Pentanone, diacetyl, acetoin, 2-undecanone, butyl acetate, methyl hexanoate, methyl caprate, ethyl caprate, ethyl butyrate, ethyl hexanoate, 3-methylbutanal, benzaldehyde, pentanal, nonanal, octanal, acetic acid, propionic acid, isobutyric acid, butyric acid, isovaleric acid, hexanoic acid, octanoic acid, decanoic acid, valeric acid, δ-dodecalactone, ( Z )-dairy lactone, δ-caprinolactone, γ-dodecalactone, dichloromethane and n -alkane standards (C 6 –C 30 ) were purchased from Sigma-Aldrich (St. Louis, MO, USA). 2-Octanol (internal standard, IS) was purchased from Dr Ehrenstorfer GmbH, Augsburg, Germany. All of the chemicals were of chromatographic grade and had a purity>98 %. 
+2.3. Sensory evaluation 
+Sensory evaluation consisted of a consumer preference test followed by a descriptive sensory analysis. The consumer preference test panel consisted of 60 people (28 men and 32 women, aged 16–60 years old) who were from various regions of China and were temporarily residing in Shanghai. The descriptive sensory analysis panel consisted of 20 professional sensory analysts (10 men and 10 women, average age of 26 years), who were selected from a pool of 40 candidates based on a sensory discrimination test. All were familiar with the sensory properties of cheese, and received regular professional training to enable them to conduct sensory evaluations of Gouda cheese. 
+The experiments were carried out under controlled sensory laboratory conditions according to the ISO 8589:2007 standard, with the temperature maintained at 20 ℃. The Gouda cheese samples for all tests were randomly coded with three-digit numbers, cut into 5-g pieces, and then individually stored in 50-mL lidded and odourless brown glass containers. These containers were placed in a random order, and then sequentially presented to the panellists. 
+All the descriptive sensory analysis panellists scored the aroma of each sample on an evaluation form, using 11 aroma descriptors, which were ‘fruit’, ‘toast’, ‘milk’, ‘sour’, ‘rancid’, ‘broth’, ‘nutty’, ‘sulfur’, ‘cocoa’ ‘whey’, and ‘cream’. These descriptors were chosen by 20 panellists in preliminary tests ( Majcher et al., 2018 ), and are defined as follows: ‘fruit’ = the aroma of fresh pineapple juice; ‘toast’ = the aroma of freshly baked bread; ‘milk’ = the aroma of fresh milk; ‘whey’ = the aroma of fresh Gouda whey; ‘cream’ = the aroma of beaten heavy cream; ‘sour’ = the aroma of acetic acid (2.0 mg/L in water); ‘rancid’ = the aroma of butyric acid; ‘broth’ = the aroma of freshly boiled beef soup; ‘nutty’ = the aroma of raw nuts; ‘cocoa’ = the aroma of melted dark chocolate; and ‘sulfur’ = the aroma of mashed boiled egg. 
+In addition, the panellists for the consumer preference test evaluated the aroma of each sample and indicated whether they liked it on a 9-point hedonic scale (where 1 = ‘I disliked it very much,’ 5 = ‘I neither liked or disliked it,’ 9 = ‘I liked it very much’) (Drake, Gerard, & Drake, 2008). Moreover, the descriptive sensory analysis panellists scored the intensity of the 11 aroma attributes of each sample from 0 (none) to 10 (very strong). 
+All panellists were given a 2-min break between each sample evaluation to prevent olfactory fatigue, and all evaluations were performed in triplicate. 
+2.4. Extraction of aroma compounds from samples 
+2.4.1. Solid-phase microextraction (SPME) 
+Samples were pulverised after being frozen in liquid nitrogen for 5 min, and then finely ground with a blender to obtain a homogeneous sample. Three grams of each pulverised sample and 2-octanol (20 µL, 220 mg/L) were placed in a 20-mL glass vial, which was then sealed with a silicon septum, and placed in 60 ℃ water bath for 30 min for equilibration. After this time, a 1-cm 50/30-μm divinylbenzene/carboxyl/polydimethylsiloxane fibre (Supelco, Bellefonte, PA) was inserted into the headspace of each vial, and maintained in this position at 60 ℃ for 30 min to extract aroma compounds (these conditions had been found to be optimal in preliminary experiments). After this time, each fibre was inserted into the front injection port of the GC, and desorbed at 250 ℃ for 5 min. 
+2.4.2. Solvent-assisted flavour evaporation (SAFE) 
+Each sample (30 g) was frozen in liquid nitrogen for 5 min, and then pulverised with a mortar and pestle. The pulverised sample was then treated with 2-octanol (300 µL, 220 mg/L) and dichloromethane (90 mL), and the resulting mixture was agitated on a shaker (ME104E, Mettler Toledo Instruments Co., ltd., Shanghai, China) at 150 r/min at 4 ℃ for 4 h. Then the mixture was moved to a separatory funnel, and the solid–liquid was separated after stratification. The resulting solution was then extracted with SAFE apparatus (Glasbläserei Bahr, Manching, Germany). The temperature of the water bath and circulating water was maintained at 50 ℃, and the extraction was started when the system pressure was approximately 1 × 10 −3 Pa. The resulting extract was dried over anhydrous Na 2 SO 4 , and then filtered. Finally, the filtrate was concentrated to 1 mL using a Vigreux column (60 × 1 cm), and 1 µL of concentrate was injected into the front injection port of the GC ( Sonmezdag, Kelebek, & Selli, 2018 ). 
+2.5. GC–MS analysis 
+The GC–MS method we used is an improved version of the method we have previously employed ( Chen, Liu, Yu, Xu, & Tian, 2022 ). The gas chromatograph and mass spectrometer were Agilent models 7890B and 5977B, respectively (Santa Clara, CA). Volatile compounds were separated on an HP-Innowax column (60 m × 0.25 mm × 0.25 μm; Agilent (Santa Clara, CA)). Helium (99.999 %) was used as a carrier gas, at a flow rate of 1 mL/min. The oven was first maintained at 40 ℃ for 4 min, and then successively increased to 100 ℃ at a rate of 3 ℃/min, and held at 100 ℃ for 2 min; heated to 150 ℃ at a rate of 4 °C/min, and held at 150 ℃ for 2 min; and finally heated to 230 ℃ at a rate of 10 ℃/min, and held at 230 ℃ for 5 min. The ionisation energy of the electron bombardment mode was 70 eV, and the temperatures of the ion source and transmission line were set to 230 ℃ and 280 ℃, respectively. A full scan ( m / z 35–450) was performed. 
+The volatile compounds were identified by comparing their mass spectral data to the National Institute of Standards and Technology 17 library data and by comparing their retention indices (RIs) to those of the n -alkane standards, and the RIs reported in previous studies ( Sevindik, 2020 ). 
+The volatile compounds were quantified by reference to an IS calibration curve. An example of a quantification method is as follows ( Tian, Xu, Chen, & Yu, 2019 ). First, 100 μL of various concentrations of δ-dodecalactone and 20 μL of IS solution (220 mg/L) were added to a sample, and the resulting solutions were analysed by GC–MS. A curve was constructed from the results to determine whether there was a linear relationship between the ratio ( x ) of the concentrations of the tested compound (C i ) and that of the IS (C IS ) (where x = C i /C IS ), and the ratio ( y ) of their peak areas (A) (where y = A i /A IS ). The standard curve was described by the equation y  = 0.2832 x  + 0.1146, and the coefficient of determination was 0.9952, which indicated that the relationship between  ×  and y was sufficiently linear. The formula for the relative concentration of a given volatile compound is Ci = fi × CIS × Ai / AIS , where f i is the slope of the IS curve and was used as a correction factor. 
+2.6. GC-O analysis 
+An Agilent 7890 gas chromatography system equipped with an olfactory detection port (Gerstel ODP-2, Mulheim an der Ruhr, Germany) was used to identify the volatile aroma compounds. Equal portions of the gas chromatography effluent were delivered to the flame ionisation detector and the sniffer. The temperature of the transfer line was held at 280 ℃. The volatile aroma compounds in the sample extracts were separated on an HP-Innowax fused-silica capillary column (60 m × 0.25 mm × 0.25 μm; Agilent Technologies). The column effluent was delivered into a glass sniffing device, where odour-specific magnitude estimation (OSME) analysis (a time-intensity method used in GC-O) was performed. Fifteen panellists were trained for the smelling task by being familiarised with the odours in a reference odorant solution, and these odours’ descriptions. Each of the panellists then used the glass sniffing device to smell the column effluent for each sample, and recorded the onset and end times of the odours, and their characteristics and intensity. Odour intensity was assessed on a 5-point intensity scale from 0 to 5, where 0 = no odour, 3 = a moderate odour, and 5 = a very strong odour. Each experiment was performed in triplicate, and resulting data were used to calculated the modified frequency [MF (%)] for each odour via the following formula proposed by Dravnieks (1985) : MF % = F × I % 1 / 2 , where F (%) is the aroma detection frequency expressed as a percentage, and I (%) is the ratio of the average intensity to the maximum aroma intensity expressed as a percentage. 
+2.7. OAVs 
+OAVs were used to assess the contribution of each compound to the overall aroma of each sample, and were calculated from the ratio of aroma compound concentrations to their odour thresholds; the latter were obtained from previous studies ( Van Gemert, 2011 ). A compound with an OAV greater than or equal to 1 was considered to contribute to the overall aroma of a sample, i.e., to be aroma-active compounds. 
+2.8. Aroma recombination and omission tests 
+Recombination of the aroma components was performed, and the aroma-active components were then determined. The appropriate aroma-active compounds of the 28 that were identified (i.e., compounds with an OAV greater than or equal to 1 or an MF>30 %) were dissolved in a triacetin matrix in a concentration equal to that in a given sample, and then equilibrated at room temperature for 10 min to obtain a complete recombined aroma model for each cheese sample (R1–R12). The descriptive sensory analysis panellists then performed sensory evaluations, as described in section 2.3. 
+Given that the models R1 (young), R6 (medium) and R10 (aged) had the best aroma reorganization effect in different maturity levels, these 3 models were used for aroma omission tests. The contribution of each aroma-active compound to the overall aroma of Gouda cheese was investigated by a triangle test, in which one or a group of compounds was omitted from a reconstituted aroma model for Gouda cheese to obtain an omission model. Each omission model and two reconstituted aroma models (5 g each; encoded with random three-digit numbers) were presented at random to the panellists for sensory analysis. The panellists were asked to identify which of the three samples given least matched the other two samples, which ultimately allowed the key aroma-active compounds for each sample to be identified. 
+2.9. Statistical analysis 
+The statistical significances of data were examined by analysis of variance and Tukey’s multiple comparisons using SPSS (version 21.0; SPSS Inc., Chicago, IL), p  ≤ 0.05 were considered to indicate significance, p  ≤ 0.01 and p  ≤ 0.001 indicate high and very high significance respectively. Then, principal component analysis (Canoco for Windows 5.0; Microcomputer Power) and partial least squares (Simca 14.1; Umetrics AB, Umeå, Sweden) were used to identify the key aroma compounds in the cheese samples of different maturities, and the correlation of these compounds with the cheeses’ sensory attributes. 
+3. Results and discussion 
+3.1. Sensory evaluation 
+ Fig. 1 a show that our consumer preference test panellists gave the highest scores (in order) to samples C1 and C4 in the young cheese group, sample C6 in the medium cheese group, and sample C11 and C12 in the aged cheese group. Among all cheese samples, young Gouda had relatively higher sensory scores than other groups of Gouda cheeses ( p  ≤ 0.05). Thus, the panellists preferred young Gouda cheese, which is consistent with a finding from a recent study on cheddar cheese among Chinese consumers ( Wang, Yang, Wang, Cao, Wang, & Liu, 2021 ). 
+Fig. 1. 
+ Open in a new tab 
+(a) Preference scores for various aromas in samples of 12 Gouda cheeses (as allocated by panel of consumers); (b) heatmap of intensity of various aromas in samples of 12 Gouda cheeses; (c) consumer panel’s assessments of various aromas in samples of 12 Gouda cheeses, where a positive coefficient indicates an aroma that is preferred by consumers, and a negative coefficient indicates an aroma attribute that is not preferred by consumers. 
+ Fig. 1 b shows that samples C1–C4 were scored highest for the ‘milk’ aroma, and that samples C5–C8 were scored highest for the ‘creamy’ aroma; in addition, samples C5–C8 were scored higher for the ‘toast’ aroma than were samples C1–C4. Samples C9–C12 were scored highest for the ‘nutty’, ‘sour’, ‘fruit’, and ‘toast’ aromas. These findings are broadly consistent with previous studies of the aromas of Gouda cheeses of various maturities ( Jo et al., 2018 , Wang et al., 2021 ). 
+The Gouda cheese aroma preferences of our panel of Chinese consumers are displayed in Fig. 1 c. The ‘milk’ and ‘cream’ aromas were most preferred, which is similar to previous findings on Chinese consumer preferences for the aromas of other cheeses ( Ma, Gong, Wu, & Liu, 2006 ). Liggett et al. (2008) also found that aroma attributes like “milk/diacetyl” were the drivers of liking of consumer preference for Swiss cheese. Conversely, aromas such as ‘sour’, ‘rancid’, and ‘sulfur’ were least preferred. In contrast, ‘sour’ and ‘sulfur’ cheese aromas have been found to be preferred by consumers in the US and Ireland ( Jo et al., 2018 , Murray and Delahunty, 2000 ). Such differences in aroma preferences are strongly linked to the eating habits of consumers in different countries ( Ojeda, Etaio, Valentin, Dacremont, Zannoni, Tupasela, et al., 2021 ). 
+3.2. Volatile compounds 
+The 77 volatile compounds that were identified comprised 10 ketones, 20 esters, 11 aldehydes, 9 alcohols, 13 acids, 8 lactones, and 6 other compounds, and their proportions in each sample are shown in Fig. S2 . The higher concentration of a compound determined by analysis of the extracts obtained by the two extraction methods was taken as the compound’s concentration in a given sample. Samples C1–C4 had a higher proportion of ketones and lactones than other samples, samples C5–C12 had a higher proportion of acids (>50 %) than other samples, and samples C9–C12 had a higher proportions of esters than other samples. No matter what kind of samples, the proportion of acids is higher than that of other compounds. The characteristics are similar in other lactic acid bacteria fermented foods ( Chen, Zhao, Hao, Yu, Tian, & Zhao, 2017 ). 
+A heatmap of all volatiles detected by GC–MS is provided in Fig. 2 , which shows the difference in concentration of each aroma compound in 12 cheese samples. Samples C1–C4 had high concentrations of hexanal, methyl phenylacetate, nonanal, methyl hexanoate, methyl palmitate, methyl dodecanoate, leaf alcohol, caprylic acid, methyl ester, methyl benzoate, methyl caprate, and diacetyl. The number of esters in these samples reflects that fact that they are easily formed by the reaction of free fatty acids and alcohols ( Thierry, Collins, Mukdsi, McSweeney, Wilkinson, & Spinnler, 2017 ). The presence of aldehydes is typical of young cheeses, as these compounds are rapidly converted into alcohols and acids, and thus their proportions decrease as a cheese ages ( Curioni and Bosset, 2002 , Ganesan and Weimer, 2017 ). Diacetyl has buttery and milky aromas, and previous studies have identified it as a unique flavour of Gouda cheese ( Jo et al., 2018 , Tian et al., 2020 ). It can be reduced by the action of lactic acid bacteria ( Bartowsky & Henschke, 2004 ), which may explain why it is present in lower proportions in well-ripened cheeses. 
+Fig. 2. 
+ Open in a new tab 
+Heatmap of the aroma compound content of samples of 12 Gouda cheeses. 
+Samples C5–C8 had high concentrations of butyraldehyde, butyl butyrate, ethyl laurate, ethyl caprate, heptanoic acid, 3-methyl-1-butanol, ethyl hexanoate, dimethyl sulfone, benzyl alcohol, acetoin, 3-methylthiopropanol, pentanal, and 2-octanone. Most of these are ethyl esters, which contribute significantly to both the fruity and floral aromas of cheese ( Urbach, 1997 ). Samples C5–C8 had higher concentrations of certain ketones, acids and aldehydes (such as acetoin, heptanoic acid, butyraldehyde and pentanal) than the other samples. 
+The concentrations of acids such as acetic acid, isobutyric acid and isovaleric acid, and lactones such as δ-octalactone, δ-hexalactone and δ-nonalactone were high in samples C9–C12. Additionally, higher concentrations of compounds such as octanoic acid, butyric acid and ethyl caprate were present in samples C9–C12 than in other samples. Most acids are produced by lactose metabolism or fat degradation, while lactones are derived from hydroxy fatty acids ( Alewijn et al., 2007 , McSweeney, 2004 ). These results are reasonably consistent with those of previous studies, which showed that proportions of most acids and lactones in cheese increase with aging ( Chen, Liu, Yu, Xu, & Tian, 2022 ; J. Wang, Yang, Wang, Cao, Wang, & Liu, 2021 ). 
+3.3. Aroma-active compounds 
+The contribution of the aroma compounds in a food to the food’s aroma is closely related to their concentrations in the food and their sensory thresholds ( Delahunty, Eyres, & Dufour, 2006 ). Therefore, this study used an OSME-based GC-O method to detect aroma-active compounds, and then calculated their OAVs. Compounds with an OAV greater than or equal to 1 or an MF>30 % were considered to be aroma-active, and these values for each aroma-active compound in the samples and these compounds’ aroma descriptions are shown in Table 1 . 
+Table 1. 
+MF, OAVs and descriptions of aromas of aroma-active compounds in samples of 12 Gouda cheeses. 
+ NO. 
+ Compounds 
+ AD a 
+ OT b 
+ C1 
+ C2 
+ C3 
+ C4 
+ C5 
+ C6 
+ C7 
+ C8 
+ C9 
+ C10 
+ C11 
+ C12 
+ OAV 
+ MF c 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ OAV 
+ MF 
+ 1 
+ 2-Pentanone 
+ Banana 
+ 98 
+ 0.07 
+ 47.33 
+ 0.07 
+ 46.48 
+ 0.10 
+ 45.61 
+ 0.07 
+ 39.50 
+ – 
+ – 
+ 0.49 
+ 51.38 
+ – 
+ – 
+ 0.48 
+ 54.77 
+ 1.39 
+ 55.86 
+ 1.80 
+ 57.97 
+ 1.77 
+ 60.00 
+ 0.07 
+ 42.43 
+ 2 
+ Diacetyl 
+ Milk 
+ 50 
+ 17.52 
+ 80.50 
+ 13.66 
+ 74.83 
+ 21.54 
+ 80.50 
+ 16.34 
+ 74.83 
+ 7.19 
+ 68.99 
+ 8.13 
+ 64.81 
+ 8.48 
+ 60.99 
+ 8.53 
+ 60.99 
+ 4.07 
+ 60.99 
+ 5.15 
+ 63.72 
+ 5.80 
+ 64.81 
+ 2.80 
+ 60.99 
+ 3 
+ Acetoin 
+ Butter 
+ 14 
+ 238.28 
+ 83.67 
+ 300.36 
+ 84.85 
+ 211.20 
+ 83.67 
+ 274.04 
+ 86.02 
+ 375.03 
+ 87.18 
+ 434.30 
+ 89.44 
+ 418.71 
+ 90.55 
+ 206.34 
+ 80.00 
+ 233.81 
+ 78.74 
+ 94.00 
+ 74.70 
+ 140.95 
+ 75.89 
+ 159.35 
+ 78.74 
+ 4 
+ 2-Undecanone 
+ Citrus 
+ 5.5 
+ 3.64 
+ 66.93 
+ – 
+ – 
+ – 
+ – 
+ 6.51 
+ 63.72 
+ 5.91 
+ 62.61 
+ 4.28 
+ 64.50 
+ 4.85 
+ 63.25 
+ 5.82 
+ 68.12 
+ 7.85 
+ 64.50 
+ 31.18 
+ 73.48 
+ 19.43 
+ 72.11 
+ 7.85 
+ 66.93 
+ 5 
+ Butyl acetate 
+ Pear 
+ 300 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ 11.78 
+ 72.11 
+ 8.62 
+ 70.71 
+ 11.66 
+ 74.83 
+ 10.64 
+ 76.16 
+ 6 
+ Methyl hexanoate 
+ Pineapple 
+ 70 
+ 1.06 
+ 66.93 
+ 0.50 
+ 60.33 
+ 1.13 
+ 64.50 
+ 1.23 
+ 64.50 
+ – 
+ – 
+ – 
+ – 
+ 1.26 
+ 70.99 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ 7 
+ Methyl caprate 
+ Wine 
+ 4.3 
+ 34.93 
+ 78.74 
+ 15.30 
+ 75.89 
+ 67.98 
+ 79.37 
+ 42.74 
+ 73.76 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ 8 
+ Ethyl caprate 
+ Apple 
+ 5 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ 78.45 
+ 84.85 
+ – 
+ – 
+ 21.26 
+ 75.89 
+ 22.33 
+ 74.83 
+ 24.15 
+ 80.50 
+ 23.06 
+ 81.61 
+ – 
+ – 
+ 15.24 
+ 72.66 
+ 9 
+ Ethyl butyrate 
+ Apple 
+ 0.9 
+ 13.12 
+ 72.66 
+ 8.06 
+ 71.55 
+ 6.19 
+ 70.99 
+ 31.38 
+ 84.85 
+ 82.14 
+ 83.67 
+ 97.98 
+ 81.61 
+ 68.50 
+ 76.94 
+ 132.83 
+ 84.85 
+ 66.87 
+ 83.67 
+ – 
+ – 
+ 45.06 
+ 77.07 
+ 45.93 
+ 80.50 
+ 10 
+ Ethyl hexanoate 
+ Pineapple 
+ 5 
+ – 
+ – 
+ 1.21 
+ 61.48 
+ – 
+ – 
+ 1.20 
+ 65.73 
+ 32.59 
+ 73.48 
+ 40.63 
+ 73.48 
+ 32.78 
+ 70.43 
+ 3.64 
+ 65.88 
+ 9.13 
+ 69.28 
+ 8.00 
+ 65.73 
+ 9.15 
+ 74.70 
+ 6.01 
+ 67.97 
+ 11 
+ 3-Methylbutanal 
+ Nut 
+ 2 
+ 1.63 
+ 74.70 
+ 3.42 
+ 81.24 
+ 7.61 
+ 82.46 
+ 4.44 
+ 75.89 
+ 3.27 
+ 81.24 
+ 12.95 
+ 82.46 
+ 1.71 
+ 78.74 
+ 7.04 
+ 78.74 
+ 23.28 
+ 81.24 
+ 17.56 
+ 80.00 
+ 27.63 
+ 82.46 
+ 3.63 
+ 80.50 
+ 12 
+ Benzaldehyde 
+ Almond 
+ 85 
+ 0.10 
+ 41.95 
+ 0.31 
+ 46.90 
+ 0.46 
+ 50.99 
+ 0.49 
+ 47.96 
+ 1.66 
+ 63.25 
+ 1.00 
+ 65.73 
+ 0.90 
+ 64.50 
+ 0.91 
+ 65.73 
+ 1.10 
+ 68.41 
+ 0.65 
+ 61.48 
+ 0.27 
+ 57.97 
+ 2.17 
+ 64.50 
+ 13 
+ Pentanal 
+ Almond 
+ 12 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ 1.21 
+ 42.93 
+ – 
+ – 
+ 3.07 
+ 44.34 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ 14 
+ Nonanal 
+ Fat 
+ 8 
+ 3.12 
+ 50.43 
+ – 
+ – 
+ 4.43 
+ 51.55 
+ 4.62 
+ 50.43 
+ 4.20 
+ 54.70 
+ – 
+ – 
+ 0.40 
+ 59.16 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ 6.41 
+ 57.46 
+ – 
+ – 
+ 15 
+ Octanal 
+ Fat 
+ 0.7 
+ 23.24 
+ 64.83 
+ 24.64 
+ 63.48 
+ 26.06 
+ 62.11 
+ 7.41 
+ 58.41 
+ 6.07 
+ 59.28 
+ 21.80 
+ 57.82 
+ 4.59 
+ 50.71 
+ 7.44 
+ 59.28 
+ 90.36 
+ 66.16 
+ 71.73 
+ 66.16 
+ 64.46 
+ 68.74 
+ – 
+ – 
+ 16 
+ Acetic acid 
+ Sour 
+ 124 
+ 5.77 
+ 80.50 
+ 4.91 
+ 74.83 
+ 4.22 
+ 73.76 
+ 2.75 
+ 75.89 
+ 8.93 
+ 80.50 
+ 10.16 
+ 83.67 
+ 6.76 
+ 81.24 
+ 9.58 
+ 78.74 
+ 13.49 
+ 84.85 
+ 14.22 
+ 83.67 
+ 17.57 
+ 84.85 
+ 14.01 
+ 80.50 
+ 17 
+ Propionic acid 
+ Vinegar 
+ 3 
+ 25.32 
+ 73.48 
+ 11.50 
+ 68.12 
+ – 
+ – 
+ 3.12 
+ 62.61 
+ – 
+ – 
+ 3.32 
+ 69.28 
+ 3.42 
+ 64.50 
+ 2.54 
+ 63.25 
+ 136.43 
+ 76.16 
+ 19.97 
+ 73.48 
+ 55.14 
+ 74.83 
+ 55.48 
+ 73.48 
+ 18 
+ Isobutyric acid 
+ Rancid 
+ 10 
+ 1.32 
+ 80.50 
+ – 
+ – 
+ 0.77 
+ 75.89 
+ – 
+ – 
+ 3.54 
+ 74.83 
+ 3.15 
+ 72.66 
+ – 
+ – 
+ – 
+ – 
+ 98.70 
+ 86.02 
+ 94.76 
+ 87.18 
+ 10.86 
+ 84.85 
+ 27.05 
+ 82.70 
+ 19 
+ Butyric acid 
+ Rancid 
+ 2400 
+ 0.32 
+ 76.68 
+ 0.21 
+ 71.83 
+ 0.42 
+ 74.30 
+ 0.58 
+ 73.48 
+ 2.02 
+ 87.64 
+ 1.63 
+ 86.72 
+ 1.69 
+ 90.99 
+ 1.59 
+ 90.00 
+ 2.08 
+ 95.92 
+ 1.69 
+ 96.95 
+ 1.48 
+ 95.92 
+ 0.70 
+ 94.87 
+ 20 
+ Isovaleric acid 
+ Sweat 
+ 490 
+ 0.57 
+ 64.81 
+ – 
+ – 
+ – 
+ – 
+ 0.56 
+ 65.73 
+ 1.21 
+ 66.93 
+ 1.31 
+ 72.66 
+ 0.90 
+ 71.55 
+ 0.70 
+ 70.43 
+ 10.34 
+ 80.50 
+ 18.57 
+ 81.61 
+ 5.23 
+ 80.50 
+ 5.53 
+ 79.37 
+ 21 
+ Hexanoic acid 
+ Sweat 
+ 890 
+ 1.60 
+ 77.07 
+ 1.66 
+ 78.23 
+ 1.68 
+ 77.07 
+ 1.01 
+ 72.66 
+ 2.95 
+ 78.23 
+ 3.13 
+ 80.50 
+ 2.58 
+ 80.50 
+ 2.03 
+ 81.61 
+ 4.82 
+ 78.92 
+ 4.45 
+ 86.02 
+ 4.83 
+ 84.85 
+ 2.60 
+ 80.50 
+ 22 
+ Octanoic acid 
+ Rancid 
+ 5.1 
+ 116.34 
+ 78.74 
+ 28.53 
+ 77.07 
+ 87.89 
+ 84.85 
+ 116.52 
+ 83.67 
+ 330.70 
+ 84.85 
+ 338.98 
+ 87.18 
+ 374.52 
+ 88.32 
+ 402.42 
+ 88.32 
+ 375.78 
+ 83.79 
+ 241.04 
+ 82.70 
+ 280.65 
+ 81.61 
+ 245.78 
+ 80.00 
+ 23 
+ Decanoic acid 
+ Rancid 
+ 130 
+ 3.93 
+ 74.70 
+ 0.64 
+ 68.12 
+ 2.23 
+ 72.25 
+ 1.63 
+ 74.70 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ – 
+ 24 
+ Valeric acid 
+ Sweat 
+ 0.16 
+ – 
+ – 
+ – 
+ – 
+ 93.88 
+ 76.16 
+ 297.69 
+ 77.46 
+ 321.31 
+ 78.74 
+ 147.38 
+ 77.46 
+ 69.38 
+ 76.16 
+ 98.56 
+ 78.74 
+ 441.50 
+ 77.07 
+ 327.88 
+ 80.00 
+ 309.75 
+ 78.23 
+ 191.13 
+ 75.89 
+ 25 
+ δ-Dodecalactone 
+ Peach 
+ 150 
+ 4.18 
+ 70.43 
+ 2.44 
+ 66.93 
+ 2.66 
+ 68.12 
+ – 
+ – 
+ – 
+ – 
+ 3.57 
+ 73.48 
+ – 
+ – 
+ 1.69 
+ 74.70 
+ – 
+ – 
+ 1.66 
+ 76.16 
+ 1.77 
+ 72.25 
+ 2.49 
+ 72.11 
+ 26 
+ ( Z )-dairy lactone 
+ Cream 
+ 0.1 
+ 384.00 
+ 74.83 
+ 407.20 
+ 73.48 
+ 294.70 
+ 76.16 
+ – 
+ – 
+ 182.50 
+ 72.25 
+ 153.80 
+ 73.48 
+ 130.30 
+ 69.28 
+ – 
+ – 
+ – 
+ – 
+ 225.80 
+ 74.83 
+ – 
+ – 
+ 449.50 
+ 74.83 
+ 27 
+ δ-Caprinolactone 
+ Coconut 
+ 66 
+ 6.59 
+ 67.08 
+ 4.12 
+ 68.41 
+ 4.24 
+ 68.41 
+ 3.44 
+ 64.50 
+ 2.91 
+ 63.25 
+ 2.33 
+ 65.73 
+ 1.83 
+ 66.93 
+ 4.64 
+ 69.71 
+ 3.61 
+ 70.99 
+ 3.42 
+ 74.83 
+ 4.11 
+ 73.48 
+ 3.74 
+ 72.11 
+ 28 
+ γ-Dodecalactone 
+ Peach 
+ 63 
+ 2.15 
+ 61.97 
+ – 
+ – 
+ – 
+ – 
+ 0.55 
+ 60.33 
+ 0.67 
+ 63.25 
+ 1.10 
+ 69.71 
+ 1.31 
+ 69.71 
+ – 
+ – 
+ 0.71 
+ 69.28 
+ 1.29 
+ 69.71 
+ 0.94 
+ 68.12 
+ 2.51 
+ 72.11 
+ Open in a new tab 
+ a 
+Description of the aroma of the compound; b Olfactory threshold of compound (from references); c Detailed in section 2.6. 
+The 28 aroma-active compounds identified comprised 4 ketones, 6 esters, 5 aldehydes, 9 acids and 4 lactones. The compounds that made the highest contribution to the aroma of samples C1–C4 were acetoin (OAV > 100, MF > 70 %) and ( Z )-dairy lactone (OAV > 100, MF > 70 %), and contributed mainly ‘butter’ and ‘cream’ aromas. The odours of these compounds were uniformly pleasant and thus were scored high in the sensory ratings for the samples of the 12 Gouda cheeses. This accords with a previous study, which found that Gouda cheeses with a creamy odour were preferred by American subjects ( Yates & Drake, 2007 ). 
+Acetoin and ( Z )-dairy lactone also had high OAVs in samples C5–C8, and thus made a large contribution to the aromas of these samples. In addition, compared with samples C1–C4, samples C5–C8 had higher OAVs and MFs for various acids, and thus these also contributed to these samples’ aroma. This is similar to a previous finding ( Wang, Yang, Wang, Cao, Wang, & Liu, 2021 ). 
+The OAVs and MF of 3-methylbutyraldehyde, isobutyric acid, caprylic acid, capric acid and δ-caprolactone were greatest in samples C9–C12. These substances mainly impart nutty, sour and peach aromas to Gouda cheese, and as aged Gouda cheese has many flavour compounds with high aroma contributions and strong flavours, such as sourness, the overall aroma of samples C9–C12 was more complex and diverse than that of samples C1–C4 and samples C5–C8. Samples C9–C12 also had a lower preference score than samples C1–C4 and samples C5–C8, which is the opposite to the findings of a study on US consumer preferences for Gouda cheese ( Jo, et al., 2018 ). which suggests that Chinese consumers prefer younger Gouda cheeses. 
+ Fig. 3 shows the results of PCA, which indicates that the PCA for OAV of Gouda sample volatile compounds can represented>70 % of the volatile component variable information, such that cheeses of different ages were well differentiated. According to the results of PCA, the key compounds causing those differences were diacetyl, acetoin, methyl caprate, ethyl hexanoate, δ-caprinolactone. 
+Fig. 3. 
+ Open in a new tab 
+Principal component analysis of samples of 12 Gouda cheeses. The yellow dots represent the samples, and the blue arrows indicate correlations between aroma compounds and samples Numbers 1–27 denote the aroma-active compounds listed in Table 1 . (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.) 
+3.4. Correlation of aroma-active compounds with sensory attributes 
+The results of the PLS regression performed to determine the correlations between the aroma-active compounds and their contribution to the aromas of the samples are depicted in Fig. 4 . The  ×  variable represents the OAV of volatile compounds and the y variable represents the intensity of the aromas of the compounds. The  ×  and y values were loaded around a circle ( R ( x ) 2  = 0.904 and R ( y ) 2  = 0.905, where R 2 represents the magnitude of a correlation). The model quality (Q 2  = 0.823) is high, as Q 2  > 0.50 indicates that a correlation between two variables is well represented by a PLS analysis. 
+Fig. 4. 
+ Open in a new tab 
+Correlation of aromas with aroma-active compounds. Yellow dots represent 12 samples of Gouda cheese. Blue dots represent 11 aroma attributes. Green dots represent the aroma compounds listed in Table 1 . (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.) 
+Samples C1–C4, samples C5–C8 and sample C9–C12 are in different regions of the figure and well separated, consistent with the previous PCA results. Furthermore, samples C1–C4 were correlated with ‘milk’ and ‘whey’ aromas, which were in turn strongly correlated with diacetyl and methyl caprate, respectively. The ‘cream’ aroma was associated samples C5–C8, and the volatile compound associated with this aroma was acetoin. Samples C9–C12 were strongly correlated with ‘fruit’, ‘sour’, ‘broth’, ‘cocoa’, ‘rancid’, ‘nutty’ and ‘sulfur’ aromas. The flavour compounds isovaleric acid, isobutyric acid, 3-methylbutanal, acetic acid, hexanoic acid and 2-pentanone were correlated with the aforementioned aromas. Collcetively, compounds such as diacetyl and acetoin were correlated with the aromas preferred by our panellists, whereas those such as isobutyric acid, valeric acid and hexanoic acid were correlated with aromas that were not preferred by our panellists. 
+3.5. Aroma recombination and omission tests 
+ Fig. 5 shows the aroma profile obtained by comparing the results of aroma recombination experiments with the aromas of each of the actual cheese samples. It can be seen that each recombined aromas had a similar profile to the aroma profiles of the samples, aside from a slight and non-significant difference between the profiles with regard to the ‘cream’ and ‘sour’ aromas ( p  > 0.05). These results show that recombining the 28 aroma-active substances simulated the aroma profile of the 12 Gouda cheeses. 
+Fig. 5. 
+ Open in a new tab 
+Comparison of aroma of recombination models and aromas of corresponding Gouda cheese samples. The codes (e.g., “C5″, ”R5″) mean Gouda cheese sample C5 and its aroma recombination model R5. 
+The PCA and PLS results of aroma testing show that samples were grouped by age. Therefore, a recombined system that best matched the aroma of each of the three groups of samples was used for the aroma omission tests. The information on aroma omission testing is listed in Table S2 . When all ketones, aldehydes, acids and lactones were separately omitted, there was a highly significant difference between the respective omission model and each recombined system ( p  ≤ 0.001). This indicates that ketones, aldehydes, acids and lactones all make an important contribution to the aroma of the 12 studied Gouda cheeses. Furthermore, each acid also contributed significantly to the aromas of all three groups of samples ( p  ≤ 0.05). Diacetyl and acetoin made a greater contribution to the odour of samples C1–C4 and samples C5–C8 cheeses than to the odour of samples C9–C12 ( p  ≤ 0.05). In contrast, 2-pentanone and 2-undecanone contributed more to the aroma of samples C9–C12 than to the aromas of samples C1–C4 and samples C5–C9. 
+There were significant differences between the model esters omitted and the aroma–recombination system ( p  ≤ 0.05). Methyl hexanoate and methyl caprate contributed more to aromas of samples C1–C4 than to the aromas of samples C5–C8 and samples C9–C12, whereas ethyl hexanoate contributed more to the aromas of samples C5–C8 and samples C9–C12 than to that of samples C1–C4. Ethyl butyrate contributed least to the aromas of samples C9–C12, while butyl acetate and ethyl caprate contributed most to the aromas of these samples. The aldehydes 3-methylbutanal, benzaldehyde and pentanal contributed less to the aromas of samples C1–C4 than to those of samples C5–C8 and samples C9–C12. The aldehydes nonanal and octanal contributed more to the aromas of samples C1–C4 and samples C9–C12, respectively, than to the aromas of samples C5–C8. All lactones except for δ-dodecalactone contributed more to the aromas of samples C1–C4 than to the aromas of samples C5–C8 and samples C9–C12. This may be ascribed that the aroma of lactones is masked in mature cheeses by the stronger odour or flavour of compounds that are more prevalent in mature cheeses than in young cheeses ( Chen, Liu, Yu, Lou, Huang, Yuan, et al., 2022 ). 
+The above results confirm that diacetyl and acetoin contributed significantly to the ‘milk’ and ‘cream’ aromas, which were preferred by our panel of Chinese consumers, while isobutyric acid, valeric acid and hexanoic acid contributed significantly to the ‘sour’, ‘rancid’ and ‘sulfur’ aromas, which were not preferred by our panel. 
+4. Conclusion 
+The aromas of samples of 12 Gouda cheeses that are commercially available in China were investigated by GC–MS, GC-O, OAV, sensory evaluation, and aroma reorganisation and omission experiments. Sensory evaluation showed that young Gouda cheeses were preferred by our panel of Chinese consumers, due to these cheeses’ ‘milk’ and ‘cream’ aromas, medium and aged cheeses were not preferred by our panel, due to these cheeses’, ‘sour’, ‘rancid’ and ‘sulfur’ aromas. GC–MS identified 77 aroma compounds, and a combination of GC-O and OAV determined that 28 of these compounds were aroma-active. The relative proportions of diacetyl, acetoin, methyl caprate, ethyl hexanoate and δ-caprinolactone in samples were found to distinguish between samples of three different maturities: i.e., young, medium and aged cheeses. Compounds such as diacetyl and acetoin were correlated with aromas preferred by our panel of Chinese consumers, whereas isobutyric acid, hexanoic acid and valeric acid were correlated with aromas that were not preferred by our panel. 
+Taken together, our results show that further studies are warranted to develop methods to increase proportions of preferred aroma compounds and decrease proportions of non-preferred aromas compounds during the production and processing of Gouda cheeses. Such studies would assist in the tailoring of Gouda cheeses and associated products to appeal to consumers in China. 
+CRediT authorship contribution statement 
+ Chen Chen: Conceptualization, Methodology, Formal analysis, Resources, Writing – original draft, Writing – review & editing. Tonghui Tian: Methodology, Formal analysis, Investigation, Writing – original draft. Haiyan Yu: Resources, Supervision, Project administration. Haibin Yuan: Resources, Supervision. Bei Wang: Resources, Supervision. Zhiyuan Xu: Resources, Supervision. Huaixiang Tian: Writing – review & editing, Project administration. 
+Declaration of Competing Interest 
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. 
+Acknowledgments 
+This research was supported by the National Natural Science Foundation of China (No. 31972197). 
+Footnotes 
+ Appendix A 
+Supplementary data to this article can be found online at https://doi.org/10.1016/j.fochx.2022.100416 . 
+Appendix A. Supplementary data 
+The following are the Supplementary data to this article: 
+ Supplementary data 1 
+ mmc1.docx (123KB, docx) 
+References 
+ Alewijn M., Smit B., Sliwinski E., Wouters J. The formation mechanism of lactones in Gouda cheese. International Dairy Journal. 2007;17(1):59–66. doi: 10.1016/j.idairyj.2006.01.002. [ DOI ] [ Google Scholar ] 
+ Bartowsky E.J., Henschke P.A. The 'buttery' attribute of wine–diacetyl–desirability, spoilage and beyond. International Journal of Food Microbiology. 2004;96(3):235–252. doi: 10.1016/j.ijfoodmicro.2004.05.013. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Chen C., Liu Z., Yu H., Lou X., Huang J., Yuan H.…Tian H. Characterization of six lactones in cheddar cheese and their sensory interactions studied by odor activity values and Feller's additive model. Journal of Agricultural and Food Chemistry. 2022;70(1):301–308. doi: 10.1021/acs.jafc.1c07924. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Chen C., Liu Z., Yu H., Xu Z., Tian H. Flavoromic determination of lactones in cheddar cheese by GC-MS-olfactometry, aroma extract dilution analysis, aroma recombination and omission analysis. Food Chemistry. 2022;368 doi: 10.1016/j.foodchem.2021.130736. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Chen C., Zhao S., Hao G., Yu H., Tian H., Zhao G. Role of lactic acid bacteria on the yogurt flavour: A review. International Journal of Food Properties. 2017;20(sup1):S316–S330. doi: 10.1080/10942912.2017.1295988. [ DOI ] [ Google Scholar ] 
+ Chen C., Zhou W., Yu H., Yuan J., Tian H. Characterization of major odor-active compounds responsible for nutty flavor in Cheddar cheese according to Chinese taste. Flavour and Fragrance Journal. 2021;36(2):171–181. doi: 10.1002/ffj.3627. [ DOI ] [ Google Scholar ] 
+ Curioni P., Bosset J. Key odorants in various cheese types as determined by gas chromatography-olfactometry. International Dairy Journal. 2002;12(12):959–984. doi: 10.1016/S0958-6946(02)00124-3. [ DOI ] [ Google Scholar ] 
+ Delahunty C.M., Eyres G., Dufour J.P. Gas chromatography-olfactometry. Journal of Separation Science. 2006;29(14):2107–2125. doi: 10.1002/jssc.200500509. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Di Donato F., Biancolillo A., Mazzulli D., Rossi L., D’Archivio A.A. HS-SPME/GC–MS volatile fraction determination and chemometrics for the discrimination of typical Italian Pecorino cheeses. Microchemical Journal. 2021;165 doi: 10.1016/j.microc.2021.106133. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Dravnieks A. ASTM; Philadelphia, PA: 1985. Atlas of odor character profiles. [ Google Scholar ] 
+ Feng T., Shui M., Song S., Zhuang H., Sun M., Yao L. Characterization of the key aroma compounds in three truffle varieties from China by flavoromics approach. Molecules. 2019;24(18):3305. doi: 10.3390/molecules24183305. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Fusté-Forné F. Say Gouda, Say Cheese: Travel narratives of a food identity. International Journal of Gastronomy and Food Science. 2020;22 doi: 10.1016/j.ijgfs.2020.100252. [ DOI ] [ Google Scholar ] 
+ Ganesan, B., & Weimer, B. C. (2017). Amino acid catabolism and its relationship to cheese flavor outcomes. Cheese (pp. 483-516). Elsevier. 
+ Garcia-Cano I., Rocha-Mendoza D., Kosmerl E., Jimenez-Flores R. Purification and characterization of a phospholipid-hydrolyzing phosphoesterase produced by Pediococcus acidilactici isolated from Gouda cheese. Journal of Dairy Science. 2020;103(5):3912–3923. doi: 10.3168/jds.2019-17965. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Go J.-E., Kim M.-R., Chung S.-J. Acquired (dis)liking of natural cheese in different repeated exposure environment. Food Research International. 2017;99:403–412. doi: 10.1016/j.foodres.2017.05.031. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Han P., Fark T., de Wijk R.A., Roudnitzky N., Iannilli E., Seo H.-S., Hummel T. Modulation of sensory perception of cheese attributes intensity and texture liking via ortho-and retro-nasal odors. Food Quality and Preference. 2019;73:1–7. doi: 10.1016/j.foodqual.2018.11.019. [ DOI ] [ Google Scholar ] 
+ Jo Y., Benoist D.M., Ameerally A., Drake M.A. Sensory and chemical properties of Gouda cheese. Journal of Dairy Science. 2018;101(3):1967–1989. doi: 10.3168/jds.2017-13637. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Karametsi K., Kokkinidou S., Ronningen I., Peterson D.G. Correction to identification of bitter peptides in aged Cheddar cheese. Journal of Agricultural and Food Chemistry. 2019;67(39):10994. doi: 10.1021/acs.jafc.9b05725. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Liggett R.E., Drake M.A., Delwiche J.F. Impact of flavor attributes on consumer liking of Swiss cheese. Journal of dairy science. 2008;91(2):466–476. doi: 10.3168/jds.2007-0527. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Ma, Z. D., Gong, X. Q., Wu, Z. X., & Liu, H. P. (2006). Developmental advantage of cottage cheese in China. Food Science and Technology, 12 , 66-69 (In Chinese). https://doi.org/10.3969/j.issn.1005-9989.2006.12.019. 
+ Majcher M.A., Myszka K., Gracka A., Grygier A., Jeleń H.H. Key odorants of lazur, a polish mold-ripened cheese. Journal of Agricultural & Food Chemistry. 2018;66(10):2443–2448. doi: 10.1021/acs.jafc.6b04911. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ McSweeney P.L. Biochemistry of cheese ripening. International Journal of Dairy Technology. 2004;57(2–3):127–144. doi: 10.1111/j.1471-0307.2004.00147.x. [ DOI ] [ Google Scholar ] 
+ Murray J., Delahunty C. Mapping consumer preference for the sensory and packaging attributes of Cheddar cheese. Food Quality and Preference. 2000;11(5):419–435. doi: 10.1016/S0950-3293(00)00017-3. [ DOI ] [ Google Scholar ] 
+ Oh N.S., Joung J.Y., Lee J.Y., Kim S.H., Kim Y. Characterization of the microbial diversity and chemical composition of Gouda cheese made by potential probiotic strains as an adjunct starter culture. Journal of Agricultural and Food Chemistry. 2016;64(39):7357–7366. doi: 10.1021/acs.jafc.6b02689. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Ojeda M., Etaio I., Valentin D., Dacremont C., Zannoni M., Tupasela T.…Pérez-Elortondo F.J. Effect of consumers’ origin on perceived sensory quality, liking and liking drivers: A cross-cultural study on European cheeses. Food Quality and Preference. 2021;87 doi: 10.1016/j.foodqual.2020.104047. [ DOI ] [ Google Scholar ] 
+ Ronningen I., Miller M., Xia Y., Peterson D.G. Identification and validation of sensory-active compounds from data-driven research: A flavoromics approach. Journal of Agricultural and Food Chemistry. 2018;66(10):2473–2479. doi: 10.1021/acs.jafc.7b00093. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Saravani M., Ehsani A., Aliakbarlu J., Ghasempour Z. Gouda cheese spoilage prevention: Biodegradable coating induced by Bunium persicum essential oil and lactoperoxidase system. Food Science & Nutrition. 2019;7(3):959–968. doi: 10.1002/fsn3.888. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Sevindik B. Stability of volatile compounds of Turkish saffron (Crocus sativus) after one-year storage. Journal of Raw Materials to Processed Foods. 2020;1(2):72–79. [ Google Scholar ] 
+ Sonmezdag A.S., Kelebek H., Selli S. Pistachio oil (Pistacia vera L. cv. Uzun): Characterization of key odorants in a representative aromatic extract by GC-MS-olfactometry and phenolic profile by LC-ESI-MS/MS. Food chemistry. 2018;240:24–31. doi: 10.1016/j.foodchem.2017.07.086. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Thierry, A., Collins, Y. F., Mukdsi, M. A., McSweeney, P. L., Wilkinson, M. G., & Spinnler, H. E. (2017). Lipolysis and metabolism of fatty acids in cheese. Cheese (pp. 423-444). Elsevier. 
+ Tian H., Xu X., Chen C., Yu H. Flavoromics approach to identifying the key aroma compounds in traditional Chinese milk fan. Journal of Dairy Science. 2019;102(11):9639–9650. doi: 10.3168/jds.2019-16796. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Tian H., Yu B., Yu H., Chen C. Evaluation of the synergistic olfactory effects of diacetyl, acetaldehyde, and acetoin in a yogurt matrix using odor threshold, aroma intensity, and electronic nose analyses. Journal of Dairy Science. 2020;103(9):7957–7967. doi: 10.3168/jds.2019-17495. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Urbach G. The flavour of milk and dairy products: II. Cheese: Contribution of volatile compounds. International Journal of Dairy Technology. 1997;50(3):79–89. doi: 10.1111/j.1471-0307.1997.tb01743.x. [ DOI ] [ Google Scholar ] 
+ Van Gemert L.J. Oliemans Punter & Partners BV; Zeist, the Netherlands: 2011. Odour thresholds. Compilations of odour threshold values in air, water and other media. [ Google Scholar ] 
+ Wang G., Song X., Zhu L., Li Q., Zheng F., Geng X.…Sun B. A flavoromics strategy for the differentiation of different types of Baijiu according to the non-volatile organic acids. Food Chemistry. 2022;374 doi: 10.1016/j.foodchem.2021.131641. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Wang J., Yang Z.J., Wang Y.D., Cao Y.P., Wang B., Liu Y. The key aroma compounds and sensory characteristics of commercial Cheddar cheeses. Journal of Dairy Science. 2021;104(7):7555–7571. doi: 10.3168/jds.2020-19992. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Wang J., Yang Z.J., Xu L.Y., Wang B., Zhang J.H., Li B.Z.…Tan L. Key aroma compounds identified in Cheddar cheese with different ripening times by aroma extract dilution analysis, odor activity value, aroma recombination, and omission. Journal of Dairy Science. 2021;104(2):1576–1590. doi: 10.3168/jds.2020-18757. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Wu X., Lu Y., Xu H., Lv M., Hu D., He Z.…Feng Y. Challenges to improve the safety of dairy products in China. Trends in food science & technology. 2018;76:6–14. doi: 10.1016/j.tifs.2018.03.019. [ DOI ] [ Google Scholar ] 
+ Yang Y., Yu P., Sun J., Jia Y., Wan C., Zhou Q., Huang F. Investigation of volatile thiol contributions to rapeseed oil by odor active value measurement and perceptual interactions. Food Chemistry. 2022;373(Part:B). doi: 10.1016/j.foodchem.2021.131607. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Yates M., Drake M. Texture properties of Gouda cheese. Journal of sensory studies. 2007;22(5):493–506. doi: 10.1111/j.1745-459X.2007.00124.x. [ DOI ] [ Google Scholar ] 
+ Yu P., Yang Y., Sun J., Jia X., Zheng C., Zhou Q., Huang F. Identification of volatile sulfur-containing compounds and the precursor of dimethyl sulfide in cold-pressed rapeseed oil by GC-SCD and UPLC-MS/MS. Food Chemistry. 2022;367 doi: 10.1016/j.foodchem.2021.130741. [ DOI ] [ PubMed ] [ Google Scholar ] 
+Associated Data 
+ This section collects any data citations, data availability statements, or supplementary materials included in this article. 
+Supplementary Materials 
+ Supplementary data 1 
+ mmc1.docx (123KB, docx) 
+Articles from Food Chemistry: X are provided here courtesy of Elsevier 
+ACTIONS 
+ View on publisher site 
+ PDF (4.7 MB) 
+ Cite 
+ Collections 
+ Permalink 
+PERMALINK 
+ Copy 
+RESOURCES 
+ Similar articles
+ Cited by other articles
+ Links to NCBI Databases
+Cite 
+ Copy 
+ Download .nbib 
+ .nbib 
+ Format: 
+ AMA
+ APA
+ MLA
+ NLM
+Add to Collections 
+ Create a new collection 
+ Add to an existing collection 
+ Name your collection
+ * 
+ Choose a collection
+ Unable to load your collection due to an error 
+ Please try again 
+ Add
+ Cancel
+ Follow NCBI
+ NCBI on X (formerly known as Twitter) 
+ NCBI on Facebook 
+ NCBI on LinkedIn 
+ NCBI on GitHub 
+ NCBI RSS feed 
+ Connect with NLM
+ NLM on X (formerly known as Twitter) 
+ NLM on Facebook 
+ NLM on YouTube 
+ National Library of Medicine
+ 8600 Rockville Pike Bethesda, MD 20894 
+ Web Policies
+ FOIA
+ HHS Vulnerability Disclosure
+ Help
+ Accessibility
+ Careers
+ NLM
+ NIH
+ HHS
+ USA.gov
+ Back to Top 

@@ -7,6 +7,30 @@
 
 ---
 
+## Actualización con la base v3-fases456 (tras las Fases 4–6)
+
+**Cambios que afectan a las cifras:**
+- Curioni & Bosset (2002) se cuenta como **revisión**, no como estudio primario.
+- Las etiquetas se cuentan **sin duplicados por estudio** (`use_as_cheese_aroma_label_dedup`).
+- Se añadieron **datos por muestra** de 7 estudios (Fase 6).
+
+| Pregunta | v2 | v3 |
+|---|---|---|
+| 2. Filas de etiqueta queso–aroma (queso concreto) | 720 | **693** (sin duplicados) |
+| 3. Estudios primarios independientes (todas / fuertes) | 44 / 20 (Curioni contado como primario) | **42 / 19**; el más citado es Moio 2000, con el 9,5 % de las etiquetas (antes Curioni 2002, con el 30 %); 235 etiquetas solo se apoyan en la revisión |
+| 4. Familias candidatas | 6 | **6** (sin cambio: fruity 25 estudios, vegetal 20, floral 16, lactic 16, toasted 15, animal 12) |
+| 5. Combinaciones de producción del tipo de queso (fuertes) | 11 | 11 |
+| **Nuevo:** unidades de producción reales con producción y aroma **por muestra** | 0 | **20 muestras** (3 estudios, 3 métodos de aroma) y 58 muestras con producción y compuestos |
+
+**Veredicto v3:**
+- **Modelo B (compuesto → familia):** viable y evaluado (ver [FASE5_Modelo_Compuesto_Aroma.md](FASE5_Modelo_Compuesto_Aroma.md)).
+- **Modelo A (producción → compuestos):** efectos direccionales **coherentes entre estudios** para la maduración (14 de 16 compuestos) y la pasteurización (8 pares). Sirve para un modelo semicuantitativo de direcciones, no para concentraciones.
+- **Modelo C (producción → aroma directo):** **no viable** todavía (20 muestras, 3 métodos de aroma incompatibles).
+
+Detalle: [FASE6_Extraccion_Muestras.md](FASE6_Extraccion_Muestras.md).
+
+---
+
 ## Actualización con la base v2-harmonized (tras las Fases 1–3)
 
 Se volvió a ejecutar la auditoría sobre la base armonizada. Ahora las etiquetas solo usan notas de aroma válidas (`use_as_cheese_aroma_label`) y las familias son las de Bérodier (1997). Las secciones siguientes (v1) se conservan como referencia.

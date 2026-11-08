@@ -1,0 +1,40 @@
+﻿,compounds,RT (min),calc. RI,lit. RI,qualifier ion
+sulfur compounds,methanthiol,3.44,745,800,48
+,dimethyl sulfide (DMS),3.88,774,777,62
+,dimethyl disulfide (DMDS),10.67,1105,1104,94
+,"2,4-dithiapentane",16.95,1328,1300,108
+,dimethyl trisulfide (DMTS),19.69,1429,1386,126
+,dimethylsulfone,32.48,1978,1890,94
+esters,butanoic acid ethyl ester,9.37,1055,1048,116
+,hexanoic acid ethyl ester,14.92,1256,1244,115
+,octanoic acid ethyl ester,20.41,1457,1431,127
+,decanoic acid methyl ester,24.54,1620,1615,155
+Lactones,δ-octalactone,33.82,2047,1988,99
+,δ-decalactone,38.65,2307,2225,114
+,δ-dodecalactone,46.18,2770,2470,99
+ketones,butan-2-one,6.24,921,908,72
+,"pentan-2-one, butane-2,3-dione (diacetyl) coelution",7.99,1002,988/1005,86
+,hexan-2-one,8.65,1028,1094,100
+,heptan-2-one,13.64,1210,1183,71
+,octan-2-one,16.58,1315,1268,71
+,3-hydroxybutan-2-one (acetoin),16.87,1326,1296,88
+,nonan-2-one,19.42,1419,1372,142
+aldehydes,3-methylbutanal,6.55,936,933,86
+,hexanal,10.76,1108,1095,82
+,nonanal,19.55,1424,1406,98
+acids,acetic acid,21.25,1489,1452,60
+,propanoic acid,23.47,1577,1534,74
+,2-methylpropanoic acid,24.19,1606,1554,88
+,butanoic acid,25.65,1667,1624,73
+,3-methylbutanoic acid,26.45,1701,1667,87
+,hexanoic acid,30.66,1890,1839,87
+,octanoic acid,35.02,2110,2055,115
+,nonanoic acid,37.2,2226,2127,129
+alcohols,1-butanol,12.3,1163,1179,56
+,3-methylbutanol,14.1,1227,1210,70
+,1-hexanol,18.24,1375,1361,69
+,1-heptanol,20.98,1478,1450,70
+pyrazines,"2,5-dimethylpyrazine",17.86,1362,1358,108
+,"2,3,5-trimethylpyrazine",20.05,1443,1394,122
+,"pyrazine-2-ethyl-3,5-dimethyl",21.05,1481,1435,135
+,"pyrazine-3,5-diethyl-2-methyl",22.75,1548,1509,149

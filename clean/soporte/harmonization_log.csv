@@ -1,4 +1,42 @@
 ﻿fase,tabla,clave,campo,valor_anterior,valor_nuevo,estado,referencia,criterio
+4,dim_compound,CP_0161,CID/CAS,None / 1618-26-4,15380 / 1618-26-4,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/15380,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0162,CID/CAS,None / 111-31-9,8106 / 111-31-9,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/8106,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0163,CID/CAS,None / 96-48-0,7302 / 96-48-0,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/7302,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0164,CID/CAS,None / 104-50-7,7704 / 104-50-7,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/7704,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0165,CID/CAS,None / 27538-09-6,93111 / 27538-09-6,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/93111,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0168,CID/CAS,None / 626-93-7,12297 / 626-93-7,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/12297,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0169,CID/CAS,None / 123-38-6,527 / 123-38-6,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/527,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0170,CID/CAS,None / 6728-26-3,5281168 / 6728-26-3,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/5281168,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0171,CID/CAS,None / 25152-84-5,5283349 / 25152-84-5,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/5283349,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0172,CID/CAS,None / 112-54-9,8194 / 112-54-9,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/8194,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0173,CID/CAS,None / 105-68-0,7772 / 105-68-0,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/7772,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0174,CID/CAS,None / 105-66-8,7770 / 105-66-8,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/7770,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0175,CID/CAS,None / 106-27-4,7795 / 106-27-4,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/7795,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0176,CID/CAS,None / 106-70-7,7824 / 106-70-7,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/7824,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0177,CID/CAS,None / 122-70-3,31225 / 122-70-3,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/31225,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0178,CID/CAS,None / 103-52-6,7658 / 103-52-6,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/7658,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0179,CID/CAS,None / 13360-64-0,25915 / 13360-64-0,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/25915,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0180,CID/CAS,None / 18138-04-0,28905 / 18138-04-0,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/28905,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0181,CID/CAS,None / 106-24-1,637566 / 106-24-1,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/637566,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0182,CID/CAS,None / 151-10-0,9025 / 151-10-0,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/9025,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0183,CID/CAS,None / 103-26-4,637520 / 103-26-4,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/637520,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0184,CID/CAS,None / nan,311 / 77-92-9,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/311,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0189,CID/CAS,None / 108-64-5,7945 / 108-64-5,verificado_con_fuente,https://pubchem.ncbi.nlm.nih.gov/compound/7945,CID completado: PubChem lo asigna al CAS del compuesto.
+4,dim_compound,CP_0190,CID/CAS,None / nan,None / nan,no_verificado,,Sin CID: no se pudo buscar el CAS.
+4,dim_compound,CP_0191,CID/CAS,None / nan,525 / 6915-15-7,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/525,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0192,CID/CAS,None / nan,2519 / 58-08-2,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/2519,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0193,CID/CAS,None / nan,None / nan,no_verificado,,Sin CID: no se pudo buscar el CAS.
+4,dim_compound,CP_0194,CID/CAS,None / nan,6106 / 61-90-5,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/6106,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0195,CID/CAS,None / nan,5234 / 7647-14-5,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/5234,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0196,CID/CAS,None / nan,4873 / 7447-40-7,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/4873,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0197,CID/CAS,None / nan,None / nan,no_verificado,,Sin CID: no se pudo buscar el CAS.
+4,dim_compound,CP_0198,CID/CAS,None / nan,None / nan,no_verificado,,Sin CID: no se pudo buscar el CAS.
+4,dim_compound,CP_0199,CID/CAS,None / nan,107526 / 58367-01-4,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/107526,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0200,CID/CAS,None / nan,439524 / 328-38-1,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/439524,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0201,CID/CAS,None / nan,None / nan,no_verificado,,Sin CID: no se pudo buscar el CAS.
+4,dim_compound,CP_0202,CID/CAS,None / nan,5460541 / 17090-93-6,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/5460541,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0203,CID/CAS,None / nan,135398640 / 131-99-7,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/135398640,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
+4,dim_compound,CP_0204,CID/CAS,None / nan,135398631 / 85-32-5,inferencia_documentada,https://pubchem.ncbi.nlm.nih.gov/compound/135398631,CID obtenido por búsqueda del nombre IUPAC en PubChem (sin CAS).
 1.1,cheese_alias,Pecorino,cheese_name_std / label_type,Pecorino / specific,Pecorino (generic) / generic_category,inferencia_documentada,https://en.wikipedia.org/wiki/List_of_European_cheeses_with_protected_geographical_status,"'Pecorino' designa una familia de quesos de oveja: la lista de DOP de la UE recoge varios pecorinos distintos (Romano, Siciliano, Toscano, Sardo…). No es un queso concreto."
 1.1,cheese_alias,pecorino,cheese_name_std / label_type,Pecorino / specific,Pecorino (generic) / generic_category,inferencia_documentada,https://en.wikipedia.org/wiki/List_of_European_cheeses_with_protected_geographical_status,Igual que 'Pecorino'.
 1.1,cheese_alias,Pecorino (6 months),cheese_name_std / label_type,Pecorino / specific,Pecorino (generic) / generic_category,inferencia_documentada,https://en.wikipedia.org/wiki/List_of_European_cheeses_with_protected_geographical_status,Igual que 'Pecorino'; '6 months' se conserva como calificador de muestra.

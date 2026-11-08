@@ -44,6 +44,21 @@ Archivos nuevos en `soporte/`:
 - `harmonization_log.csv`: cada cambio aplicado.
 - `qa_checks_v2.csv`: 30 comprobaciones de calidad, todas OK.
 
+## Novedades de la versión `v3-fases456` (Fases 4–6)
+
+- **`modelo/compound_properties.csv`**: propiedades químicas de PubChem (SMILES, InChIKey, peso molecular, XLogP, TPSA, Fingerprint2D de 881 bits) para 199 compuestos.
+- **`soporte/dim_compound.csv`**: CID y CAS verificados o completados (`*_final`, `*_status`, `*_note`) y olores de Flavornet.
+- **`modelo/fact_compound_odor.csv`** y la tabla plana: `flavornet_support` (término / familia / sin coincidencia / no en Flavornet).
+- **Tabla plana**:
+  - `independent_study_keys`, `only_via_review` y `study_group_key`: Curioni 2002 se cuenta como revisión, no como estudio primario.
+  - `duplicate_of_evidence` y **`use_as_cheese_aroma_label_dedup`**: etiqueta recomendada, sin duplicados por estudio (943 filas).
+- **`soporte/qa_pending_confirmation.csv`** y **`soporte/qa_pending_evidence_resolution.csv`**: resolución de los 138 pares y las 53 evidencias pendientes.
+- **`soporte/bridge_evidence_process.csv`**: enlaces exactos evidencia → proceso por compuesto (`link_method`).
+- **Carpeta nueva `muestras/`** (Fase 6): datos experimentales **por muestra** de 7 estudios de acceso abierto: `study.csv`, `sample.csv`, `sample_compound.csv`, `sample_descriptor.csv` y su diccionario.
+- Control de calidad: `soporte/qa_checks.csv` (37 comprobaciones).
+
+Documentación: `FASE4_Control_Calidad.md`, `FASE5_Modelo_Compuesto_Aroma.md`, `FASE6_Extraccion_Muestras.md` e `INFORME_FINAL_FASES_4_5_6.md`.
+
 ## Archivo principal para Machine Learning
 
 **`modelo/ml_evidence_flat.csv`** — 2.023 filas × 128 columnas. Una fila = una evidencia × un queso.
@@ -73,7 +88,7 @@ Columnas clave para filtrar:
 - `unsupported` / `not_verified`: sin apoyo o sin verificar.
 
 Filtros recomendados antes de entrenar:
-- Aroma del queso: `use_as_cheese_aroma_label == True`.
+- Aroma del queso: `use_as_cheese_aroma_label_dedup == True` (v3, sin duplicados por estudio).
 - Olor del compuesto: `use_as_compound_aroma_label == True` (o `fact_compound_odor.csv` con `is_aroma_target == True`).
 - Opcional: quitar `cheese_label_type` en (`not_cheese`, `unresolved`) y usar `evidence_score` como peso.
 

@@ -4,6 +4,46 @@ Registro de lo que se hizo en cada sesión. La entrada más reciente va primero.
 
 ---
 
+## 2026-11-08 · Sesión 5 — Fases 4, 5 y 6 ejecutadas → base `v3-fases456`
+
+Instrucción seguida: [`corrections/fases456.md`](corrections/fases456.md). Informe: [INFORME_FINAL_FASES_4_5_6.md](INFORME_FINAL_FASES_4_5_6.md).
+
+### Qué se hizo
+
+**Fase 4 — Control de calidad** ([FASE4](FASE4_Control_Calidad.md))
+- Se descargaron y guardaron en caché PubChem y Flavornet (`data_external/`).
+- Se resolvieron 42 de las 53 evidencias pendientes y 64 de los 138 pares por confirmar, con fuente o por inferencia documentada.
+- CID faltantes: de 38 a 5. CAS faltantes: de 16 a 5.
+- Se añadieron propiedades químicas y huellas moleculares de 199 compuestos.
+- Se confirmó que Curioni 2002 es una **revisión**. Se añadió la independencia de estudios (`independent_study_keys`) y se marcaron 31 duplicados (`use_as_cheese_aroma_label_dedup`).
+- Se recalcularon enlaces exactos evidencia → proceso. Las 369 listas cortadas no son reconstruibles; se documenta.
+
+**Fase 5 — Modelo compuesto → familia** ([FASE5](FASE5_Modelo_Compuesto_Aroma.md))
+- 144 compuestos y 6 familias; validación agrupada por estructura (10 × 5 pliegues).
+- Random Forest: macro-AUPRC 0,57, frente a 0,46 de la clase química y 0,22 del azar. Prueba de permutación p = 0,02.
+- Validación externa con 510 compuestos de Flavornet: generaliza en toasted y fruity; no en lactic ni animal.
+
+**Fase 6 — Datos por muestra** ([FASE6](FASE6_Extraccion_Muestras.md))
+- 7 estudios de acceso abierto, 64 muestras, 30 unidades de producción, 2.192 mediciones de compuestos y 425 descriptores de aroma.
+- Los 10 estudios prioritarios, incluido Jo 2018, son de pago: no se extrajeron.
+- Viabilidad:
+  - **A:** direcciones coherentes (maduración 14 de 16 compuestos; pasteurización 8 de 8 pares).
+  - **C:** no viable todavía (20 muestras, 3 métodos).
+
+### Correcciones durante la sesión
+- La normalización de términos trataba distinto «vegetables» y «vegetable». Por eso «Cooked vegetables» se asignaba a lactic; corregido a vegetal.
+- «Toasted» y «Ammonia» de Torri 2021 quedaban sin familia; corregido.
+- La conversión a texto del artículo de Idiazabal se había sobrescrito con una respuesta vacía de Europe PMC; se regeneró desde el HTML.
+
+### Decisiones a revisar por la usuaria
+1. **Acceso a artículos de pago** (Jo 2018, Qian 2002, Moio 1998/2000) a través de la biblioteca. Es lo que más puede mejorar el proyecto.
+2. La asignación de los 197 términos de Flavornet a familias de Bérodier (`FN_FAMILY` en `scripts/phase4_quality.py`).
+
+### Versión
+Etiqueta git **`v3-fases456`**. Se conservan `v1-clean` y `v2-harmonized`.
+
+---
+
 ## 2026-11-08 · Sesión 4 — Fases 1, 2 y 3 ejecutadas → base `v2-harmonized`
 
 Instrucción seguida: [`corrections/fases123.md`](corrections/fases123.md).

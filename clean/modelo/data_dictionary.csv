@@ -1,4 +1,20 @@
 ﻿table,column,dtype,description
+modelo/compound_properties.csv,compound_id,str,FK a dim_compound
+modelo/compound_properties.csv,pubchem_cid,int64,CID de PubChem (de la hoja Synonyms)
+modelo/compound_properties.csv,iupac_name_pubchem,str,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,molecular_formula,str,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,molecular_weight,float64,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,smiles,str,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,connectivity_smiles,str,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,inchikey,str,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,xlogp,float64,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,tpsa,float64,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,hbond_donors,int64,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,hbond_acceptors,int64,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,rotatable_bonds,int64,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,heavy_atoms,int64,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,fingerprint2d_b64,str,"Columna original del Excel, renombrada a snake_case"
+modelo/compound_properties.csv,source,str,"Columna original del Excel, renombrada a snake_case"
 modelo/fact_compound_odor.csv,compound_id,str,FK a dim_compound
 modelo/fact_compound_odor.csv,descriptor_id,str,FK a dim_descriptor
 modelo/fact_compound_odor.csv,n_evidence,int64,Nº de evidencias que lo apoyan
@@ -11,6 +27,10 @@ modelo/fact_compound_odor.csv,evidence_ids,str,IDs de evidencia (|)
 modelo/fact_compound_odor.csv,is_aroma_target,bool,True si el descriptor es una nota de aroma utilizable como objetivo (Fase 3)
 modelo/fact_compound_odor.csv,aroma_family,str,"Familia de aroma armonizada (nivel 1, Bérodier et al. 1997): lactic, vegetal, floral, fruity, toasted, animal, spicy, other"
 modelo/fact_compound_odor.csv,berodier_subfamily,str,Nivel 2: subfamilia de Bérodier; '[proyecto] …' = subfamilia añadida por la armonización
+modelo/fact_compound_odor.csv,flavornet_support,str,"Columna original del Excel, renombrada a snake_case"
+modelo/fact_compound_odor.csv,flavornet_status,str,"Columna original del Excel, renombrada a snake_case"
+modelo/fact_compound_odor.csv,flavornet_odors,str,"Columna original del Excel, renombrada a snake_case"
+modelo/fact_compound_odor.csv,flavornet_matched_term,str,"Columna original del Excel, renombrada a snake_case"
 modelo/fact_process_effect.csv,process_effect_id,str,ID original de la hoja Process and Volatiles
 modelo/fact_process_effect.csv,factor_studied_raw,str,Factor estudiado (texto original)
 modelo/fact_process_effect.csv,factor_category,str,Factor estudiado armonizado
@@ -208,6 +228,13 @@ modelo/ml_evidence_flat.csv,use_as_cheese_descriptor_label,bool,True si sirve co
 modelo/ml_evidence_flat.csv,use_as_compound_odor_label,bool,True si sirve como etiqueta 'este compuesto huele a este descriptor'
 modelo/ml_evidence_flat.csv,use_as_cheese_aroma_label,bool,use_as_cheese_descriptor_label y además descriptor de aroma válido (Fase 3)
 modelo/ml_evidence_flat.csv,use_as_compound_aroma_label,bool,use_as_compound_odor_label y además descriptor de aroma válido (Fase 3)
+modelo/ml_evidence_flat.csv,use_as_cheese_aroma_label_dedup,bool,"Columna original del Excel, renombrada a snake_case"
+modelo/ml_evidence_flat.csv,duplicate_of_evidence,str,"Columna original del Excel, renombrada a snake_case"
+modelo/ml_evidence_flat.csv,flavornet_support,str,"Columna original del Excel, renombrada a snake_case"
+modelo/ml_evidence_flat.csv,independent_study_keys,str,"Columna original del Excel, renombrada a snake_case"
+modelo/ml_evidence_flat.csv,n_independent_studies,int64,"Columna original del Excel, renombrada a snake_case"
+modelo/ml_evidence_flat.csv,only_via_review,bool,"Columna original del Excel, renombrada a snake_case"
+modelo/ml_evidence_flat.csv,study_group_key,str,"Columna original del Excel, renombrada a snake_case"
 modelo/ml_evidence_flat.csv,reported_value_raw,str,"Valor reportado en la fuente, sin interpretar"
 modelo/ml_evidence_flat.csv,rv_FD,float64,Número tras 'FD' en reported_value
 modelo/ml_evidence_flat.csv,rv_DF,float64,Número tras 'DF='
@@ -248,6 +275,8 @@ soporte/bridge_evidence_process.csv,evidence_id,str,ID de la evidencia (original
 soporte/bridge_evidence_process.csv,process_effect_id,str,ID original de la hoja Process and Volatiles
 soporte/bridge_evidence_process.csv,marked_with_asterisk,bool,El ID llevaba '*' en el Excel
 soporte/bridge_evidence_process.csv,list_truncated_in_source,bool,La lista original estaba truncada
+soporte/bridge_evidence_process.csv,link_method,str,"Columna original del Excel, renombrada a snake_case"
+soporte/bridge_evidence_process.csv,evidence_list_truncated,bool,"Columna original del Excel, renombrada a snake_case"
 soporte/bridge_evidence_source.csv,evidence_id,str,ID de la evidencia (original del Excel; EVX_ = generado porque faltaba)
 soporte/bridge_evidence_source.csv,source_id,str,FK a dim_source
 soporte/cheese_alias.csv,cheese_id,str,FK a dim_cheese
@@ -369,6 +398,14 @@ soporte/dim_compound.csv,chemical_class_method,str,Método usado para chemical_c
 soporte/dim_compound.csv,is_reference_standard_only,bool,"True para patrones de panel sensorial (cafeína, quinina), no compuestos del queso"
 soporte/dim_compound.csv,only_in_taste_sheet,bool,True si el compuesto solo aparece en la hoja 2. Taste
 soporte/dim_compound.csv,origin_sheets,str,Hojas del Excel donde aparece
+soporte/dim_compound.csv,pubchem_cid_final,float64,"Columna original del Excel, renombrada a snake_case"
+soporte/dim_compound.csv,cid_status,str,"Columna original del Excel, renombrada a snake_case"
+soporte/dim_compound.csv,cid_note,str,"Columna original del Excel, renombrada a snake_case"
+soporte/dim_compound.csv,cas_final,str,"Columna original del Excel, renombrada a snake_case"
+soporte/dim_compound.csv,cas_status,str,"Columna original del Excel, renombrada a snake_case"
+soporte/dim_compound.csv,cas_note,str,"Columna original del Excel, renombrada a snake_case"
+soporte/dim_compound.csv,in_flavornet,bool,"Columna original del Excel, renombrada a snake_case"
+soporte/dim_compound.csv,flavornet_odors,str,"Columna original del Excel, renombrada a snake_case"
 soporte/dim_descriptor.csv,descriptor_id,str,FK a dim_descriptor
 soporte/dim_descriptor.csv,descriptor_label,str,Descriptor tal como está en la fuente (sin espacios sobrantes)
 soporte/dim_descriptor.csv,n_terms,int64,Nº de términos en el descriptor
@@ -401,6 +438,7 @@ soporte/dim_source.csv,first_author,str,Primer autor
 soporte/dim_source.csv,year,int64,Año
 soporte/dim_source.csv,source_type,str,primary | review | book (según el Excel)
 soporte/dim_source.csv,n_mentions,int64,Nº de veces que se menciona en el Excel
+soporte/dim_source.csv,bibliographic_note,str,"Columna original del Excel, renombrada a snake_case"
 soporte/fact_cheese_compound.csv,cheese_id,str,FK a dim_cheese
 soporte/fact_cheese_compound.csv,compound_id,str,FK a dim_compound
 soporte/fact_cheese_compound.csv,n_evidence,float64,Nº de evidencias que lo apoyan
@@ -512,6 +550,11 @@ soporte/fact_evidence.csv,ctx_proc_transhumance_milk,float64,Contexto de producc
 soporte/fact_evidence.csv,ctx_proc_wooden_utensils,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_wooden_utensils
 soporte/fact_evidence.csv,ctx_proc_artisanal_handmade,float64,Contexto de producción asignado a la fila en la fuente. 1 = mencionado en 'otros factores': proc_artisanal_handmade
 soporte/fact_evidence.csv,ctx_curd_cooking_temp_c,float64,Contexto de producción asignado a la fila en la fuente. Temperatura de cocción citada (°C)
+soporte/fact_evidence.csv,independent_study_keys,str,"Columna original del Excel, renombrada a snake_case"
+soporte/fact_evidence.csv,n_independent_studies,int64,"Columna original del Excel, renombrada a snake_case"
+soporte/fact_evidence.csv,cites_curioni_review,bool,"Columna original del Excel, renombrada a snake_case"
+soporte/fact_evidence.csv,only_via_review,bool,"Columna original del Excel, renombrada a snake_case"
+soporte/fact_evidence.csv,study_group_key,str,"Columna original del Excel, renombrada a snake_case"
 soporte/harmonization_log.csv,fase,float64,Fase del plan
 soporte/harmonization_log.csv,tabla,str,Tabla afectada
 soporte/harmonization_log.csv,clave,str,Registro afectado
@@ -547,9 +590,9 @@ soporte/pathway_steps.csv,resulting_compound_family,str,"Columna original del Ex
 soporte/pathway_steps.csv,figure_in_source,str,"Columna original del Excel, renombrada a snake_case"
 soporte/pathway_steps.csv,source_raw,str,Texto original de la fuente (sin interpretar)
 soporte/pathway_steps.csv,source_id,str,FK a dim_source
-soporte/qa_checks_v2.csv,comprobacion,str,Comprobación de calidad
-soporte/qa_checks_v2.csv,resultado,str,OK / FALLO
-soporte/qa_checks_v2.csv,detalle,str,Detalle
+soporte/qa_checks.csv,comprobacion,str,Comprobación de calidad
+soporte/qa_checks.csv,resultado,str,OK / FALLO
+soporte/qa_checks.csv,detalle,str,Detalle
 soporte/qa_issues.csv,table,str,Tabla
 soporte/qa_issues.csv,record_key,str,Clave del registro
 soporte/qa_issues.csv,field,str,Campo
@@ -565,6 +608,23 @@ soporte/qa_pending_confirmation.csv,cheeses_raw,str,Texto original de la fuente 
 soporte/qa_pending_confirmation.csv,sources_raw,str,Texto original de la fuente (sin interpretar)
 soporte/qa_pending_confirmation.csv,reason,str,"Columna original del Excel, renombrada a snake_case"
 soporte/qa_pending_confirmation.csv,master_row,int64,Fila de la hoja '1. Odor & Aroma' de la que procede (source_row)
+soporte/qa_pending_confirmation.csv,resolucion,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_confirmation.csv,estado,str,Estado de la decisión
+soporte/qa_pending_confirmation.csv,evidencias_confirmatorias,float64,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_confirmation.csv,flavornet_soporte,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_confirmation.csv,flavornet_olores,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_confirmation.csv,criterio,str,Justificación
+soporte/qa_pending_confirmation.csv,aroma_family,str,"Familia de aroma armonizada (nivel 1, Bérodier et al. 1997): lactic, vegetal, floral, fruity, toasted, animal, spicy, other"
+soporte/qa_pending_evidence_resolution.csv,evidence_id,str,ID de la evidencia (original del Excel; EVX_ = generado porque faltaba)
+soporte/qa_pending_evidence_resolution.csv,descriptor_label,str,Descriptor tal como está en la fuente (sin espacios sobrantes)
+soporte/qa_pending_evidence_resolution.csv,iupac_name,str,Nombre IUPAC del compuesto tal como en la fuente
+soporte/qa_pending_evidence_resolution.csv,cheese_label_raw,str,Texto original del queso en la fuente
+soporte/qa_pending_evidence_resolution.csv,pendiente,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_evidence_resolution.csv,resolucion,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_evidence_resolution.csv,estado,str,Estado de la decisión
+soporte/qa_pending_evidence_resolution.csv,evidencias_confirmatorias,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_evidence_resolution.csv,flavornet_soporte,str,"Columna original del Excel, renombrada a snake_case"
+soporte/qa_pending_evidence_resolution.csv,criterio,str,Justificación
 soporte/taste_compound.csv,record_id,str,ID del registro
 soporte/taste_compound.csv,descriptor_id,str,FK a dim_descriptor
 soporte/taste_compound.csv,compound_name_raw,str,Texto original de la fuente (sin interpretar)

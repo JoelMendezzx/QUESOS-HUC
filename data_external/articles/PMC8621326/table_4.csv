@@ -1,0 +1,17 @@
+﻿Attributes.,Equations,R2,Q2,p (CV−ANOVA),Variable Coefficient (Significant)
+Taste,,,,,
+Salty,y = x + 8.818E −7,0.448,0.329,0.001,isoamyl butanoate; 2-propanone; (z)-3-hexenyl butanoate; 2-pentanone
+Sweet,y = x − 1.394E −6,0.963,0.835,<0.001,2-butanol; 2-methyl butanal; 1-pentanol; ethyl octanoate
+Flavor,,,,,
+Ammonia,y = x − 1.613E −7,0.976,0.912,<0.001,4-methyl-2-pentanol; methyl hexanoate; dimethyl sulfone; methanethiol
+Cooked vegetables,n.s.,,,n.s.,
+Floral,y = x − 9.763E −8,0.914,0.619,0.002,2-butanol; 2-methyl butanal; 1-pentanol; ethyl octanoate
+Moldy,y = x − 2.704E −7,0.974,0.867,<0.001,(z)-3-hexenyl butanoate; dimethyl sulfone; methyl hexanoate; methanethiol
+Nutty,n.s.,,,n.s.,
+Soapy,y = x − 6.369E −7,0.979,0.823,<0.001,4-methyl-2-pentanol; 1-pentanol; 2-heptanol; methyl hexanoate
+Toasted,y = x + 1.89E −7,0.920,0.749,<0.001,3-octanone; ethyl benzene; 2-ethyl hexanol; 1-methyl-1-butanol
+Mouthfeel,,,,,
+Creamy,y = 1*x − 8.436E −7,0.960,0.833,<0.001,2-methyl butanal; 1-pentanol; 2-butanol; 1-methoxy-4-methyl benzene
+Grainy,y = x − 1.961E −7,0.601,0.517,<0.001,(z)-3-hexenyl butanoate; 1-methyl-1-butanol; ethyl hexanoate; 2-octanol
+Pungent,y = x − 1.544E −7,0.985,0.879,<0.001,methyl hexanoate; dimethyl sulfone; methanethiol; isoamyl butanoate
+Liking,y = x − 1.478E −5,0.933,0.628,0.008,ethyl hexanoate; (z)-3-hexenyl butanoate; decanoic acid; phenylethyl alcohol

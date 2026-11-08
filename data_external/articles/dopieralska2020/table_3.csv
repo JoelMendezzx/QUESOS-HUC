@@ -1,0 +1,74 @@
+﻿"# CAPTION: Area percentage of the volatile compounds detected in cheeses during 69-day storage (mean ± SD, n = 3)."
+Day,RI,Smoked Cheese,Smoked Cheese,Smoked Cheese,Smoked Cheese
+Day,RI,1 (day 1),2 (day 21),3 (day 42),4 (day 69)
+Alcohols,Alcohols,Alcohols,Alcohols,Alcohols,Alcohols
+Ethanol,550,5.31 a ± 0.33,6.36 a ± 0.96,10.51 b ± 1.70,5.79 a ± 1.64
+Cyclobutanol,665,0.28 a ± 0.3,1.01 b ± 0.01,Nd,0.38 a ± 0.02
+"2,3-Butanediol",777,Nd,Nd,Nd,0.68 ± 0.39
+"Butanol, 3-methyl-",725,3.26 b ± 0.37,3.75 b ± 1.15,3.02 ab ± 0.16,1.83 a ± 0.64
+"1,3-Butanediol",793,Nd,0.53 ± 0.11,Nd,Nd
+1-Hexanol,865,0.19 a ± 0.03,1.28 b ± 0.17,Nd,Nd
+Total,,9.04 a ± 0.27,12.93 b ± 0.48,13.53 b ± 0.92,8.68 a ± 0.69
+Ketones,Ketones,Ketones,Ketones,Ketones,Ketones
+2-Propanone,558,3.62 ± 0.26,3.52 ± 0.14,3.62 ± 0.73,2.45 ± 0.88
+"2,3-Butanedione",593,1.62 b ± 0.14,1.06 a ± 0.07,1.09 a ± 0.13,0.86 a ± 0.11
+2-Butanone,598,9.75 b ± 0.10,3.76 a ± 0.16,2.44 a ± 0.42,3.53 a ± 0.58
+1-Hydroxyacetone,663,2.00 c ± 0.19,1.61 b ± 0.13,1.70 b ± 0.14,1.17 a ± 0.10
+2-Pentanone,682,1.00 ± 0.67,1.05 ± 0.47,Nd,Nd
+"2-Butanone, 3-hydroxy-",706,10.38 c ± 1.51,4.27 b ± 0.20,4.81 b ± 0.08,2.61 a ± 0.53
+Cyclopentanone,783,0.45 ± 0.34,0.72 ± 0.17,0.72 ± 0.27,Nd
+2-Cyclopenten-1-one,827,Nd,1.27 ± 0.19,1.05 ± 0.17,Nd
+"2-Propanone, 1-(acetoloxy)-",873,0.84 ab ± 0.09,1.23 b ± 0.06,0.64 a ± 0.21,Nd
+"2H-Pyran-3(4H)-one, dihydro-",892,Nd,0.21 ± 0.07,0.16 ± 0.03,Nd
+2-Heptanone,890,0.56 b ± 0.05,0.66 b ± 0.01,0.31 a ± 0.06,0.62b ± 0.04
+2-Methyl-2-cyclopentenone,904,0.56 a ± 0.03,0.73 ab ± 0.08,0.55 a ± 0.08,0.83 b ± 0.05
+3-Methyl-2-cyclopenten-1-one,964,0.76 ± 0.14,0.85 ± 0.08,0.85 ± 0.04,0.75 ± 0.07
+"2-Butanone, 1-(acetyloxy)-",973,Nd,0.64 ± 0.14,Nd,Nd
+2-Methyltetrahydrothiophen-3-one,985,0.17 ± 0.07,Nd,Nd,0.16 ± 0.03
+"2,3-Dimethyl-2-cyclopenten-1-one",1038,0.45 a ± 0.14,0.86 c ± 0.19,0.66 b ± 0.15,0.58 a ± 0.13
+3-Ethyl-2-cyclopenten-1-one,1075,Nd,0.22 ± 0.06,0.25 ± 0.08,0.14 ± 0.06
+2-Nonanone,1093,0.52 ± 0.11,Nd,Nd,0.59 ± 0.16
+Total,,32.68 d ± 0.35,22.66 c ± 0.24,18.85 b ± 0.35,14.29 a ± 0.27
+Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes,Aldehydes
+Pentanal,695,1.43 b ± 0.64,2.01 c ± 0.75,0.72 a ± 0.13,2.05 c ± 0.11
+3-Methylbutanal,643,2.05 c ± 0.02,1.22 b ± 0.49,0.79 a ± 0.51,1.05 a ± 0.06
+Hexanal,798,Nd,Nd,0.88 a ± 0.08,1.31 b ± 0.09
+Heptanal,902,0.18 ± 0.09,0.16 ± 0.09,0.09 ± 0.03,0.12 ± 0.03
+Benzaldehyde,959,0.93 ± 0.66,0.49 ± 0.19,0.40 ± 0.10,0.37 ± 0.13
+Nonanal,1104,0.26 a ± 0.02,0.34 b ± 0.02,0.37 b ± 0.02,0.21 a ± 0.02
+Decanal,1206,Nd,Nd,0.15 ± 0.06,Nd
+Total,,4.85 b ± 0.31,4.22 b ± 0.29,3.40 a ± 0.14,5.11 c ± 0.08
+Carboxylic acids,Carboxylic acids,Carboxylic acids,Carboxylic acids,Carboxylic acids,Carboxylic acids
+Acetic acid,622,11.44 ab ± 0.39,10.03 a ± 0.68,10.00 a ± 0.21,12.10 b ± 0.56
+Butanoic acid,816,4.93 a ± 0.59,8.24 b ± 0.76,5.95 ab ± 1.01,12.02 c ± 0.34
+Hexanoic acid,1005,3.62 b ± 0.05,2.98 a ± 0.38,2.48 a ± 0.29,6.17 c ± 0.66
+Octanoic acid,1182,0.10 ± 0.04,0.10 ± 0.03,0.03 ± 0.01,0.42 ± 0.09
+Total,,20.09 ab ± 0.28,21.35 b ± 1.83,18.46 a ± 4.42,30.71 c ± 0.43
+Furan compounds,Furan compounds,Furan compounds,Furan compounds,Furan compounds,Furan compounds
+2-Furaldehyde or furfural,828,2.0 c ± 0.02,0.26 a ± 0.05,0.67 b ± 0.11,Nd
+2-Furanmethanol,856,1.90 a ± 0.10,2.99 b ± 0.21,3.13 ab ± 0.31,3.49 c ± 0.57
+Acetylfuran,911,Nd,0.25 ± 0.08,0.16 ± 0.09,0.18 ± 0.06
+"2-Furancarboxaldehyde,5-methyl-",965,Nd,Nd,0.14 ± 0.02,Nd
+Total,,3.90 b ± 0.07,3.50 a ± 0.10,4.10 c ± 0.09,3.67 a ± 0.33
+Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons,Hydrocarbons
+Cyclopentane,581,Nd,Nd,Nd,0.84 ± 0.21
+Toluen,754,0.76 ± 0.29,0.74 ± 0.26,0.59 ± 0.26,1.00 ± 0.24
+"Cyclohexene, 1-methyl-4-(1-methylethenyl)",811,0.16 ± 0.02,Nd,Nd,Nd
+Total,,0.92 b ± 0.16,0.74 a ± 0.26,0.59 a ± 0.06,1.84 c ± 0.19
+Lactones,Lactones,Lactones,Lactones,Lactones,Lactones
+γ-butyrolactone,913,0.29 a ± 0.05,0.38 b ± 0.05,0.55 c ± 0.16,0.47 c ± 0.11
+α-Methyl-γ-crotonolactone,980,Nd,0.47 ± 0.01,0.47 ± 0.02,0.46 ± 0.06
+2-Hydroxy-1-methylcyclopenten-3-one or Maple lactone,1027,Nd,0.64 a ± 0.12,1.04 b ± 0.19,0.65 a ± 0.21
+Total,,0.29 a ± 0.05,1.49 b ± 0.06,2.06 c ± 0.11,1.58 b ± 0.14
+Esters,Esters,Esters,Esters,Esters,Esters
+"Butanoic acid, ethyl ester",802,1.22 ± 0.11,1.86 ± 0.16,1.30 ± 1.03,1.91 ± 0.47
+"Hexanoic acid, ethyl ester",1001,Nd,Nd,Nd,2.28 ± 0.64
+"2(3H)-Furanone, 5-Methyl-",943,0.06 a ± 0.01,0.38 c ± 0.21,0.13 b ± 0.02,0.16 b ± 0.02
+Total,,1.28 a ± 0.09,2.24 b ± 0.12,1.43 a ± 0.54,4.35 c ± 0.33
+Other compounds,Other compounds,Other compounds,Other compounds,Other compounds,Other compounds
+α-Pinene,931,Nd,0.16 ± 0.09,0.12 ± 0.02,0.16 ± 0.03
+Phenol,988,0.36 a ± 0.01,0.55 b ± 0.02,0.82 c ± 0.01,0.32 a ± 0.02
+"Phenol, 3-methyl-",1059,0.19 a ± 0.08,0.89 b ± 0.46,1.82 c ± 0.33,0.15 a ± 0.02
+"Phenol, 2-methoxy-",1088,0.83 a ± 0.03,2.86 b ± 0.07,4.31 c ± 0.35,1.01 a ± 0.17
+1-Hydroxy-2-methoxy-4-methylbenzene,1192,0.22 a ± 0.05,Nd,1.56 b ± 0.26,0.21 a ± 0.08
+Total,,3.46 b ± 0.10,6.23 c ± 0.17,8.63 d ± 0.21,1.85 a ± 0.07

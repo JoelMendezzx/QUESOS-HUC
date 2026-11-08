@@ -1,0 +1,64 @@
+﻿table,column,description
+study.csv,study_id,Identificador del estudio
+study.csv,citation,Cita
+study.csv,doi,DOI verificado en la página del artículo
+study.csv,url,URL consultada
+study.csv,access,Tipo de acceso
+study.csv,design,Diseño experimental (según el artículo)
+study.csv,in_excel_sources,Si el estudio ya figuraba en las fuentes del Excel
+sample.csv,sample_id,Identificador único de la muestra
+sample.csv,study_id,FK a study
+sample.csv,sample_code_in_source,Código o descripción de la muestra en el artículo
+sample.csv,cheese_type_reported,Tipo de queso según el artículo
+sample.csv,cheese_id,FK a dim_cheese (tipo armonizado)
+sample.csv,milk_species_reported,Especie de leche indicada por el artículo para la muestra (vacío = no indicada)
+sample.csv,milk_heat_treatment_reported,raw / pasteurized indicado por el artículo
+sample.csv,heat_treatment_detail,Detalle del tratamiento térmico
+sample.csv,coagulant_reported,Coagulante indicado
+sample.csv,starter_culture_reported,Cultivo iniciador indicado
+sample.csv,other_process,Otras condiciones indicadas
+sample.csv,ripening_days,Días de maduración de la muestra
+sample.csv,ripening_category_reported,Categoría de maduración (si no hay días)
+sample.csv,ripening_temp_c,Temperatura de maduración (°C)
+sample.csv,ripening_rh_pct,Humedad relativa de maduración (%)
+sample.csv,storage_days,Días de almacenamiento (quesos ya elaborados)
+sample.csv,production_unit,Unidad de producción (para medir independencia)
+sample.csv,replicate_type,Tipo de réplica / agregación del valor
+sample.csv,independence_note,Relación con otras muestras
+sample.csv,possible_same_material_as,Muestra de otro estudio que podría ser el mismo material
+sample.csv,has_production_variable,Tiene al menos una variable de producción documentada
+sample.csv,has_compound_data,Tiene mediciones de compuestos
+sample.csv,has_descriptor_data,Tiene descriptores de aroma
+sample.csv,source_location,Tabla/sección del artículo
+sample_compound.csv,sample_id,FK a sample
+sample_compound.csv,compound_name_source,Nombre del compuesto en el artículo
+sample_compound.csv,compound_id,FK a dim_compound (si el compuesto está en la base)
+sample_compound.csv,cas,CAS (de dim_compound)
+sample_compound.csv,pubchem_cid,CID de PubChem obtenido por nombre (si no está en la base)
+sample_compound.csv,compound_match,Cómo se identificó el compuesto
+sample_compound.csv,is_family_total,Total de una familia química
+sample_compound.csv,measure_type,concentracion / abundancia_relativa / porcentaje_area / OAV / OIR
+sample_compound.csv,value,Valor numérico
+sample_compound.csv,value_sd,Desviación estándar (si se da)
+sample_compound.csv,value_raw,Texto original de la celda
+sample_compound.csv,unit_original,Unidad original del artículo
+sample_compound.csv,detected,False = no detección explícita (ND); vacío = no aplica o no indicado
+sample_compound.csv,detection_note,Nota sobre la celda
+sample_compound.csv,analytical_method,Método analítico
+sample_compound.csv,source_location,Tabla del artículo
+sample_descriptor.csv,sample_id,FK a sample
+sample_descriptor.csv,descriptor_source,Descriptor en el artículo
+sample_descriptor.csv,category_source,Categoría del descriptor en el artículo
+sample_descriptor.csv,modality,aroma / taste / texture
+sample_descriptor.csv,evaluation_method,Panel sensorial (RATA) o GC-O; nunca propiedades de compuestos aislados
+sample_descriptor.csv,value,"Valor (FD, MF % o intensidad)"
+sample_descriptor.csv,value_unit,Unidad del valor
+sample_descriptor.csv,presence,Presencia en la muestra
+sample_descriptor.csv,linked_compound_source,Compuesto asociado (GC-O)
+sample_descriptor.csv,linked_compound_id,FK a dim_compound
+sample_descriptor.csv,aroma_family,Familia de Bérodier (ontología de la Fase 3)
+sample_descriptor.csv,ontology_mapping,Cómo se asignó la familia
+sample_descriptor.csv,ontology_status,Estado de la asignación
+sample_descriptor.csv,sample_link_status,Estado del vínculo con la muestra
+sample_descriptor.csv,source_location,Tabla del artículo
+sample_descriptor.csv,note,Nota

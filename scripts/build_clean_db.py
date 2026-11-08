@@ -19,6 +19,7 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import harmonization_decisions as HD  # noqa: E402  (decisiones de armonización, Fases 1–3)
+import phase4_quality as P4  # noqa: E402  (Fase 4: PubChem y Flavornet desde data_external/)
 
 warnings.filterwarnings("ignore")
 CORR_LOG = []  # registro de cada corrección aplicada (base v2)
@@ -135,7 +136,7 @@ def to_num(v):
 # clean/modelo  -> lo necesario para entrenar (+ diccionario de columnas)
 # clean/soporte -> catálogos, puentes, otras modalidades y control de calidad
 MODEL_FILES = {"ml_evidence_flat.csv", "fact_process_effect.csv", "fact_compound_odor.csv",
-               "data_dictionary.csv"}
+               "data_dictionary.csv", "compound_properties.csv"}
 OUT_MODEL = os.path.join(OUT, "modelo")
 OUT_SUPPORT = os.path.join(OUT, "soporte")
 for _d in (OUT_MODEL, OUT_SUPPORT):
@@ -381,6 +382,13 @@ for i, (key, g) in enumerate(groups.items(), start=1):
                                n_occurrences=g["names"][n]))
 dim_compound = pd.DataFrame(cmp_rows)
 compound_alias = pd.DataFrame(alias_rows)
+
+# --- Fase 4: verificación y completado de CID/CAS con PubChem + propiedades químicas ---
+dim_compound, compound_properties, _p4log = P4.enrich_compounds(dim_compound)
+CORR_LOG.extend(_p4log)
+FLAVORNET = P4.load_flavornet()
+dim_compound["in_flavornet"] = dim_compound.cas_final.isin(FLAVORNET)
+dim_compound["flavornet_odors"] = dim_compound.cas_final.map(lambda c: "; ".join(sorted(FLAVORNET[c])) if c in FLAVORNET else None)
 
 
 def compound_id(name=None, cas=None):
@@ -1480,6 +1488,22 @@ fact_compound_odor = co.groupby(["compound_id", "descriptor_id"]).agg(
 fact_compound_odor = fact_compound_odor.merge(
     dim_descriptor[["descriptor_id", "is_aroma_target", "aroma_family", "berodier_subfamily"]],
     on="descriptor_id", how="left")
+# --- Fase 4: contraste independiente de cada par compuesto-descriptor con Flavornet ---
+_cas = dim_compound.set_index("compound_id").cas_final
+_terms = dim_descriptor.set_index("descriptor_id").aroma_terms
+
+
+def _fn_cols(df):
+    res = [P4.flavornet_check(_cas.get(c), _terms.get(d), f, FLAVORNET)
+           for c, d, f in zip(df.compound_id, df.descriptor_id, df.aroma_family)]
+    df["flavornet_support"] = [r[0] for r in res]
+    df["flavornet_status"] = [r[1] for r in res]
+    df["flavornet_odors"] = [r[2] for r in res]
+    df["flavornet_matched_term"] = [r[3] for r in res]
+    return df
+
+
+fact_compound_odor = _fn_cols(fact_compound_odor)
 
 # queso -> compuesto (presencia), desde evidencias + proceso
 cc = fe[fe.claim_scope.isin(["descriptor_compound_in_cheese", "compound_odor_note_only",
@@ -1514,6 +1538,103 @@ bridge_compound_pathway = fe.dropna(subset=["compound_id", "pathway_id"]).groupb
     ["compound_id", "pathway_id"]).agg(n_evidence=("evidence_id", "nunique")).reset_index()
 
 # ----------------------------------------------------------------------------
+# 9b. FASE 4 — independencia de estudios, duplicados y pendientes
+# ----------------------------------------------------------------------------
+REVIEW_KEYS = {"curioni 2002"}  # Curioni & Bosset (2002), Int. Dairy J. 12:959-984: revisión (no estudio primario)
+_PRIMARY_SRC = {r.source_id: f"{fold(r.first_author)} {int(r.year)}" for r in dim_source.itertuples()
+                if r.source_type == "primary" and pd.notna(r.year)}
+
+
+def _cited_keys(s_):
+    keys = []
+    for part in re.split(r"[;|]", s_ or ""):
+        p_ = fold(part).strip() if part else ""
+        p_ = re.sub(r"^(odor notes|notes)\s*:\s*", "", p_)
+        if not p_ or p_.startswith("ch."):
+            continue
+        m = re.match(r"^([a-z][a-z\-' ]*?)(?:,|\s+and\s|\s*&|\s+et al|\s*\()[^0-9]*?(\d{4})", p_)
+        if m:
+            keys.append(f"{m.group(1).strip()} {m.group(2)}")
+    return keys
+
+
+_sid_by_ev = bridge_evidence_source.groupby("evidence_id").source_id.agg(list)
+study_rows = []
+for r in fact_evidence.itertuples():
+    keys = _cited_keys(r.cited_primary_source_raw if isinstance(r.cited_primary_source_raw, str) else "")
+    keys += [_PRIMARY_SRC[x] for x in _sid_by_ev.get(r.evidence_id, []) if x in _PRIMARY_SRC]
+    keys = list(dict.fromkeys(keys))
+    prim = [k for k in keys if k not in REVIEW_KEYS]
+    study_rows.append(dict(
+        evidence_id=r.evidence_id,
+        independent_study_keys="|".join(prim) or None,
+        n_independent_studies=len(prim),
+        cites_curioni_review=any(k in REVIEW_KEYS for k in keys),
+        only_via_review=(not prim) and any(k in REVIEW_KEYS for k in keys),
+        study_group_key=prim[0] if prim else ("curioni 2002 [revisión]" if keys else "sin_estudio_primario")))
+_study = pd.DataFrame(study_rows)
+fact_evidence = fact_evidence.merge(_study, on="evidence_id", how="left")
+fe = fact_evidence
+
+# Fase 4 — pares por confirmar (Articles to Confirm): evidencia interna + Flavornet
+_conf = fe[fe.verification_status.isin(["CONFIRMED_PRIMARY", "CONFIRMED_SECONDARY"])
+           & fe.claim_scope.isin(["descriptor_compound_in_cheese", "compound_odor_note_only"])]
+_conf_pairs = _conf.groupby(["descriptor_id", "compound_id"]).evidence_id.agg(lambda x: "|".join(sorted(x)))
+_fam = dim_descriptor.set_index("descriptor_id").aroma_family
+
+
+def _pair_resolution(did, cid_):
+    ev_ids = _conf_pairs.get((did, cid_))
+    fn = P4.flavornet_check(_cas.get(cid_), _terms.get(did), _fam.get(did), FLAVORNET)
+    if ev_ids:
+        return ("confirmado_por_otra_evidencia", P4.V, ev_ids, fn,
+                "El mismo par descriptor–compuesto está confirmado en otra evidencia del Excel.")
+    if fn[0] == "termino":
+        return ("confirmado_externamente", P4.V, None, fn,
+                f"Flavornet registra para el compuesto el olor '{fn[3]}', coincidente con el descriptor.")
+    if fn[0] == "familia":
+        return ("compatible_a_nivel_familia", P4.I, None, fn,
+                "Flavornet registra para el compuesto olores de la misma familia de Bérodier, no el término exacto.")
+    if fn[0] == "sin_coincidencia":
+        return ("no_confirmado", P4.N, None, fn, f"Flavornet registra otros olores ({fn[2]}); ninguno de la familia.")
+    return ("no_confirmado", P4.N, None, fn, "El compuesto no está en Flavornet y ninguna otra evidencia del Excel confirma el par.")
+
+
+# Fase 4 — evidencias pendientes en la fuente (split_status 'pending')
+pend_rows = []
+for r in fe[fe.split_status.astype(str).str.startswith("pending")].itertuples():
+    if r.evidence_id in HD.CHECK_IN_TABLE:
+        d = HD.CHECK_IN_TABLE[r.evidence_id]
+        pend_rows.append(dict(evidence_id=r.evidence_id, descriptor_label=r.descriptor_label, iupac_name=r.iupac_name,
+                              cheese_label_raw=r.cheese_label_raw, pendiente=r.split_status,
+                              resolucion="queso identificado en el texto del PDF (Fase 1)" if d[0] else "queso no identificable",
+                              estado=d[1], evidencias_confirmatorias=None, flavornet_soporte=None, criterio=d[2]))
+        continue
+    res = _pair_resolution(r.descriptor_id, r.compound_id)
+    pend_rows.append(dict(evidence_id=r.evidence_id, descriptor_label=r.descriptor_label, iupac_name=r.iupac_name,
+                          cheese_label_raw=r.cheese_label_raw, pendiente=r.split_status,
+                          resolucion=res[0] + "; asignación queso/fuente: no recuperable sin el documento original",
+                          estado=res[1], evidencias_confirmatorias=res[2], flavornet_soporte=res[3][0],
+                          criterio=res[4] + " El queso y la fuente concretos de esta fila no se pueden asignar: "
+                          "la fila maestra lista varios quesos y fuentes sin indicar cuál corresponde."))
+qa_pending_evidence = pd.DataFrame(pend_rows)
+
+# Fase 4 — enlaces evidencia -> proceso recalculados de forma exacta (mismo compuesto)
+_pvc = fact_process_effect.dropna(subset=["compound_id"])[["process_effect_id", "compound_id"]]
+_rec = fe[["evidence_id", "compound_id"]].dropna().merge(_pvc, on="compound_id")[["evidence_id", "process_effect_id"]]
+_rec["link_method"] = "mismo_compuesto (recalculado)"
+bridge_evidence_process = bridge_evidence_process.assign(link_method="lista_original_visible")
+bridge_evidence_process = pd.concat([bridge_evidence_process, _rec], ignore_index=True)
+_trunc_ev = set(fe.loc[fe.process_refs_truncated == True, "evidence_id"])
+bridge_evidence_process["evidence_list_truncated"] = bridge_evidence_process.evidence_id.isin(_trunc_ev)
+
+# dim_source: estado bibliográfico verificado
+dim_source["bibliographic_note"] = None
+dim_source.loc[dim_source.short_citation == "Curioni 2002", ["source_type", "bibliographic_note"]] = [
+    "review", "Revisión: Curioni & Bosset (2002), Int. Dairy J. 12(12):959–984, DOI 10.1016/S0958-6946(02)00124-3. "
+              "No es un estudio primario: sus tablas compilan estudios de GC-O."]
+
+# ----------------------------------------------------------------------------
 # 10. TABLA PLANA PARA ML (una fila = evidencia x queso)
 # ----------------------------------------------------------------------------
 desc_info = dim_descriptor.set_index("descriptor_id")[
@@ -1533,6 +1654,18 @@ ml = fe.merge(bec[["evidence_id", "cheese_id", "cheese_name_std", "sample_qualif
 ml = ml.join(desc_info, on="descriptor_id").join(cmp_info, on="compound_id").join(cheese_info, on="cheese_id")
 ml["use_as_cheese_aroma_label"] = ml.use_as_cheese_descriptor_label & (ml.is_aroma_target == True)
 ml["use_as_compound_aroma_label"] = ml.use_as_compound_odor_label & (ml.is_aroma_target == True)
+# Fase 4: contraste con Flavornet y duplicados por estudio independiente
+_fnr = [P4.flavornet_check(_cas.get(c), _terms.get(d), f, FLAVORNET) if isinstance(c, str) else ("no_en_flavornet", P4.N, None, None)
+        for c, d, f in zip(ml.compound_id, ml.descriptor_id, ml.aroma_family)]
+ml["flavornet_support"] = [x[0] for x in _fnr]
+ml["_ord"] = -ml.evidence_score.fillna(0)
+ml = ml.sort_values(["_ord", "evidence_id"])
+_lab = ml.use_as_cheese_aroma_label & ml.cheese_id.notna()
+_key = ml.cheese_id.astype(str) + "|" + ml.descriptor_id.astype(str) + "|" + ml.compound_id.astype(str) + "|" + ml.study_group_key.astype(str)
+_first = ml[_lab].assign(_k=_key[_lab]).groupby("_k").evidence_id.first()
+ml["duplicate_of_evidence"] = [(_first.get(k) if (l and _first.get(k) != e) else None) for k, l, e in zip(_key, _lab, ml.evidence_id)]
+ml["use_as_cheese_aroma_label_dedup"] = _lab & ml.duplicate_of_evidence.isna()
+ml = ml.sort_index().drop(columns="_ord")
 ml["pathway_label"] = ml["pathway_id"].map(pw_info)
 ml["source_ids"] = ml["evidence_id"].map(src_one)
 ml.insert(0, "row_id", [f"ML_{i:05d}" for i in range(1, len(ml) + 1)])
@@ -1553,7 +1686,9 @@ ML_ORDER = (
     + ctx_ev
     + ["claim_scope", "verification_status", "evidence_level_raw", "evidence_score",
        "use_as_cheese_descriptor_label", "use_as_compound_odor_label",
-       "use_as_cheese_aroma_label", "use_as_compound_aroma_label",
+       "use_as_cheese_aroma_label", "use_as_compound_aroma_label", "use_as_cheese_aroma_label_dedup",
+       "duplicate_of_evidence", "flavornet_support", "independent_study_keys", "n_independent_studies",
+       "only_via_review", "study_group_key",
        "reported_value_raw", "rv_FD", "rv_DF", "rv_OI", "rv_OP", "rv_c", "rv_pct", "rv_vol",
        "method_hint_gc_olfactometry", "descriptor_in_source", "evidence_text", "location_in_source",
        "source_ids", "n_sources", "source_type", "cited_primary_source_id", "cited_primary_source_raw",
@@ -1611,6 +1746,18 @@ qa_pending.insert(1, "compound_id", [compound_id(n, c) for n, c in zip(qa_pendin
 
 for _, r in dim_compound[dim_compound.pubchem_cid.isna()].iterrows():
     issue("dim_compound", r["compound_id"], "pubchem_cid", "Sin CID en la fuente", r["iupac_name"])
+# Fase 4: resolución de los 138 pares por confirmar
+_res = [_pair_resolution(d, c) if (isinstance(d, str) and isinstance(c, str)) else
+        ("no_confirmado", P4.N, None, ("sin_id", None, None, None), "Descriptor o compuesto sin identificador.")
+        for d, c in zip(qa_pending.descriptor_id, qa_pending.compound_id)]
+qa_pending["resolucion"] = [x[0] for x in _res]
+qa_pending["estado"] = [x[1] for x in _res]
+qa_pending["evidencias_confirmatorias"] = [x[2] for x in _res]
+qa_pending["flavornet_soporte"] = [x[3][0] for x in _res]
+qa_pending["flavornet_olores"] = [x[3][2] for x in _res]
+qa_pending["criterio"] = [x[4] for x in _res]
+qa_pending["aroma_family"] = qa_pending.descriptor_id.map(_fam)
+
 qa_issues = pd.DataFrame(ISSUES).drop_duplicates().sort_values(["table", "problem", "record_key"])
 
 # ----------------------------------------------------------------------------
@@ -1643,6 +1790,8 @@ write(nonaroma_source, "nonaroma_source.csv")
 write(taste_compound, "taste_compound.csv")
 write(qa_pending, "qa_pending_confirmation.csv")
 write(qa_issues, "qa_issues.csv")
+write(compound_properties, "compound_properties.csv")
+write(qa_pending_evidence, "qa_pending_evidence_resolution.csv")
 
 # ----------------------------------------------------------------------------
 # 12b. REGISTROS DE ARMONIZACIÓN (corrections/*.xlsx) — una fila por registro evaluado
@@ -1825,8 +1974,21 @@ check("Fase 3: familias de nivel 1 dentro de Bérodier",
       REC["desc"][REC["desc"].is_aroma_target == True].berodier_family_fr.isin(HD.L1).all())
 check("Valores de producción del tipo separados de los de muestra (ctx_ sin cambios)",
       all(c in fact_evidence.columns for c in ["ctx_ripening_days_min", "ctx_milk_heat_treatment"]))
+# --- Fase 4 ---
+check("Fase 4: 138 pares por confirmar evaluados", len(qa_pending) == 138 and qa_pending.estado.notna().all())
+check("Fase 4: 53 evidencias pendientes evaluadas", len(qa_pending_evidence) == 53 and qa_pending_evidence.estado.notna().all(),
+      len(qa_pending_evidence))
+check("Fase 4: todos los compuestos con estado de CID", dim_compound.cid_status.notna().all())
+check("Fase 4: propiedades PubChem sin compuestos duplicados", compound_properties.compound_id.is_unique)
+check("Fase 4: todo CAS completado tiene dígito de control válido",
+      dim_compound.cas_final.dropna().map(cas_checksum_ok).all())
+check("Fase 4: etiquetas sin duplicar <= etiquetas totales",
+      ml.use_as_cheese_aroma_label_dedup.sum() <= ml.use_as_cheese_aroma_label.sum())
+check("Fase 4: enlaces evidencia-proceso apuntan a mediciones existentes",
+      bridge_evidence_process.loc[bridge_evidence_process.link_method.str.startswith("mismo"), "process_effect_id"]
+      .isin(fact_process_effect.process_effect_id).all())
 qc = pd.DataFrame(QC)
-write(qc, "qa_checks_v2.csv")
+write(qc, "qa_checks.csv")
 if (qc.resultado == "FALLO").any():
     print(qc[qc.resultado == "FALLO"].to_string())
     raise SystemExit("Control de calidad NO superado")

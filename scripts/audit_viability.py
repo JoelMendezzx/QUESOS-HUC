@@ -53,14 +53,11 @@ def cited_keys(s):
 
 
 def primary_studies(rows):
-    """Estudios primarios distintos: fuentes de tipo 'primary' + fuentes primarias citadas."""
+    """Estudios primarios independientes (v3, Fase 4): columna independent_study_keys de la tabla plana,
+    que excluye la revisión Curioni & Bosset (2002) como estudio primario."""
     keys = set()
-    for _, r in rows.iterrows():
-        for sid in str(r["source_ids"]).split("|"):
-            if sid in PRIMARY_SRC:
-                row = src[src.source_id == sid].iloc[0]
-                keys.add(f"{fold(row.first_author)} {int(row.year)}")
-        keys.update(cited_keys(r["cited_primary_source_raw"]))
+    for v in rows["independent_study_keys"].dropna():
+        keys.update(k for k in str(v).split("|") if k)
     return keys
 
 
@@ -111,7 +108,7 @@ res["q1"] = dict(n_dim=len(ch), n_specific=len(spec), n_profile=len(prof),
                  dist=prof.profile_completeness.value_counts().sort_index().to_dict())
 
 # ---------------------------------------------------------------- Q2
-lab = ml[ml.use_as_cheese_aroma_label & (ml.cheese_label_type == "specific")].copy()
+lab = ml[ml.use_as_cheese_aroma_label_dedup & (ml.cheese_label_type == "specific")].copy()
 lab["is_primary"] = lab.verification_status == "CONFIRMED_PRIMARY"
 lab["is_gco"] = lab.method_hint_gc_olfactometry == True
 levels = {

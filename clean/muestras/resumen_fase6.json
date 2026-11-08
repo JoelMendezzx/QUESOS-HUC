@@ -1,0 +1,29 @@
+{
+ "estudios": 7,
+ "muestras": 64,
+ "unidades_de_produccion": 30,
+ "muestras_con_produccion_y_compuestos": 58,
+ "muestras_con_produccion_y_descriptores_aroma": 20,
+ "registros_compuesto": 2192,
+ "registros_compuesto_con_compound_id": 1600,
+ "no_detecciones_explicitas": 341,
+ "registros_descriptor": 455,
+ "registros_descriptor_aroma": 425,
+ "descriptores_aroma_con_familia": 419,
+ "muestras_por_estudio": {
+  "CHE22": 12,
+  "DOP20": 4,
+  "DUE24A": 12,
+  "DUE24B": 4,
+  "IDI23": 6,
+  "NAT20": 20,
+  "TOR21": 6
+ },
+ "variables_faltantes": {
+  "milk_species_reported": 54,
+  "milk_heat_treatment_reported": 38,
+  "coagulant_reported": 38,
+  "starter_culture_reported": 38,
+  "ripening_days": 36
+ }
+}

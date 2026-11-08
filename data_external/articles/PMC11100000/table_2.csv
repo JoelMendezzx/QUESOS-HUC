@@ -1,0 +1,26 @@
+﻿,,,,RId,RId,RId,,
+no.,compounda,odor qualityb,fractionc,DB-FFAP,DB-1701,DB-5,FD factore,earlier reported as volatile constituent of Gouda
+1,ethyl butanoate,fruity,NBF,1045,851,810,128,"3, 4, 5"
+2,3-methylbutanol,malty,NBF,1225,848,730,32,"3, 4, 5, 10"
+3,2-isopropyl-3-methoxypyrazinef,earthy,NBF,1451,1147,1101,64,15
+4,acetic acid,vinegar-like,AF,1468,784,n.d.,2048,"4, 5, 7"
+5,(Z)-2-nonenal,"fatty, green",NBF,1529,1253,1140,64,-
+6,(E)-2-nonenal,"fatty, green",NBF,1560,1276,1154,256,-
+7,2-methylpropanoic acid,"sweaty, fruity",AF,1589,958,n.d.,512,"7, 10"
+8,butanoic acid,sweaty-rancid,AF,1649,982,n.d.,4096,"6, 7, 10"
+9,2- and 3-methylbutanoic acidg,sweaty-cheesy,AF,1691,1033,n.d.,4096,"6, 7, 10"
+10,pentanoic acid,sweaty,AF,1763,1079,n.d.,32,7
+11,hexanoic acid,sweaty,AF,1874,1173,n.d.,16,"4, 5, 6, 7, 10"
+12,2-phenylethanol,flowery,NBF,1952,1282,1051,512,"7, 10"
+13,"trans-4,5-epoxy-(E)-2-decenalf",metallic,NBF,2041,1547,1375,32,-
+14,γ-nonalactoneg,peach-like,NBF,2081,1586,1366,16,10
+15,δ-decalactoneg,peach-like,NBF,2203,1695,1467,16,7
+16,4-ethyloctanoic acid,goat-like,AF,2240,1439,n.d.,512,-
+17,"3-hydroxy-4,5-dimethyl-2(5H)- furanonef",lovage-like,AF,2260,1357,1108,512,14
+18,δ-decalactoneg,coconut-like,NBF,2268,1739,1491,512,"6, 7, 10"
+19,unknown,leather-like,NBF,2288,1567,n.d.,512,-
+20,5-ethyl-3-hydroxy-4-methyl-2(5H)-furanonef,lovage-like,AF,2327,1435,1196,1024,"14,15"
+21,γ -dodecalactoneg,peach-like,NBF,2438,1914,1676,64,"6, 7, 10"
+22,δ-dodecalactoneg,peach-like,NBF,2484,1948,1710,512,"6, 7, 10"
+23,2-phenylacetic acid,honey-like,AF,2575,1496,1283,1024,14
+24,vanillin,vanilla-like,AF,2599,1648,1391,1024,-
